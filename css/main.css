@@ -465,10 +465,6 @@ nav .dropdown-menu .dropdown-items {
           animation-name: spin;
   -webkit-animation-duration: 1500ms;
           animation-duration: 1500ms;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
 }
 
 .filtering_demos {

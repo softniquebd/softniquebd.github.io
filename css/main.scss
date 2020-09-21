@@ -7,7 +7,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 * {
   font-family: "Quicksand", sans-serif;
   margin: 0;
@@ -541,8 +540,8 @@ nav {
 .spinner {
   animation-name: spin;
   animation-duration: 1500ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  // animation-iteration-count: infinite;
+  // animation-timing-function: linear;
 }
 
 .filtering_demos {
@@ -1611,8 +1610,7 @@ nav {
 }
 
 .curvy {
-
-  .fa{
+  .fa {
     margin-right: 1em;
   }
 
