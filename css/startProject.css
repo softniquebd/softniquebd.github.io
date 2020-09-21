@@ -172,7 +172,7 @@
     -o-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
     width: 20px;
     height: 20px;
-    fill: #d6372e;
+    fill:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     -webkit-transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
     -o-transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
     transition: 600ms all cubic-bezier(0.23, 1, 0.32, 1);
@@ -234,7 +234,7 @@
     -o-transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 .link-mask i {
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     font-style: normal;
 }
 .navigation {
@@ -249,7 +249,7 @@
     line-height: 0;
     overflow: hidden;
     border-radius: 50%;
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     width: 40px;
     position: fixed;
     height: 40px;
@@ -803,7 +803,7 @@
     width: 40px;
     height: 40px;
     padding: 10px;
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     z-index: 9556;
     -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
@@ -1165,7 +1165,7 @@
     height: 0;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
-    border-top: 10px solid #d6372e;
+    border-top: 10px solidlinear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 .blog-post-wrap {
     border-bottom: 1px solid rgba(37, 48, 105, 0.15);
@@ -1214,7 +1214,7 @@
     -ms-transform: scale(1.1, 1.1) translate(-50%, -50%);
 }
 .blog-post-wrap:hover h1 {
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 .blog-post {
     width: 76%;
@@ -1233,7 +1233,7 @@
     line-height: 1.2em;
 }
 .blog-content-wrap h2 span {
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 .blog-content-wrap h3 {
     margin: 2.2em 0 1em;
@@ -1256,12 +1256,12 @@
 }
 .blog-content-wrap #about-author .author-img {
     line-height: 0;
-    border: 50px solid #d6372e;
+    border: 50px solidlinear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     border-radius: 50%;
     overflow: hidden;
 }
 .blog-content p:first-child:first-letter {
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     
     float: left;
     font-weight: 800;
@@ -1371,7 +1371,7 @@
     font-size: 5em;
 }
 #blog-related h2 span {
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 #blog-related:before {
     content: "";
@@ -1519,7 +1519,7 @@
     font-size: 30vw;
 }
 .project-heading h1 span {
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 @-webkit-keyframes titleAnim {
     0% {
@@ -1653,7 +1653,7 @@
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     z-index: 1000;
 }
 .project-heading .live-link a:after {
@@ -6437,7 +6437,7 @@ video {
     letter-spacing: 0.1em;
     padding: 1.5em 2em;
     border-radius: 5px;
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     color: #fff;
 }
 .js-form-response .social {
@@ -6561,7 +6561,7 @@ button.form-btn {
     
     font-weight: 600;
     border: none;
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     color: #fff;
     padding: 0px;
     font-size: 0.75em;
@@ -6657,7 +6657,7 @@ section.main-type .small {
     -moz-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
     -o-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
     background-color: transparent;
-    background-image: url("../img/form/icon-selected.png");
+    background-image: url("https://buzzworthystudio.com/img/form/icon-selected.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 0% 0%;
@@ -6708,7 +6708,7 @@ section.main-type .small {
     -webkit-transform: scale(0.8);
     -o-transform: scale(0.8);
     -ms-transform: scale(0.8);
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     background-size: 35% 35%;
 }
 .js-form-link.selected .form-icon img,
@@ -6720,7 +6720,7 @@ section.main-type .small {
     margin-top: -1em;
     text-align: left;
     font-size: 0.6em;
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 .text-input {
     transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -6813,7 +6813,7 @@ textarea:focus {
     left: 0;
     display: block;
    
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     color: #fff;
     padding: 0;
     font-size: 0.7em;
@@ -6987,7 +6987,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     -moz-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
     -o-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
     border-radius: 50%;
-    background: #d6372e;
+    background:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     cursor: pointer;
     -webkit-box-shadow: 0 7px 18px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0 7px 18px 0px rgba(0, 0, 0, 0.15);
@@ -7007,7 +7007,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     position: absolute;
     height: 16px;
     width: 16px;
-    background: transparent url("../images/ui-slider-left.svg") no-repeat;
+    background: transparent url("https://buzzworthystudio.com/img/form/ui-slider-left.svg") no-repeat;
     background-size: contain;
     left: 40%;
     top: 50%;
@@ -7023,7 +7023,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     position: absolute;
     height: 16px;
     width: 16px;
-    background: transparent url("../images/ui-slider-right.svg") no-repeat;
+    background: transparent url("https://buzzworthystudio.com/img/form/ui-slider-right.svg") no-repeat;
     background-size: contain;
     left: 70%;
     top: 50%;
@@ -7281,7 +7281,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
         top: 50%;
         left: 50%;
         border-radius: 50%;
-        background-color: #d6372e;
+        background:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
         z-index: -1;
     }
     .form-pager li a.active {
@@ -8775,7 +8775,7 @@ h3 b,
 h4 b,
 h5 b,
 h6 b {
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 h2 {
     font-size: 5em;
@@ -9094,7 +9094,7 @@ a.text-link:hover:before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     color: #fff;
 }
 .contact-button-wrap {
@@ -9119,7 +9119,7 @@ a.text-link:hover:before {
     margin: 20%;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 #contact .contact-button:after {
     content: "" attr(data-linkName) "";
@@ -9201,7 +9201,7 @@ a.bs-button {
     font-weight: 600;
     overflow: hidden;
     position: relative;
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 a.bs-button.btn-small {
     padding: 0 20px;
@@ -9238,15 +9238,15 @@ a.contact {
 }
 ::-moz-selection {
     background: rgba(214, 55, 46, 0.05);
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 ::selection {
     background: rgba(214, 55, 46, 0.05);
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 ::-moz-selection {
     background: rgba(214, 55, 46, 0.05);
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 a:active,
 a:focus,
@@ -9442,7 +9442,7 @@ header .header-description {
     width: 100%;
     height: auto;
     padding-top: 100%;
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 #loader {
     position: absolute;
@@ -9504,7 +9504,7 @@ header .header-description {
     -moz-transition: all 1250ms cubic-bezier(0.77, 0, 0.175, 1);
     -o-transition: all 1250ms cubic-bezier(0.77, 0, 0.175, 1);
     position: fixed;
-    background-color: #d6372e;
+    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0, 0);
@@ -9608,7 +9608,7 @@ header .header-description {
     z-index: -1;
 }
 .team .shape-morph svg {
-    fill: #d6372e;
+    fill:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 .studio .shape-morph .scene {
     fill: none;
@@ -10376,7 +10376,7 @@ header .header-description {
 }
 #team {
     position: relative;
-    color: #d6372e;
+    color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
 }
 #team:before {
     content: "";
@@ -10826,7 +10826,7 @@ header .header-description {
         height: auto;
         padding-top: 80%;
         margin: 10%;
-        background-color: #d6372e;
+        background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
     }
@@ -10865,7 +10865,7 @@ header .header-description {
         width: 250%;
         height: auto;
         padding-top: 250%;
-        background-color: #d6372e;
+        background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     }
     #loader .circle-first,
     #loader .circle-second {
@@ -10972,7 +10972,7 @@ header .header-description {
         position: absolute;
         width: 12px;
         height: 3px;
-        background-color: #d6372e;
+        background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     }
     #approach h3:after {
         top: 50%;
@@ -11806,7 +11806,7 @@ header .header-description {
         position: absolute;
         width: 12px;
         height: 3px;
-        background-color: #d6372e;
+        background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     }
     #approach h3:after {
         top: 50%;
@@ -12242,4 +12242,31 @@ header .header-description {
     .portfolio-wrapper .portfolio-mask > span {
         height: 250px;
     }
+}
+
+
+.theme_btn {
+  font-size: 16px !important;
+  color: #fff !important;
+  -webkit-box-shadow: 0px 20px 50px 0px rgba(123, 78, 245, 0.3);
+          box-shadow: 0px 20px 50px 0px rgba(123, 78, 245, 0.3);
+  border-radius: 10px;
+  font-weight: 500;
+  padding: 11px 41px;
+  display: inline-block;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  margin: auto;
+  background: #ff00cc;
+  /*fallbackforoldbrowsers*/
+  /*Chrome10-25,Safari5.1-6*/
+  background: -webkit-gradient(linear, right top, left top, from(#4f4fcc), color-stop(#9758b4), to(#ff00cc)) !important;
+  background: linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
+}
+
+.theme_btn:hover {
+  cursor: pointer !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #fff;
 }
