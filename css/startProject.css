@@ -6708,7 +6708,7 @@ section.main-type .small {
     -webkit-transform: scale(0.8);
     -o-transform: scale(0.8);
     -ms-transform: scale(0.8);
-    background-color:linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
+    background-color: #253069;
     background-size: 35% 35%;
 }
 .js-form-link.selected .form-icon img,
@@ -7215,7 +7215,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 @media only screen and (min-width: 64em) {
     #main-form h1,
     #main-form h2 {
-        font-size: 3.75em !important;
+        font-size: 2.5em !important;
     }
     #main-form h3 {
         font-size: 0.8333em;
