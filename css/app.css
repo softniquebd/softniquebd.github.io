@@ -1,0 +1,136 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+}
+
+/*** 
+
+====================================================================
+	Global Settings
+====================================================================
+
+ ***/
+
+.auto-container {
+  position: static;
+  max-width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.sec-title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+}
+
+.sec-title h2 {
+  position: relative;
+  font-size: 35px;
+  color: #444444;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+
+/* main section */
+.screenshots-section {
+  position: relative;
+  padding: 70px 0px 110px;
+  overflow: hidden;
+}
+
+.screenshots-section:before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: 250px;
+  width: 100%;
+  height: 499px;
+  background: url(../images/5.gif) repeat-x;
+}
+
+.screenshots-section .carousel-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.screenshots-section .carousel-outer {
+  position: relative;
+  width: 284px;
+  height: 578px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  background: url(../images/iphone-mockup.png) center top no-repeat;
+}
+
+.screenshots-section .carousel-outer .owl-carousel {
+  z-index: auto;
+}
+
+.screenshots-section .carousel-outer .mockup-layer {
+  position: absolute;
+  width: 285px;
+  left: 0px;
+  top: 0px;
+  z-index: 20;
+}
+
+.screenshots-section .carousel-outer .mockup-layer:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20px;
+  height: 630px;
+  background: url(../images/iphone-mockup.png) left top no-repeat;
+  z-index: 20;
+}
+
+.screenshots-section .carousel-outer .mockup-layer:after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 21px;
+  height: 630px;
+  background: url(../images/iphone-mockup.png) right top no-repeat;
+  z-index: 20;
+}
+
+.screenshots-section .owl-stage-outer {
+  overflow: visible;
+}
+
+.screenshots-section .slide {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.screenshots-section .active .slide {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.screenshots-section .slide .image img {
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  z-index: 99999999;
+}
+
+.screenshots-section .owl-nav,
+.screenshots-section .owl-dots {
+  display: none;
+}
