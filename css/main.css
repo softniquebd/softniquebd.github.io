@@ -633,12 +633,9 @@ nav .dropdown-menu .dropdown-items {
             transform: translateY(500px);
   }
   100% {
-            -webkit-transform:;
+    -webkit-transform: translateY(0);
             transform: translateY(0);
-            -moz-transform:;
-            -ms-transform:;
-            -o-transform:;
-}
+  }
 }
 
 @keyframes "showComputer" {

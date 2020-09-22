@@ -268,78 +268,78 @@
     width: auto;
 }
 .logo.animated:hover img {
-    position: relative;
-    animation: animIn 0.9s steps(29) 1;
-    -moz-animation: animIn 0.9s steps(29) 1;
-    -webkit-animation: animIn 0.9s steps(29) 1;
-    -o-animation: animIn 0.9s steps(29) 1;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+	        animation: heartbeat 1.5s ease-in-out infinite both;
 }
-@-webkit-keyframes animIn {
-    0% {
-        transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        -webkit-transform: translateX(0%);
-        -o-transform: translateX(0%);
-        -ms-transform: translateX(0%);
+@-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
     }
-    to {
-        transform: translateX(-96.7%);
-        -moz-transform: translateX(-96.7%);
-        -webkit-transform: translateX(-96.7%);
-        -o-transform: translateX(-96.7%);
-        -ms-transform: translateX(-96.7%);
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
     }
-}
-@keyframes animIn {
-    0% {
-        transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        -webkit-transform: translateX(0%);
-        -o-transform: translateX(0%);
-        -ms-transform: translateX(0%);
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
     }
-    to {
-        transform: translateX(-96.7%);
-        -moz-transform: translateX(-96.7%);
-        -webkit-transform: translateX(-96.7%);
-        -o-transform: translateX(-96.7%);
-        -ms-transform: translateX(-96.7%);
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
     }
-}
-@-webkit-keyframes animOut {
-    0% {
-        transform: translateX(-96.7%);
-        -moz-transform: translateX(-96.7%);
-        -webkit-transform: translateX(-96.7%);
-        -o-transform: translateX(-96.7%);
-        -ms-transform: translateX(-96.7%);
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
     }
-    to {
-        transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        -webkit-transform: translateX(0%);
-        -o-transform: translateX(0%);
-        -ms-transform: translateX(0%);
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
     }
-}
-@keyframes animOut {
-    0% {
-        transform: translateX(-96.7%);
-        -moz-transform: translateX(-96.7%);
-        -webkit-transform: translateX(-96.7%);
-        -o-transform: translateX(-96.7%);
-        -ms-transform: translateX(-96.7%);
+    10% {
+      -webkit-transform: scale(0.91);
+              transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
     }
-    to {
-        transform: translateX(0%);
-        -moz-transform: translateX(0%);
-        -webkit-transform: translateX(0%);
-        -o-transform: translateX(0%);
-        -ms-transform: translateX(0%);
+    17% {
+      -webkit-transform: scale(0.98);
+              transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
     }
-}
+    33% {
+      -webkit-transform: scale(0.87);
+              transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+              animation-timing-function: ease-out;
+    }
+  }
+  
 .mc-chicken {
    
     font-size: 0.48em;
