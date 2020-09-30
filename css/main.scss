@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 
 $marleft: 1em;
 $txtShadow: 2px 4px 6px rgba(65, 26, 221, 0.61);
@@ -8,7 +8,7 @@ html {
 }
 
 * {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -165,8 +165,8 @@ nav {
     margin-left: -22px;
 
     &:before {
-      content: "";
-      background: url("../img/shap_dot.png") no-repeat scroll right;
+      content: '';
+      background: url('../img/shap_dot.png') no-repeat scroll right;
       position: absolute;
       top: 0;
       right: -120%;
@@ -394,7 +394,7 @@ nav {
     font-size: 120px;
     line-height: 120px;
     font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-image: -moz-linear-gradient(
       70deg,
       #3a2bdc 18%,
@@ -482,7 +482,7 @@ nav {
 
     &:after {
       position: absolute;
-      content: "";
+      content: '';
       left: 0;
       bottom: 10px;
       height: 10px;
@@ -916,7 +916,7 @@ nav {
 // typed.js css
 .typed::after,
 .typed2::after {
-  content: "|";
+  content: '|';
   display: inline;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
@@ -1726,3 +1726,4 @@ nav {
     -webkit-transform: rotateY(360deg);
   }
 }
+/// web project scss
