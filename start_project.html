@@ -12,12 +12,8 @@
     <title>SoftniqueBD</title>
     <link rel="icon" href="./images/icon.png" sizes="16x16" />
 
-    <link
-      href="./css/startProject.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="./css/">
+    <link href="./css/startProject.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/" />
   </head>
 
   <body class="hireus">
@@ -51,11 +47,14 @@
 
               <div class="option-wrap">
                 <div class="row center-xs">
-                  <div class="col-xs-5 col-sm-3 link js-show-section" data-form="website">
+                  <div
+                    class="col-xs-5 col-sm-3 link js-show-section"
+                    data-form="website"
+                  >
                     <figure class="form-icon">
                       <img src="images/icon-website.svg" alt="Website" />
                     </figure>
-                    <h3>Website</h3>
+                    <h3>Web Development</h3>
                   </div>
                   <div
                     class="col-xs-5 col-sm-3 col-xs-offset-1 col-sm-offset-0 link js-show-section"
@@ -75,14 +74,15 @@
                     </figure>
                     <h3>Brand</h3>
                   </div>
+                  <!-- extra project part -->
                   <div
-                    class="col-xs-5 col-sm-3 col-xs-offset-1 col-sm-offset-0 link js-show-section"
-                    data-form="chat"
+                    class="col-xs-5 col-sm-3 link js-show-section"
+                    data-form="brand"
                   >
                     <figure class="form-icon">
-                      <img src="images/icon-chat.svg" alt="Chat" />
+                      <img src="images/icon-brand.svg" alt="Brand" />
                     </figure>
-                    <h3>Just Chat :)</h3>
+                    <h3>Brand</h3>
                   </div>
                 </div>
               </div>
@@ -328,7 +328,7 @@
                       </div>
                       <div class="row center-xs">
                         <div class="col-xs-8 col-sm-4 col-lg-3">
-                          <div style="padding-top:1em;">
+                          <div style="padding-top: 1em">
                             <input
                               name="submit"
                               class="theme_btn"
@@ -603,7 +603,7 @@
                       </div>
                       <div class="row center-xs">
                         <div class="col-xs-8 col-sm-4 col-lg-3">
-                          <div style="padding-top:1em;">
+                          <div style="padding-top: 1em">
                             <input
                               name="submit"
                               class="theme_btn"
@@ -869,7 +869,7 @@
                       </div>
                       <div class="row center-xs">
                         <div class="col-xs-8 col-sm-4 col-lg-3">
-                          <div style="padding-top:1em;">
+                          <div style="padding-top: 1em">
                             <input
                               name="submit"
                               class="theme_btn"
@@ -887,91 +887,6 @@
             </div>
           </section>
           <!-- End of #brand-->
-
-          <!--start of chat -->
-          <section class="main-type" id="chat">
-            <div class="grid-wrap">
-              <form action="" method="post" id="form-4">
-                <div class="step step-1 chat-step">
-                  <div class="offset-top-sm">
-                    <div class="row center-xs start-lg">
-                      <div class="col-xs-12 col-sm-9 col-md-7">
-                        <h2>We're Listening</h2>
-                      </div>
-                    </div>
-                    <div class="hidden">
-                      <input
-                        name="main-category"
-                        type="hidden"
-                        class="js-form-link-main-data"
-                      />
-                    </div>
-                    <div class="row center-xs start-lg middle-xs">
-                      <div class="col-xs-12 col-sm-10 col-lg-8">
-                        <div class="form-wrap">
-                          <div class="row">
-                            <div class="col-xs-12 col-md-6">
-                              <p>
-                                <input
-                                  class="text-input"
-                                  name="name"
-                                  type="text"
-                                  placeholder="Name *"
-                                  data-validation="length required"
-                                  data-validation-length="3-40"
-                                  data-validation-error-msg="Name must be at least 3 characters"
-                                />
-                              </p>
-                            </div>
-                            <div class="col-xs-12 col-md-6">
-                              <p>
-                                <input
-                                  class="text-input"
-                                  name="email"
-                                  type="email"
-                                  placeholder="Email *"
-                                  data-validation="email required"
-                                  data-validation-error-msg="Please provide an accurate email address"
-                                />
-                              </p>
-                            </div>
-                          </div>
-
-                          <textarea
-                            rows="6"
-                            cols="50"
-                            placeholder="What do you have on your mind?"
-                            name="your-message"
-                            id="your-message"
-                          ></textarea>
-                          <p>
-                            <input
-                              type="checkbox"
-                              name="contact_me_by_fax_only"
-                              value="1"
-                              style="display: none !important"
-                              tabindex="-1"
-                              autocomplete="false"
-                            />
-                          </p>
-                        </div>
-                      </div>
-                      <div class="col-xs-8 col-sm-4 col-lg-3 col-lg-offset-1">
-                        <div class="">
-                          <input
-                            name="submit-chat"
-                            class="theme_btn"
-                              type="submit"
-                              value="SEND OVER"
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </section>
         </div>
       </div>
     </div>
@@ -980,6 +895,32 @@
     <!-- COPY THIS EVERYWHERE -->
     <div class="form-response js-form-response text-center"></div>
   </body>
+  <!-- chatbox js -->
+  <script>
+    (function () {
+      var options = {
+        facebook: "114263207095888", // Facebook page ID
+        whatsapp: "+8801784215213", // WhatsApp number
+        call_to_action: "", // Call to action
+        button_color: "#932C8B", // Color of button
+        position: "right", // Position may be 'right' or 'left'
+        order: "facebook,whatsapp", // Order of buttons
+      };
+      var proto = document.location.protocol,
+        host = "getbutton.io",
+        url = proto + "//static." + host;
+      var s = document.createElement("script");
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = url + "/widget-send-button/js/init.js";
+      s.onload = function () {
+        WhWidgetSendButton.init(host, proto, options);
+      };
+      var x = document.getElementsByTagName("script")[0];
+      x.parentNode.insertBefore(s, x);
+    })();
+  </script>
+
   <script src="https://buzzworthystudio.com/js/js-dist.js"></script>
   <script src="https://buzzworthystudio.com/js/main.js"></script>
 </html>
