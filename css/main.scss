@@ -1726,4 +1726,53 @@ nav {
     -webkit-transform: rotateY(360deg);
   }
 }
-/// web project scss
+/// layout scss
+.image_scroll {
+  background-image: url('https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-about-page-533x1412.jpg');
+  width: 50px;
+  height: 300px;
+  background-size: 100%;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  transition: all 2s ease;
+  &:hover {
+    background-position-y: 100%;
+  }
+}
+
+.second_element {
+  margin-left: 11em;
+  .text_div {
+    h2 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+  }
+
+  /* First the Grid */
+  .gallery-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
+    grid-gap: 1.5rem;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gallery-frame {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #333;
+    color: #d9d9d9;
+  }
+
+  .gallery-img {
+    width: 6em;
+    height: 7em;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
+  }
+}

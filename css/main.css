@@ -4,7 +4,7 @@ html {
 }
 
 * {
-  font-family: "Quicksand", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -151,7 +151,7 @@ nav .dropdown-menu .dropdown-items {
 }
 
 .banner_text_two .price:before {
-  content: "";
+  content: '';
   background: url("../img/shap_dot.png") no-repeat scroll right;
   position: absolute;
   top: 0;
@@ -350,7 +350,7 @@ nav .dropdown-menu .dropdown-items {
   font-size: 120px;
   line-height: 120px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-image: -ms-linear-gradient(70deg, #3a2bdc 18%, #8545eb 51%, #cf5ff9 68%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -403,7 +403,7 @@ nav .dropdown-menu .dropdown-items {
 
 .banner_text mark:after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0;
   bottom: 10px;
   height: 10px;
@@ -1044,7 +1044,7 @@ nav .dropdown-menu .dropdown-items {
 
 .typed::after,
 .typed2::after {
-  content: "|";
+  content: '|';
   display: inline;
   -webkit-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
@@ -1819,5 +1819,59 @@ nav .dropdown-menu .dropdown-items {
   to {
     -webkit-transform: rotateY(360deg);
   }
+}
+
+.image_scroll {
+  background-image: url("https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-about-page-533x1412.jpg");
+  width: 50px;
+  height: 300px;
+  background-size: 100%;
+  background-position-x: 0;
+  background-repeat: no-repeat;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.image_scroll:hover {
+  background-position-y: 100%;
+}
+
+.second_element {
+  margin-left: 11em;
+  /* First the Grid */
+}
+
+.second_element .text_div h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.second_element .gallery-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(2px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(2px, 1fr));
+  grid-gap: 1.5rem;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.second_element .gallery-frame {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #333;
+  color: #d9d9d9;
+}
+
+.second_element .gallery-img {
+  width: 6em;
+  height: 7em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */
