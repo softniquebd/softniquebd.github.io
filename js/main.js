@@ -1,4 +1,4 @@
-$(".nav-link").append("<i class='fa fa-plus'></i>");
+$('.nav-link').append("<i class='fa fa-plus'></i>");
 // svg computer text manupulation
 
 $(document).ready(function () {
@@ -8,12 +8,12 @@ $(document).ready(function () {
 $(window).resize(function () {
   var width = $(window).width();
   if (width <= 821) {
-    $('[id ="typer"]').removeClass("h1");
-    $('[id= "typer"]').addClass("h3");
+    $('[id ="typer"]').removeClass('h1');
+    $('[id= "typer"]').addClass('h3');
     // $('[id ="circular"]').css("font-size", "2vw !important");
   } else {
-    $('[id ="typer"]').removeClass("h3");
-    $('[id="typer"]').addClass("h1");
+    $('[id ="typer"]').removeClass('h3');
+    $('[id="typer"]').addClass('h1');
   }
 });
 
@@ -28,8 +28,8 @@ $(function () {
 /*=============================================== 
 	       Parallax Init
 	  ================================================*/
-if ($("#apps_craft_animation").length > 0) {
-  $("#apps_craft_animation").parallax({
+if ($('#apps_craft_animation').length > 0) {
+  $('#apps_craft_animation').parallax({
     scalarX: 10.0,
     scalarY: 5.0,
   });
@@ -38,8 +38,8 @@ if ($("#apps_craft_animation").length > 0) {
 
 // typed.js
 $(function () {
-  $(".typed").typed({
-    strings: ["Websites", "Apps", "Ideas"],
+  $('.typed').typed({
+    strings: ['Websites', 'Apps', 'Ideas'],
     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
     stringsElement: null,
     // typing speed
@@ -57,11 +57,11 @@ $(function () {
     // show cursor
     showCursor: false,
     // character for cursor
-    cursorChar: "|",
+    cursorChar: '|',
     // attribute to type (null == text)
     attr: null,
     // either html or text
-    contentType: "html",
+    contentType: 'html',
     // call when done callback function
     callback: function () {},
     // starting callback function before each string
@@ -74,8 +74,8 @@ $(function () {
 });
 
 $(function () {
-  $(".typed2").typed({
-    strings: [" modern flavor.", " better UX.", " ultimate solutions."],
+  $('.typed2').typed({
+    strings: [' modern flavor.', ' better UX.', ' ultimate solutions.'],
     // Optionally use an HTML element to grab strings from (must wrap each string in a <p>)
     stringsElement: null,
     // typing speed
@@ -93,11 +93,11 @@ $(function () {
     // show cursor
     showCursor: false,
     // character for cursor
-    cursorChar: "|",
+    cursorChar: '|',
     // attribute to type (null == text)
     attr: null,
     // either html or text
-    contentType: "html",
+    contentType: 'html',
     // call when done callback function
     callback: function () {},
     // starting callback function before each string
@@ -111,26 +111,26 @@ $(function () {
 // typed.js ends
 
 //filterizr script
-const filterizr = $(".filter-container").filterizr({
-  controlsSelector: ".fltr-controls",
-  gridItemsSelector: ".filtr-item",
+const filterizr = $('.filter-container').filterizr({
+  controlsSelector: '.fltr-controls',
+  gridItemsSelector: '.filtr-item',
   spinner: {
     enabled: true,
   },
 });
-$("#shuffle").click(() => {
-  filterizr.filterizr("shuffle");
+$('#shuffle').click(() => {
+  filterizr.filterizr('shuffle');
 });
 
 const sortFilterizr = (order) => {
-  filterizr.filterizr("sort", $("select :selected").val(), order);
+  filterizr.filterizr('sort', $('select :selected').val(), order);
 };
-$("#asc-btn").click(() => sortFilterizr("asc"));
-$("#des-btn").click(() => sortFilterizr("desc"));
+$('#asc-btn').click(() => sortFilterizr('asc'));
+$('#des-btn').click(() => sortFilterizr('desc'));
 
 //  app project carousal
-if ($(".screenshot-carousel").length) {
-  $(".screenshot-carousel").owlCarousel({
+if ($('.screenshot-carousel').length) {
+  $('.screenshot-carousel').owlCarousel({
     loop: true,
     margin: 0,
     nav: true,
@@ -163,23 +163,24 @@ if ($(".screenshot-carousel").length) {
 // chatbox js part
 (function () {
   var options = {
-    facebook: "114263207095888", // Facebook page ID
-    whatsapp: "+8801784215213", // WhatsApp number
-    call_to_action: "", // Call to action
-    button_color: "#932C8B", // Color of button
-    position: "right", // Position may be 'right' or 'left'
-    order: "facebook,whatsapp", // Order of buttons
+    facebook: '114263207095888', // Facebook page ID
+    whatsapp: '+8801784215213', // WhatsApp number
+    call_to_action: '', // Call to action
+    button_color: '#932C8B', // Color of button
+    position: 'right', // Position may be 'right' or 'left'
+    order: 'facebook,whatsapp', // Order of buttons
   };
   var proto = document.location.protocol,
-    host = "getbutton.io",
-    url = proto + "//static." + host;
-  var s = document.createElement("script");
-  s.type = "text/javascript";
+    host = 'getbutton.io',
+    url = proto + '//static.' + host;
+  var s = document.createElement('script');
+  s.type = 'text/javascript';
   s.async = true;
-  s.src = url + "/widget-send-button/js/init.js";
+  s.src = url + '/widget-send-button/js/init.js';
   s.onload = function () {
     WhWidgetSendButton.init(host, proto, options);
   };
-  var x = document.getElementsByTagName("script")[0];
+  var x = document.getElementsByTagName('script')[0];
   x.parentNode.insertBefore(s, x);
 })();
+// web project onclick

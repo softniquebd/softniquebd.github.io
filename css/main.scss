@@ -1737,6 +1737,7 @@ nav {
   transition: all 10s ease;
   &:hover {
     background-position-y: 100%;
+    cursor: pointer;
   }
 }
 

@@ -1834,6 +1834,7 @@ nav .dropdown-menu .dropdown-items {
 
 .image_scroll:hover {
   background-position-y: 100%;
+  cursor: pointer;
 }
 
 .second_element {
