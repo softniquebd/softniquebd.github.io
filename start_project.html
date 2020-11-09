@@ -40,7 +40,7 @@
             </div>
 
             <div class="option-wrap">
-              <div class="row center-xs">
+              <div class="row center-xs" id="option1">
                 <div class="col-xs-5 col-sm-3 link js-show-section" data-form="website">
                   <figure class="form-icon">
                     <img src="images/icon-website.svg" alt="Website" />
@@ -273,7 +273,7 @@
                 </li>
               </ul>
             </nav>
-            <form action="" method="post" id="form-2">
+            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScI3EeVZ0FBjUQzZdmA3eYKOOiQ3fTmRJva1Ag4Bc2THdvmRQ/formResponse" method="post" id="form-2">
               <div id="ecommerce-step-1" class="step step-1">
                 <div class="offset-top-sm">
                   <div class="row center-xs">
@@ -340,7 +340,7 @@
                         <div id="ecommerce-slider-budget"></div>
                         <p class="section-caption">Approximate budget</p>
                         <input class="slider-input" name="slider-budget-input" type="text"
-                          id="ecommerce-slider-budget-input" readonly />
+                          id="ecommerce-slider-budget-input" />
                       </div>
                     </div>
                     <div class="row center-xs">
@@ -348,7 +348,7 @@
                         <div id="ecommerce-slider-week"></div>
                         <p class="section-caption">Estimated timeline</p>
                         <input class="slider-input" name="slider-week-input" type="text"
-                          id="ecommerce-slider-week-input" readonly />
+                          id="ecommerce-slider-week-input"  />
                       </div>
                     </div>
                   </div>
@@ -530,7 +530,7 @@
                         <div id="brand-slider-budget"></div>
                         <p class="section-caption">Approximate budget</p>
                         <input class="slider-input" name="slider-budget-input" type="text"
-                          id="brand-slider-budget-input" readonly />
+                          id="brand-slider-budget-input"  />
                       </div>
                     </div>
                     <div class="row center-xs">
@@ -538,7 +538,7 @@
                         <div id="brand-slider-week"></div>
                         <p class="section-caption">Estimated timeline</p>
                         <input class="slider-input" name="slider-week-input" type="text" id="brand-slider-week-input"
-                          readonly />
+                           />
                       </div>
                     </div>
                   </div>
@@ -644,7 +644,33 @@
   <div class="form-response js-form-response text-center"></div>
 </body>
 <!-- chatbox js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+
+  $(document).ready(function(){
+    const category = ['Website','Marketing','Brand0','Brand1'];
+    const subCategory = ['WebsiteChoice1','WebsiteChoice2','WebsiteChoice3','MarketingChoice1','MarketingChoice2','MarketingChoice3','Brand0Choice1','Brand0Choice2','Brand0Choice3','Brand1Choice1','Brand1Choice2','Brand1Choice3'];
+
+    $('.js-show-section').bind('click', function(){
+        $("input[name=main-category]").val(category[$('.js-show-section').index(this)]);
+    });
+
+    $('.js-form-link').bind('click', function(){
+        $("input[name=sub-category]").val(subCategory[$('.js-form-link').index(this)]);
+    });
+
+    $("input[name=slider-budget-input]").mouseup(function() {
+        $("input[name=slider-budget-input]").val($('form').serializeArray()[12].value);
+    })
+
+    $("input[name=slider-week-input]").mouseup(function() {
+        $("input[name=slider-week-input]").val($('form').serializeArray()[13].value);
+    })
+
+  });
+
+
+
   (function () {
     var options = {
       facebook: "114263207095888", // Facebook page ID
