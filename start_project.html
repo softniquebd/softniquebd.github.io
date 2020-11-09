@@ -82,7 +82,7 @@
                 <li><a href="#web-step-4" data-anchor="web-step-4">04</a></li>
               </ul>
             </nav>
-            <form action="" method="post" id="form-1">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLScI3EeVZ0FBjUQzZdmA3eYKOOiQ3fTmRJva1Ag4Bc2THdvmRQ/formResponse" method="post" id="form-1">
               <div id="web-step-1" class="step step-1">
                 <div class="offset-top-sm">
                   <div class="row center-xs">
@@ -148,7 +148,7 @@
                         <div id="website-slider-budget"></div>
                         <p class="section-caption">Approximate budget</p>
                         <input class="slider-input" name="slider-budget-input" type="text"
-                          id="website-slider-budget-input" readonly />
+                          id="website-slider-budget-input" />
                       </div>
                     </div>
                     <div class="row center-xs">
@@ -156,7 +156,7 @@
                         <div id="website-slider-week"></div>
                         <p class="section-caption">Estimated timeline</p>
                         <input class="slider-input" name="slider-week-input" type="text" id="website-slider-week-input"
-                          readonly />
+                         />
                       </div>
                     </div>
                   </div>
@@ -273,7 +273,7 @@
                 </li>
               </ul>
             </nav>
-            <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLScI3EeVZ0FBjUQzZdmA3eYKOOiQ3fTmRJva1Ag4Bc2THdvmRQ/formResponse" method="post" id="form-2">
+            <form id="testy" action="https://docs.google.com/forms/d/e/1FAIpQLScI3EeVZ0FBjUQzZdmA3eYKOOiQ3fTmRJva1Ag4Bc2THdvmRQ/formResponse" method="post" id="form-2">
               <div id="ecommerce-step-1" class="step step-1">
                 <div class="offset-top-sm">
                   <div class="row center-xs">
@@ -464,7 +464,7 @@
                 </li>
               </ul>
             </nav>
-            <form action="" method="post" id="form-3">
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLScI3EeVZ0FBjUQzZdmA3eYKOOiQ3fTmRJva1Ag4Bc2THdvmRQ/formResponse" method="post" id="form-3">
               <div id="brand-step-1" class="step step-1">
                 <div class="offset-top-sm">
                   <div class="row center-xs">
@@ -646,6 +646,17 @@
 <!-- chatbox js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxkgWotCMyvIKoT9aGtPCndZdHtHrq8i972t9CKAVjO6xC7T0I/exec'
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<script>
 
   $(document).ready(function(){
     const category = ['Website','Marketing','Brand0','Brand1'];
@@ -659,14 +670,6 @@
         $("input[name=sub-category]").val(subCategory[$('.js-form-link').index(this)]);
     });
 
-    $("input[name=slider-budget-input]").mouseup(function() {
-        $("input[name=slider-budget-input]").val($('form').serializeArray()[12].value);
-    })
-
-    $("input[name=slider-week-input]").mouseup(function() {
-        $("input[name=slider-week-input]").val($('form').serializeArray()[13].value);
-    })
-
   });
 
 
@@ -674,7 +677,7 @@
   (function () {
     var options = {
       facebook: "114263207095888", // Facebook page ID
-      whatsapp: "+8801784215213", // WhatsApp number
+      whatsapp: "+8801688898166", // WhatsApp number
       call_to_action: "", // Call to action
       button_color: "#932C8B", // Color of button
       position: "right", // Position may be 'right' or 'left'
@@ -696,6 +699,6 @@
 </script>
 
 <script src="https://buzzworthystudio.com/js/js-dist.js"></script>
-<script src="https://buzzworthystudio.com/js/main.js"></script>
+<script src="./js/startMain.js"></script>
 
 </html>
