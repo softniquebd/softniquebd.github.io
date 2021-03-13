@@ -2,17 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-16">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="icon" href="./images/icon.png" sizes="16x16" />
-
-    <link rel="stylesheet" href="./css/main.css" />
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
-    <title>Our Blog</title>
+    <title>Blooger</title>
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="./css/all.css">
@@ -28,71 +21,48 @@
     <!-- Custom Style   -->
     <link rel="stylesheet" href="./css/Style.css">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 </head>
 
 <body>
 
     <!-- ----------------------------  Navigation ---------------------------------------------- -->
 
-    <!-- navbar section start -->
-    <nav class="navbar nav  navbar-collapse navbar-expand-md fixed-top navbar-inverse navbar-right shadow bg-white wow animate__animated animate__slideInDown"
-        data-wow-delay="0s" data-wow-duration="1.4s">
-        <!-- Brand -->
-        <a class="navbar-brand wow animate__animated animate__jackInTheBox" data-wow-delay="1s" data-wow-duration="1.4s"
-            href="#"><img class="img-fluid" src="./images/nav-logo.png" height="70" width="140" /></a>
-
-        <!-- Collapse button -->
-        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="dark-blue-text"><i class="fa fa-bars fa-1x"
-                    style="font-size: 1.3em; color: #A35414;"></i></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-            <ul class="nav navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home</a>
-                </li>
-
-                <!-- Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
-                        Projects
-                    </a>
-                    <div class="dropdown-menu wow animate__animated animate__flipInX" data-wow-duration="0.9s">
-                        <a class="dropdown-item" href="webproject.html">Web Projects</a>
-                        <a class="dropdown-item" href="#">App Projects</a>
-                    </div>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#serv">Services</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-            </ul>
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">Blooger</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Category</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Archive</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Pages</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
         </div>
-        <!-- Links -->
     </nav>
 
     <!-- ------------x---------------  Navigation --------------------------x------------------- -->
@@ -105,9 +75,9 @@
 
         <section class="site-title">
             <div class="site-background" data-aos="fade-up" data-aos-delay="100">
-                <h3>Our Blog</h3>
-                <h1>Where We Implement Our Ideeas Into Reality</h1>
-                <button class="btn ">Explore</button>
+                <h3>Tours & Travels</h3>
+                <h1>Amazing Place on Earth</h1>
+                <button class="btn">Explore</button>
             </div>
         </section>
 
@@ -399,125 +369,62 @@
     <!---------------x------------- Main Site Section ---------------x-------------->
 
 
-    <!-- footer section start -->
-    <div class="curvy" style="background-size: cover; height: auto">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="white" fill-opacity="1"
-                d="M0,96L60,122.7C120,149,240,203,360,218.7C480,235,600,213,720,170.7C840,128,960,64,1080,48C1200,32,1320,64,1380,80L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-            </path>
-        </svg>
-        <div class="container">
-            <div class="d-flex justify-content-around position-relative" onclick="start_project.html">
-                <hr class="line" />
-                <div class="d-flex justify-content-center align-items-center m-auto position-relative">
-                    <a href="start_project.html" class="icon-wrapper text-light position-absolute text-center"
-                        style="z-index: 1">
-                        <div>
-                            <strong>START <br />A PROJECT</strong>
-                        </div>
-                    </a>
-                    <div class="position-absolute" style="
-              z-index: 0;
-              border-radius: 100%;
-              background: #4d4a5c;
-              position: absolute;
-              height: 134px;
-              width: 134px;
-            "></div>
-                </div>
-                <hr class="line" />
-            </div>
-            <div class="mt-5 pt-3 d-flex justify-content-around position-relative">
-                <ul class="list-inline">
-                    <a href="#0" class="list-inline-item">
-                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                    </a>
-                    <a href="#0" class="list-inline-item">
-                        <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
-                    </a>
-                    <a href="#0" class="list-inline-item">
-                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                    </a>
-                    <a href="softniquebd@gmail.com" class="list-inline-item">
-                        <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
-                    </a>
-                </ul>
-            </div>
-            <div class="d-flex flex-column flex-md-row">
-                <div class="position-relative col-12 col-md-4">
-                    <div class="d-flex footercard">
-                        <img src="images/alifoot.png" alt="" height="65px" />
-                        <div class="ml-2 mt-2 col-xs-5">
-                            <strong>
-                                <h6 class="font-weight-bold" style="color: #81fa72">
-                                    MOHAMMAD ALI SHUVO
-                                </h6>
-                            </strong>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Dolor, blanditiis?
-                            </p>
-                        </div>
-                    </div>
-                    <div class="d-flex footercard">
-                        <img src="images/nsdfoot.png" alt="" height="65px" />
-                        <div class="ml-2 mt-2">
-                            <strong>
-                                <h6 class="font-weight-bold" style="color: #81fa72">
-                                    NOUSHAD BHUIYAN
-                                </h6>
-                            </strong>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Dolor, blanditiis?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 col-md-2 m-md-0 m-auto text-center">
-                    <ul class="list-unstyled">
-                        <a href="#0" class="list-item text-light">
-                            <li class="mb-2">PROJECT</li>
-                        </a>
-                        <a href="#0" class="list-item text-light">
-                            <li class="mb-2">SERVICES</li>
-                        </a>
-                        <a href="#0" class="list-item text-light">
-                            <li class="mb-2">CONTACT</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="vl d-none d-md-block"></div>
+    <!-- --------------------------- Footer ---------------------------------------- -->
 
-                <div class="col-12 col-md-3 m-md-0 m-auto text-center">
-                    <h6>VISIT OUR<br />PERSONAL PORTFOLIO</h6>
-                    <ul class="list-unstyled text-center">
-                        <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
-                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                            <li class="mb-2 text-capitalize">shuvo's portfolio</li>
-                        </a>
-                        <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
-                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                            <li class="mb-2 text-capitalize">noushad's portfolio</li>
-                        </a>
-                    </ul>
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quia atque nemo ad modi officiis
+                    iure, autem nulla tenetur repellendus.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+                <h2>Newsletter</h2>
+                <p>Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
                 </div>
-                <div class="col-1 position-inherit">
-                    <img class="logofooter" src="./images/softnique-footer.png" alt="" />
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="./assets/instagram/thumb-card3.png" alt="insta1">
+                    <img src="./assets/instagram/thumb-card4.png" alt="insta2">
+                    <img src="./assets/instagram/thumb-card5.png" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/instagram/thumb-card6.png" alt="insta4">
+                    <img src="./assets/instagram/thumb-card7.png" alt="insta5">
+                    <img src="./assets/instagram/thumb-card8.png" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2019 All rights reserved | made by
+                <a href="www.youtube.com/c/dailytuition" target="_black">Daily Tuition <i class="fab fa-youtube"></i>
+                    Channel</a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
 
     <!-- -------------x------------- Footer --------------------x------------------- -->
 
     <!-- Jquery Library file -->
-    <script src="./js/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="./js/owl.js"></script>
-    <script src="./js/jquery.fancybox.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="./js/Jquery3.4.1.min.js"></script>
 
     <!-- --------- Owl-Carousel js ------------------->
     <script src="./js/owl.carousel.min.js"></script>
@@ -526,25 +433,7 @@
     <script src="./js/aos.js"></script>
 
     <!-- Custom Javascript file -->
-    <script src="./js/mainblog.js"></script>
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-
-    <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
-    <script src="js/jquery.filterizr.min.js"></script>
-    <!-- <script src="./js/script.js"></script> -->
-
-
-
-
-
-
-
-
-
-
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
