@@ -5,7 +5,7 @@
   outline: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Global Settings
@@ -133,4 +133,36 @@
 .screenshots-section .owl-nav,
 .screenshots-section .owl-dots {
   display: none;
+}
+
+
+
+/* filter css */
+
+.filterDiv {
+  /* display: none; */
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  /* Hide the element content, while height = 0 */
+  height: 0;
+  opacity: 0;
+  transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+
+
+.show {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  /* display: block; */
+  height: auto;
+  opacity: 1;
+  transition: height 0ms 0ms, opacity 600ms 0ms;
+
 }
