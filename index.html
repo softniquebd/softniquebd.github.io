@@ -15,7 +15,36 @@
 	<title>SoftniqueBD</title>
 
 </head>
+<style>
 
+@media (min-width: 992px){
+	.dropdown-menu .dropdown-toggle:after{
+		border-top: .3em solid transparent;
+	    border-right: 0;
+	    border-bottom: .3em solid transparent;
+	    border-left: .3em solid;
+	}
+	.dropdown-menu .dropdown-menu{
+		margin-left:0; margin-right: 0;
+	}
+	.dropdown-menu li{
+		position: relative;
+	}
+	.nav-item .submenu{ 
+		display: none;
+		position: absolute;
+		left:100%; top:-7px;
+	}
+	.nav-item .submenu-left{ 
+		right:100%; left:auto;
+	}
+	.dropdown-menu > li:hover{ background-color: #f1f1f1 }
+	.dropdown-menu > li:hover > .submenu{
+		display: block;
+	}
+}
+
+</style>
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
 	<div class="wrapper">
 		<nav class="navbar navbar-collapse navbar-expand-md fixed-top navbar-inverse navbar-right shadow bg-white wow animate__animated animate__slideInDown"
@@ -45,9 +74,18 @@
 							Portfolio
 						</a>
 						<div class="dropdown-menu wow animate__animated animate__flipInX" data-wow-duration="0.9s">
-							<a class="dropdown-item" href="webproject.html">Web Projects</a>
-							<a class="dropdown-item" href="app_projects.html">App Projects</a>
-							<a class="dropdown-item" href="app_projects.html">Softwares</a>
+							<ul>
+								<a class="dropdown-item" href="webproject.html">Web Projects</a>
+								<a class="dropdown-item" href="app_projects.html">App Projects</a>
+								<li class=" nav-item dropdown dropdown-item">
+									<a class="dropdown-toggle" href="#" data-toggle="dropdown">Softwares</a>
+									<ul class="dropdown-menu" style="top: 0;left: 127px;">
+									<li><a class="dropdown-item" href="#"> Second level 1 </a></li>
+									<li><a class="dropdown-item" href="#"> Dropdown item 3 </a></li>
+									<li><a class="dropdown-item" href="#"> Dropdown item 4 </a>
+									</ul>
+								</li>
+							</ul>
 						</div>
 					</li>
 
@@ -1480,5 +1518,23 @@
 <script src="./js/owl.js"></script>
 <script src="./js/jquery.fancybox.js"></script>
 <script src="./js/main.js"></script>
+<script>
+	// Prevent closing from click inside dropdown
+$(document).on('click', '.dropdown-menu', function (e) {
+  e.stopPropagation();
+});
 
+// make it as accordion for smaller screens
+if ($(window).width() < 992) {
+  $('.dropdown-menu a').click(function(e){
+    e.preventDefault();
+      if($(this).next('.submenu').length){
+        $(this).next('.submenu').toggle();
+      }
+      $('.dropdown').on('hide.bs.dropdown', function () {
+     $(this).find('.submenu').hide();
+  })
+  });
+}
+</script>
 </html>
