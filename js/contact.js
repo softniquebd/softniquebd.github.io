@@ -42,7 +42,12 @@ function ajax(method, url, data, success, error) {
             success(xhr.response, xhr.responseType);
         } else {
             error(xhr.status, xhr.response, xhr.responseType);
+
+
         }
+        console.log(xhr.status);
+        console.log(xhr.response);
+        console.log(xhr.responseType);
     };
     xhr.send(data);
 }
