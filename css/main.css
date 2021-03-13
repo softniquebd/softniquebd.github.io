@@ -448,7 +448,10 @@ nav .dropdown-menu .dropdown-items {
   100% {
     -webkit-transform: rotate(359deg);
     transform: rotate(359deg);
-  }
+    -moz-transform: rotate(359deg);
+    -ms-transform: rotate(359deg);
+    -o-transform: rotate(359deg);
+}
 }
 
 @keyframes spin {

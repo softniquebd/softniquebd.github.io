@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="./css/slider.css" />
     <link rel="stylesheet" href="./css/testomonial.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
     <title>App projects</title>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100" style="overflow-x: hidden;">
@@ -160,26 +162,17 @@
             <div class="container heading app-projects">
                 <h1 class="text-center my-5 pt-5 title">App Projects</h1>
                 <div class="filters">
-                    <ul class="btn-group row justify-content-center simplefilter d-flex p-4 shadow-lg"
+                    <ul class="btn-group row justify-content-center myBtnContainer d-flex p-4 shadow-lg"
                         style="border-radius: 1em;">
-                        <li class="btn col-xs-2 m-1 fltr-controls  shadow" data-filter="2">E-Commerce</li>
-                        <li class="btn col-xs-2  m-1 fltr-controls  shadow" data-filter="3">Real-Estate</li>
-                        <li class="btn col-xs-2  m-1 fltr-controls  shadow" data-filter="4">Entertainment</li>
-                        <li class="btn col-xs-2  m-1 fltr-controls  shadow" data-multifilter="5">Food & Beverages</li>
-                        <li class="btn col-xs-2  m-1 fltr-controls  shadow" data-multifilter="5">Lifestyles</li>
-                        <li class="btn col-xs-2  m-1 fltr-controls  shadow" data-multifilter="5">Health-Care</li>
-                        <li class="btn col-md-2  m-1 fltr-controls text-light shadow" style="background:orangered"
-                            data-filter="all">All</li>
+                        <li class="btn col-xs-2 m-1 filtrBtn shadow" onclick="filterSelection('Ecommerce')">E-Commerce</li>
+                        <li class="btn col-xs-2  m-1 filtrBtn shadow" onclick="filterSelection('RealEstate')">Real-Estate</li>
+                        <li class="btn col-xs-2  m-1 filtrBtn shadow" onclick="filterSelection('Entertainment')">Entertainment</li>
+                        <li class="btn col-xs-2  m-1 filtrBtn shadow" onclick="filterSelection('Food&Beverages')">Food & Beverages</li>
+                        <li class="btn col-xs-2  m-1 filtrBtn shadow" onclick="filterSelection('Lifestyles')">Lifestyles</li>
+                        <li class="btn col-xs-2  m-1 filtrBtn shadow" onclick="filterSelection('Health-Care')">Health-Care</li>
+                        <li class="btn col-md-2  m-1 text-light shadow filtrBtn active allBtn" onclick="filterSelection('all')" style="background: orangered;">All</li>
                     </ul>
                     <div class="additional p-2 d-flex ml-4 justify-content-between">
-                        <!-- Shuffle -->
-                        <a class="theme_btn py-2 pointer" id="shuffle">Shuffle</a>
-                        <!-- To create a search control -->
-                        <div class="input-group pl-2 pr-2">
-                            <input type="text" class="form-control fltr-controls" name="filtr-search" value=""
-                                placeholder="search anything ie. 'Logo', 'App'" data-search=""
-                                style="border-radius: 0.5em;padding: 1.19em;left: -25px;">
-                        </div>
                     </div>
                 </div>
 
@@ -188,8 +181,8 @@
 
             </div>
             <!-- projects app -->
-            <div class="container app-wrapper filter-container  col-md-12 col-12">
-                <div class=" container  col-md-12 col-12 " data-category="2,4" data-sort="value">
+            <div class="container app-wrapper filter-container  col-md-12 col-12 mt-5" id="filter-container">
+                <div class=" container  col-md-12 col-12  filterDiv Ecommerce">
 
                     <div class="row col-12">
                         <div class="col-md-6 col-12">
@@ -240,7 +233,7 @@
 
 
 
-                <div class=" container col-md-12 col-12 mt-5" data-category="3" data-sort="value">
+                <div class=" container col-md-12 col-12 mt-5  filterDiv RealEstate">
 
                     <div class="row col-12">
                         <div class="col-md-6 col-12">
@@ -288,7 +281,7 @@
 
 
 
-                <div class=" container col-md-12 col-12 mt-5" data-category="2" data-sort="value">
+                <div class=" container col-md-12 col-12 mt-5  filterDiv Ecommerce Entertainment">
 
                     <div class="row col-12">
                         <div class="col-md-6 col-12">
@@ -337,7 +330,7 @@
 
 
 
-                <div class=" container col-md-12 col-12 mt-5" data-category="3,5" data-sort="value">
+                <div class=" container col-md-12 col-12 mt-5  filterDiv Entertainment">
 
                     <div class="row col-12">
                         <div class="col-md-6 col-12">
@@ -398,7 +391,7 @@
 
 
 
-                <div class=" container col-md-12 col-12 mt-5" data-category="4" data-sort="value">
+                <div class=" container col-md-12 col-12 mt-5  filterDiv Health-Care">
 
                     <div class="row col-12">
                         <div class="col-md-6 col-12">
@@ -451,7 +444,7 @@
 
 
 
-                <div class=" container col-md-12 col-12  mt-5" data-category="2,3" data-sort="value">
+                <div class=" container col-md-12 col-12  mt-5  filterDiv Ecommerce">
 
                     <div class="row col-12">
                         <div class="col-md-6 col-12">
@@ -665,24 +658,22 @@
 
 
 
-
+<script src="js/jquery-3.4.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="./js/owl.js"></script>
 <script src="./js/jquery.fancybox.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery.filterizr.min.js"></script>
-<script src="./js/script.js"></script>
+ <script src="./js/script.js"></script>
+<script src="./js/filterCustom.js"></script>
 
-<script src="./js/main.js"></script>
+<script>
+$(document).ready(function () {
+    $('.allBtn').click();
+});
 
 
-
-
-
+</script>
 
 </html>

@@ -107,7 +107,7 @@ var quotes = [
     '"Thank you so much for all of your help with everything! - CEO of TechSoft',
     '"Hands down the best support I have ever received - CEO of Raid Express"',
     '"The best service I have ever received!- CEO of Prime Power" ',
-    '"We could not have done it without you! -CEO of Techsoi "',
+    '"We could not have done it without you! -CEO of TechXon"',
     '"Beyond grateful for the service I received!" - CEO of IntelliWare ',
     '"A wonderful experience all around! -CEO of BNL Software "'
 ];
@@ -155,4 +155,3 @@ function handleAnimation() {
 
 // changes the quote every 7 seconds
 setInterval(handleAnimation, 7000);
-

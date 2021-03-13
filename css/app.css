@@ -134,3 +134,15 @@
 .screenshots-section .owl-dots {
   display: none;
 }
+
+
+
+/* filter css */
+
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
