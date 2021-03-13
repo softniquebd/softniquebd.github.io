@@ -254,20 +254,14 @@ h6 {
     -o-transform: scale(1.03);
 }
 
- h4{
-    font-family: 'Khand', sans-serif !important;
-}
 
-h6{
-    font-family: 'Titillium Web', sans-serif !important;
-}
 
-.form_name{
-    font-family: 'Titillium Web', sans-serif !important;
-}
 
-.btn{
-    font-family: 'Titillium Web', sans-serif !important;
+
+.contact-head
+{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;  
+
 }
 #status.success
 {
