@@ -10,23 +10,11 @@ html, body{
 
 :root{
 
-    /*      Theme colors        */
-    --text-gray: #3f4954;
-    --text-light : #686666da;
-    --bg-color: #0f0f0f;
-    --white: #ffffff;
-    --midnight: #104f55;
+    /*      Theme colors        */--text-gray: #3f4954;--text-light : #686666da;--bg-color: #0f0f0f;--white: #ffffff;--midnight: #104f55;
 
-    /* gradient color   */
-    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    /* gradient color   */--sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 
-    /*      theme font-family   */
-    --Abel: 'Abel', cursive;
-    --Anton: 'Anton', cursive;
-    --Josefin : 'Josefin', cursive;
-    --Lexend: 'Lexend', cursive;
-    --Livvic : 'Livvic', cursive;
-}
+    /*      theme font-family   */--Abel: 'Abel', cursive;--Anton: 'Anton', cursive;--Josefin : 'Josefin', cursive;/* --Lexend: 'Lexend', cursive; */--Livvic : 'Livvic', cursive;}
 
 
 /* ---------------- Global Classes ---------------*/
@@ -74,7 +62,7 @@ span{
 }
 
 .container{
-    margin: 0 5vw;
+    /* margin: 0 5vw; */
 }
 
 .text-gray{
@@ -345,6 +333,11 @@ main .post-content .post-title a{
 
 
 /* ---------x------- Footer ----------x---------- */
+.nosufoot,.alifoot
+{
+    font-weight: normal;
+    color: white !important;
+}
 
 /*              Viewport less then or equal to 1130px            */
 
@@ -359,9 +352,7 @@ main .post-content .post-title a{
         display: none !important;
     }
 
-    footer.footer .container{
-        grid-template-columns: repeat(2, 1fr);
-    }
+  
 
 }
 
@@ -371,21 +362,13 @@ main .post-content .post-title a{
 /*              Viewport less then or equal to 750px            */
 
 @media only screen and (max-width: 750px){
-    .nav .nav-menu, .nav .nav-items{
-        flex-direction: column;
-    }
-
-    .nav .toggle-collapse{
-        display: initial;
-    }
+  
 
     main .site-content{
         grid-template-columns: 100%;
     }
 
-    footer.footer .container{
-        grid-template-columns: repeat(1, 1fr);
-    }
+  
 
 }
 
@@ -404,18 +387,10 @@ main .post-content .post-title a{
         display: none;
     }
 
-    footer.footer .container > div{
-        padding:  1rem .9rem !important;
-    }
+  
 
-    footer .rights{
-        padding: 0 1.4rem;
-        text-align: center;
-    }
 
-    nav .toggle-collapse{
-        width: 80% !important;
-    }
+
 
 }
 
