@@ -85,13 +85,19 @@ nav .dropdown-menu {
   -o-border-radius: 6px;
 }
 
-nav .dropdown-menu :active {
+
+nav .dropdown-menu .dropdown-items {
+  font-weight: bold;
+}
+
+nav .dropdown-menu .dropdown-items:hover {
   background: #a35414;
   color: white !important;
 }
 
-nav .dropdown-menu .dropdown-items {
-  font-weight: bold;
+nav .dropdown-menu .dropdown-items:active {
+  background: #a35414;
+  color: white !important;
 }
 
 /*============== banner_area css =============*/
@@ -451,7 +457,7 @@ nav .dropdown-menu .dropdown-items {
     -moz-transform: rotate(359deg);
     -ms-transform: rotate(359deg);
     -o-transform: rotate(359deg);
-}
+  }
 }
 
 @keyframes spin {
