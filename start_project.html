@@ -74,7 +74,7 @@
                 <li><a href="#web-step-4" data-anchor="web-step-4">04</a></li>
               </ul>
             </nav>
-            <form action="https://formspree.io/f/xqkgrgzw" method="POST" id="form-1">
+            <form action="https://formspree.io/f/xqkgrgzw" method="POST" id="form-1"> 
               <div id="web-step-1" class="step step-1">
                 <div class="offset-top-sm">
                   <div class="row center-xs">
@@ -639,68 +639,7 @@
 </body>
 <!-- chatbox js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
 
-        var formSelectionList = ['website','marketing','brand']
-        var formSelectionNumber = 0;
-
-        formSelectionList.forEach(function(entry, index) {
-            $('[data-form="'+entry+'"]').on( "click", function() {
-              formSelectionNumber = index+1;
-            });
-        });
-
-        var form = document.getElementById("form-"+formSelectionNumber);
-        async function handleSubmit(event) {
-          event.preventDefault();
-          var status = document.getElementById("my-form-status");
-          var data = new FormData(event.target);
-          fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-          }).then(response => {
-             alert(response)
-            //  $('#main').removeClass("is-exiting");
-            // $( "body" ).append( `
-            // <!-- Button trigger modal -->
-            //       <button type="button" id="modalButton" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-            //         Launch demo modal
-            //       </button>
-
-            //       <!-- Modal -->
-            //       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            //         <div class="modal-dialog modal-dialog-centered" role="document">
-            //           <div class="modal-content">
-            //             <div class="modal-header">
-            //               <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-            //               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            //                 <span aria-hidden="true">&times;</span>
-            //               </button>
-            //             </div>
-            //             <div class="modal-body">
-            //               ...
-            //             </div>
-            //             <div class="modal-footer">
-            //               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            //               <button type="button" class="btn btn-primary">Save changes</button>
-            //             </div>
-            //           </div>
-            //         </div>
-            //       </div>
-            // ` );
-            // $('#modalButton').click()
-            // status.innerHTML = "Thanks for your submission!";
-            form.reset()
-          }).catch(error => {
-            // status.innerHTML = "Oops! There was a problem submitting your form"
-          });
-        }
-      form.addEventListener("submit", handleSubmit)
-
-</script>
 <script>
 
   $(document).ready(function(){
@@ -743,7 +682,47 @@
   })();
 </script>
 
-<script src="https://buzzworthystudio.com/js/js-dist.js"></script>
+<script>
+
+
+          var formSelectionList = ['website','marketing','brand']
+          var formSelectionNumber = 0;
+
+          formSelectionList.forEach(function(entry, index) {
+              $('[data-form="'+entry+'"]').on( "click", function() {
+                formSelectionNumber = index+1;
+                var form = document.getElementById("form-"+formSelectionNumber);
+                console.log(form)
+
+                async function handleSubmit(event) {
+                  event.preventDefault();
+                  //var status = document.getElementById("my-form-status");
+                  var data = new FormData(event.target);
+                  fetch(event.target.action, {
+                    method: form.method,
+                    body: data,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                  }).then(response => {
+                    $('.js-form-response').addClass('sent');
+                    $('.js-form-response').html('<h2>Hoooray!</h2> <p>It is a pleasure to meet ya! Give us a day and we will schedule our first date.</p><a class="bs-button btn-small" data-linkName="go home" href="/"><span data-hover="go home">go home</span></a><h6>Check out our creative channels</h6><ul class="social"><li class="dribbble"><a href="https://dribbble.com/Buzzworthy" target="_blank"><span>Dribbble</span><img src="img/social/social-dribbble-loop.gif" alt="Dribbble"></a><li><li class="behance"><a href="https://www.behance.net/BuzzworthyStudio" target="_blank"><span>Behance</span><img src="img/social/social-behance-loop.gif" alt="Behance"></a><li><li class="instagram"><a href="https://www.instagram.com/buzzworthy.studio/" target="_blank"><span>instagram</span><img src="img/social/social-instagram-loop.gif" alt="Instagram"></a><li></ul>');
+                    form.reset()
+                  }).catch(error => {
+                    $('.js-form-response').addClass('sent');
+                    $('.js-form-response').html('<h2>Oops!</h2> <p> There was a problem submitting your form</p><a class="bs-button btn-small" data-linkName="go home" href="/"><span data-hover="go home">go home</span></a><h6>Check out our creative channels</h6><ul class="social"><li class="dribbble"><a href="https://dribbble.com/Buzzworthy" target="_blank"><span>Dribbble</span><img src="img/social/social-dribbble-loop.gif" alt="Dribbble"></a><li><li class="behance"><a href="https://www.behance.net/BuzzworthyStudio" target="_blank"><span>Behance</span><img src="img/social/social-behance-loop.gif" alt="Behance"></a><li><li class="instagram"><a href="https://www.instagram.com/buzzworthy.studio/" target="_blank"><span>instagram</span><img src="img/social/social-instagram-loop.gif" alt="Instagram"></a><li></ul>')
+                  });
+              }
+
+              form.addEventListener("submit", handleSubmit)
+
+              });
+          });
+
+
+</script>
+<script src="./js/startProjectSetup.js"></script>
 <script src="./js/startMain.js"></script>
+
 
 </html>
