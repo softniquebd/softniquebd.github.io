@@ -128,6 +128,7 @@ main .blog .blog-post{
 }
 
 main .blog-post .blog-content{
+    border-radius: 2em;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -189,6 +190,7 @@ main .post-content{
 }
 
 main .site-content .post-content > .post-image, .post-title{
+    /* border-radius: 2em; */
     padding: 1rem 2rem;
     position: relative;
 }
@@ -207,6 +209,7 @@ main .site-content .post-content > .post-image > div{
 }
 
 main .site-content .post-content > .post-image .img{
+    border-radius: 1.5em;
     width: 100%;
     transition: all 1s ease;
 }
@@ -225,7 +228,7 @@ main .post-content .post-title a{
 }
 
 .site-content .post-content .post-title .post-btn{
-    border-radius: 0;
+    /* border-radius: 0; */
     padding: .7rem 1.5rem;
     background: var(--sky);
 }
@@ -308,7 +311,6 @@ main .post-content .post-title a{
 }
 
 .site-content .sidebar .newsletter .form-btn{
-    border-radius: 0;
     padding: .8rem 32%;
     margin: 1rem 0;
     background: var(--sky);
