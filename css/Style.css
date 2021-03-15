@@ -21,7 +21,7 @@ html, body{
 
 a{
     text-decoration: none;
-    color: var(--text-gray);
+    color: black;
 }
 
 .flex-row{
@@ -40,11 +40,13 @@ h1{
 }
 
 h2{
-    font-family: var(--Lexend);
+    font-weight: bold;
+    font-family: 'Quicksand';
 }
 
 h3{
-    font-family: var(--Abel);
+    font-weight: bold;
+    font-family: 'Quicksand';
     font-size: 1.3rem;
 }
 
@@ -66,7 +68,7 @@ span{
 }
 
 .text-gray{
-    color: var(--text-gray);
+    /* color: var(--text-gray); */
 }
 
 p{
@@ -223,8 +225,9 @@ main .site-content .post-content > .post-image .post-info span{
 }
 
 main .post-content .post-title a{
-    font-family: var(--Anton);
+    font-family: 'Quicksand';
     font-size: 1.5rem;
+    font-weight: bolder;
 }
 
 .site-content .post-content .post-title .post-btn{
@@ -271,7 +274,7 @@ main .post-content .post-title a{
 }
 
 .site-content > .sidebar .category-list .list-items a{
-    color:  black;
+    color: white;
 }
 
 .site-content .sidebar .popular-post .post-content{
@@ -283,11 +286,12 @@ main .post-content .post-title a{
 }
 
 .site-content .sidebar .popular-post .post-info{
+    color: white;
+    background: linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
     padding: .4rem .1rem !important;
     bottom: 0rem !important;
     left: 1.5rem !important;
-    border-radius: 0rem !important;
-    background: white !important;
+    /* border-radius: 0rem !important; */
 }
 
 .site-content .sidebar .popular-post .post-title a{
@@ -303,11 +307,13 @@ main .post-content .post-title a{
 }
 
 .site-content .sidebar .newsletter .input-element{
-    width: 80%;
-    height: 1.9rem;
-    padding: .3rem .5rem;
+    border-color: fuchsia;
+    width: 87%;
+    height: 2.9rem;
+    padding: 1.3rem .5rem;
     font-family: var(--Lexend);
     font-size: 1rem;
+    border-radius: 2em;
 }
 
 .site-content .sidebar .newsletter .form-btn{
