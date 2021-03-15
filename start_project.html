@@ -9,9 +9,8 @@
 
   <title>SoftniqueBD</title>
   <link rel="icon" href="./images/icon.png" sizes="16x16" />
-
   <link href="./css/startProject.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="./css/" />
+
 </head>
 
 <body class="hireus">
@@ -23,7 +22,7 @@
           <img src="images/icon.png" alt="SoftniqueBD symbol" />
         </a>
       </h1>
-      <span class="form-close" onclick="location.href = 'index.html';">
+      <span class="form-close" onclick="window.history.back();">
         <img src="images/form-close.svg" alt="close form" />
       </span>
 
@@ -60,13 +59,6 @@
                   </figure>
                   <h3>Brand</h3>
                 </div>
-                <!-- extra project part -->
-                <div class="col-xs-5 col-sm-3 link js-show-section" data-form="brand">
-                  <figure class="form-icon">
-                    <img src="images/icon-brand.svg" alt="Brand" />
-                  </figure>
-                  <h3>Brand</h3>
-                </div>
               </div>
             </div>
           </section>
@@ -82,7 +74,7 @@
                 <li><a href="#web-step-4" data-anchor="web-step-4">04</a></li>
               </ul>
             </nav>
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLScI3EeVZ0FBjUQzZdmA3eYKOOiQ3fTmRJva1Ag4Bc2THdvmRQ/formResponse" method="post" id="form-1">
+            <form action="https://formspree.io/f/xqkgrgzw" method="POST" id="form-1">
               <div id="web-step-1" class="step step-1">
                 <div class="offset-top-sm">
                   <div class="row center-xs">
@@ -273,7 +265,7 @@
                 </li>
               </ul>
             </nav>
-            <form id="testy" action="https://docs.google.com/forms/d/e/1FAIpQLScI3EeVZ0FBjUQzZdmA3eYKOOiQ3fTmRJva1Ag4Bc2THdvmRQ/formResponse" method="post" id="form-2">
+            <form action="https://formspree.io/f/xqkgrgzw" method="POST" id="form-2">
               <div id="ecommerce-step-1" class="step step-1">
                 <div class="offset-top-sm">
                   <div class="row center-xs">
@@ -464,7 +456,7 @@
                 </li>
               </ul>
             </nav>
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLScI3EeVZ0FBjUQzZdmA3eYKOOiQ3fTmRJva1Ag4Bc2THdvmRQ/formResponse" method="post" id="form-3">
+            <form action="https://formspree.io/f/xqkgrgzw" method="POST" id="form-3">
               <div id="brand-step-1" class="step step-1">
                 <div class="offset-top-sm">
                   <div class="row center-xs">
@@ -635,6 +627,8 @@
           </div>
         </section>
         <!-- End of #brand-->
+
+        <h3 id="my-form-status"></h3>
       </div>
     </div>
   </div>
@@ -646,15 +640,66 @@
 <!-- chatbox js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxkgWotCMyvIKoT9aGtPCndZdHtHrq8i972t9CKAVjO6xC7T0I/exec'
-  const form = document.forms['google-sheet']
 
-  form.addEventListener('submit', e => {
-    e.preventDefault()
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-      .catch(error => console.error('Error!', error.message))
-  })
+        var formSelectionList = ['website','marketing','brand']
+        var formSelectionNumber = 0;
+
+        formSelectionList.forEach(function(entry, index) {
+            $('[data-form="'+entry+'"]').on( "click", function() {
+              formSelectionNumber = index+1;
+            });
+        });
+
+        var form = document.getElementById("form-"+formSelectionNumber);
+        async function handleSubmit(event) {
+          event.preventDefault();
+          var status = document.getElementById("my-form-status");
+          var data = new FormData(event.target);
+          fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+          }).then(response => {
+             alert(response)
+            //  $('#main').removeClass("is-exiting");
+            // $( "body" ).append( `
+            // <!-- Button trigger modal -->
+            //       <button type="button" id="modalButton" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+            //         Launch demo modal
+            //       </button>
+
+            //       <!-- Modal -->
+            //       <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            //         <div class="modal-dialog modal-dialog-centered" role="document">
+            //           <div class="modal-content">
+            //             <div class="modal-header">
+            //               <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+            //               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            //                 <span aria-hidden="true">&times;</span>
+            //               </button>
+            //             </div>
+            //             <div class="modal-body">
+            //               ...
+            //             </div>
+            //             <div class="modal-footer">
+            //               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            //               <button type="button" class="btn btn-primary">Save changes</button>
+            //             </div>
+            //           </div>
+            //         </div>
+            //       </div>
+            // ` );
+            // $('#modalButton').click()
+            // status.innerHTML = "Thanks for your submission!";
+            form.reset()
+          }).catch(error => {
+            // status.innerHTML = "Oops! There was a problem submitting your form"
+          });
+        }
+      form.addEventListener("submit", handleSubmit)
+
 </script>
 <script>
 
