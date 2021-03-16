@@ -1,32 +1,58 @@
 {
     "posts": [
         {
-            "title": "testing for title",
-            "body": "<p>aadasda</p><img src ="./sadasdasd">",
+            "postImage": "../assets/Blog-post/post-1.jpg",
+            "bannerTitle": "Flutter announced the desktop stable version",
+            "category": "Software",
+            "date": "March 21, 2021",
+            "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
+            "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
+            "blogWriter": "Noushad",
             "tags": [
                 "tech",
                 "extention",
                 "app"
-            ],
-            "category": ""
-        },
-
-        {
-            "name": "BMW",
-            "models": [
-                "320",
-                "X3",
-                "X5"
             ]
         },
-
         {
-            "name": "Fiat",
-            "models": [
-                "500",
-                "Panda"
+            "postImage": "../assets/Blog-post/blog2.png",
+            "bannerTitle": "SoftniqueBd release Office kothone in March",
+            "category": "Software",
+            "date": "March 23, 2021",
+            "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
+            "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
+            "blogWriter": "Shuvo",
+            "tags": [
+                "web",
+                "software",
+                "extension"
+            ]
+        },
+        {
+            "postImage": "../assets/Blog-post/blog3.png",
+            "bannerTitle": "SoftniqueBd made Hello Doctor application",
+            "category": "Mobile App",
+            "date": "April 04, 2021",
+            "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
+            "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
+            "blogWriter": "Noushad",
+            "tags": [
+                "software",
+                "app"
+            ]
+        },
+        {
+            "postImage": "../assets/Blog-post/blog4.png",
+            "bannerTitle": "SoftniqueBd made a chrome extension",
+            "category": "Extension",
+            "date": "April 21, 2021",
+            "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
+            "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
+            "blogWriter": "Shuvo",
+            "tags": [
+                "tech",
+                "extention"
             ]
         }
-
     ]
 }
