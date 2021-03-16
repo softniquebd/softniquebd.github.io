@@ -2863,32 +2863,32 @@ if (function(e, t) {
             }, o = function(e, n, r) {
                 var i = k.translate(e);
                 void 0 === n && (n = !0), void 0 === r && (r = !0);
-                var o = !1, a = !1, t = {
-                    loaded: function() {
-                        var e = o ? "ss.onProgressEnd" : "ss.onStartEnd";
-                        if (a && o ? a && h(i.url) : l.one(e, function() {
-                            h(i.url), r || f(i.url);
-                        }), n) {
-                            var t = c[i.url].destUrl;
-                            d = s.alterChangeState({
-                                id: u
-                            }, c[i.url].title, t), c[i.url].state = d, S.history.pushState(d, c[i.url].title, t);
-                        }
-                        a && !r && f(i.url);
-                    },
-                    fetching: function() {
-                        o || (o = !0, l.one("ss.onStartEnd", function() {
-                            s.loadingClass && T.addClass(s.loadingClass), s.onProgress.render(l), S.setTimeout(function() {
-                                l.trigger("ss.onProgressEnd"), a = !0;
-                            }, s.onProgress.duration);
-                        })), S.setTimeout(function() {
-                            c.hasOwnProperty(i.url) && t[c[i.url].status]();
-                        }, 10);
-                    },
-                    error: function() {
-                        s.debug && A ? A.log("There was an error loading: " + i.url) : S.location = i.url;
-                    }
-                };
+                // var o = !1, a = !1, t = {
+                //     loaded: function() {
+                //         var e = o ? "ss.onProgressEnd" : "ss.onStartEnd";
+                //         if (a && o ? a && h(i.url) : l.one(e, function() {
+                //             h(i.url), r || f(i.url);
+                //         }), n) {
+                //             var t = c[i.url].destUrl;
+                //             d = s.alterChangeState({
+                //                 id: u
+                //             }, c[i.url].title, t), c[i.url].state = d, S.history.pushState(d, c[i.url].title, t);
+                //         }
+                //         a && !r && f(i.url);
+                //     },
+                //     fetching: function() {
+                //         o || (o = !0, l.one("ss.onStartEnd", function() {
+                //             s.loadingClass && T.addClass(s.loadingClass), s.onProgress.render(l), S.setTimeout(function() {
+                //                 l.trigger("ss.onProgressEnd"), a = !0;
+                //             }, s.onProgress.duration);
+                //         })), S.setTimeout(function() {
+                //             c.hasOwnProperty(i.url) && t[c[i.url].status]();
+                //         }, 10);
+                //     },
+                //     error: function() {
+                //         s.debug && A ? A.log("There was an error loading: " + i.url) : S.location = i.url;
+                //     }
+                // };
                 c.hasOwnProperty(i.url) || p(i), s.onStart.render(l), S.setTimeout(function() {
                     s.scroll && T.scrollTop(0), l.trigger("ss.onStartEnd");
                 }, s.onStart.duration), t[c[i.url].status]();
