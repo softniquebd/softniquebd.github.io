@@ -2860,9 +2860,10 @@ if (function(e, t) {
                 }), S.setTimeout(function() {
                     l.trigger("ss.onReadyEnd");
                 }, s.onReady.duration)) : !n && s.debug && A ? A.warn("No element with an id of " + t + " in response from " + e + " in " + c) : S.location = e;
-            }, o = function(e, n, r) {
-                var i = k.translate(e);
-                void 0 === n && (n = !0), void 0 === r && (r = !0);
+                },
+                o = function (e, n, r) {
+                // var i = k.translate(e);
+                // void 0 === n && (n = !0), void 0 === r && (r = !0);
                 // var o = !1, a = !1, t = {
                 //     loaded: function() {
                 //         var e = o ? "ss.onProgressEnd" : "ss.onStartEnd";
@@ -2889,9 +2890,9 @@ if (function(e, t) {
                 //         s.debug && A ? A.log("There was an error loading: " + i.url) : S.location = i.url;
                 //     }
                 // };
-                c.hasOwnProperty(i.url) || p(i), s.onStart.render(l), S.setTimeout(function() {
-                    s.scroll && T.scrollTop(0), l.trigger("ss.onStartEnd");
-                }, s.onStart.duration), t[c[i.url].status]();
+                // c.hasOwnProperty(i.url) || p(i), s.onStart.render(l), S.setTimeout(function() {
+                //     s.scroll && T.scrollTop(0), l.trigger("ss.onStartEnd");
+                // }, s.onStart.duration), t[c[i.url].status]();
             }, a = function(e) {
                 var t, n = w(e.currentTarget);
                 k.shouldLoadAnchor(n, s.blacklist, s.hrefRegex) && !i && (e.stopPropagation(), t = k.translate(n.prop("href")), 
