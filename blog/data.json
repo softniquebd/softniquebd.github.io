@@ -1,13 +1,16 @@
 {
     "posts": [
         {
-            "blogposts1": ,
-            "models": [
-                "Fiesta",
-                "Focus",
-                "Mustang"
-            ]
+            "title": "testing for title",
+            "body": "<p>aadasda</p><img src ="./sadasdasd">",
+            "tags": [
+                "tech",
+                "extention",
+                "app"
+            ],
+            "category": ""
         },
+
         {
             "name": "BMW",
             "models": [
@@ -16,6 +19,7 @@
                 "X5"
             ]
         },
+
         {
             "name": "Fiat",
             "models": [
@@ -23,5 +27,6 @@
                 "Panda"
             ]
         }
+
     ]
 }
