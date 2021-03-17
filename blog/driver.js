@@ -9,7 +9,7 @@ $.getJSON("data.json", function (info) {
     var totalPosts = data.length;
     var categories = [];
 
-    data.forEach(function(element) {
+    data.forEach(function (element) {
         categories.push(element.category);
     })
 
@@ -17,7 +17,7 @@ $.getJSON("data.json", function (info) {
     var uniqueCatIDs = [];
 
     uniqueCategories.forEach(function (element) {
-        uniqueCatIDs.push(data.findIndex(function(item, i){
+        uniqueCatIDs.push(data.findIndex(function (item, i) {
             return item.category === element
         }));
     })
@@ -39,7 +39,7 @@ $.getJSON("data.json", function (info) {
     else if (query.indexOf("cat=") !== -1) {
         var categoryName = query.split('cat=')[1]
         if (categoryName != null && categoryName != undefined && categoryName != '' && uniqueCategories.indexOf(categoryName) !== -1) {
-           renderCategorizedPosts(categoryName);
+            renderCategorizedPosts(categoryName);
         }
         else {
             //alert("blog main page")
