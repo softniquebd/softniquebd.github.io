@@ -66,7 +66,7 @@
         }
 
         function renderMainPage() {
-            
+
             $(`<main>
 
                 <!------------------------ Site Title ---------------------->
