@@ -3,8 +3,7 @@
 
 
 
-$.getJSON("data.json", function (info) {
-
+$.getJSON("data.json", async function (info) {
     // VARIABLE SETUP STARTS
     var url = window.location.href.replace('#PostFeed','');
     var loaction = url.split("?")[0];
