@@ -12,7 +12,7 @@ $.getJSON("data.json", async function (info) {
     var totalPosts = data.length;
     var categories = [];
 
-    data.forEach(function(element) {
+    data.forEach(function (element) {
         categories.push(element.category);
     })
 
@@ -20,7 +20,7 @@ $.getJSON("data.json", async function (info) {
     var uniqueCatIDs = [];
 
     uniqueCategories.forEach(function (element) {
-        uniqueCatIDs.push(data.findIndex(function(item, i){
+        uniqueCatIDs.push(data.findIndex(function (item, i) {
             return item.category === element
         }));
     })
