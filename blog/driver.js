@@ -7,7 +7,7 @@
         var data = info.posts;
         var totalPosts = data.length;
         var categories = [];
-        
+
         data.forEach(function (element) {
             categories.push(element.category);
         })
