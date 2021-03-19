@@ -16,16 +16,16 @@
     });
     }
 
-    function loadAllScript() {
-        loadScript("https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js");
-        loadScript("../js/owl.js");
-        loadScript("../js/jquery.fancybox.js");
-        loadScript("https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js");
-        loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js");
-        loadScript("../js/owl.carousel.min.js");
-        loadScript("../js/aos.js");
-        loadScript("../js/mainblog.js");
-        loadScript("https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js");
+    async function loadAllScript() {
+        await loadScript("https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js");
+        await loadScript("../js/owl.js");
+        await loadScript("../js/jquery.fancybox.js");
+        await loadScript("https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js");
+        await loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js");
+        await loadScript("../js/owl.carousel.min.js");
+        await loadScript("../js/aos.js");
+        await loadScript("../js/mainblog.js");
+        await loadScript("https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js");
     }
 
     $.getJSON("data.json", async function (info) {
