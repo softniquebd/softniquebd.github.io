@@ -39,9 +39,11 @@ $.getJSON("data.json", async function (info) {
     var categories = [];
     var catpostId = [];
     var tags = [];
+    var tagList = [];
 
     data.forEach(function (element) {
         categories.push(element.category);
+        tagList.push(element.tags)
         element.tags.forEach(function (tag) {
             tags.push(tag)
         })
@@ -50,6 +52,7 @@ $.getJSON("data.json", async function (info) {
     tags = tags.filter((item, i, ar) => ar.indexOf(item) === i);
     var uniqueCategories = categories.filter((item, i, ar) => ar.indexOf(item) === i);
     var uniqueCatIDs = [];
+
 
     uniqueCategories.forEach(function (element) {
         uniqueCatIDs.push(data.findIndex(function (item, i) {
@@ -62,7 +65,7 @@ $.getJSON("data.json", async function (info) {
         }));
     })
 
-    console.log(catpostId)
+    console.log(tagList[0][1]);
     console.log(categories)
     console.log(data)
     console.log(uniqueCategories);
@@ -121,6 +124,95 @@ $.getJSON("data.json", async function (info) {
       </section>
       </main>`).insertAfter("nav");
         loadAllScript()
+    }
+
+    function renderselectedTag(tag) {
+        var found = false, html = '';
+        for (let x = 0; x < tagList.length; x++) {
+            for (let y = 0; y < tagList[x].length; y++) {
+                if (tag == tagList[x][y]) {
+                    found = true;
+                }
+            }
+            if (found) {
+                html += `<div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="post-image">
+                        <div>
+                            <img src="${data[x].postImage}" class="img" alt="blog${x}">
+                        </div>
+                        <div class="post-info flex-row theme_btn">
+                            <span> <i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;${data[x].blogWriter}</span>
+                            <span><i class="fa fa-calendar-check-o text-gray" aria-hidden="true"></i>
+                                &nbsp;&nbsp;${data[x].date}</span>
+                                <span>${data[x].category}
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + x}"><span>${data[x].bannerTitle}</a>
+                        <p>${data[x].postDescription.substring(0, 294) + "..."}
+                        </p>
+                        <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?post=' + x}'">Read More &nbsp; <i class="fa fa-arrow-right"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>`;
+                found = false;
+                }
+            }
+        return html;
+    }
+
+    function renderTaggedPosts(tag) {
+                $(`
+          <div class="col-md-12 mt-5 container  banner-img  "> </div>
+        <div class="banner-text">
+
+            <h1 class="font-weight-bold">Blogs related to </h1>
+             <h3> "${tag}"</h3>
+
+        </div>
+        <main>
+          <section class="container mt-5">
+          <div class="site-content mt-5">
+              <div class="posts" id="posts">
+                  <div class="pagination flex-row">${renderselectedTag(tag)}
+                      <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                      <a href="#" class="pages">1</a>
+                      <a href="#" class="pages">2</a>
+                      <a href="#" class="pages">3</a>
+                      <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+
+              <aside class="sidebar">
+                  <div class="category">
+                      <h2>Category</h2>
+                      <ul class="category-list">
+                          ${renderCategories()}
+                      </ul>
+                  </div>
+                  <div class="popular-post">
+                      <h2>Recent Post</h2>
+                      ${renderblogTiles('desc')}
+                  </div>
+                  <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                      <h2 class="text-center">Newsletter</h2>
+                      <div class="form-element text-center ">
+                          <input type="text" class="input-element form-control m-auto" placeholder="Email">
+                          <button class="btn form-btn theme_btn">Subscribe</button>
+                      </div>
+                  </div>
+                  <div class="popular-tags">
+                      <h2 class="text-center">Popular Tags</h2>
+                      <div class="tags flex-row">
+                       ${renderTags()}
+                      </div>
+                  </div>
+              </aside>
+          </div>
+      </section>
+      </main>`).insertAfter("nav");
+        loadAllScript()
+
     }
 
     function renderdetailsPage(postnum) {
@@ -271,10 +363,6 @@ $.getJSON("data.json", async function (info) {
         })
         return html;
     }
-
-
-
-
 
     function renderblogTiles(order) {
         var html = '';
