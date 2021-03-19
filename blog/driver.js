@@ -245,7 +245,8 @@ $.getJSON("data.json", async function (info) {
 
     function renderselectedCategory(catName) {
         var html = '';
-        categories.forEach(function (element, index) {
+        uniqueCategories.forEach(function (element, index) {
+
             if (element == catName) {
                 html += `<div class="post-content" data-aos="zoom-in" data-aos-delay="200">
                 <div class="post-image">
