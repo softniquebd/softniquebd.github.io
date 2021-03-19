@@ -64,9 +64,9 @@ $.getJSON("data.json", async function (info) {
 
     console.log(catpostId)
     console.log(categories)
+    console.log(data)
     console.log(uniqueCategories);
     console.log(uniqueCatIDs)
-    console.log(catpostId)
     // VARIABLE SETUP ENDS
 
     // FUNCTIONS
@@ -182,7 +182,7 @@ $.getJSON("data.json", async function (info) {
                 <div class="cs-main-post">
                     <figure><img onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                             data-pagespeed-url-hash="2714250504" alt="jobline-blog (8)"
-                            src="../images/office_kothon1.PNG">
+                            src="../images/office_kothone1.PNG">
                     </figure>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -202,7 +202,7 @@ $.getJSON("data.json", async function (info) {
             <div class="cs-main-post">
                 <figure><img onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                         data-pagespeed-url-hash="2714250504" alt="jobline-blog (8)"
-                        src="../images/office kothon-1.JPG">
+                        src="../images/office kothone-1.JPG">
                 </figure>
             </div>
         </div>
@@ -319,7 +319,7 @@ $.getJSON("data.json", async function (info) {
                                         </div>
                                     </div>
                                     <div class="post-title">
-                                        <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}">${post.bannerTitle}</a>
+                                        <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + ((data.length-1) - index) }">${post.bannerTitle}</a>
                                     </div>
                                 </div>
                     `;
