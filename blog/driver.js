@@ -57,7 +57,7 @@
 
         // FUNCTIONS
         function renderCategorizedPosts(catName) {
-            //alert(catName)
+            alert(catName)
         }
 
         function renderUniqueCategories() {
