@@ -15,36 +15,28 @@ h1{
     background-repeat: no-repeat;
     background-position: center center;
     height: 32em;
-    filter: blur(2px);
+    filter: blur(6px);
+    -webkit-filter: blur(6px);
 }
 .banner-text
 {
-    
-border-radius: 2em;
-    
-position: absolute;
-    
-top: 50%;
-    
-left: 50%;
-    
-transform: translate(-50%,-81%);
-    
-z-index: 5;
-    
-width: 45%;
-    
-padding: 40px 0;
-    
-text-align: center;
-    
-background-color: rgba(0, 0,0, 0.3);
-    
-color: #fff;
-    
-font-weight: bold;
-    
-border: 1px inset #fff;
+    border-radius: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-150%);
+    z-index: 5;
+    width: 45%;
+    padding: 40px 0;
+    text-align: center;
+    background-color: rgba(0, 0,0, 0.3);
+    color: #fff;
+    font-weight: bold;
+    border: 1px inset #fff;
+    -webkit-transform: translate(-50%,-150%);
+    -moz-transform: translate(-50%,-150%);
+    -ms-transform: translate(-50%,-150%);
+    -o-transform: translate(-50%,-150%);
 }
 .banner-text p{
     padding: 0 8%;

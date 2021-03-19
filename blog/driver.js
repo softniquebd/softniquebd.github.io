@@ -24,6 +24,7 @@ async function loadAllScript() {
     await loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js");
     await loadScript("../js/owl.carousel.min.js");
     await loadScript("../js/aos.js");
+    await loadScript("https://pagination.js.org/dist/2.1.5/pagination.js");
     await loadScript("../js/mainblog.js");
     await loadScript("https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js");
 }
@@ -31,7 +32,7 @@ async function loadAllScript() {
 $.getJSON("data.json", async function (info) {
     // VARIABLE SETUP STARTS
     var url = window.location.href.replace('#PostFeed', '');
-    var loaction = url.split("?")[0];
+    var loaction = window.location.href.split("#")[0].split("?")[0];
     var query = url.split("?")[1];
     var data = info.posts;
     var totalPosts = data.length;
@@ -68,19 +69,12 @@ $.getJSON("data.json", async function (info) {
 
             <h1 class="font-weight-bold">category</h1>
              <h3> ${catName}</h3>
-    
-
-        
 
         </div>
-        
-        
-        
-        
         <main>
           <section class="container mt-5">
           <div class="site-content mt-5">
-              <div class="posts ">${renderblogTiles('asc')}
+              <div class="posts" id="posts">${renderblogTiles('asc')}
                   <div class="pagination flex-row">
                       <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
                       <a href="#" class="pages">1</a>
@@ -141,7 +135,7 @@ $.getJSON("data.json", async function (info) {
                                             <a href="#">${post.bannerTitle}</a>
                                             <p>${post.postDescription.substring(0, 294) + "..."}
                                             </p>
-                                            <button class="btn post-btn theme_btn" onclick="window.location.href = '${url.split("?")[0] + '?post=' + index}'">Read More &nbsp; <i class="fa fa-arrow-right"
+                                            <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}'">Read More &nbsp; <i class="fa fa-arrow-right"
                                                     aria-hidden="true"></i></button>
                                         </div>
                                     </div>`;
@@ -182,7 +176,7 @@ $.getJSON("data.json", async function (info) {
                     <div style="height: 160px;"><img style="max-width: 100%;max-height: 100%;" src="${data[uniqueCatIDs[index]].postImage}" alt="post-${index}"></div> 
                         <div class="blog-title">
                         <h3>${data[uniqueCatIDs[index]].bannerTitle}</h3>
-                        <button class="btn btn-blog theme_btn" onclick="window.location.href = '${url.split("?")[0] + '?cat=' + data[uniqueCatIDs[index]].category}'">${data[uniqueCatIDs[index]].category}</button>
+                        <button class="btn btn-blog theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?cat=' + data[uniqueCatIDs[index]].category}'">${data[uniqueCatIDs[index]].category}</button>
                         <span>${data[uniqueCatIDs[index]].date}</span>
                         </div>
                     </div>
@@ -198,7 +192,7 @@ $.getJSON("data.json", async function (info) {
         var html = '';
         tags.forEach(function (element, index) {
             html += `
-                    <span class="tag theme_btn " data-aos="flip-up" data-aos-delay="${index}00" onclick="window.location.href = '${url.split("?")[0] + '?tag=' + element}'">${element}</span>
+                    <span class="tag theme_btn " data-aos="flip-up" data-aos-delay="${index}00" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?tag=' + element}'">${element}</span>
                     `;
         })
         return html;
@@ -210,7 +204,7 @@ $.getJSON("data.json", async function (info) {
         uniqueCategories.forEach(function (element, index) {
             html += `
                     <li class="list-items theme_btn" data-aos="fade-left" data-aos-delay="100">
-                        <a href="${url.split("?")[0] + '?cat=' + data[uniqueCatIDs[index]].category}">${element}</a>
+                        <a href="${window.location.href.split("#")[0].split("?")[0] + '?cat=' + data[uniqueCatIDs[index]].category}">${element}</a>
                         <span>(${countOccurrences(categories)[element]})</span>
                     </li>
                 `;
@@ -256,7 +250,7 @@ $.getJSON("data.json", async function (info) {
 
                 <section class="container">
                     <div class="site-content">
-                        <div class="posts">${renderblogTiles('asc')}
+                        <div class="posts" >${renderblogTiles('asc')}
                             <div class="pagination flex-row">
                                 <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
                                 <a href="#" class="pages">1</a>
@@ -298,6 +292,15 @@ $.getJSON("data.json", async function (info) {
 
             </main>`).insertAfter("nav");
         loadAllScript()
+
+        $('#posts').pagination({
+            dataSource: data,
+            callback: function(myData, pagination) {
+                // template method of yourself
+                var html = template(myData);
+                dataContainer.html(html);
+            }
+        })
     }
 
 
@@ -329,7 +332,7 @@ $.getJSON("data.json", async function (info) {
 
         else if (query.indexOf("tag=") !== -1) {
             var tagName = query.split('tag=')[1]
-            if (tagName != null && tagName != undefined && tagName != '' && tags.indexOf(categoryName) !== -1) {
+            if (tagName != null && tagName != undefined && tagName != '' && tags.indexOf(tagName) !== -1) {
                 renderTaggedPosts(tagName);
             }
             else {
