@@ -64,9 +64,9 @@ $.getJSON("data.json", async function (info) {
 
     console.log(catpostId)
     console.log(categories)
+    console.log(data)
     console.log(uniqueCategories);
     console.log(uniqueCatIDs)
-    console.log(catpostId)
     // VARIABLE SETUP ENDS
 
     // FUNCTIONS
@@ -255,15 +255,8 @@ $.getJSON("data.json", async function (info) {
     function renderdetailsPage(postnum) {
         $(`
 
-
          ${blogdetails(postnum)}
         
-
-   
-    
-    
-    
-    
     `).insertAfter("nav");
         loadAllScript()
 
@@ -346,7 +339,7 @@ $.getJSON("data.json", async function (info) {
                                         </div>
                                     </div>
                                     <div class="post-title">
-                                        <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}">${post.bannerTitle}</a>
+                                        <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + ((data.length - 1) - index)}">${post.bannerTitle}</a>
                                     </div>
                                 </div>
                     `;
