@@ -62,7 +62,7 @@ $.getJSON("data.json", async function (info) {
         }));
     })
 
-    console.log(tags)
+    console.log(catpostId)
     console.log(categories)
     console.log(uniqueCategories);
     console.log(uniqueCatIDs)
@@ -127,9 +127,9 @@ $.getJSON("data.json", async function (info) {
         $(` <div class="col-md-12 mt-5 container  banner-img  "> </div>
     <div class="banner-text">
 
-        <h1 class="font-weight-bold">Office kothone</h1>
+        <h1 class="font-weight-bold">Office kothon</h1>
         <p>
-            Office kothone - a business communication tool launched by softniquebd in April 2 , 2021
+            Office kothon - a business communication tool launched by softniquebd in April 2 , 2021
         </p>
 
     </div>
@@ -182,7 +182,7 @@ $.getJSON("data.json", async function (info) {
                 <div class="cs-main-post">
                     <figure><img onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                             data-pagespeed-url-hash="2714250504" alt="jobline-blog (8)"
-                            src="../images/office_kothone1.PNG">
+                            src="../images/office_kothon1.PNG">
                     </figure>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -202,7 +202,7 @@ $.getJSON("data.json", async function (info) {
             <div class="cs-main-post">
                 <figure><img onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                         data-pagespeed-url-hash="2714250504" alt="jobline-blog (8)"
-                        src="../images/office kothone-1.JPG">
+                        src="../images/office kothon-1.JPG">
                 </figure>
             </div>
         </div>
@@ -242,35 +242,32 @@ $.getJSON("data.json", async function (info) {
 
     }
 
-
     function renderselectedCategory(catName) {
         var html = '';
-        uniqueCategories.forEach(function (element, index) {
+        categories.forEach(function (element, index) {
 
             if (element == catName) {
                 html += `<div class="post-content" data-aos="zoom-in" data-aos-delay="200">
                 <div class="post-image">
                     <div>
-                        <img src="${data[catpostId[index]].postImage}" class="img" alt="blog${index}">
+                        <img src="${data[index].postImage}" class="img" alt="blog${index}">
                     </div>
                     <div class="post-info flex-row theme_btn">
-                        <span> <i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;${data[catpostId[index]].blogWriter}</span>
+                        <span> <i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;${data[index].blogWriter}</span>
                         <span><i class="fa fa-calendar-check-o text-gray" aria-hidden="true"></i>
-                            &nbsp;&nbsp;${data[catpostId[index]].date}</span>
-                            <span>${data[catpostId[index]].category}
+                            &nbsp;&nbsp;${data[index].date}</span>
+                            <span>${data[index].category}
                     </div>
                 </div>
                 <div class="post-title">
-                    <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}"><span>${data[catpostId[index]].bannerTitle}</a>
-                    <p>${data[catpostId[index]].postDescription.substring(0, 294) + "..."}
+                    <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}"><span>${data[index].bannerTitle}</a>
+                    <p>${data[index].postDescription.substring(0, 294) + "..."}
                     </p>
                     <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}'">Read More &nbsp; <i class="fa fa-arrow-right"
                             aria-hidden="true"></i></button>
                 </div>
             </div>`
             }
-
-
         })
         return html;
     }
