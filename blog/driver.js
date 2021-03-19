@@ -37,6 +37,7 @@ $.getJSON("data.json", async function (info) {
     var data = info.posts;
     var totalPosts = data.length;
     var categories = [];
+    var catpostId = [];
     var tags = [];
 
     data.forEach(function (element) {
@@ -55,10 +56,17 @@ $.getJSON("data.json", async function (info) {
             return item.category === element
         }));
     })
+    categories.forEach(function (element) {
+        catpostId.push(data.findIndex(function (item, i) {
+            return item.category === element
+        }));
+    })
 
     console.log(tags)
     console.log(categories)
     console.log(uniqueCategories);
+    console.log(uniqueCatIDs)
+    console.log(catpostId)
     // VARIABLE SETUP ENDS
 
     // FUNCTIONS
@@ -74,7 +82,7 @@ $.getJSON("data.json", async function (info) {
         <main>
           <section class="container mt-5">
           <div class="site-content mt-5">
-              <div class="posts" id="posts">${renderblogTiles('asc')}
+              <div class="posts" id="posts">${renderselectedCategory(catName)}
                   <div class="pagination flex-row">
                       <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
                       <a href="#" class="pages">1</a>
@@ -235,7 +243,36 @@ $.getJSON("data.json", async function (info) {
     }
 
 
+    function renderselectedCategory(catName) {
+        var html = '';
+        categories.forEach(function (element, index) {
+            if (element == catName) {
+                html += `<div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                <div class="post-image">
+                    <div>
+                        <img src="${data[catpostId[index]].postImage}" class="img" alt="blog${index}">
+                    </div>
+                    <div class="post-info flex-row theme_btn">
+                        <span> <i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;${data[catpostId[index]].blogWriter}</span>
+                        <span><i class="fa fa-calendar-check-o text-gray" aria-hidden="true"></i>
+                            &nbsp;&nbsp;${data[catpostId[index]].date}</span>
+                            <span>${data[catpostId[index]].category}
+                    </div>
+                </div>
+                <div class="post-title">
+                    <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}"><span>${data[catpostId[index]].bannerTitle}</a>
+                    <p>${data[catpostId[index]].postDescription.substring(0, 294) + "..."}
+                    </p>
+                    <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}'">Read More &nbsp; <i class="fa fa-arrow-right"
+                            aria-hidden="true"></i></button>
+                </div>
+            </div>`
+            }
 
+
+        })
+        return html;
+    }
 
 
 
@@ -258,7 +295,7 @@ $.getJSON("data.json", async function (info) {
                                             </div>
                                         </div>
                                         <div class="post-title">
-                                            <a href="#">${post.bannerTitle}</a>
+                                            <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}">${post.bannerTitle}</a>
                                             <p>${post.postDescription.substring(0, 294) + "..."}
                                             </p>
                                             <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}'">Read More &nbsp; <i class="fa fa-arrow-right"
@@ -284,7 +321,7 @@ $.getJSON("data.json", async function (info) {
                                         </div>
                                     </div>
                                     <div class="post-title">
-                                        <a href="#">${post.bannerTitle}</a>
+                                        <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}">${post.bannerTitle}</a>
                                     </div>
                                 </div>
                     `;
@@ -421,7 +458,7 @@ $.getJSON("data.json", async function (info) {
 
         $('#posts').pagination({
             dataSource: data,
-            callback: function(myData, pagination) {
+            callback: function (myData, pagination) {
                 // template method of yourself
                 var html = template(myData);
                 dataContainer.html(html);
