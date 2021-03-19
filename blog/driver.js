@@ -81,17 +81,13 @@ $.getJSON("data.json", async function (info) {
             if (postnum == index) {
                 html += `<div class="col-md-12 mt-5 container  banner-img  "> </div>
                 <div class="banner-text">
-                
-                
                 <h1 class="font-weight-bold">${data[index].bannerTitle}</h1>
             <p>
                ${data[index].postTitle}
             </p>
             </div>
             <div class="container mt-5">
-        
             <div class="cs-blog-detail">
-        
                 <div class="cs-post-title">
                     <div class="cs-author">
                         <figure>
@@ -107,12 +103,10 @@ $.getJSON("data.json", async function (info) {
                         </div>
                     </div>
                     <div class="post-option">
-        
                         <span class="post-date"><i class="cs-color icon-calendar6"></i>${data[index].date}</a></span>
                         <span class="post-comment"><a href="#"><i class="cs-color icon-chat6"></i>${data[index].category}</a></span>
                     </div>
                 </div>
-        
                 <div class="cs-post-option-panel">
                     <div class="rich-editor-text">
                         <p>Ravenously while stridently coughed far promiscuously below jeez much yikes bland that
@@ -133,7 +127,6 @@ $.getJSON("data.json", async function (info) {
                             salamander cunningly some over abhorrent as house with between ouch that well scurrilously
                             alas capybara massive outdid oh said hello majestically roadrunner lobster much bled alas
                             lighted together waved upheld.</p>
-        
                         <div class="cs-main-post">
                             <figure><img onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                                     data-pagespeed-url-hash="2714250504" alt="jobline-blog (8)"
@@ -161,12 +154,7 @@ $.getJSON("data.json", async function (info) {
                         </figure>
                     </div>
                 </div>
-        
-        
-        
-        
-        
-        
+
                 <div class="cs-tags">
                     <div class="tags">
                         <span>Tags</span>
