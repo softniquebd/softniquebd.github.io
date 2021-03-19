@@ -1,6 +1,4 @@
-body{
-    background-color: #E4E6EB;
-  }
+
 
 h1{
     font-size: 70px;
@@ -11,16 +9,18 @@ h1{
 }
 .banner-img
 {
-    background-image: url('https://www.zaptechsolutions.com/wp-content/uploads/2016/08/zaptech-banner.jpg');
+    background-image: url('../assets/Background-image.webp');
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     height: 32em;
-    filter: blur(5px);
+    filter: blur(2px);
 }
 .banner-text
 {
+    
+border-radius: 2em;
     
 position: absolute;
     
@@ -37,10 +37,6 @@ width: 45%;
 padding: 40px 0;
     
 text-align: center;
-    
-border-top-left-radius: 70px;
-    
-border-bottom-right-radius: 70px;
     
 background-color: rgba(0, 0,0, 0.3);
     
