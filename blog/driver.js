@@ -36,11 +36,16 @@
         var data = info.posts;
         var totalPosts = data.length;
         var categories = [];
+        var tags = [];
 
         data.forEach(function (element) {
             categories.push(element.category);
+            element.tags.forEach(function (tag) {
+                tags.push(tag)
+            })
         })
 
+        tags = tags.filter((item, i, ar) => ar.indexOf(item) === i);
         var uniqueCategories = categories.filter((item, i, ar) => ar.indexOf(item) === i);
         var uniqueCatIDs = [];
 
@@ -50,7 +55,7 @@
             }));
         })
 
-        console.log(uniqueCatIDs)
+        console.log(tags)
         console.log(categories)
         console.log(uniqueCategories);
         // VARIABLE SETUP ENDS
@@ -58,6 +63,59 @@
         // FUNCTIONS
         function renderCategorizedPosts(catName) {
             alert(catName)
+        }
+
+        function renderblogTiles(order) {
+            var html = '';
+            if (order == 'asc') {
+                    data.forEach(function (post, index) {
+                    html += `<div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                                        <div class="post-image">
+                                            <div>
+                                                <img src="${post.postImage}" class="img" alt="blog${index}">
+                                            </div>
+                                            <div class="post-info flex-row theme_btn">
+                                                <span> <i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;${post.blogWriter}</span>
+                                                <span><i class="fa fa-calendar-check-o text-gray" aria-hidden="true"></i>
+                                                    &nbsp;&nbsp;${post.date}</span>
+                                                <span>${post.category}</span>
+                                            </div>
+                                        </div>
+                                        <div class="post-title">
+                                            <a href="#">${post.bannerTitle}</a>
+                                            <p>${post.postDescription.substring(0,294) + "..."}
+                                            </p>
+                                            <button class="btn post-btn theme_btn" onclick="window.location.href = '${url.split("?")[0] + '?post=' + index}'">Read More &nbsp; <i class="fa fa-arrow-right"
+                                                    aria-hidden="true"></i></button>
+                                        </div>
+                                    </div>`;
+                    if (index + 1 != data.length) { html += `<hr>`;}
+                })
+            }
+            else if (order == 'desc'){
+                data.reverse().forEach(function (post, index) {
+                    if (index < 5) {
+                        html += `
+                    <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                                    <div class="post-image">
+                                        <div>
+                                            <img src="${post.postImage}" class="img" alt="blog${index}">
+                                        </div>
+                                        <div class="post-info flex-row ">
+                                            <span><i class="fa fa-calendar-check-o text-gray"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp;${post.date}</span>
+                                            <span>${post.category}</span>
+                                        </div>
+                                    </div>
+                                    <div class="post-title">
+                                        <a href="#">${post.bannerTitle}</a>
+                                    </div>
+                                </div>
+                    `;
+                    }
+                })
+            }
+            return html;
         }
 
         function renderUniqueCategories() {
@@ -76,6 +134,16 @@
                 if (decision == 'fade-in') decision = 'fade-left';
                 else if (decision == 'fade-right') decision = 'fade-in';
                 else if (decision == 'fade-left') decision = 'fade-right';
+            })
+            return html;
+        }
+
+        function renderTags() {
+            var html = '';
+            tags.forEach(function (element, index) {
+                html += `
+                    <span class="tag theme_btn " data-aos="flip-up" data-aos-delay="${index}00" onclick="window.location.href = '${url.split("?")[0] + '?tag=' + element}'">${element}</span>
+                    `;
             })
             return html;
         }
@@ -132,104 +200,7 @@
 
                 <section class="container">
                     <div class="site-content">
-                        <div class="posts">
-                            <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                                <div class="post-image">
-                                    <div>
-                                        <img src="../assets/Blog-post/blog1.png" class="img" alt="blog1">
-                                    </div>
-                                    <div class="post-info flex-row theme_btn">
-                                        <span> <i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;Admin</span>
-                                        <span><i class="fa fa-calendar-check-o text-gray" aria-hidden="true"></i>
-                                            &nbsp;&nbsp;January 14, 2019</span>
-                                        <span>2 Commets</span>
-                                    </div>
-                                </div>
-                                <div class="post-title">
-                                    <a href="#">Why should boys have all the fun? it's the women who are making india an
-                                        alcohol-loving contry</a>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                        adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                        nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                        illum similique veniam tempore unde?
-                                    </p>
-                                    <button class="btn post-btn theme_btn">Read More &nbsp; <i class="fa fa-arrow-right"
-                                            aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                                <div class="post-image">
-                                    <div>
-                                        <img src="../assets/Blog-post/blog2.png" class="img" alt="blog1">
-                                    </div>
-                                    <div class="post-info flex-row theme_btn">
-                                        <span><i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;Admin</span>
-                                        <span><i class="fa fa-calendar-check-o text-gray" aria-hidden="true"></i>
-                                            &nbsp;&nbsp;January 16, 2019</span>
-                                        <span>7 Commets</span>
-                                    </div>
-                                </div>
-                                <div class="post-title">
-                                    <a href="#">Why should boys have all the fun? it's the women who are making india an
-                                        alcohol-loving contry</a>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                        adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                        nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                        illum similique veniam tempore unde?
-                                    </p>
-                                    <button class="btn post-btn theme_btn">Read More &nbsp; <i class="fa fa-arrow-right"
-                                            aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                                <div class="post-image">
-                                    <div>
-                                        <img src="../assets/Blog-post/blog3.png" class="img" alt="blog1">
-                                    </div>
-                                    <div class="post-info flex-row theme_btn">
-                                        <span><i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;Admin</span>
-                                        <span><i class="fa fa-calendar-check-o text-gray"
-                                                aria-hidden="true"></i>&nbsp;&nbsp;January 19, 2019</span>
-                                        <span>5 Commets</span>
-                                    </div>
-                                </div>
-                                <div class="post-title">
-                                    <a href="#">New data recording system to better analyse road accidents</a>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                        adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                        nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                        illum similique veniam tempore unde?
-                                    </p>
-                                    <button class="btn post-btn theme_btn">Read More &nbsp; <i class="fa fa-arrow-right"
-                                            aria-hidden="true"></i></button>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                                <div class="post-image">
-                                    <div>
-                                        <img src="../assets/Blog-post/blog4.png" class="img" alt="blog1">
-                                    </div>
-                                    <div class="post-info flex-row theme_btn">
-                                        <span><i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;Admin</span>
-                                        <span><i class="fa fa-calendar-check-o text-gray"
-                                                aria-hidden="true"></i>&nbsp;&nbsp;January 21, 2019</span>
-                                        <span>12 Commets</span>
-                                    </div>
-                                </div>
-                                <div class="post-title">
-                                    <a href="#">New data recording system to better analyse road accidents</a>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                                        adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                                        nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                                        illum similique veniam tempore unde?
-                                    </p>
-                                    <button class="btn post-btn theme_btn">Read More &nbsp; <i class="fa fa-arrow-right"
-                                            aria-hidden="true"></i></button>
-                                </div>
-                            </div>
+                        <div class="posts">${renderblogTiles('asc')}
                             <div class="pagination flex-row">
                                 <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
                                 <a href="#" class="pages">1</a>
@@ -248,86 +219,7 @@
                             </div>
                             <div class="popular-post">
                                 <h2>Recent Post</h2>
-                                <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                                    <div class="post-image">
-                                        <div>
-                                            <img src="../assets/popular-post/m-blog-1.jpg" class="img" alt="blog1">
-                                        </div>
-                                        <div class="post-info flex-row ">
-                                            <span><i class="fa fa-calendar-check-o text-gray"
-                                                    aria-hidden="true"></i>&nbsp;&nbsp;January 14,
-                                                2019</span>
-                                            <span>2 Commets</span>
-                                        </div>
-                                    </div>
-                                    <div class="post-title">
-                                        <a href="#">New data recording system to better analyse road accidents</a>
-                                    </div>
-                                </div>
-                                <div class="post-content" data-aos="flip-up" data-aos-delay="300">
-                                    <div class="post-image">
-                                        <div>
-                                            <img src="../assets/popular-post/m-blog-2.jpg" class="img" alt="blog1">
-                                        </div>
-                                        <div class="post-info flex-row ">
-                                            <span><i class="fa fa-calendar-check-o text-gray"
-                                                    aria-hidden="true"></i>&nbsp;&nbsp;January 14,
-                                                2019</span>
-                                            <span>2 Commets</span>
-                                        </div>
-                                    </div>
-                                    <div class="post-title">
-                                        <a href="#">New data recording system to better analyse road accidents</a>
-                                    </div>
-                                </div>
-                                <div class="post-content" data-aos="flip-up" data-aos-delay="400">
-                                    <div class="post-image">
-                                        <div>
-                                            <img src="../assets/popular-post/m-blog-3.jpg" class="img" alt="blog1">
-                                        </div>
-                                        <div class="post-info flex-row ">
-                                            <span><i class="fa fa-calendar-check-o text-gray"
-                                                    aria-hidden="true"></i>&nbsp;&nbsp;January 14,
-                                                2019</span>
-                                            <span>2 Commets</span>
-                                        </div>
-                                    </div>
-                                    <div class="post-title">
-                                        <a href="#">New data recording system to better analyse road accidents</a>
-                                    </div>
-                                </div>
-                                <div class="post-content" data-aos="flip-up" data-aos-delay="500">
-                                    <div class="post-image">
-                                        <div>
-                                            <img src="../assets/popular-post/m-blog-4.jpg" class="img" alt="blog1">
-                                        </div>
-                                        <div class="post-info flex-row ">
-                                            <span><i class="fa fa-calendar-check-o text-gray"
-                                                    aria-hidden="true"></i>&nbsp;&nbsp;January 14,
-                                                2019</span>
-                                            <span>2 Commets</span>
-                                        </div>
-                                    </div>
-                                    <div class="post-title">
-                                        <a href="#">New data recording system to better analyse road accidents</a>
-                                    </div>
-                                </div>
-                                <div class="post-content" data-aos="flip-up" data-aos-delay="600">
-                                    <div class="post-image">
-                                        <div>
-                                            <img src="../assets/popular-post/m-blog-5.jpg" class="img" alt="blog1">
-                                        </div>
-                                        <div class="post-info flex-row ">
-                                            <span><i class="fa fa-calendar-check-o text-gray"
-                                                    aria-hidden="true"></i>&nbsp;&nbsp;January 14,
-                                                2019</span>
-                                            <span>2 Commets</span>
-                                        </div>
-                                    </div>
-                                    <div class="post-title">
-                                        <a href="#">New data recording system to better analyse road accidents</a>
-                                    </div>
-                                </div>
+                                ${renderblogTiles('desc')}
                             </div>
                             <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
                                 <h2 class="text-center">Newsletter</h2>
@@ -339,14 +231,7 @@
                             <div class="popular-tags">
                                 <h2 class="text-center">Popular Tags</h2>
                                 <div class="tags flex-row">
-                                    <span class="tag theme_btn " data-aos="flip-up" data-aos-delay="100">Software</span>
-                                    <span class="tag theme_btn" data-aos="flip-up" data-aos-delay="200">technology</span>
-                                    <span class="tag theme_btn" data-aos="flip-up" data-aos-delay="300">travel</span>
-                                    <span class="tag theme_btn" data-aos="flip-up" data-aos-delay="400">illustration</span>
-                                    <span class="tag theme_btn" data-aos="flip-up" data-aos-delay="500">design</span>
-                                    <span class="tag theme_btn" data-aos="flip-up" data-aos-delay="600">lifestyle</span>
-                                    <span class="tag theme_btn" data-aos="flip-up" data-aos-delay="700">love</span>
-                                    <span class="tag theme_btn" data-aos="flip-up" data-aos-delay="800">project</span>
+                                 ${renderTags()}
                                 </div>
                             </div>
                         </aside>
@@ -380,6 +265,16 @@
                 var categoryName = query.split('cat=')[1]
                 if (categoryName != null && categoryName != undefined && categoryName != '' && uniqueCategories.indexOf(categoryName) !== -1) {
                     renderCategorizedPosts(categoryName);
+                }
+                else {
+                    renderMainPage();
+                }
+            }
+
+            else if (query.indexOf("tag=") !== -1) {
+                var tagName = query.split('tag=')[1]
+                if (tagName != null && tagName != undefined && tagName != '' && tags.indexOf(categoryName) !== -1) {
+                    renderTaggedPosts(tagName);
                 }
                 else {
                     renderMainPage();
