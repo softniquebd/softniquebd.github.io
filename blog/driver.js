@@ -541,11 +541,6 @@ $.getJSON("data.json", async function (info) {
             </main>`).insertAfter("nav");
         loadAllScript()
 
-        $("#posts").paging({
-            number_of_items: 2,
-            number_of_page_buttons: 2
-        });
-
     }
 
 

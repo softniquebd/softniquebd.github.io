@@ -1,1 +1,5 @@
-console.log($('#posts').children())
+
+
+var dataLength = $('#posts').children();
+var postsToShow = 4;
+
