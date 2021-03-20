@@ -224,11 +224,11 @@ $.getJSON("data.json", async function (info) {
           <div class="site-content mt-5">
               <div class="posts" id="posts">${renderselectedCategory(catName)}
                   <div class="pagination flex-row">
-                      <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                      <a href="#" class="pages">1</a>
-                      <a href="#" class="pages">2</a>
-                      <a href="#" class="pages">3</a>
-                      <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                      <a href="#0" id="routeToFirst"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                      <a href="#0" class="pages">1</a>
+                      <a href="#0" class="pages">2</a>
+                      <a href="#0" class="pages">3</a>
+                      <a href="#0" id="routeToLast"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                   </div>
               </div>
 
@@ -312,11 +312,11 @@ $.getJSON("data.json", async function (info) {
           <div class="site-content mt-5">
               <div class="posts" id="posts">
                   <div class="pagination flex-row">${renderselectedTag(tag)}
-                      <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                      <a href="#" class="pages">1</a>
-                      <a href="#" class="pages">2</a>
-                      <a href="#" class="pages">3</a>
-                      <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                      <a href="#0" id="routeToFirst"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                      <a href="#0" class="pages">1</a>
+                      <a href="#0" class="pages">2</a>
+                      <a href="#0" class="pages">3</a>
+                      <a href="#0" id="routeToLast"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                   </div>
               </div>
 
@@ -527,7 +527,13 @@ $.getJSON("data.json", async function (info) {
 
                 <section class="container">
                     <div class="site-content">
-                        <div class="posts" id="posts" >${renderblogTiles('asc')}</div>
+                        <div class="posts" id="posts"><div id="postList">${renderblogTiles('asc')}</div>
+                        <div class="pagination flex-row">
+                                <a href="#0" id="routeToFirst"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+
+                                <a href="#0" id="routeToLast"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
+                        </div>
 
                         <aside class="sidebar">
                             <div class="category">
