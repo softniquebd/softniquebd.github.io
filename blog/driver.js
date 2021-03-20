@@ -73,7 +73,24 @@ $.getJSON("data.json", async function (info) {
     // VARIABLE SETUP ENDS
 
     // FUNCTIONS
+    function tagGenerator(data) {
+        var listHtml = '';
+
+        data.forEach(function (element, index) {
+
+            listHtml += `<li><a rel="tag" href="">${element}</a>
+                     </li>`
+
+            console.log(element);
+
+        })
+
+        return listHtml;
+
+
+    }
     function blogdetails(postnum) {
+
         var html = '';
         data.forEach(function (post, index) {
 
@@ -91,8 +108,8 @@ $.getJSON("data.json", async function (info) {
                     <div class="cs-author">
                         <figure>
                             <a href="${data[index].gitlink}"><img width="32" height="32"
-                                    onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                    data-pagespeed-url-hash="1229941675" class="avatar avatar-32 photo"
+                                 
+                                    
                                     srcset="http://1.gravatar.com/avatar/7a20fad302fc2dd4b4649dc5bdb3c463?s=64&amp;d=mm&amp;r=g 2x"
                                     src="${data[index].writerPic}" alt="${index}"></a>
                         </figure>
@@ -129,7 +146,7 @@ $.getJSON("data.json", async function (info) {
                         <div class="cs-main-post">
                             <figure><img onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
                                     data-pagespeed-url-hash="2714250504" alt="jobline-blog (8)"
-                                    src="../images/office_kothon1.PNG">
+                                    src="../images/office_kothone1.PNG">
                             </figure>
                         </div>
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -147,9 +164,8 @@ $.getJSON("data.json", async function (info) {
                             lighted together waved upheld.</p>
                     </div>
                     <div class="cs-main-post">
-                        <figure><img onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                data-pagespeed-url-hash="2714250504" alt="jobline-blog (8)"
-                                src="../images/office kothon-1.JPG">
+                        <figure><img 
+                                src="../images/office kothone-1.JPG">
                         </figure>
                     </div>
                 </div>
@@ -158,12 +174,10 @@ $.getJSON("data.json", async function (info) {
                     <div class="tags">
                         <span>Tags</span>
                         <ul>
-                            <li><a rel="tag" href="#">College</a>
-                            </li>
-                            <li><a rel="tag" href="#">Job</a></li>
-                            <li><a rel="tag" href="#">Search</a></li>
-                            <li><a rel="tag" href="#">Teacher</a>
-                            </li>
+                       ${tagGenerator(post.tags)
+
+                    }
+                           
                         </ul>
                     </div>
         
@@ -179,7 +193,14 @@ $.getJSON("data.json", async function (info) {
             
             
             `
-                
+                // <li><a rel="tag" href="#">data</a>
+                // </li>
+                // <li><a rel="tag" href="#">Job</a></li>
+                // <li><a rel="tag" href="#">Search</a></li>
+                // <li><a rel="tag" href="#">Teacher</a>
+                // </li>
+
+
             }
 
         })
@@ -272,13 +293,13 @@ $.getJSON("data.json", async function (info) {
                     </div>
                 </div>`;
                 found = false;
-                }
             }
+        }
         return html;
     }
 
     function renderTaggedPosts(tag) {
-                $(`
+        $(`
           <div class="col-md-12 mt-5 container  banner-img  "> </div>
         <div class="banner-text">
 
@@ -394,7 +415,7 @@ $.getJSON("data.json", async function (info) {
                                             <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}'">Read More &nbsp; <i class="fa fa-arrow-right"
                                                     aria-hidden="true"></i></button>
                                         </div>
-                                         ${index + 1 != data.length? "<hr>":" "}
+                                         ${index + 1 != data.length ? "<hr>" : " "}
                                     </div>`;
             })
         }
