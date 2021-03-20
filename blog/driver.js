@@ -18,13 +18,13 @@ function loadScript(src) {
 
 async function loadAllScript() {
     await loadScript("https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js");
+    await loadScript("../js/softPagination.js");
     await loadScript("../js/owl.js");
     await loadScript("../js/jquery.fancybox.js");
     await loadScript("https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js");
     await loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js");
     await loadScript("../js/owl.carousel.min.js");
     await loadScript("../js/aos.js");
-    await loadScript("https://pagination.js.org/dist/2.1.5/pagination.js");
     await loadScript("../js/mainblog.js");
     await loadScript("https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js");
 }
@@ -65,7 +65,7 @@ $.getJSON("data.json", async function (info) {
         }));
     })
 
-    console.log(tagList[0][1]);
+    console.log(tags);
     console.log(categories)
     console.log(data)
     console.log(uniqueCategories);
@@ -93,7 +93,6 @@ $.getJSON("data.json", async function (info) {
 
         var html = '';
         data.forEach(function (post, index) {
-
 
             if (postnum == index) {
                 html += `<div class="col-md-12 mt-5 container  banner-img  "> </div>
@@ -200,6 +199,7 @@ $.getJSON("data.json", async function (info) {
                 // <li><a rel="tag" href="#">Search</a></li>
                 // <li><a rel="tag" href="#">Teacher</a>
                 // </li>
+
 
             }
 
@@ -415,8 +415,8 @@ $.getJSON("data.json", async function (info) {
                                             <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}'">Read More &nbsp; <i class="fa fa-arrow-right"
                                                     aria-hidden="true"></i></button>
                                         </div>
+                                         ${index + 1 != data.length ? "<hr>" : " "}
                                     </div>`;
-                if (index + 1 != data.length) { html += `<hr>`; }
             })
         }
         else if (order == 'desc') {
@@ -527,15 +527,7 @@ $.getJSON("data.json", async function (info) {
 
                 <section class="container">
                     <div class="site-content">
-                        <div class="posts" >${renderblogTiles('asc')}
-                            <div class="pagination flex-row">
-                                <a href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                                <a href="#" class="pages">1</a>
-                                <a href="#" class="pages">2</a>
-                                <a href="#" class="pages">3</a>
-                                <a href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
+                        <div class="posts" id="posts" >${renderblogTiles('asc')}</div>
 
                         <aside class="sidebar">
                             <div class="category">
@@ -570,14 +562,11 @@ $.getJSON("data.json", async function (info) {
             </main>`).insertAfter("nav");
         loadAllScript()
 
-        $('#posts').pagination({
-            dataSource: data,
-            callback: function (myData, pagination) {
-                // template method of yourself
-                var html = template(myData);
-                dataContainer.html(html);
-            }
-        })
+        $("#posts").paging({
+            number_of_items: 2,
+            number_of_page_buttons: 2
+        });
+
     }
 
 
