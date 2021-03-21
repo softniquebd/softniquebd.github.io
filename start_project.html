@@ -14,6 +14,27 @@
 </head>
 
 <body class="hireus">
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v10.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your Chat Plugin code -->
+  <div class="fb-customerchat" attribution="setup_tool" page_id="114263207095888" theme_color="#ff7e29">
+  </div>
   <div id="main" class="m-scene">
     <nav class="navigation">
       <h1 class="logo animated">
@@ -74,7 +95,7 @@
                 <li><a href="#web-step-4" data-anchor="web-step-4">04</a></li>
               </ul>
             </nav>
-            <form action="https://formspree.io/f/meqpynpy" method="POST" id="form-1"> 
+            <form action="https://formspree.io/f/meqpynpy" method="POST" id="form-1">
               <div id="web-step-1" class="step step-1">
                 <div class="offset-top-sm">
                   <div class="row center-xs">
@@ -147,8 +168,8 @@
                       <div class="col-xs-10 col-sm-8 col-lg-6">
                         <div id="website-slider-week"></div>
                         <p class="section-caption">Estimated timeline</p>
-                        <input class="slider-input" name="slider-week-input" type="text" id="website-slider-week-input"
-                         />
+                        <input class="slider-input" name="slider-week-input" type="text"
+                          id="website-slider-week-input" />
                       </div>
                     </div>
                   </div>
@@ -340,7 +361,7 @@
                         <div id="ecommerce-slider-week"></div>
                         <p class="section-caption">Estimated timeline</p>
                         <input class="slider-input" name="slider-week-input" type="text"
-                          id="ecommerce-slider-week-input"  />
+                          id="ecommerce-slider-week-input" />
                       </div>
                     </div>
                   </div>
@@ -522,15 +543,14 @@
                         <div id="brand-slider-budget"></div>
                         <p class="section-caption">Approximate budget</p>
                         <input class="slider-input" name="slider-budget-input" type="text"
-                          id="brand-slider-budget-input"  />
+                          id="brand-slider-budget-input" />
                       </div>
                     </div>
                     <div class="row center-xs">
                       <div class="col-xs-10 col-sm-8 col-lg-6">
                         <div id="brand-slider-week"></div>
                         <p class="section-caption">Estimated timeline</p>
-                        <input class="slider-input" name="slider-week-input" type="text" id="brand-slider-week-input"
-                           />
+                        <input class="slider-input" name="slider-week-input" type="text" id="brand-slider-week-input" />
                       </div>
                     </div>
                   </div>
@@ -641,61 +661,61 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
-          // var formSelectionList = ['website','marketing','brand']
+  // var formSelectionList = ['website','marketing','brand']
 
-          function formSubmission(param){
-            var form = document.getElementById("form-"+param);
+  function formSubmission(param) {
+    var form = document.getElementById("form-" + param);
 
-              async function handleSubmit(event) {
-                event.preventDefault();
-                //var status = document.getElementById("my-form-status");
-                var data = new FormData(event.target);
-                fetch(event.target.action, {
-                  method: form.method,
-                  body: data,
-                  headers: {
-                      'Accept': 'application/json'
-                  }
-                }).then(response => {
-                  $('.js-form-response').addClass('sent');
-                  $('.js-form-response').html('<h2>Thanks!</h2> <p>We have recieved your information! We will come back to contact with you very soon.</p><a class="bs-button btn-small theme_btn" data-linkName="go home" href="/"><span data-hover="go home">go home</span></a><h6>Check out our social platforms</h6><ul class="social"><li class="facebook"><a href="https://www.facebook.com/softniquebd/" target="_blank"><span>Facebook</span><img src="./images/facebook.png" alt="Facebook"></a><li><li class="instagram"><a href="https://www.instagram.com/softniquebd/" target="_blank"><span>Instagram</span><img src="./images/instagram.png" alt="instagram"></a><li><li class="linkedin"><a href="https://www.linkedin.com/company/softniquebd" target="_blank"><span>linkedin</span><img src="./images/linkedin.png" alt="Linkedin"></a><li></ul>');
-                  form.reset()
-                }).catch(error => {
-                  $('.js-form-response').addClass('sent');
-                  $('.js-form-response').html('<h2>Oops!</h2> <p> There was a problem submitting your form</p><a class="bs-button btn-small theme_btn" data-linkName="go home" href="/"><span data-hover="go home">go home</span></a><h6>Check out our socail platforms</h6><ul class="social"><li class="facebook"><a href="https://www.facebook.com/softniquebd/" target="_blank"><span>Facebook</span><img src="./images/facebook.png" alt="Facebook"></a><li><li class="instagram"><a href="https://www.instagram.com/softniquebd/" target="_blank"><span>Instagram</span><img src="./images/instagram.png" alt="instagram"></a><li><li class="linkedin"><a href="https://www.linkedin.com/company/softniquebd" target="_blank"><span>linkedin</span><img src="./images/linkedin.png" alt="Linkedin"></a><li></ul>')
-                });
-            }
+    async function handleSubmit(event) {
+      event.preventDefault();
+      //var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
+      }).then(response => {
+        $('.js-form-response').addClass('sent');
+        $('.js-form-response').html('<h2>Thanks!</h2> <p>We have recieved your information! We will come back to contact with you very soon.</p><a class="bs-button btn-small theme_btn" data-linkName="go home" href="/"><span data-hover="go home">go home</span></a><h6>Check out our social platforms</h6><ul class="social"><li class="facebook"><a href="https://www.facebook.com/softniquebd/" target="_blank"><span>Facebook</span><img src="./images/facebook.png" alt="Facebook"></a><li><li class="instagram"><a href="https://www.instagram.com/softniquebd/" target="_blank"><span>Instagram</span><img src="./images/instagram.png" alt="instagram"></a><li><li class="linkedin"><a href="https://www.linkedin.com/company/softniquebd" target="_blank"><span>linkedin</span><img src="./images/linkedin.png" alt="Linkedin"></a><li></ul>');
+        form.reset()
+      }).catch(error => {
+        $('.js-form-response').addClass('sent');
+        $('.js-form-response').html('<h2>Oops!</h2> <p> There was a problem submitting your form</p><a class="bs-button btn-small theme_btn" data-linkName="go home" href="/"><span data-hover="go home">go home</span></a><h6>Check out our socail platforms</h6><ul class="social"><li class="facebook"><a href="https://www.facebook.com/softniquebd/" target="_blank"><span>Facebook</span><img src="./images/facebook.png" alt="Facebook"></a><li><li class="instagram"><a href="https://www.instagram.com/softniquebd/" target="_blank"><span>Instagram</span><img src="./images/instagram.png" alt="instagram"></a><li><li class="linkedin"><a href="https://www.linkedin.com/company/softniquebd" target="_blank"><span>linkedin</span><img src="./images/linkedin.png" alt="Linkedin"></a><li></ul>')
+      });
+    }
 
-            form.addEventListener("submit", handleSubmit)
-          }
+    form.addEventListener("submit", handleSubmit)
+  }
 
-          $('[data-form="website"]').on( "click", function() {
-              formSubmission(1);
-          });
+  $('[data-form="website"]').on("click", function () {
+    formSubmission(1);
+  });
 
-          $('[data-form="marketing"]').on( "click", function() {
-              formSubmission(2);
-          });
+  $('[data-form="marketing"]').on("click", function () {
+    formSubmission(2);
+  });
 
-          $('[data-form="brand"]').on( "click", function() {
-              formSubmission(3);
-          });
+  $('[data-form="brand"]').on("click", function () {
+    formSubmission(3);
+  });
 
 </script>
 
 
 <script>
 
-  $(document).ready(function(){
-    const category = ['Website','Marketing','Brand0','Brand1'];
-    const subCategory = ['WebsiteChoice1','WebsiteChoice2','WebsiteChoice3','MarketingChoice1','MarketingChoice2','MarketingChoice3','Brand0Choice1','Brand0Choice2','Brand0Choice3','Brand1Choice1','Brand1Choice2','Brand1Choice3'];
+  $(document).ready(function () {
+    const category = ['Website', 'Marketing', 'Brand0', 'Brand1'];
+    const subCategory = ['WebsiteChoice1', 'WebsiteChoice2', 'WebsiteChoice3', 'MarketingChoice1', 'MarketingChoice2', 'MarketingChoice3', 'Brand0Choice1', 'Brand0Choice2', 'Brand0Choice3', 'Brand1Choice1', 'Brand1Choice2', 'Brand1Choice3'];
 
-    $('.js-show-section').bind('click', function(){
-        $("input[name=main-category]").val(category[$('.js-show-section').index(this)]);
+    $('.js-show-section').bind('click', function () {
+      $("input[name=main-category]").val(category[$('.js-show-section').index(this)]);
     });
 
-    $('.js-form-link').bind('click', function(){
-        $("input[name=sub-category]").val(subCategory[$('.js-form-link').index(this)]);
+    $('.js-form-link').bind('click', function () {
+      $("input[name=sub-category]").val(subCategory[$('.js-form-link').index(this)]);
     });
 
   });
