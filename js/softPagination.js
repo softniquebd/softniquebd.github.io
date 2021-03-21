@@ -13,7 +13,7 @@ $(html).insertAfter('#routeToPrev')
 $('#postList div.post-content').hide();
 $('#paginate0').addClass('active-pagination').siblings('.active-pagination').removeClass('active-pagination');
 $("#postList .post-content").slice(0, postsToShow).each(function (index) {
-        $(this).show('slow')
+        $(this).show()
     })
 
 
@@ -46,7 +46,7 @@ $(' .pages').click(function (e) {
     $('#postList div.post-content').hide();
     $("#postList .post-content").slice(indexValue*postsToShow , (indexValue+1)*postsToShow).each(function(index) {
         if (indexValue < dataLength) {
-            $(this).show('slow')
+            $(this).show()
         }
     })
 });
