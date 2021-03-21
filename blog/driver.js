@@ -177,30 +177,12 @@ $.getJSON("data.json", async function (info) {
                        ${tagGenerator(post.tags)
 
                     }
-                           
                         </ul>
                     </div>
-        
                 </div>
-        
             </div>
         </div>
-            
-            
-            
-            
-            
-            
-            
             `
-                // <li><a rel="tag" href="#">data</a>
-                // </li>
-                // <li><a rel="tag" href="#">Job</a></li>
-                // <li><a rel="tag" href="#">Search</a></li>
-                // <li><a rel="tag" href="#">Teacher</a>
-                // </li>
-
-
             }
 
         })
@@ -224,11 +206,11 @@ $.getJSON("data.json", async function (info) {
           <div class="site-content mt-5">
               <div class="posts" id="posts">${renderselectedCategory(catName)}
                   <div class="pagination flex-row">
-                      <a href="#0" id="routeToFirst"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                      <a href="#0" id="routeToPrev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
                       <a href="#0" class="pages">1</a>
                       <a href="#0" class="pages">2</a>
                       <a href="#0" class="pages">3</a>
-                      <a href="#0" id="routeToLast"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                      <a href="#0" id="routeToNext"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                   </div>
               </div>
 
@@ -311,12 +293,11 @@ $.getJSON("data.json", async function (info) {
           <section class="container mt-5">
           <div class="site-content mt-5">
               <div class="posts" id="posts">
-                  <div class="pagination flex-row">${renderselectedTag(tag)}
-                      <a href="#0" id="routeToFirst"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                      <a href="#0" class="pages">1</a>
-                      <a href="#0" class="pages">2</a>
-                      <a href="#0" class="pages">3</a>
-                      <a href="#0" id="routeToLast"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                  <div class="pagination flex-row"><div id="postList">${renderselectedTag(tag)}</div>
+                        <div class="pagination flex-row" id="paginationSection">
+                                <a href="#0" id="routeToPrev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a href="#0" id="routeToNext"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        </div>
                   </div>
               </div>
 
@@ -356,10 +337,9 @@ $.getJSON("data.json", async function (info) {
         $(`
 
          ${blogdetails(postnum)}
-        
+
     `).insertAfter("nav");
         loadAllScript()
-
     }
 
     function renderselectedCategory(catName) {
@@ -415,7 +395,7 @@ $.getJSON("data.json", async function (info) {
                                             <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}'">Read More &nbsp; <i class="fa fa-arrow-right"
                                                     aria-hidden="true"></i></button>
                                         </div>
-                                         ${index + 1 != data.length ? "<hr>" : " "}
+                                         <hr>
                                     </div>`;
             })
         }
@@ -528,10 +508,9 @@ $.getJSON("data.json", async function (info) {
                 <section class="container">
                     <div class="site-content">
                         <div class="posts" id="posts"><div id="postList">${renderblogTiles('asc')}</div>
-                        <div class="pagination flex-row">
-                                <a href="#0" id="routeToFirst"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-
-                                <a href="#0" id="routeToLast"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        <div class="pagination flex-row" id="paginationSection">
+                                <a href="#0" id="routeToPrev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a href="#0" id="routeToNext"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                         </div>
                         </div>
 

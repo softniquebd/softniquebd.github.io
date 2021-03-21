@@ -1,33 +1,58 @@
 var dataLength = $('#postList').children().length;
-var postsToShow = 2;
-var estimatedPages = (dataLength/postsToShow).toFixed();
+var postsToShow = 3;
+var estimatedPages = Math.ceil(dataLength / postsToShow);
+var pageState = 0;
 console.log(estimatedPages)
-
-
-
-
-$('div.post-content').hide();
-// $('div.post-content:lt(' + postsToShow + ')').show();
-$(".post-content").slice(postsToShow-1 , dataLength).each(function(index) {
-    $(this).show()
-})
-
-
 
 
 var html = '';
 for (let index = 0; index < estimatedPages; index++) {
-    html += `<a href="#0" class="pages">${index+1}</a>`;
+    html += `<a href="#0" class="pages" id="paginate${index}">${index+1}</a>`;
 }
-$(html).insertAfter('#routeToFirst')
+$(html).insertAfter('#routeToPrev')
+
+$('#postList div.post-content').hide();
+$('#paginate0').addClass('active-pagination').siblings('.active-pagination').removeClass('active-pagination');
+$("#postList .post-content").slice(0, postsToShow).each(function (index) {
+        $(this).show()
+    })
 
 
+function scroller() {
+    $('#postList').css('height', '129em');
+    setTimeout(function () {
 
+    var scroll = $('#PostFeed').offset().top;
+        $('html, body').animate({
+        scrollTop: scroll
+        }, 400);
+    }, 300);
 
-$('#routeToFirst').click(function(){
-        alert("go to first page");
+    setTimeout(function() {
+        $('#postList').css('height', 'auto');
+    }, 1000);
+}
+
+$('#routeToPrev').click(function () {
+    scroller();
+    $('#paginate'+(pageState-1)).click()
 });
-$('#routeToLast').click(function(){
-        alert("go to last page");
+
+$(' .pages').click(function (e) {
+    scroller();
+    var indexValue = parseInt($(this).attr('id').split('paginate')[1]);
+    pageState = indexValue;
+    $(this).addClass('active-pagination').siblings('.active-pagination').removeClass('active-pagination');
+    $('#postList div.post-content').hide();
+    $("#postList .post-content").slice(indexValue*postsToShow , (indexValue+1)*postsToShow).each(function(index) {
+        if (indexValue < dataLength) {
+            $(this).show()
+        }
+    })
+});
+
+$(' #routeToNext').click(function () {
+    scroller();
+    $('#paginate'+(pageState+1)).click()
 });
 

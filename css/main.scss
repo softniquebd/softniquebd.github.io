@@ -21,12 +21,12 @@ body {
   }
 }
 
-.dropdown:hover > .dropdown-menu {
+.dropdown:hover>.dropdown-menu {
   display: block;
   top: 40px;
 }
 
-.dropdown > .dropdown-toggle:active {
+.dropdown>.dropdown-toggle:active {
   /*Without this, clicking will make it sticky*/
   pointer-events: none;
 }
@@ -178,24 +178,18 @@ nav {
     h3 {
       font-size: 265px;
       line-height: 225px;
-      background-image: -moz-linear-gradient(
-        70deg,
-        #3a2bdc 18%,
-        #8545eb 51%,
-        #cf5ff9 68%
-      );
-      background-image: -webkit-linear-gradient(
-        70deg,
-        #3a2bdc 18%,
-        #8545eb 51%,
-        #cf5ff9 68%
-      );
-      background-image: -ms-linear-gradient(
-        70deg,
-        #3a2bdc 18%,
-        #8545eb 51%,
-        #cf5ff9 68%
-      );
+      background-image: -moz-linear-gradient(70deg,
+          #3a2bdc 18%,
+          #8545eb 51%,
+          #cf5ff9 68%);
+      background-image: -webkit-linear-gradient(70deg,
+          #3a2bdc 18%,
+          #8545eb 51%,
+          #cf5ff9 68%);
+      background-image: -ms-linear-gradient(70deg,
+          #3a2bdc 18%,
+          #8545eb 51%,
+          #cf5ff9 68%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 600;
@@ -214,24 +208,18 @@ nav {
       font-size: 42px;
       line-height: 40px;
       font-weight: 600;
-      background-image: -moz-linear-gradient(
-        70deg,
-        #3a2bdc 18%,
-        #8545eb 51%,
-        #cf5ff9 68%
-      );
-      background-image: -webkit-linear-gradient(
-        70deg,
-        #3a2bdc 18%,
-        #8545eb 51%,
-        #cf5ff9 68%
-      );
-      background-image: -ms-linear-gradient(
-        70deg,
-        #3a2bdc 18%,
-        #8545eb 51%,
-        #cf5ff9 68%
-      );
+      background-image: -moz-linear-gradient(70deg,
+          #3a2bdc 18%,
+          #8545eb 51%,
+          #cf5ff9 68%);
+      background-image: -webkit-linear-gradient(70deg,
+          #3a2bdc 18%,
+          #8545eb 51%,
+          #cf5ff9 68%);
+      background-image: -ms-linear-gradient(70deg,
+          #3a2bdc 18%,
+          #8545eb 51%,
+          #cf5ff9 68%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -395,48 +383,36 @@ nav {
     line-height: 120px;
     font-weight: 700;
     font-family: 'Poppins', sans-serif;
-    background-image: -moz-linear-gradient(
-      70deg,
-      #3a2bdc 18%,
-      #8545eb 51%,
-      #cf5ff9 68%
-    );
-    background-image: -webkit-linear-gradient(
-      70deg,
-      #3a2bdc 18%,
-      #8545eb 51%,
-      #cf5ff9 68%
-    );
-    background-image: -ms-linear-gradient(
-      70deg,
-      #3a2bdc 18%,
-      #8545eb 51%,
-      #cf5ff9 68%
-    );
+    background-image: -moz-linear-gradient(70deg,
+        #3a2bdc 18%,
+        #8545eb 51%,
+        #cf5ff9 68%);
+    background-image: -webkit-linear-gradient(70deg,
+        #3a2bdc 18%,
+        #8545eb 51%,
+        #cf5ff9 68%);
+    background-image: -ms-linear-gradient(70deg,
+        #3a2bdc 18%,
+        #8545eb 51%,
+        #cf5ff9 68%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 35px;
 
     sup {
       font-weight: 500;
-      background-image: -moz-linear-gradient(
-        70deg,
-        #3a2bdc 18%,
-        #8545eb 51%,
-        #cf5ff9 68%
-      );
-      background-image: -webkit-linear-gradient(
-        70deg,
-        #3a2bdc 18%,
-        #8545eb 51%,
-        #cf5ff9 68%
-      );
-      background-image: -ms-linear-gradient(
-        70deg,
-        #3a2bdc 18%,
-        #8545eb 51%,
-        #cf5ff9 68%
-      );
+      background-image: -moz-linear-gradient(70deg,
+          #3a2bdc 18%,
+          #8545eb 51%,
+          #cf5ff9 68%);
+      background-image: -webkit-linear-gradient(70deg,
+          #3a2bdc 18%,
+          #8545eb 51%,
+          #cf5ff9 68%);
+      background-image: -ms-linear-gradient(70deg,
+          #3a2bdc 18%,
+          #8545eb 51%,
+          #cf5ff9 68%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       top: -0.4em;
@@ -568,24 +544,18 @@ nav {
       transition: all 0.2s linear;
 
       span {
-        background-image: -moz-linear-gradient(
-          70deg,
-          #3a2bdc 18%,
-          #8545eb 51%,
-          #cf5ff9 68%
-        );
-        background-image: -webkit-linear-gradient(
-          70deg,
-          #3a2bdc 18%,
-          #8545eb 51%,
-          #cf5ff9 68%
-        );
-        background-image: -ms-linear-gradient(
-          70deg,
-          #3a2bdc 18%,
-          #8545eb 51%,
-          #cf5ff9 68%
-        );
+        background-image: -moz-linear-gradient(70deg,
+            #3a2bdc 18%,
+            #8545eb 51%,
+            #cf5ff9 68%);
+        background-image: -webkit-linear-gradient(70deg,
+            #3a2bdc 18%,
+            #8545eb 51%,
+            #cf5ff9 68%);
+        background-image: -ms-linear-gradient(70deg,
+            #3a2bdc 18%,
+            #8545eb 51%,
+            #cf5ff9 68%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         padding: 0px;
@@ -755,6 +725,7 @@ nav {
 }
 
 @keyframes "bounceComputer" {
+
   0%,
   100% {
     animation-timing-function: ease-in-out;
@@ -788,6 +759,7 @@ nav {
 }
 
 @keyframes "scaleShadow" {
+
   0%,
   100% {
     animation-timing-function: ease-in-out;
@@ -994,62 +966,50 @@ nav {
 
   .circle1 {
     background: rgb(137, 18, 214);
-    background: linear-gradient(
-      0deg,
-      rgb(104, 17, 161) 15%,
-      rgb(116, 87, 221) 63%,
-      rgba(86, 179, 255, 1) 100%
-    );
+    background: linear-gradient(0deg,
+        rgb(104, 17, 161) 15%,
+        rgb(116, 87, 221) 63%,
+        rgba(86, 179, 255, 1) 100%);
   }
 
   .circle2 {
     background: rgb(199, 23, 164);
-    background: linear-gradient(
-      0deg,
-      rgb(146, 16, 120) 14%,
-      rgb(170, 11, 136) 29%,
-      rgba(255, 158, 240, 1) 100%
-    );
+    background: linear-gradient(0deg,
+        rgb(146, 16, 120) 14%,
+        rgb(170, 11, 136) 29%,
+        rgba(255, 158, 240, 1) 100%);
   }
 
   .circle3 {
     background: rgb(15, 172, 112);
-    background: linear-gradient(
-      0deg,
-      rgb(14, 184, 119) 33%,
-      rgba(44, 221, 109, 1) 71%,
-      rgba(191, 255, 158, 1) 98%
-    );
+    background: linear-gradient(0deg,
+        rgb(14, 184, 119) 33%,
+        rgba(44, 221, 109, 1) 71%,
+        rgba(191, 255, 158, 1) 98%);
   }
 
   .circle4 {
     background: rgb(83, 8, 8);
-    background: linear-gradient(
-      0deg,
-      rgba(83, 8, 8, 1) 0%,
-      rgba(153, 71, 32, 1) 58%,
-      rgba(221, 67, 32, 1) 98%
-    );
+    background: linear-gradient(0deg,
+        rgba(83, 8, 8, 1) 0%,
+        rgba(153, 71, 32, 1) 58%,
+        rgba(221, 67, 32, 1) 98%);
   }
 
   .circle5 {
     background: rgb(8, 21, 83);
-    background: linear-gradient(
-      0deg,
-      rgba(8, 21, 83, 1) 0%,
-      rgba(113, 32, 153, 1) 58%,
-      rgba(171, 32, 221, 1) 98%
-    );
+    background: linear-gradient(0deg,
+        rgba(8, 21, 83, 1) 0%,
+        rgba(113, 32, 153, 1) 58%,
+        rgba(171, 32, 221, 1) 98%);
   }
 
   .circle6 {
     background: rgb(43, 83, 8);
-    background: linear-gradient(
-      0deg,
-      rgba(43, 83, 8, 1) 0%,
-      rgba(130, 153, 32, 1) 58%,
-      rgba(166, 221, 32, 1) 98%
-    );
+    background: linear-gradient(0deg,
+        rgba(43, 83, 8, 1) 0%,
+        rgba(130, 153, 32, 1) 58%,
+        rgba(166, 221, 32, 1) 98%);
   }
 }
 
@@ -1620,13 +1580,11 @@ nav {
     margin-right: 1em;
   }
 
-  background: linear-gradient(
-    0deg,
+  background: linear-gradient(0deg,
     rgba(88, 104, 245, 1) 8%,
     rgba(100, 125, 209, 1) 23%,
     rgba(86, 156, 162, 1) 43%,
-    rgba(125, 235, 19, 1) 98%
-  );
+    rgba(125, 235, 19, 1) 98%);
   background-size: cover;
   height: 100vh;
   color: white;
@@ -1700,32 +1658,38 @@ nav {
     font-size: 0.8em;
   }
 }
+
 // start a project
 .icon_rotate {
   animation-name: spin;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
 @keyframes spin {
   from {
     transform: rotateY(0deg);
     moz-transform: rotateY(0deg); //Firefox
     ms-transform: rotateY(0deg); //Microsoft Browsers
   }
+
   to {
     transform: rotateY(360deg);
     moz-transform: rotateY(360deg); //Firefox
     ms-transform: rotateY(360deg); //Microsoft Browsers
   }
 }
+
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotateY(0deg);
   }
+
   to {
     -webkit-transform: rotateY(360deg);
   }
 }
+
 /// layout scss
 .image_scroll {
   background-image: url('https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-about-page-533x1412.jpg');
@@ -1735,6 +1699,7 @@ nav {
   background-position-x: 0;
   background-repeat: no-repeat;
   transition: all 10s ease;
+
   &:hover {
     background-position-y: 100%;
     cursor: pointer;
@@ -1743,6 +1708,7 @@ nav {
 
 .second_element {
   margin-left: 11em;
+
   .text_div {
     h2 {
       font-size: 1.5rem;
