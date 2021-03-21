@@ -10,7 +10,7 @@ for (let index = 0; index < estimatedPages; index++) {
     html += `<a href="#0" class="pages" id="paginate${index}">${index+1}</a>`;
 }
 $(html).insertAfter('#routeToPrev')
-
+if (dataLength < postsToShow) $('#postList').css('height', 'auto')
 $('#postList div.post-content').hide();
 $('#paginate0').addClass('active-pagination').siblings('.active-pagination').removeClass('active-pagination');
 $("#postList .post-content").slice(0, postsToShow).each(function (index) {
@@ -19,6 +19,7 @@ $("#postList .post-content").slice(0, postsToShow).each(function (index) {
 
 
 function scroller() {
+    dataLength < postsToShow ? $('#postList').css('height', 'auto'):
     $('#postList').css('height', '129em');
     setTimeout(function () {
 
