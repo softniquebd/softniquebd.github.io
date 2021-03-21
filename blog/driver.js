@@ -32,6 +32,7 @@ async function loadAllScript() {
 $.getJSON("data.json", async function (info) {
     // VARIABLE SETUP STARTS
     var url = window.location.href.replace('#PostFeed', '');
+    url = url.replace('#0', '');
     var loaction = window.location.href.split("#")[0].split("?")[0];
     var query = url.split("?")[1];
     var data = info.posts;
@@ -73,27 +74,19 @@ $.getJSON("data.json", async function (info) {
     // VARIABLE SETUP ENDS
 
     // FUNCTIONS
-    function tagGenerator(data) {
+    function tagGenerator() {
         var listHtml = '';
-
         data.forEach(function (element, index) {
-
             listHtml += `<li><a rel="tag" href="">${element}</a>
                      </li>`
-
             console.log(element);
-
         })
-
         return listHtml;
-
-
     }
-    function blogdetails(postnum) {
 
+    function blogdetails(postnum) {
         var html = '';
         data.forEach(function (post, index) {
-
             if (postnum == index) {
                 html += `<div class="col-md-12 mt-5 container  banner-img  "> </div>
                 <div class="banner-text">
@@ -108,8 +101,6 @@ $.getJSON("data.json", async function (info) {
                     <div class="cs-author">
                         <figure>
                             <a href="${data[index].gitlink}"><img width="32" height="32"
-                                 
-                                    
                                     srcset="http://1.gravatar.com/avatar/7a20fad302fc2dd4b4649dc5bdb3c463?s=64&amp;d=mm&amp;r=g 2x"
                                     src="${data[index].writerPic}" alt="${index}"></a>
                         </figure>
@@ -189,9 +180,6 @@ $.getJSON("data.json", async function (info) {
         return html;
     }
 
-
-
-
     function renderCategorizedPosts(catName) {
         $(`
           <div class="col-md-12 mt-5 container  banner-img  "> </div>
@@ -204,13 +192,10 @@ $.getJSON("data.json", async function (info) {
         <main>
           <section class="container mt-5">
           <div class="site-content mt-5">
-              <div class="posts" id="posts">${renderselectedCategory(catName)}
-                  <div class="pagination flex-row">
-                      <a href="#0" id="routeToPrev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                      <a href="#0" class="pages">1</a>
-                      <a href="#0" class="pages">2</a>
-                      <a href="#0" class="pages">3</a>
-                      <a href="#0" id="routeToNext"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+              <div class="posts" id="posts"><div id="postList">${renderselectedCategory(catName)}</div>
+                        <div class="pagination flex-row" id="paginationSection">
+                                <a href="#0" id="routeToPrev"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+                                <a href="#0" id="routeToNext"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                   </div>
               </div>
 

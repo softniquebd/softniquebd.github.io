@@ -88,7 +88,7 @@ html {
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#0">Blog</a>
+                    <a class="nav-link" href="#0" onclick="showRoute()">Blog</a>
                 </li>
 
                 <li class="nav-item">
@@ -247,6 +247,9 @@ html {
     <!-- <script src="../js/jquery.filterizr.min.js"></script> -->
     <script>
         $('.nav-link').append("<i class='fa fa-plus'></i>");
+        function showRoute(){
+           if (window.location.href.includes("?")) window.location.href = "/blog/index.html";
+        }
     </script>
     <script src="../blog/driver.js"></script>
 
