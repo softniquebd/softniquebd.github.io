@@ -1809,6 +1809,92 @@ nav .dropdown-menu .dropdown-items:active {
   }
 }
 
+/* our work process css */
+.Accordion {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.Accordion__tabs {
+  max-width: 600px;
+  list-style: none;
+}
+.Accordion__tab {
+  width: 100%;
+}
+.Accordion__tab__headline {
+  border-radius: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(248, 248, 248, 0.5);
+  transition: 0.2s ease all;
+  padding: 20px 15px;
+  cursor: pointer;
+  font-weight: 400;
+}
+.Accordion__tab__headline:hover {
+  background: linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important
+}
+.head-work
+{
+  text-transform: capitalize;
+  font-family: 'Quicksand';
+  font-size: 21px;
+  font-weight: bold;
+}
+.Accordion__tab__headline .icon {
+  padding: 10.5px;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+  position: relative;
+  background:white;
+}
+.Accordion__tab__headline .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 10px;
+  left: 6px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.Accordion__tab__headline .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 10px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+  transition: 0.2s ease all;
+}
+.Accordion__tab__content {
+  overflow: hidden;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  height: 100%;
+  max-height: 0;
+  transition: 0.4s ease all;
+}
+.Accordion__tab__content p{
+  color: dimgrey;
+  font-weight: 600;
+  text-align: justify;
+
+}
+.Accordion__tab--open .Accordion__tab__headline .icon::after {
+  transform: scaleY(0);
+}
+
+
+/* our work process css end */
+
+
 .curvy {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(8%, #5868f5), color-stop(23%, #647dd1), color-stop(43%, #569ca2), color-stop(98%, #7deb13));
   background: linear-gradient(0deg, #5868f5 8%, #647dd1 23%, #569ca2 43%, #7deb13 98%);

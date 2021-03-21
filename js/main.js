@@ -183,5 +183,24 @@ if ($('.screenshot-carousel').length) {
   var x = document.getElementsByTagName('script')[0];
   x.parentNode.insertBefore(s, x);
 })();
-// web project onclick
+// our work process js
+var elementOld = null;
+var openClass = "Accordion__tab--open";
 
+function toggleAccordion(element) {
+  content = element.querySelector(".Accordion__tab__content");
+
+  if (elementOld != null) {
+    elementOld.classList.remove(openClass);
+    contentOld = elementOld.querySelector(".Accordion__tab__content");
+    contentOld.style.maxHeight = "0px";
+  }
+
+  if (elementOld !== element) {
+    element.classList.add(openClass);
+    content.style.maxHeight = content.scrollHeight + "px";
+    elementOld = element;
+  } else {
+    elementOld = null;
+  }
+}
