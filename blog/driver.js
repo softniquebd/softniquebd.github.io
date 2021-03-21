@@ -120,7 +120,7 @@ $.getJSON("data.json", async function (info) {
                     </div>
                     <div class="post-option">
                         <span class="post-date"><i class="cs-color icon-calendar6"></i>${data[index].date}</a></span>
-                        <span class="post-comment"><a href="#"><i class="cs-color icon-chat6"></i>${data[index].category}</a></span>
+                        <span class="post-comment"><a href="${window.location.href.split("#")[0].split("?")[0] + '?cat=' + data[index].category}"><i class="cs-color icon-chat6"></i>${data[index].category}</a></span>
                     </div>
                 </div>
                 <div class="cs-post-option-panel">

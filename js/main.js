@@ -18,7 +18,7 @@ $(window).resize(function () {
 });
 
 /*=============================================== 
-	       Wow Init
+         Wow Init
     ================================================*/
 $(function () {
   new WOW().init();
@@ -26,8 +26,8 @@ $(function () {
 // wow init ends
 
 /*=============================================== 
-	       Parallax Init
-	  ================================================*/
+         Parallax Init
+    ================================================*/
 if ($('#apps_craft_animation').length > 0) {
   $('#apps_craft_animation').parallax({
     scalarX: 10.0,
@@ -63,13 +63,13 @@ $(function () {
     // either html or text
     contentType: 'html',
     // call when done callback function
-    callback: function () {},
+    callback: function () { },
     // starting callback function before each string
-    preStringTyped: function () {},
+    preStringTyped: function () { },
     //callback for every typed string
-    onStringTyped: function () {},
+    onStringTyped: function () { },
     // callback for reset
-    resetCallback: function () {},
+    resetCallback: function () { },
   });
 });
 
@@ -99,13 +99,13 @@ $(function () {
     // either html or text
     contentType: 'html',
     // call when done callback function
-    callback: function () {},
+    callback: function () { },
     // starting callback function before each string
-    preStringTyped: function () {},
+    preStringTyped: function () { },
     //callback for every typed string
-    onStringTyped: function () {},
+    onStringTyped: function () { },
     // callback for reset
-    resetCallback: function () {},
+    resetCallback: function () { },
   });
 });
 // typed.js ends
@@ -184,3 +184,4 @@ if ($('.screenshot-carousel').length) {
   x.parentNode.insertBefore(s, x);
 })();
 // web project onclick
+
