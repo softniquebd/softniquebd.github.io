@@ -1832,10 +1832,12 @@ nav .dropdown-menu .dropdown-items:active {
   cursor: pointer;
   font-weight: 400;
 }
-.Accordion__tab__headline:hover {
+.Accordion__tab__headline:hover{
+  color: white !important;
+ 
   background: linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important
 }
-.Accordion__tab__headline:hover > h4 {
+.Accordion__tab__headline:hover > h4{
   color: white;
 }
 .head-work
@@ -1845,6 +1847,7 @@ nav .dropdown-menu .dropdown-items:active {
   font-size: 21px;
   font-weight: bold;
 }
+
 .Accordion__tab__headline .icon {
   padding: 10.5px;
   display: inline-block;
@@ -1863,7 +1866,7 @@ nav .dropdown-menu .dropdown-items:active {
   left: 6px;
   width: 10px;
   height: 2px;
-  background: currentColor;
+  background: brown;
 }
 .Accordion__tab__headline .icon::after {
   display: block;
@@ -1873,7 +1876,7 @@ nav .dropdown-menu .dropdown-items:active {
   left: 10px;
   width: 2px;
   height: 10px;
-  background: currentColor;
+  background: brown;
   transition: 0.2s ease all;
 }
 .Accordion__tab__content {
@@ -2040,10 +2043,74 @@ nav .dropdown-menu .dropdown-items:active {
   }
 }
 
+/* READ MORE */
+.read-more-state {
+  display: none;
+}
+
+.read-more-wrap {
+  margin: 0;
+}
+
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+
+.read-more-state:checked ~ .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: "Read more";
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: "Read less";
+}
+
+.read-more-trigger {
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  color: #00154f;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+.head-title
+{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.6em;
+}
+.parts
+{
+  background-image: url(../images/parts.png);
+}
+.ppi 
+{
+  background-image: url(../images/webprojectppi.png);
+}
+.resturant 
+{
+  background-image: url(../images/resturant-khaowadaowa.png);
+}
+.office-kothon
+{
+  background-image: url(../images/office-kothon.JPG);
+}
+
 .image_scroll {
-  background-image: url("https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-about-page-533x1412.jpg");
+  border-radius: 1.5em;
+   max-height: 65% !important; 
+  max-width: 100% !important;
+
   width: 50px;
-  height: 300px;
+  height: 400px;
   background-size: 100%;
   background-position-x: 0;
   background-repeat: no-repeat;
@@ -2056,7 +2123,17 @@ nav .dropdown-menu .dropdown-items:active {
   background-position-y: 100%;
   cursor: pointer;
 }
-
+.header
+{
+  font-weight: bolder;
+  color: firebrick
+}
+.project-bio
+{
+  color: dimgrey;
+  font-weight: 600;
+  text-align: initial;
+}
 .second_element {
   margin-left: 11em;
   /* First the Grid */

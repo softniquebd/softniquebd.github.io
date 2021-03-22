@@ -59,11 +59,21 @@
           <!-- Dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
-              Projects
+              Portfolio
             </a>
             <div class="dropdown-menu wow animate__animated animate__flipInX" data-wow-duration="0.9s">
-              <a class="dropdown-item" href="#">Web Projects</a>
-              <a class="dropdown-item" href="#">App Projects</a>
+              <ul>
+                <a class="dropdown-item" href="#">Web Projects</a>
+                <a class="dropdown-item" href="app_projects.html">App Projects</a>
+                <li class=" nav-item dropdown dropdown-item">
+                  <a class="dropdown-toggle" href="#" data-toggle="dropdown">Softwares</a>
+                  <ul class="dropdown-menu" style="top: 0;left: 127px;">
+                    <a class="dropdown-item" href="#"> Second level 1 </a>
+                    <a class="dropdown-item" href="#"> Dropdown item 3 </a>
+                    <a class="dropdown-item" href="#"> Dropdown item 4 </a>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </li>
 
@@ -72,11 +82,11 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="blog/index.html">Blog</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -103,13 +113,17 @@
       <div class="filters">
         <ul class="btn-group row justify-content-center simplefilter d-flex p-4 shadow-lg" style="border-radius: 1em;">
           <li class="btn col-xs-2 m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
-            data-filter="2">Cities</li>
+            data-filter="2">Industrial</li>
           <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
-            data-filter="3">Nature</li>
+            data-filter="3">Education</li>
           <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
-            data-filter="4">Manmade</li>
+            data-filter="4">Travel & Hospitality</li>
           <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
-            data-multifilter="5">Culture</li>
+            data-multifilter="5">E-commerce</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
+            data-multifilter="5">Healthcare</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
+            data-multifilter="5">Entertainment</li>
           <li class="btn col-md-2  m-1 fltr-controls rounded-pill font-weight-bold text-light shadow"
             style="background:orangered" data-filter="all">
             All
@@ -122,182 +136,302 @@
     <!--  layout section-->
 
     <div class="filter-container">
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-0" data-category="4" data-sort="value">
-        <div class="col-md-4 m-0">
+      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto" data-category="2,4"
+        data-sort="value">
+        <div class="col-md-4 m-auto">
 
-          <div class="image_scroll rounded col-md-6 ml-auto"></div>
+          <div class="image_scroll ppi col-md-6"></div>
+
         </div>
-        <div class="second_element col-md-5 ">
+        <div class="second_element col-md-5 m-auto">
           <div class="textdiv">
-            <h2 class="title">Hosting Company Landing Page</h2>
-            <h5>Offer your web hosting services online with style with this vibrant hosting company layout
-              pack. The
-              custom.</h5>
+            <h2 class="title mb-3 head-title">Industrial Web Application -PPI</h2>
+
+
+            <input type="checkbox" class="read-more-state jcf-hidden" id="following-content">
+            <p class="read-more-wrap project-bio ml-3">prime power International is a Sub- Station manufacturing
+              organization in
+              Bangladesh. </p>
+            <!-- read more goes here -->
+            <p class="read-more-target project-bioml-3 ml-3 project-bio ">We design a
+              web application
+              that can grow their business activities, represent their self value, services and selling and buying
+              products and also many other features which help them to esablish a sucessful sign in manufacturing
+              industry.</p>
+            <label for="following-content" class="read-more-trigger ml-3"></label>
 
           </div>
-          <div class="gallery-grid mt-5">
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>About</figcaption>
-            </figure>
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>Service</figcaption>
-            </figure>
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>Contact</figcaption>
+          <div class="details-wrapper mt-3">
+            <div class="row col-12">
+              <div class="col-md-6 col-6">
+                <h6 class="header ">Industry</h6>
+                <p class="project-bio"> Real Estate</p>
+              </div>
+              <div class="col-md-6 col-6">
+                <h6 class="header">Project Duration</h6>
+                <p class="project-bio"> Jun 2020 - July 28 </p>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6 class="header">Technology used</h6>
+                <p class="project-bio">Frontend - HTML5, CSS, VueJS</p>
+                <p class="project-bio"> Backend - PHP Laravel, MySQL</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Client Info</h6>
+                <p class="project-bio">Prime Power International, Gajipur</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Business outcome</h6>
+                <p class="project-bio">Represent company self valu, products and services</p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
           </div>
 
         </div>
+
+
+
       </div>
-      <div class="row wrapper_pack item filtr-item container pt-5 col-12 mx-0 " data-category="2,4" data-sort="value">
-        <div class="col-md-4 m-0">
-          <div class="image_scroll rounded col-md-6 ml-auto"></div>
+      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto" data-category="4" data-sort="value">
+        <div class="col-md-4 m-auto">
+
+          <div class="image_scroll resturant col-md-6"></div>
+
         </div>
-        <div class="second_element col-md-5 ">
+        <div class="second_element col-md-5 m-auto">
           <div class="textdiv">
-            <h2 class="title">Hosting Company Landing Page</h2>
-            <h5>Offer your web hosting services online with style with this vibrant hosting company layout
-              pack. The
-              custom.</h5>
+            <h2 class="title mb-3 head-title">Restaurant Web Application - Khaowa dawa </h2>
+
+
+            <input type="checkbox" class="read-more-state jcf-hidden" id="khaowa-content">
+            <p class="read-more-wrap project-bio ml-3">Khaowa-dawa is a famous resturant in Mirpur.They can offer
+              various dishes all
+              over the world. </p>
+            <!-- read more goes here -->
+            <p class="read-more-target project-bioml-3 ml-3 project-bio ">We have include so many features on this
+              application to make it more user-friendly to the
+              customers. Customer can order food, see the latest offer, todays hot dishes, price-plan, reserve table,
+              rating and review of each dishes, food blog , collection of various dishes in a organized category and
+              many more features.</p>
+            <label for="khaowa-content" class="read-more-trigger ml-3"></label>
 
           </div>
-          <div class="gallery-grid mt-5">
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>About</figcaption>
-            </figure>
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>Service</figcaption>
-            </figure>
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>Contact</figcaption>
+          <div class="details-wrapper mt-3">
+            <div class="row col-12">
+              <div class="col-md-6 col-6">
+                <h6 class="header ">Industry</h6>
+                <p class="project-bio"> Food service</p>
+              </div>
+              <div class="col-md-6 col-6">
+                <h6 class="header">Project Duration</h6>
+                <p class="project-bio"> August 2020 - September 28</p>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6 class="header">Technology used</h6>
+                <p class="project-bio">Frontend - HTML 5, CSS, Sass, Bootstrap-5, JS</p>
+                <p class="project-bio"> Backend - PHP Laravel, MySQL</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Client Info</h6>
+                <p class="project-bio">Khaowa-daowa Restaurant, Mirpur-2</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Business outcome</h6>
+                <p class="project-bio">Represent company self valu, products and services</p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
           </div>
 
         </div>
+
+
+
       </div>
-      <div class="row wrapper_pack item filtr-item container pt-5 col-12 mx-0" data-category="3" data-sort="value">
-        <div class="col-md-4 m-0">
-          <div class="image_scroll rounded col-md-6 ml-auto"></div>
+      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto" data-category="4" data-sort="value">
+        <div class="col-md-4 m-auto">
+
+          <div class="image_scroll office-kothon col-md-6"></div>
+
         </div>
-        <div class="second_element col-md-5 ">
+        <div class="second_element col-md-5 m-auto">
           <div class="textdiv">
-            <h2 class="title">Hosting Company Landing Page</h2>
-            <h5>Offer your web hosting services online with style with this vibrant hosting company layout
-              pack. The
-              custom.</h5>
+            <h2 class="title mb-3 head-title">Office kothon -a busines communication tool </h2>
+
+
+            <input type="checkbox" class="read-more-state jcf-hidden" id="office-content">
+            <p class="read-more-wrap project-bio ml-3">Office kothon is a business communication tool.It can manage the
+              internal
+              communication in any organization.</p>
+            <!-- read more goes here -->
+            <p class="read-more-target project-bioml-3 ml-3 project-bio ">It provides many features like authentication
+              of admin and user,live
+              notice update, notice priority,files and reminder for any notice, live weather info and event calender,
+              live chat with office member, assign task to any one, give feedback, employee activities track, user
+              profile settings, dark and light mode features and an interactive admin panel to manage all of this
+              record and many others features also.</p>
+            <label for="office-content" class="read-more-trigger ml-3"></label>
 
           </div>
-          <div class="gallery-grid mt-5">
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>About</figcaption>
-            </figure>
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>About</figcaption>
-            </figure>
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>About</figcaption>
-            </figure>
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>About</figcaption>
-            </figure>
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>Service</figcaption>
-            </figure>
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>Contact</figcaption>
-            </figure>
+          <div class="details-wrapper mt-3">
+            <div class="row col-12">
+              <div class="col-md-6 col-6">
+                <h6 class="header ">Industry</h6>
+                <p class="project-bio"> Industry Specific</p>
+              </div>
+              <div class="col-md-6 col-6">
+                <h6 class="header">Project Duration</h6>
+                <p class="project-bio"> October 2020 - January 6,2021</p>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6 class="header">Technology used</h6>
+                <p class="project-bio">Frontend - HTML 5, CSS, Sass, Bootstrap-5, JS</p>
+                <p class="project-bio"> Backend - Firebase, Firestore</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Client Info</h6>
+                <p class="project-bio">Available For Any Business Organization</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Business outcome</h6>
+                <p class="project-bio">Solve the Internal Communication In Any Business Field</p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
           </div>
 
         </div>
+
+
+
       </div>
-      <div class="row wrapper_pack item filtr-item container pt-5 col-12 mx-0" data-category="2,4" data-sort="value">
-        <div class="col-md-4 m-0">
-          <div class="image_scroll rounded col-md-6 ml-auto"></div>
+      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto" data-category="4" data-sort="value">
+        <div class="col-md-4 m-auto">
+
+          <div class="image_scroll parts col-md-6"></div>
+
         </div>
-        <div class="second_element col-md-5 ">
+        <div class="second_element col-md-5 m-auto">
           <div class="textdiv">
-            <h2 class="title">Hosting Company Landing Page</h2>
-            <h5>Offer your web hosting services online with style with this vibrant hosting company layout
-              pack. The
-              custom.</h5>
+            <h2 class="title mb-3 head-title">Ecommerce Application - Zaman Auto </h2>
+
+
+            <input type="checkbox" class="read-more-state jcf-hidden" id="zaman-content">
+            <p class="read-more-wrap project-bio ml-3">Zaman Auto is one of the most popular vehicle parts selling
+              company in Bangladesh.</p>
+            <!-- read more goes here -->
+            <p class="read-more-target project-bioml-3 ml-3 project-bio ">They
+              sell filter elements, brakes, batteries, car-tyres, lubricants, spark plugs, horn, wiper blade and many
+              other
+              vehicle parts.Customer can buy those parts and also can submit their issue for any parts, step by step
+              tutorial for each and every parts, multiple payment gateway, home service and many more features.</p>
+            <label for="zaman-content" class="read-more-trigger ml-3"></label>
 
           </div>
-          <div class="gallery-grid mt-5">
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>About</figcaption>
-            </figure>
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>Service</figcaption>
-            </figure>
-            <figure class="gallery-frame">
-              <img class="gallery-img"
-                src="https://www.elegantthemes.com/layouts/wp-content/uploads/2018/08/hosting-company-blog-page-533x1231.jpg"
-                alt="symbol image" title="symbol image">
-              <figcaption>Contact</figcaption>
+          <div class="details-wrapper mt-3">
+            <div class="row col-12">
+              <div class="col-md-6 col-6">
+                <h6 class="header ">Industry</h6>
+                <p class="project-bio">E-Commerce</p>
+              </div>
+              <div class="col-md-6 col-6">
+                <h6 class="header">Project Duration</h6>
+                <p class="project-bio"> April 2020 - March 6</p>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6 class="header">Technology used</h6>
+                <p class="project-bio">Frontend - React</p>
+                <p class="project-bio"> Backend - ExpressJs, NodeJs, mongoDB</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Client Info</h6>
+                <p class="project-bio">Zaman Auto, Uttara</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Business outcome</h6>
+                <p class="project-bio">Make business more efficient in online platform</p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
           </div>
 
         </div>
+
+
+
       </div>
+
     </div>
 
-    <!-- footer section start -->
-    <div class="curvy" style="background-size: cover; height: auto">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="white" fill-opacity="1"
-          d="M0,96L60,122.7C120,149,240,203,360,218.7C480,235,600,213,720,170.7C840,128,960,64,1080,48C1200,32,1320,64,1380,80L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-        </path>
-      </svg>
-      <div class="container">
-        <div class="d-flex justify-content-around position-relative" onclick="start_project.html">
-          <hr class="line" />
-          <div class="d-flex justify-content-center align-items-center m-auto position-relative">
-            <a href="start_project.html" class="icon-wrapper text-light position-absolute text-center"
-              style="z-index: 1">
-              <div>
-                <strong>START <br />A PROJECT</strong>
-              </div>
-            </a>
-            <div class="position-absolute" style="
+
+  </div>
+
+  <!-- footer section start -->
+  <div class="curvy" style="background-size: cover; height: auto">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="white" fill-opacity="1"
+        d="M0,96L60,122.7C120,149,240,203,360,218.7C480,235,600,213,720,170.7C840,128,960,64,1080,48C1200,32,1320,64,1380,80L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+      </path>
+    </svg>
+    <div class="container">
+      <div class="d-flex justify-content-around position-relative" onclick="start_project.html">
+        <hr class="line" />
+        <div class="d-flex justify-content-center align-items-center m-auto position-relative">
+          <a href="start_project.html" class="icon-wrapper text-light position-absolute text-center" style="z-index: 1">
+            <div>
+              <strong>START <br />A PROJECT</strong>
+            </div>
+          </a>
+          <div class="position-absolute" style="
                   z-index: 0;
                   border-radius: 100%;
                   background: #4d4a5c;
@@ -305,90 +439,90 @@
                   height: 134px;
                   width: 134px;
                 "></div>
-          </div>
-          <hr class="line" />
         </div>
-        <div class="mt-5 pt-3 d-flex justify-content-around position-relative">
-          <ul class="list-inline">
-            <a href="#0" class="list-inline-item">
-              <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+        <hr class="line" />
+      </div>
+      <div class="mt-5 pt-3 d-flex justify-content-around position-relative">
+        <ul class="list-inline">
+          <a href="#0" class="list-inline-item">
+            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+          </a>
+          <a href="#0" class="list-inline-item">
+            <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+          </a>
+          <a href="#0" class="list-inline-item">
+            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+          </a>
+          <a href="softniquebd@gmail.com" class="list-inline-item">
+            <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+          </a>
+        </ul>
+      </div>
+      <div class="d-flex flex-column flex-md-row">
+        <div class="position-relative col-12 col-md-4">
+          <div class="d-flex footercard">
+            <img src="images/alifoot.png" alt="" height="65px" />
+            <div class="ml-2 mt-2 col-xs-5">
+              <strong>
+                <h6 class="font-weight-bold" style="color: #81fa72">
+                  MOHAMMAD ALI SHUVO
+                </h6>
+              </strong>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolor, blanditiis?
+              </p>
+            </div>
+          </div>
+          <div class="d-flex footercard">
+            <img src="images/nsdfoot.png" alt="" height="65px" />
+            <div class="ml-2 mt-2">
+              <strong>
+                <h6 class="font-weight-bold" style="color: #81fa72">
+                  NOUSHAD BHUIYAN
+                </h6>
+              </strong>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolor, blanditiis?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 col-md-2 m-md-0 m-auto text-center">
+          <ul class="list-unstyled">
+            <a href="#0" class="list-item text-light">
+              <li class="mb-2">PROJECT</li>
             </a>
-            <a href="#0" class="list-inline-item">
-              <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+            <a href="#0" class="list-item text-light">
+              <li class="mb-2">SERVICES</li>
             </a>
-            <a href="#0" class="list-inline-item">
-              <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-            </a>
-            <a href="softniquebd@gmail.com" class="list-inline-item">
-              <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+            <a href="#0" class="list-item text-light">
+              <li class="mb-2">CONTACT</li>
             </a>
           </ul>
         </div>
-        <div class="d-flex flex-column flex-md-row">
-          <div class="position-relative col-12 col-md-4">
-            <div class="d-flex footercard">
-              <img src="images/alifoot.png" alt="" height="65px" />
-              <div class="ml-2 mt-2 col-xs-5">
-                <strong>
-                  <h6 class="font-weight-bold" style="color: #81fa72">
-                    MOHAMMAD ALI SHUVO
-                  </h6>
-                </strong>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolor, blanditiis?
-                </p>
-              </div>
-            </div>
-            <div class="d-flex footercard">
-              <img src="images/nsdfoot.png" alt="" height="65px" />
-              <div class="ml-2 mt-2">
-                <strong>
-                  <h6 class="font-weight-bold" style="color: #81fa72">
-                    NOUSHAD BHUIYAN
-                  </h6>
-                </strong>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolor, blanditiis?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-4 col-md-2 m-md-0 m-auto text-center">
-            <ul class="list-unstyled">
-              <a href="#0" class="list-item text-light">
-                <li class="mb-2">PROJECT</li>
-              </a>
-              <a href="#0" class="list-item text-light">
-                <li class="mb-2">SERVICES</li>
-              </a>
-              <a href="#0" class="list-item text-light">
-                <li class="mb-2">CONTACT</li>
-              </a>
-            </ul>
-          </div>
-          <div class="vl d-none d-md-block"></div>
+        <div class="vl d-none d-md-block"></div>
 
-          <div class="col-12 col-md-3 m-md-0 m-auto text-center">
-            <h6>VISIT OUR<br />PERSONAL PORTFOLIO</h6>
-            <ul class="list-unstyled text-center">
-              <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
-                <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                <li class="mb-2 text-capitalize">shuvo's portfolio</li>
-              </a>
-              <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
-                <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                <li class="mb-2 text-capitalize">noushad's portfolio</li>
-              </a>
-            </ul>
-          </div>
-          <div class="col-1 position-inherit">
-            <img class="logofooter" src="./images/softnique-footer.png" alt="" />
-          </div>
+        <div class="col-12 col-md-3 m-md-0 m-auto text-center">
+          <h6>VISIT OUR<br />PERSONAL PORTFOLIO</h6>
+          <ul class="list-unstyled text-center">
+            <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              <li class="mb-2 text-capitalize">shuvo's portfolio</li>
+            </a>
+            <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
+              <i class="fa fa-paper-plane" aria-hidden="true"></i>
+              <li class="mb-2 text-capitalize">noushad's portfolio</li>
+            </a>
+          </ul>
+        </div>
+        <div class="col-1 position-inherit">
+          <img class="logofooter" src="./images/softnique-footer.png" alt="" />
         </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 
