@@ -1835,6 +1835,9 @@ nav .dropdown-menu .dropdown-items:active {
 .Accordion__tab__headline:hover {
   background: linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important
 }
+.Accordion__tab__headline:hover > h4 {
+  color: white;
+}
 .head-work
 {
   text-transform: capitalize;
