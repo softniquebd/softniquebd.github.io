@@ -2103,6 +2103,14 @@ nav .dropdown-menu .dropdown-items:active {
 {
   background-image: url(../images/office-kothon.JPG);
 }
+.padma
+{
+  background-image: url(../images/resort.png);
+}
+.hospital
+{
+  background-image: url(../images/hospital.png);
+}
 
 .image_scroll {
   border-radius: 1.5em;
