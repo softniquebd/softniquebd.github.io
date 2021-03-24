@@ -1814,13 +1814,16 @@ nav .dropdown-menu .dropdown-items:active {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
 .Accordion__tabs {
   max-width: 600px;
   list-style: none;
 }
+
 .Accordion__tab {
   width: 100%;
 }
+
 .Accordion__tab__headline {
   border-radius: 2em;
   display: flex;
@@ -1832,16 +1835,18 @@ nav .dropdown-menu .dropdown-items:active {
   cursor: pointer;
   font-weight: 400;
 }
-.Accordion__tab__headline:hover{
+
+.Accordion__tab__headline:hover {
   color: white !important;
- 
+
   background: linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important
 }
-.Accordion__tab__headline:hover > h4{
+
+.Accordion__tab__headline:hover>h4 {
   color: white;
 }
-.head-work
-{
+
+.head-work {
   text-transform: capitalize;
   font-family: 'Quicksand';
   font-size: 21px;
@@ -1856,8 +1861,9 @@ nav .dropdown-menu .dropdown-items:active {
   border: 1px solid;
   border-radius: 22px;
   position: relative;
-  background:white;
+  background: white;
 }
+
 .Accordion__tab__headline .icon::before {
   display: block;
   position: absolute;
@@ -1868,6 +1874,7 @@ nav .dropdown-menu .dropdown-items:active {
   height: 2px;
   background: brown;
 }
+
 .Accordion__tab__headline .icon::after {
   display: block;
   position: absolute;
@@ -1879,6 +1886,7 @@ nav .dropdown-menu .dropdown-items:active {
   background: brown;
   transition: 0.2s ease all;
 }
+
 .Accordion__tab__content {
   overflow: hidden;
   padding: 0px 15px;
@@ -1887,12 +1895,14 @@ nav .dropdown-menu .dropdown-items:active {
   max-height: 0;
   transition: 0.4s ease all;
 }
-.Accordion__tab__content p{
+
+.Accordion__tab__content p {
   color: dimgrey;
   font-weight: 600;
   text-align: justify;
 
 }
+
 .Accordion__tab--open .Accordion__tab__headline .icon::after {
   transform: scaleY(0);
 }
@@ -2059,17 +2069,17 @@ nav .dropdown-menu .dropdown-items:active {
   transition: 0.25s ease;
 }
 
-.read-more-state:checked ~ .read-more-target {
+.read-more-state:checked~.read-more-target {
   opacity: 1;
   font-size: inherit;
   max-height: 999em;
 }
 
-.read-more-state ~ .read-more-trigger:before {
+.read-more-state~.read-more-trigger:before {
   content: "Read more";
 }
 
-.read-more-state:checked ~ .read-more-trigger:before {
+.read-more-state:checked~.read-more-trigger:before {
   content: "Read less";
 }
 
@@ -2081,27 +2091,31 @@ nav .dropdown-menu .dropdown-items:active {
   font-size: 0.9em;
   text-decoration: underline;
 }
-.head-title
-{
+
+.head-title {
   text-align: center;
   text-transform: capitalize;
   font-size: 1.6em;
 }
-.parts
-{
+
+.parts {
   background-image: url(../images/parts.png);
 }
-.ppi 
-{
+
+.ppi {
   background-image: url(../images/webprojectppi.png);
 }
-.resturant 
-{
+
+.resturant {
   background-image: url(../images/resturant-khaowadaowa.png);
 }
-.office-kothon
-{
-  background-image: url(../images/office-kothon.JPG);
+
+.office-kothon {
+  background-image: url(../images/office-kothon-demo.JPG);
+}
+
+.metaliod {
+  background-image: url(../images/industrial-theme1-demo.png);
 }
 .padma
 {
@@ -2114,7 +2128,7 @@ nav .dropdown-menu .dropdown-items:active {
 
 .image_scroll {
   border-radius: 1.5em;
-   max-height: 65% !important; 
+  max-height: 65% !important;
   max-width: 100% !important;
 
   width: 50px;
@@ -2131,17 +2145,18 @@ nav .dropdown-menu .dropdown-items:active {
   background-position-y: 100%;
   cursor: pointer;
 }
-.header
-{
+
+.header {
   font-weight: bolder;
   color: firebrick
 }
-.project-bio
-{
+
+.project-bio {
   color: dimgrey;
   font-weight: 600;
   text-align: initial;
 }
+
 .second_element {
   margin-left: 11em;
   /* First the Grid */
