@@ -11,7 +11,38 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
   <title>Web projects</title>
 </head>
+<style>
+  
+/* filter css */
 
+.filterDiv {
+  /* display: none; */
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  /* Hide the element content, while height = 0 */
+  height: 0;
+  opacity: 0;
+  transition: height 0ms 400ms, opacity 400ms 0ms;
+}
+
+
+.show {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  /* display: block; */
+  height: auto;
+  opacity: 1;
+  transition: height 0ms 0ms, opacity 600ms 0ms;
+
+}
+</style>
 <body data-spy="scroll" data-target=".navbar" data-offset="100" style="overflow-x: hidden;">
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
@@ -111,21 +142,21 @@
     <!-- filterize part -->
     <div class="container">
       <div class="filters">
-        <ul class="btn-group row justify-content-center simplefilter d-flex p-4 shadow-lg" style="border-radius: 1em;">
-          <li class="btn col-xs-2 m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
-            data-filter="2">Industrial</li>
-          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
-            data-filter="3">Education</li>
-          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
-            data-filter="4">Travel & Hospitality</li>
-          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
-            data-multifilter="5">E-commerce</li>
-          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
-            data-multifilter="5">Healthcare</li>
-          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow" style="background: #FFEEFF;"
-            data-multifilter="5">Entertainment</li>
-          <li class="btn col-md-2  m-1 fltr-controls rounded-pill font-weight-bold text-light shadow"
-            style="background:orangered" data-filter="all">
+        <ul class="btn-group row justify-content-center simplefilter d-flex p-4 shadow-lg" id="myBtnContainer" style="border-radius: 1em;">
+          <li class="btn col-xs-2 m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
+            onclick="filterSelection('Industrial')">Industrial</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
+            onclick="filterSelection('Education')">Education</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
+            onclick="filterSelection('Travel&Hospitality')">Travel & Hospitality</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
+            onclick="filterSelection('Ecommerce')">E-commerce</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
+            onclick="filterSelection('Healthcare')">Healthcare</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
+            onclick="filterSelection('Entertainment')">Entertainment</li>
+          <li class="btn col-md-2  m-1 fltr-controls rounded-pill font-weight-bold text-light shadow filtrBtn"
+            style="background:orangered" onclick="filterSelection('all')" >
             All
           </li>
         </ul>
@@ -136,8 +167,7 @@
     <!--  layout section-->
 
     <div class="filter-container">
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto" data-category="2,4"
-        data-sort="value">
+      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto filterDiv Industrial">
         <div class="col-md-4 ml-auto my-auto">
 
           <div class="image_scroll ppi col-md-6"></div>
@@ -205,7 +235,7 @@
 
 
       </div>
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto" data-category="4" data-sort="value">
+      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto filterDiv Education">
         <div class="col-md-4 ml-auto my-auto">
 
           <div class="image_scroll resturant col-md-6"></div>
@@ -273,7 +303,7 @@
 
 
       </div>
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto" data-category="3" data-sort="value">
+      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto filterDiv Ecommerce">
         <div class="col-md-4 ml-auto my-auto">
 
           <div class="image_scroll parts col-md-6"></div>
@@ -340,75 +370,7 @@
 
 
       </div>
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto" data-category="4" data-sort="value">
-        <div class="col-md-4 ml-auto my-auto">
-
-          <div class="image_scroll office-kothon col-md-6"></div>
-
-        </div>
-        <div class="second_element col-md-5 m-auto">
-          <div class="textdiv">
-            <h2 class="title mb-3 head-title">Office kothon -a busines communication tool </h2>
-
-
-            <input type="checkbox" class="read-more-state jcf-hidden" id="office-content">
-            <p class="read-more-wrap project-bio ml-3">Office kothon is a business communication tool.It can manage the
-              internal
-              communication in any organization.</p>
-            <!-- read more goes here -->
-            <p class="read-more-target project-bioml-3 ml-3 project-bio ">It provides many features like authentication
-              of admin and user,live notice update, notice priority,files and reminder for any notice, live weather info and event calender,
-              live chat with office member, assign task to any one, give feedback, employee activities track, user
-              profile settings, dark and light mode features and an interactive admin panel to manage all of this
-              record and many others features also.</p>
-            <label for="office-content" class="read-more-trigger ml-3"></label>
-
-          </div>
-          <div class="details-wrapper mt-3">
-            <div class="row col-12">
-              <div class="col-md-6 col-6">
-                <h6 class="header ">Industry</h6>
-                <p class="project-bio"> Industry Specific</p>
-              </div>
-              <div class="col-md-6 col-6">
-                <h6 class="header">Project Duration</h6>
-                <p class="project-bio"> October 2020 - January 6,2021</p>
-              </div>
-              <div class="col-6 col-md-6">
-                <h6 class="header">Technology used</h6>
-                <p class="project-bio">Frontend - HTML 5, CSS, Sass, Bootstrap-5, JS</p>
-                <p class="project-bio"> Backend - Firebase, Firestore</p>
-              </div>
-
-              <div class="col-6 col-md-6">
-                <h6 class="header">Client Info</h6>
-                <p class="project-bio">Available For Any Business Organization</p>
-              </div>
-
-              <div class="col-6 col-md-6">
-                <h6 class="header">Business outcome</h6>
-                <p class="project-bio">Solve the Internal Communication In Any Business Field</p>
-              </div>
-
-            </div>
-
-
-
-
-
-
-
-
-
-
-          </div>
-
-        </div>
-
-
-
-      </div>
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto" data-category="1" data-sort="value">
+      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto filterDiv Industrial">
         <div class="col-md-4 ml-auto my-auto">
 
           <div class="image_scroll metaliod col-md-6"></div>
@@ -594,9 +556,9 @@
 
 
 <script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/jquery.filterizr.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script src="./js/main.js"></script>
+<!-- <script src="./js/main.js"></script> -->
+<script src="./js/filterCustom.js"></script>
 
 </html>
