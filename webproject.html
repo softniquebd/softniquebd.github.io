@@ -7,42 +7,46 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="icon" href="./images/icon.png" sizes="16x16" />
   <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/owl.css" />
+  <link rel="stylesheet" href="./css/main.scss" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
   <title>Web projects</title>
 </head>
 <style>
-  
-/* filter css */
+  /* filter css */
 
-.filterDiv {
-  /* display: none; */
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  overflow: hidden;
-  /* Hide the element content, while height = 0 */
-  height: 0;
-  opacity: 0;
-  transition: height 0ms 400ms, opacity 400ms 0ms;
-}
+  .filterDiv {
+    /* display: none; */
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    /* Hide the element content, while height = 0 */
+    height: 0;
+    opacity: 0;
+    transition: height 0ms 400ms, opacity 400ms 0ms;
+  }
 
 
-.show {
-  transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  /* display: block; */
-  height: 530px;
-  opacity: 1;
-  transition: height 0ms 0ms, opacity 600ms 0ms;
+  .show {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    /* display: block; */
+    height: 530px;
+    opacity: 1;
+    transition: height 0ms 0ms, opacity 600ms 0ms;
 
-}
+  }
 </style>
+
+
 <body data-spy="scroll" data-target=".navbar" data-offset="100" style="overflow-x: hidden;">
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
@@ -84,7 +88,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent1">
         <ul class="nav navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
+            <a class="nav-link active" href="#">Home</a>
           </li>
 
           <!-- Dropdown -->
@@ -94,7 +98,7 @@
             </a>
             <div class="dropdown-menu wow animate__animated animate__flipInX" data-wow-duration="0.9s">
               <ul>
-                <a class="dropdown-item" href="#">Web Projects</a>
+                <a class="dropdown-item" href="webproject.html">Web Projects</a>
                 <a class="dropdown-item" href="app_projects.html">App Projects</a>
                 <li class=" nav-item dropdown dropdown-item">
                   <a class="dropdown-toggle" href="#" data-toggle="dropdown">Softwares</a>
@@ -124,6 +128,7 @@
       <!-- Links -->
     </nav>
 
+
     <!-- web svg section  -->
     <div class="row pt-5" style="margin-top: 6em;">
       <div class="col-12 col-lg-6 mb-5 mb-lg-0 pt-5 mt-5 heading">
@@ -142,21 +147,22 @@
     <!-- filterize part -->
     <div class="container">
       <div class="filters">
-        <ul class="btn-group row justify-content-center simplefilter d-flex p-4 shadow-lg" id="myBtnContainer" style="border-radius: 1em;">
-          <li class="btn col-xs-2 m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
-            onclick="filterSelection('Industrial')">Industrial</li>
-          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
-            onclick="filterSelection('Education')">Education</li>
-          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
-            onclick="filterSelection('Travel&Hospitality')">Travel & Hospitality</li>
-          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
-            onclick="filterSelection('Ecommerce')">E-commerce</li>
-          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
-            onclick="filterSelection('Healthcare')">Healthcare</li>
-          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn" style="background: #FFEEFF;"
-            onclick="filterSelection('Entertainment')">Entertainment</li>
+        <ul class="btn-group row justify-content-center simplefilter d-flex p-4 shadow-lg" id="myBtnContainer"
+          style="border-radius: 1em;">
+          <li class="btn col-xs-2 m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn"
+            style="background: #FFEEFF;" onclick="filterSelection('Industrial')">Industrial</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn"
+            style="background: #FFEEFF;" onclick="filterSelection('Education')">Education</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn"
+            style="background: #FFEEFF;" onclick="filterSelection('Travel&Hospitality')">Travel & Hospitality</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn"
+            style="background: #FFEEFF;" onclick="filterSelection('Ecommerce')">E-commerce</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn"
+            style="background: #FFEEFF;" onclick="filterSelection('Healthcare')">Healthcare</li>
+          <li class="btn col-xs-2  m-1 fltr-controls rounded-pill font-weight-bold shadow filtrBtn"
+            style="background: #FFEEFF;" onclick="filterSelection('Entertainment')">Entertainment</li>
           <li class="btn col-md-2  m-1 fltr-controls rounded-pill font-weight-bold text-light shadow filtrBtn"
-            style="background:orangered" onclick="filterSelection('all')" >
+            style="background:orangered" onclick="filterSelection('all')">
             All
           </li>
         </ul>
@@ -167,7 +173,7 @@
     <!--  layout section-->
 
     <div class="filter-container">
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto filterDiv Industrial">
+      <div class="row wrapper_pack item filtr-item container   col-12 mx-auto filterDiv Industrial">
         <div class="col-md-4 ml-auto my-auto">
 
           <div class="image_scroll ppi col-md-6"></div>
@@ -235,7 +241,7 @@
 
 
       </div>
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto filterDiv Education">
+      <div class="row wrapper_pack item filtr-item container   col-12 mx-auto filterDiv Travel&Hospitality">
         <div class="col-md-4 ml-auto my-auto">
 
           <div class="image_scroll resturant col-md-6"></div>
@@ -303,7 +309,7 @@
 
 
       </div>
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto filterDiv Ecommerce">
+      <div class="row wrapper_pack item filtr-item container   col-12 mx-auto filterDiv Ecommerce">
         <div class="col-md-4 ml-auto my-auto">
 
           <div class="image_scroll parts col-md-6"></div>
@@ -370,7 +376,76 @@
 
 
       </div>
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto filterDiv Industrial">
+      <div class="row wrapper_pack item filtr-item container filterDiv  col-12 mx-auto">
+        <div class="col-md-4 ml-auto my-auto">
+
+          <div class="image_scroll office-kothon col-md-6"></div>
+
+        </div>
+        <div class="second_element col-md-5 m-auto">
+          <div class="textdiv">
+            <h2 class="title mb-3 head-title">Office kothon -a busines communication tool </h2>
+
+
+            <input type="checkbox" class="read-more-state jcf-hidden" id="office-content">
+            <p class="read-more-wrap project-bio ml-3">Office kothon is a business communication tool.It can manage the
+              internal
+              communication in any organization.</p>
+            <!-- read more goes here -->
+            <p class="read-more-target project-bioml-3 ml-3 project-bio ">It provides many features like authentication
+              of admin and user,live notice update, notice priority,files and reminder for any notice, live weather info
+              and event calender,
+              live chat with office member, assign task to any one, give feedback, employee activities track, user
+              profile settings, dark and light mode features and an interactive admin panel to manage all of this
+              record and many others features also.</p>
+            <label for="office-content" class="read-more-trigger ml-3"></label>
+
+          </div>
+          <div class="details-wrapper mt-3">
+            <div class="row col-12">
+              <div class="col-md-6 col-6">
+                <h6 class="header ">Industry</h6>
+                <p class="project-bio"> Industry Specific</p>
+              </div>
+              <div class="col-md-6 col-6">
+                <h6 class="header">Project Duration</h6>
+                <p class="project-bio"> October 2020 - January 6,2021</p>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6 class="header">Technology used</h6>
+                <p class="project-bio">Frontend - HTML 5, CSS, Sass, Bootstrap-5, JS</p>
+                <p class="project-bio"> Backend - Firebase, Firestore</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Client Info</h6>
+                <p class="project-bio">Available For Any Business Organization</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Business outcome</h6>
+                <p class="project-bio">Solve the Internal Communication In Any Business Field</p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <div class="row wrapper_pack item filtr-item container filterDiv   col-12 mx-auto Ecommerce">
         <div class="col-md-4 ml-auto my-auto">
 
           <div class="image_scroll metaliod col-md-6"></div>
@@ -378,7 +453,7 @@
         </div>
         <div class="second_element col-md-5 m-auto">
           <div class="textdiv">
-          <h2 class="title mb-3 head-title">Ecommerce Application - Zaman Auto </h2>
+            <h2 class="title mb-3 head-title">Ecommerce Application - Zaman Auto </h2>
 
 
             <input type="checkbox" class="read-more-state jcf-hidden" id="zaman-content">
@@ -437,8 +512,8 @@
 
 
       </div>
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto" data-category="4" data-sort="value">
-        <div class="col-md-4 m-auto">
+      <div class="row wrapper_pack item filtr-item container filterDiv  col-12 mx-auto Travel&Hospitality">
+        <div class="col-md-4 ml-auto my-auto">
 
           <div class="image_scroll padma col-md-6"></div>
 
@@ -506,8 +581,75 @@
 
 
       </div>
-      <div class="row wrapper_pack item filtr-item container  pt-5 col-12 mx-auto" data-category="4" data-sort="value">
-        <div class="col-md-4 m-auto">
+      <div class="row wrapper_pack item filtr-item container filterDiv   col-12 mx-auto Industrial">
+        <div class="col-md-4 ml-auto my-auto">
+
+          <div class="image_scroll civil col-md-6"></div>
+
+        </div>
+        <div class="second_element col-md-5 m-auto">
+          <div class="textdiv">
+            <h2 class="title mb-3 head-title">Industrial Web Application - TrackPach </h2>
+
+
+            <input type="checkbox" class="read-more-state jcf-hidden" id="trackpach-content">
+            <p class="read-more-wrap project-bio ml-3">TrackPach is a startup company , they provide industrial solution
+              in different sectors.</p>
+            <!-- read more goes here -->
+            <p class="read-more-target project-bioml-3 ml-3 project-bio ">
+              They have higly skilled enginner in different sectors to provide best solution.They Provide Maintenance
+              Services, Petroleum Services, Agricultural Processing, Material Enginnering and
+              many more.
+            </p>
+            <label for="trackpach-content" class="read-more-trigger ml-3"></label>
+
+          </div>
+          <div class="details-wrapper mt-3">
+            <div class="row col-12">
+              <div class="col-md-6 col-6">
+                <h6 class="header ">Industry</h6>
+                <p class="project-bio">Real Estate</p>
+              </div>
+              <div class="col-md-6 col-6">
+                <h6 class="header">Project Duration</h6>
+                <p class="project-bio"> June 2019 - August 10</p>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6 class="header">Technology used</h6>
+                <p class="project-bio">Frontend - React</p>
+                <p class="project-bio"> Backend - ExpressJs, NodeJs, mongoDB</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Client Info</h6>
+                <p class="project-bio">TrackPach </p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Business outcome</h6>
+                <p class="project-bio">Represent company self valu, products and services</p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <div class="row wrapper_pack item filtr-item container filterDiv   col-12 mx-auto Healthcare">
+        <div class="col-md-4 ml-auto my-auto">
 
           <div class="image_scroll hospital col-md-6"></div>
 
@@ -557,6 +699,385 @@
               <div class="col-6 col-md-6">
                 <h6 class="header">Business outcome</h6>
                 <p class="project-bio">Make the Health Care System Efficient Between the User and Hospital </p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <div class="row wrapper_pack item filtr-item container filterDiv col-12 mx-auto Entertainment">
+        <div class="col-md-4 ml-auto my-auto">
+
+          <div class="image_scroll movie1 col-md-6"></div>
+
+        </div>
+        <div class="second_element col-md-5 m-auto">
+          <div class="textdiv">
+            <h2 class="title mb-3 head-title">Entertainment Application - Speed Moviefy</h2>
+
+
+            <input type="checkbox" class="read-more-state jcf-hidden" id="movie1-content">
+            <p class="read-more-wrap project-bio ml-3">Speed Moviefy is a simple and straightforward video streaming
+              service to watch free movies online. It hosts tons of films,
+              TV shows, and even viral videos from all over the web for your online viewing pleasure</p>
+            <!-- read more goes here -->
+            <p class="read-more-target project-bioml-3 ml-3 project-bio ">
+              The service has been around for nearly 1 years now, and the library has continually gotten better with
+              age. It features
+              a well-organized directory to easily peruse the various genres you are interested in, including new
+              arrivals, foreign
+              films, and even it,s own server collection.
+            </p>
+            <label for="movie1-content" class="read-more-trigger ml-3"></label>
+
+          </div>
+          <div class="details-wrapper mt-3">
+            <div class="row col-12">
+              <div class="col-md-6 col-6">
+                <h6 class="header ">Industry</h6>
+                <p class="project-bio">Entertainment</p>
+              </div>
+              <div class="col-md-6 col-6">
+                <h6 class="header">Project Duration</h6>
+                <p class="project-bio"> March 2020 - April 5</p>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6 class="header">Technology used</h6>
+                <p class="project-bio">Frontend - React</p>
+                <p class="project-bio"> Backend - ExpressJs, NodeJs, mongoDB</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Client Info</h6>
+                <p class="project-bio">Speed Tech online </p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Business outcome</h6>
+                <p class="project-bio">Excellent quality movies,Unlimited access to your favorite movies and many more.
+                </p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <div class="row wrapper_pack item filtr-item container filterDiv   col-12 mx-auto Education">
+        <div class="col-md-4 ml-auto my-auto">
+
+          <div class="image_scroll driver col-md-6"></div>
+
+        </div>
+        <div class="second_element col-md-5 m-auto">
+          <div class="textdiv">
+            <h2 class="title mb-3 head-title"> Driving School Web Application - DriCub</h2>
+
+
+            <input type="checkbox" class="read-more-state jcf-hidden" id="driver-content">
+            <p class="read-more-wrap project-bio ml-3"> Dricub is a driving school and they offer affordable , effective
+              and convenient driving lessons.</p>
+            <!-- read more goes here -->
+            <p class="read-more-target project-bioml-3 ml-3 project-bio ">
+              Students can register for a court approved course , submit the verification documents , make payment ,
+              then complete the course instruction and get certificates and more.Live chat to the instructor and the
+              students , differen ind of course programe , different packages and many more .
+            </p>
+            <label for="driver-content" class="read-more-trigger ml-3"></label>
+
+          </div>
+          <div class="details-wrapper mt-3">
+            <div class="row col-12">
+              <div class="col-md-6 col-6">
+                <h6 class="header ">Industry</h6>
+                <p class="project-bio">Education</p>
+              </div>
+              <div class="col-md-6 col-6">
+                <h6 class="header">Project Duration</h6>
+                <p class="project-bio"> October 5, 2020 - December 9</p>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6 class="header">Technology used</h6>
+                <p class="project-bio">Frontend - React</p>
+                <p class="project-bio"> Backend - ExpressJs, NodeJs, mongoDB</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Client Info</h6>
+                <p class="project-bio">Dricub Driving School,Anmoore Road
+                  Brooklyn,NY</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Business outcome</h6>
+                <p class="project-bio">Represent company self valu, products and services
+                </p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <div class="row wrapper_pack item filtr-item container filterDiv Travel&Hospitality  col-12 mx-auto Ecommerce">
+        <div class="col-md-4 ml-auto my-auto">
+
+          <div class="image_scroll sports col-md-6"></div>
+
+        </div>
+        <div class="second_element col-md-5 m-auto">
+          <div class="textdiv">
+            <h2 class="title mb-3 head-title"> Ecommerce Application - Aboss</h2>
+
+
+            <input type="checkbox" class="read-more-state jcf-hidden" id="sports-content">
+            <p class="read-more-wrap project-bio ml-3"> Aboss is a creative Opencart application dedicated designed for
+              gym, sport & fitness website. Fully responsive
+              and includes 4 home page layouts with 4 eye-catching header styles.</p>
+            <!-- read more goes here -->
+            <p class="read-more-target project-bioml-3 ml-3 project-bio ">
+              Aboss Opencart design has its own extensions with easy-to-use admin panel. Megamenu shows product
+              categories and links. Slideshow shows big banners with advertising text and smooth effects. Daily Deals
+              shows discount products
+              with countdown timer with nice image and description. Featured categories shows category and thumbnail
+              images in slider.
+              Featured, new, bestseller products are displayed in slider with OC Products module. Blog and Testimonials
+              support you –
+              shop owners – contact and interchange information : new products, new promotion programs,... via posts,
+              testimonials,
+              feedback, reviews. Header and Footer contains social network icons, cart, search, Logo and internal links.
+            </p>
+            <label for="sports-content" class="read-more-trigger ml-3"></label>
+
+          </div>
+          <div class="details-wrapper mt-3">
+            <div class="row col-12">
+              <div class="col-md-6 col-6">
+                <h6 class="header ">Industry</h6>
+                <p class="project-bio">E-Commerce</p>
+              </div>
+              <div class="col-md-6 col-6">
+                <h6 class="header">Project Duration</h6>
+                <p class="project-bio"> January 5, 2020 - March 2</p>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6 class="header">Technology used</h6>
+                <p class="project-bio">Frontend - React</p>
+                <p class="project-bio"> Backend - ExpressJs, NodeJs, mongoDB</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Client Info</h6>
+                <p class="project-bio">Available for for gym, sport & fitness company</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Business outcome</h6>
+                <p class="project-bio">Represent company self valu, products and services , make business more efficient
+                  way through online platform
+                </p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <div class="row wrapper_pack item filtr-item container filterDiv   col-12 mx-auto Ecommerce Travel&Hospitality">
+        <div class="col-md-4 ml-auto my-auto">
+
+          <div class="image_scroll gym col-md-6"></div>
+
+        </div>
+        <div class="second_element col-md-5 m-auto">
+          <div class="textdiv">
+            <h2 class="title mb-3 head-title"> Gym Trainning Application - Fit Track </h2>
+
+
+            <input type="checkbox" class="read-more-state jcf-hidden" id="gym-content">
+            <p class="read-more-wrap project-bio ml-3"> Fit Track is a gym trainning application. They offer different
+              services , price -plane and fitness module.</p>
+            <!-- read more goes here -->
+            <p class="read-more-target project-bioml-3 ml-3 project-bio ">
+              This aplication is a unique opportunity to promote your fitness business and get as many customers as
+              possible.
+
+              It comes with flexible layouts, About Us section, so you can be as informative as possible when
+              representing a team of your trainers Besides practical elements such as BMI calculator. The application
+              includes advanced
+              typography, a number of pre-defined and professionally designed inners pages, and much more features
+              allowing for the
+              quick and easy website launch.
+              As it is fully compatible with shopping functionality you can customize and it for selling sports ,yoga
+              goods or sports nutrition on the Web.
+              Each page is fully responsive and retina ready, making your creation look good on any device. An
+              interactive admin panel can handel all of this functionality in a efficient way
+
+            </p>
+            <label for="gym-content" class="read-more-trigger ml-3"></label>
+
+          </div>
+          <div class="details-wrapper mt-3">
+            <div class="row col-12">
+              <div class="col-md-6 col-6">
+                <h6 class="header ">Industry</h6>
+                <p class="project-bio">Travel & Hospitality</p>
+              </div>
+              <div class="col-md-6 col-6">
+                <h6 class="header">Project Duration</h6>
+                <p class="project-bio"> June 6 , 2020 - August 2</p>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6 class="header">Technology used</h6>
+                <p class="project-bio">Frontend - React</p>
+                <p class="project-bio"> Backend - ExpressJs, NodeJs, mongoDB</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Client Info</h6>
+                <p class="project-bio">Available for for gym, sport & fitness company</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Business outcome</h6>
+                <p class="project-bio">Represent company self valu, products and services , make business more efficient
+                  way through online platform
+                </p>
+              </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <div class="row wrapper_pack item filtr-item container filterDiv   col-12 mx-auto  Education">
+        <div class="col-md-4 ml-auto my-auto">
+
+          <div class="image_scroll coaching col-md-6"></div>
+
+        </div>
+        <div class="second_element col-md-5 m-auto">
+          <div class="textdiv">
+            <h2 class="title mb-3 head-title"> Coaching & Online Courses Application - Sikhha Pohor </h2>
+
+
+            <input type="checkbox" class="read-more-state jcf-hidden" id="coaching-content">
+            <p class="read-more-wrap project-bio ml-3">
+              Sikhha Pohor is a coaching application for coaches. Packed with all the features you need for your
+              Coaching site. Attract new clients, Grow your e-mail list, and Sell Courses Online. Start Growing your
+              Coaching
+              Business Now!
+
+            </p>
+            <!-- read more goes here -->
+            <p class="read-more-target project-bioml-3 ml-3 project-bio ">
+              Suitable for All Kinds of Coaching: Business Coaching, Life Coach, Health and Wellness Coaching, Fitness
+              Coach,
+              Executive Coaching, Team Coaching, Leadership Coaching, Career and Purpose Coaching, Systemic Coaching,
+              Relationship,
+              and Dating Coaching, Family Coaching, Finance Coaching, Spiritual Coaching, Parenting Coaching,
+              Communication Coaching,
+              Creative Coaching, Image Coaching, and Retirement Coaching. live classes, live chat , selling course
+              module , multiple payment gateway, course offer section, an interactive admin panel and many more features
+              to make this application user-friendly.
+
+
+            </p>
+            <label for="coaching-content" class="read-more-trigger ml-3"></label>
+
+          </div>
+          <div class="details-wrapper mt-3">
+            <div class="row col-12">
+              <div class="col-md-6 col-6">
+                <h6 class="header ">Industry</h6>
+                <p class="project-bio">Travel & Hospitality</p>
+              </div>
+              <div class="col-md-6 col-6">
+                <h6 class="header">Project Duration</h6>
+                <p class="project-bio"> September 9, 2020 - December 2</p>
+              </div>
+              <div class="col-6 col-md-6">
+                <h6 class="header">Technology used</h6>
+                <p class="project-bio">Frontend - React</p>
+                <p class="project-bio"> Backend - ExpressJs, NodeJs, mongoDB</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Client Info</h6>
+                <p class="project-bio">Available for any coaching business</p>
+              </div>
+
+              <div class="col-6 col-md-6">
+                <h6 class="header">Business outcome</h6>
+                <p class="project-bio">Represent company self valu, services , make business more efficient
+                  way through online platform
+                </p>
               </div>
 
             </div>
@@ -700,5 +1221,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <!-- <script src="./js/main.js"></script> -->
 <script src="./js/filterCustom.js"></script>
+<script src="./js/main.js"></script>
 
 </html>

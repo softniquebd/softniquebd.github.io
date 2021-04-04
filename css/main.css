@@ -2125,6 +2125,31 @@ nav .dropdown-menu .dropdown-items:active {
 {
   background-image: url(../images/hospital.png);
 }
+.civil
+{
+  background-image: url(../images/civil.jpg);
+}
+.movie1
+{
+  background-image: url(../images/movie_site.png);
+}
+.driver
+{
+  background-image: url(../images/driver_school.png);
+}
+.sports
+{
+  background-image: url(../images/sports.png);
+}
+.gym
+{
+  background-image: url(../images/gym_website.png);
+}
+.coaching
+{
+  background-image: url(../images/course.png);
+}
+
 
 .image_scroll {
   border-radius: 1.5em;
