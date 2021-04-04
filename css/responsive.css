@@ -1,0 +1,368 @@
+/* Custom Responsive Stylesheet */
+
+/*------------  Screen 320px to 360px ------------*/
+@media screen and (max-width: 360px){
+	#topbar .nav li a {
+	    padding: 2px 5px;
+	}
+	.price-button>a {
+	    font-size: 15px;
+	}
+}
+/*------------  Screen 320px to 480px ------------*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+/* Index Page Starts */	
+	/*Topbar*/
+	#topbar .nav.nav-pills.pull-right {
+		float: left !important;
+	}
+	/*Logo*/
+	.navbar-brand{
+		float: none;
+	}
+	.navbar-brand > img {
+		width: 75%;
+		margin: 0 0 0 5px;
+	}
+	.affix .navbar-brand > img {
+		height: auto;
+		width: 75%;
+	}	
+	
+	/*Collapse Menu Icon*/
+	.navbar-default .navbar-toggle {
+		background-color: #1D76BB;
+		border-color: #1D76BB;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+		background-color: transparent;
+	}
+	.navbar-default .navbar-toggle:hover .icon-bar , .navbar-default .navbar-toggle:focus .icon-bar{
+		background-color: #1D76BB;
+	}
+	.affix .navbar-header {
+		padding: 10px;
+	}
+	.affix button.navbar-toggle {
+		margin-bottom: 0;
+	}
+	/*Menu*/
+	.navbar-nav {
+		margin: 0 -15px;
+	}
+	.navbar-nav > li > a {
+		padding: 10px 15px;
+	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus, .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover{
+		color: #1D76BB;
+		background-color: #f5f5f5;
+	}
+	.affix .navbar-nav > li > a {
+		padding: 10px 15px;
+	}
+	/*Main Background Starts*/
+	#main-background {
+		height: 50vh;
+		background-position: center top;
+	}
+	#main-background .background-content {
+	    top: 30px;
+	}
+	#main-background .background-content>h2 {
+	    font-size: 23px;
+	    display: flex;
+	}
+	#main-background .price-button>a, #main-background .demo-button>a {
+		padding: 10px 15px;
+		font-size: 15px;
+	}
+	#main-background .button-wrapper {
+	    bottom: 15px;
+	}
+	/*Main Background Ends*/
+	/*Slider*/
+	#slider .carousel-caption > p, .carousel-caption ul li {
+		font-size: 10px;
+		margin: 0 0 3px 12px;
+		padding: 0 5px;
+		width: 70%;
+	}
+	
+	#slider .carousel-caption.slide3 > p {
+		font-size: 10px;
+		width: 80%;
+	}
+	#slider .carousel-inner > .item > a > img, .carousel-inner > .item > img {
+		height: 300px;
+		max-width: 100%;
+		transform: scaleX(2);
+	}
+	#slider .carousel-indicators {
+		margin-bottom: 15%;
+	}
+	/*Software Overview Starts*/
+	#software-overview {
+		padding: 15px 0 0px;
+	}
+	/*Software Overview Ends*/
+	/*Complete Solution Starts*/
+	#complete-solution {
+		padding: 200px 0;
+	}
+	/*Complete Solution Ends*/
+	/*Breadcrumb Starts*/
+	#breadcrumb {
+		height: 150px;
+		border-bottom-right-radius: 150px;
+	}
+	#breadcrumb .shade-bg{
+		height: 150px;
+	}
+	.breadcrumb-wrapper>h1.breadcrumb-title {
+		margin-top: 3em;
+    	font-size: 15px;
+	}
+	/*Breadcrumb Ends*/
+	/*Core Modules Starts*/
+	.core-module-pic>img {
+		width: 65px;
+		height: 65px;
+	}
+	.core-module-name>h2 {
+		font-size: 22px;
+	}
+	.core-module-name>h3 {
+		font-size: 18px;
+	}
+	/*Core Modules Starts*/
+	/*Features Page Starts*/
+	.feature-content {
+		padding: 0;
+		font-size: 17px;
+		text-align: inherit;
+	}
+	.feature-title>h2>span {
+		padding: 0;
+		border: none;
+	}
+	h2.title>span {
+		padding: 0;
+		border: none;
+	}
+	#patient-management .feature-img-wrapper {
+		margin: 0 0 2em;
+	}
+	#invoicing-billing {
+		padding: 100px 0;
+	}
+	#pathology-radiology {
+		padding: 0 0;
+	}
+	#pharmacy {
+		padding: 100px 0 120px 0;
+	}
+	#financial-reports {
+		padding: 0 0;
+	}
+	/*Features Page Ends*/
+	/*Support Page Starts*/
+	.printing-title>h2>span {
+		border: 2px solid #555;
+		padding: 5px 10px;
+	}
+	/*Support Page Ends*/
+	
+}	
+
+/*-------------   Screen 768px to 980px --------------------*/
+
+@media (min-width: 768px) and (max-width: 980px) {
+/* Index Page Starts */		
+	/*Logo*/
+	.navbar-brand > img {
+		height: auto;
+		width: 220px;
+		margin-left: 0;
+	}
+	.affix .navbar-brand > img {
+		height: auto;
+		margin-top: 3px;
+		width: 250px;
+	}
+	/*Collapse Menu Icon*/
+	.navbar-default .navbar-toggle {
+		background-color: #1D76BB;
+		border-color: #1D76BB;
+	}
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #fff;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+		background-color: transparent;
+	}
+	.navbar-default .navbar-toggle:hover .icon-bar , .navbar-default .navbar-toggle:focus .icon-bar{
+		background-color: #1D76BB;
+	}
+	/*Menu*/
+	.navbar-nav > li > a {
+		padding: 5px 0px;
+	}
+	#menu ul.nav>li {
+		padding: 0 8px;
+	}
+	/* Slider Starts */
+	#slider .carousel-inner > .item > a > img, .carousel-inner > .item > img {
+		height: 400px;
+	}
+	#slider .carousel-caption > p, .carousel-caption ul li {
+		font-size: 16px;
+		width: 55%;
+	}
+	#slider .carousel-caption.slide3 > p {
+		font-size: 12px;
+		width: 45%;
+	}
+	/*Breadcrumb Starts*/
+	#breadcrumb {
+		height: 220px;
+	}
+	#breadcrumb .shade-bg{
+		height: 220px;
+	}
+	.breadcrumb-wrapper>h1.breadcrumb-title {
+		margin-top: 4em;
+	}
+	/*Breadcrumb Ends*/
+	/*Core Modules Starts*/
+	.core-modules-item{
+		min-height: 225px;
+	}
+	/*Core Modules Ends*/
+	/*Additional Modules Starts*/
+	#additional-modules {
+		padding: 100px 0;
+	}
+	.additional-modules-name>h3 {
+		font-size: 13px;
+	}
+	/*Additional Modules Ends*/
+	/*Features Page Starts*/
+	#pharmacy {
+		padding: 120px 0 160px;
+	}
+	/*Features Page Ends*/
+	
+	/*Footer Starts*/
+	.footer-logo {
+		margin: 0;
+	}
+	/*Footer Ends*/
+	
+}
+/*-------------   Screen 980px to 1200px --------------------*/
+@media (min-width: 980px) and (max-width: 1200px) {
+	/*Core Modules Starts*/
+	.core-modules-item{
+		min-height: 225px;
+	}
+	.core-module-pic {
+		margin-right: 5px;
+	}
+	.core-module-name>h2 {
+		font-size: 21px;
+	}
+	.core-module-name>h3 {
+		font-size: 18px;
+	}
+	/*Core Modules Starts*/
+	/*Additional Modules Starts*/
+	.additional-modules-name>h3 {
+		font-size: 13px;
+	}
+	/*Additional Modules Ends*/
+	/*Features Page Starts*/
+	.feature-content {
+		padding: 0;
+		font-size: 20px;
+		text-align: left;
+	}
+	#patient-management .feature-img-wrapper {
+		margin: 4em 0 0;
+	}
+	#invoicing-billing .feature-img-wrapper {
+		margin: 2em 0 0;
+	}
+	#pharmacy .feature-img-wrapper {
+		margin-top: 7em;
+	}
+	/*Features Page Ends*/
+}
+/*-------------   Screen Above 1400px --------------------*/
+
+@media (min-width: 1366px){
+	/*Accounts Page Starts*/
+		/*Core Accounts Starts*/
+		.coreAccounts-item ul>li {
+			padding: 0 4em;
+		}
+		/*Core Accounts Ends*/
+		/*Target Business Starts*/
+		.targetBusiness-item ul>li {
+			padding: 0 3.5em;
+		}
+		/*Target Business Ends*/
+	/*Accounts Page Ends*/
+	/*Features Page Starts*/
+	#patient-management .feature-img-wrapper {
+		margin: 4em 0 0;
+	}
+	#invoicing-billing .feature-img-wrapper {
+		margin: 3em 0 0;
+	}
+	#pharmacy .feature-img-wrapper {
+		margin-top: 7em;
+	}
+	/*Features Page Ends*/
+}
+/*Bootstrap Navbar break point at small screen starts*/
+/*	
+@media (max-width: 991px) {
+	.navbar-header {
+	  float: none;
+	}
+	.navbar-left,.navbar-right {
+	  float: none !important;
+	}
+	.navbar-toggle {
+	  display: block;
+	}
+	.navbar-collapse {
+	  border-top: 1px solid transparent;
+	  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+	}
+	.navbar-fixed-top {
+	  top: 0;
+	  border-width: 0 0 1px;
+	}
+	.navbar-collapse.collapse {
+	  display: none!important;
+	}
+	.navbar-nav {
+	  float: none!important;
+	  margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+	  float: none;
+	}
+	.navbar-nav>li>a {
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	}
+	.collapse.in{
+	  display:block !important;
+	}
+}	*/
