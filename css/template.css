@@ -632,6 +632,9 @@ h1 {
 #breadcrumb.bg-features {
     background: url(../images/features-bg.jpg);
 }
+#breadcrumb.bg-edu{
+    background: url(../images/edubackground.jpg);
+}
 #breadcrumb.bg-pricing {
     background: url(../images/pricing-bg.jpg);
 }
@@ -654,7 +657,7 @@ h1 {
 .breadcrumb-wrapper>h1.breadcrumb-title {
     font-weight: bold;
     margin: 6em 0 0 20px;
-    color: #03004f;
+    color: white;
     text-transform: uppercase;
     text-align: left;
     font-size: 1.8em;
@@ -1009,4 +1012,77 @@ h2.breadcrumb-subtitle {
 .boximg
 {
     border-radius: 2em;
+}
+.fast-printing
+{
+	font-weight: bold;
+    font-size: 1.3em;
+    text-align: justify;
+}
+#result-reports .skew-bg {
+    background: url(../images/automatic-result.jpg);
+    margin: 100px 0 0;
+    background-size: cover;
+    background-position: center;
+}
+.skew-bg {
+    transform: skew(
+0deg
+, 
+-5deg
+) translateY(-50px);
+    background-repeat: no-repeat;
+    margin: 100px 0 100px;
+}
+#result-reports .container {
+    padding: 100px 0 160px;
+    transform: skew(
+0deg
+, 
+5deg
+);
+}
+.result-content {
+	font-weight: bold;
+
+    font-size: 23px;
+    text-align: justify;
+    color: #fff;
+    padding: 2em;
+}
+.result-reports
+{
+	width: 600px !important;
+}
+.reports-data
+{
+	width: 500px !important;
+}
+.mobileapp,.payment
+{
+	font-weight: bold;
+	    padding: 2em;
+    font-size: 20px;
+    text-align: justify;
+}
+#free-website .skew-bg {
+    background: url(../images/freewebsite.jpg);
+    margin: 100px 0 0;
+    background-position: center;
+}
+#free-website .container {
+    padding: 100px 0 160px;
+    transform: skew(
+0deg
+, 
+5deg
+);
+}
+.freewebText
+{
+	text-align: initial !important;
+}
+#mobile-app
+{
+	padding: 0em 0 5em;
 }
