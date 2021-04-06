@@ -1086,3 +1086,14 @@ h2.breadcrumb-subtitle {
 {
 	padding: 0em 0 5em;
 }
+#breadcrumb.bg-accounting
+{
+	 background: url(../images/accounting-bg.jpg);
+}
+.keyfeature-img
+{
+   align-items: center;
+    width: 7.5vw;
+    height: 7.5vw;
+    margin: auto;
+}

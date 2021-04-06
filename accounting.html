@@ -1,0 +1,788 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="./images/icon.png" sizes="16x16" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/hospital_main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/template.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://esteemsoftbd.com/arch/js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="https://esteemsoftbd.com/arch/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://esteemsoftbd.com/arch/css/bootstrap.min.css" /> -->
+    <title>Accounting Software</title>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" style="overflow-x: hidden;">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="114263207095888" theme_color="#ff7e29"
+        logged_in_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।"
+        logged_out_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।">
+
+        >
+    </div>
+    <div class="wrapper">
+        <!-- navbar section start -->
+        <nav class="navbar navbar-collapse navbar-expand-md fixed-top navbar-inverse navbar-right shadow bg-white wow animate__animated animate__slideInDown"
+            data-wow-delay="0s" data-wow-duration="1.4s">
+            <!-- Brand -->
+            <a class="navbar-brand wow animate__animated animate__jackInTheBox" data-wow-delay="1s"
+                data-wow-duration="1.4s" href="#"><img class="img-fluid" src="./images/nav-logo.png" height="70"
+                    width="140" /></a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="dark-blue-text"><i class="fa fa-bars fa-1x"
+                        style="font-size: 1.3em; color: #A35414;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            Portfolio
+                        </a>
+                        <div class="dropdown-menu wow animate__animated animate__flipInX" data-wow-duration="0.9s">
+                            <ul>
+                                <a class="dropdown-item" href="webproject.html">Web Projects</a>
+                                <a class="dropdown-item" href="app_projects.html">App Projects</a>
+                                <li class=" nav-item dropdown dropdown-item">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Softwares</a>
+                                    <ul class="dropdown-menu" style="top: 0;left: 127px;">
+                                        <a class="dropdown-item" href="hospital.html">Hospital Software </a>
+                                        <a class="dropdown-item" href="education_st.html"> Education Software </a>
+                                        <a class="dropdown-item" href="#"> Accounting Software </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#serv">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog/index.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Links -->
+        </nav>
+
+        <section id="breadcrumb" class="bg-features bg-accounting">
+            <div class="shade-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="breadcrumb-wrapper">
+                            <h1 class="breadcrumb-title">Accounting & Inventory Management Software</h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="quickFeatures ">
+            <div class="container my-5 p-5 ">
+                <h3 class="wow fadeInUp title mb-5 text-center" data-wow-duration="1.25s" data-wow-delay=".5s">
+                    Cloud-Based
+                    Accounting
+                    Software For
+                    Your Business</h3>
+                <div class="quickFeatures-wrapper row col-12 ">
+
+                    <!----- Quick Features Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-3 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".6s">
+                        <div class="quickFeatures-item">
+                            <img src="images/quickfeatures1.svg" alt="quickFeatures1" title="user friendly">
+                            <p class="font-weight-bold">User-friendly, extremely easy to use, cloud-based software</p>
+                        </div>
+                    </div>
+                    <!----- Quick Features Item Ends ----->
+                    <!----- Quick Features Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-3 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".7s">
+                        <div class="quickFeatures-item">
+                            <img src="images/quickfeatures2.svg" alt="quickFeatures2" title="save time & money">
+                            <p class="font-weight-bold">Work Smart, save time, money & increase profits</p>
+                        </div>
+                    </div>
+                    <!----- Quick Features Item Ends ----->
+                    <!----- Quick Features Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-3 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".8s">
+                        <div class="quickFeatures-item">
+                            <img src="images/quickfeatures3.svg" alt="quickFeatures3" title="stay organized">
+                            <p class="font-weight-bold">Stay organized, run your business from your pocket</p>
+                        </div>
+                    </div>
+                    <!----- Quick Features Item Ends ----->
+                    <!----- Quick Features Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-3 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".9s">
+                        <div class="quickFeatures-item">
+                            <img src="images/quickfeatures4.svg" alt="quickFeatures4" title="track your stock swiftly">
+                            <p class="font-weight-bold">Get paid faster, organize your products & track your stocks
+                                swiftly</p>
+                        </div>
+                    </div>
+                    <!----- Quick Features Item Ends ----->
+                </div>
+            </div>
+        </section>
+        <section class="our service">
+
+            <div class="heading mb-5">
+                <h3 class="text-center">Some Key Features To Ease Your Works</h3>
+            </div>
+            <div class="row mx-2 justify-content-center">
+
+
+                <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp"
+                    id="serviceicons" data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+                    <div class="keyfeature-img">
+                        <img src="images/keyfeatures1.svg" alt="keyFeatures1" title="Invoicing & Billing">
+
+                    </div>
+
+
+                    <h4 class="text-center my-4 ">Sales & Purchase</h4>
+                    <p class="font-weight-bold text-center">Sales order, invoice, challan, purchase order(PO), auto bill
+                        against PO receive, goods receipt</p>
+                </div>
+            </div>
+            <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+                data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+                <div class="keyfeature-img">
+                    <img src="images/keyfeatures2.svg" alt="keyFeatures1" title="Invoicing & Billing">
+
+                </div>
+
+
+                <h4 class="text-center my-4 ">Invoicing & Billing</h4>
+                <p class="font-weight-bold text-center">Fast invoicing and receipt, point of sale(POS), recurring
+                    invoice & bill, discount, refund &
+                    return.</p>
+            </div>
+    </div>
+    <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+        data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+        <div class="keyfeature-img">
+            <img src="images/keyfeatures3.svg" alt="keyFeatures1" title="Invoicing & Billing">
+
+        </div>
+
+
+        <h4 class="text-center my-4 ">Asset & Inventory</h4>
+        <p class="font-weight-bold text-center">Fixed asset, warehouse & shelf management, product stock tracking</p>
+    </div>
+    </div>
+    <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+        data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+        <div class="keyfeature-img">
+            <img src="images/keyfeatures4.svg" alt="keyFeatures1" title="Invoicing & Billing">
+
+        </div>
+
+
+        <h4 class="text-center my-4 ">Customer & Vendor</h4>
+        <p class="font-weight-bold text-center">Customer & vendor management, get accounts transaction and other reports
+            of customer & vendor</p>
+    </div>
+    </div>
+    <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+        data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+        <div class="keyfeature-img">
+            <img src="images/keyfeatures5.svg" alt="keyFeatures1" title="Invoicing & Billing">
+
+        </div>
+
+
+        <h4 class="text-center my-4 ">HR & Payroll</h4>
+        <p class="font-weight-bold text-center">Employee, attendance, leave management, salary, advance, loan etc</p>
+    </div>
+    </div>
+    <div class="col-Employee, attendance, leave management, salary, advance, loan etc11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp"
+        id="serviceicons" data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+        <div class="keyfeature-img">
+            <img src="images/keyfeatures6.svg" alt="keyFeatures1" title="Invoicing & Billing">
+
+        </div>
+
+
+        <h4 class="text-center my-4 ">Report & Analysis</h4>
+        <p class="font-weight-bold text-center">Generate reports quickly & analyze them to track your business progress
+            & development</p>
+    </div>
+    </div>
+    <div class="col-Employee, attendance, leave management, salary, advance, loan etc11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp"
+        id="serviceicons" data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+        <div class="keyfeature-img">
+            <img src="images/keyfeatures7.svg" alt="keyFeatures1" title="Invoicing & Billing">
+
+        </div>
+
+
+        <h4 class="text-center my-4 ">SMS & Email</h4>
+        <p class="font-weight-bold text-center">Invoice, payment, due, notice, reports and many more sms & email
+            notification</p>
+    </div>
+    </div>
+    <div class="col-Employee, attendance, leave management, salary, advance, loan etc11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp"
+        id="serviceicons" data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+        <div class="keyfeature-img">
+            <img src="images/keyfeatures9.svg" alt="keyFeatures1" title="Invoicing & Billing">
+
+        </div>
+
+
+        <h4 class="text-center my-4 ">Increase Efficiency</h4>
+        <p class="font-weight-bold text-center">Our Software helps to reduce stress of Accounting department increasing
+            efficiency & reducing time.</p>
+    </div>
+    </div>
+    <div class="col-Employee, attendance, leave management, salary, advance, loan etc11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp"
+        id="serviceicons" data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+        <div class="keyfeature-img">
+            <img src="images/keyfeatures8.svg" alt="keyFeatures1" title="Invoicing & Billing">
+
+        </div>
+
+
+        <h4 class="text-center my-4 ">Training & Support</h4>
+        <p class="font-weight-bold text-center">Physical training & support over TeamViewer, Skype, mobile,
+            documentation & video tutorial</p>
+    </div>
+    </div>
+
+
+
+    </div>
+
+
+    </section>
+
+    <section id="keyFeatures">
+        <div class="container my-5 p-5">
+            <h3 class="wow zoomIn title mb-5 text-center" data-wow-duration="1.5s" data-wow-delay=".5s">Some Key
+                Features To Ease Your Works
+            </h3>
+            <div class="keyFeatures-wrapper  row  col-12">
+
+                <!----- Key Features Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn card" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="keyFeatures-item">
+                        <img src="images/keyfeatures1.svg" alt="keyFeatures1" title="Sales & Purchase">
+                        <h3>Sales & Purchase</h3>
+                        <p class="font-weight-bold">Sales order, invoice, challan, purchase order(PO), auto bill
+                            against PO receive, goods receipt
+                        </p>
+                    </div>
+                </div>
+                <!----- Key Features Item Ends ----->
+                <!----- Key Features Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn card" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="keyFeatures-item">
+                        <img src="images/keyfeatures2.svg" alt="keyFeatures1" title="Invoicing & Billing">
+                        <h3>Invoicing & Billing</h3>
+                        <p class="font-weight-bold">Fast invoicing and receipt, point of sale(POS), recurring
+                            invoice & bill, discount, refund &
+                            return.</p>
+                    </div>
+                </div>
+                <!----- Key Features Item Ends ----->
+                <!----- Key Features Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn card" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="keyFeatures-item">
+                        <img src="images/keyfeatures3.svg" alt="keyFeatures1" title="Asset & Inventory">
+                        <h3>Asset & Inventory</h3>
+                        <p class="font-weight-bold">Fixed asset, warehouse & shelf management, product stock
+                            tracking</p>
+                    </div>
+                </div>
+                <!----- Key Features Item Ends ----->
+                <!----- Key Features Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn card" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="keyFeatures-item">
+                        <img src="images/keyfeatures4.svg" alt="keyFeatures1" title="Customer & Vendor">
+                        <h3>Customer & Vendor</h3>
+                        <p class="font-weight-bold">Customer & vendor management, get accounts transaction and other
+                            reports of customer & vendor</p>
+                    </div>
+                </div>
+                <!----- Key Features Item Ends ----->
+                <!----- Key Features Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn card" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="keyFeatures-item">
+                        <img src="images/keyfeatures5.svg" alt="keyFeatures1" title="HR & Payroll">
+                        <h3>HR & Payroll</h3>
+                        <p class="font-weight-bold">Employee, attendance, leave management, salary, advance, loan
+                            etc</p>
+                    </div>
+                </div>
+                <!----- Key Features Item Ends ----->
+                <!----- Key Features Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn card" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="keyFeatures-item">
+                        <img src="images/keyfeatures6.svg" alt="keyFeatures1" title="Report & Analysis">
+                        <h3>Report & Analysis</h3>
+                        <p class="font-weight-bold">Generate reports quickly & analyze them to track your business
+                            progress & development</p>
+                    </div>
+                </div>
+                <!----- Key Features Item Ends ----->
+                <!----- Key Features Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn card" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="keyFeatures-item">
+                        <img src="images/keyfeatures7.svg" alt="keyFeatures1" title="SMS & Email">
+                        <h3>SMS & Email</h3>
+                        <p class="font-weight-bold">Invoice, payment, due, notice, reports and many more sms & email
+                            notification</p>
+                    </div>
+                </div>
+                <!----- Key Features Item Ends ----->
+                <!----- Key Features Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn card" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="keyFeatures-item">
+                        <img src="images/keyfeatures8.svg" alt="keyFeatures1" title="Training & Support">
+                        <h3>Training & Support</h3>
+                        <p class="font-weight-bold">Physical training & support over TeamViewer, Skype, mobile,
+                            documentation & video tutorial</p>
+                    </div>
+                </div>
+                <!----- Key Features Item Ends ----->
+            </div>
+        </div>
+    </section>
+    <!---------- OnAct Key Features Ends ---------->
+    <!---------- OnAct Some Features Starts ---------->
+    <section id="someFeatures">
+        <div class="container">
+            <div class="someFeatures-wrapper">
+                <h3 class="wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".5s">Run your Business Efficiently
+                    From
+                    Anywhere</h3>
+                <!----- Some Features Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="someFeatures-item">
+                        <img src="images/software/onact/somefeatures1.svg" alt="someFeatures1" title="Go Mobile">
+                        <h3>Go Mobile</h3>
+                        <p>Use the software on the go as it's accessible from smartphone, tablets, laptops & desktop
+                        </p>
+                    </div>
+                </div>
+                <!----- Some Features Item Ends ----->
+                <!----- Some Features Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="someFeatures-item">
+                        <img src="images/software/onact/somefeatures2.svg" alt="someFeatures2" title="Data Security">
+                        <h3>Data Security</h3>
+                        <p>Backups are kept up to date & encrypted data is stored securely</p>
+                    </div>
+                </div>
+                <!----- Some Features Item Ends ----->
+                <!----- Some Features Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="someFeatures-item">
+                        <img src="images/software/onact/somefeatures3.svg" alt="someFeatures3" title="Access Control">
+                        <h3>Access Control</h3>
+                        <p>Add unlimited user to help you manages the finances based on their role</p>
+                    </div>
+                </div>
+                <!----- Some Features Item Ends ----->
+            </div>
+        </div>
+    </section>
+    <!---------- OnAct Some Features Starts ---------->
+    <!---------- OnAct Inventory Features Starts ---------->
+    <section id="inventoryFeatures">
+        <div class="container">
+            <div class="inventory-wrapper">
+                <h3 class="wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".5s">Manage Your Product / Stock
+                    Efficiently
+                </h3>
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/software/onact/inventoryfeatures1.svg" alt="inventoryfeatures1"
+                            title="Real-time Inventory">
+                        <h3>Real-time Inventory</h3>
+                        <p>Know when to reorder as the stock is automatically updated as you work</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/software/onact/inventoryfeatures2.svg" alt="inventoryfeatures2"
+                            title="Stock Alerts">
+                        <h3>Stock Alerts</h3>
+                        <p>You will be alerted you when your stock is going to run out</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/software/onact/inventoryfeatures3.svg" alt="inventoryfeatures3"
+                            title="Search Inventory Item">
+                        <h3>Search Inventory Item</h3>
+                        <p>Easily track your inventory/stocks by item, stock amounts etc</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/software/onact/inventoryfeatures4.svg" alt="inventoryfeatures4"
+                            title="Control Your Cash Flow">
+                        <h3>Control Your Cash Flow</h3>
+                        <p>Know who owes you by how much & their payment due dates</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/software/onact/inventoryfeatures5.svg" alt="inventoryfeatures5"
+                            title="Manage Orders">
+                        <h3>Manage Orders</h3>
+                        <p>Create purchase orders and sales orders quickly. Manage your orders from one central
+                            location</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/software/onact/inventoryfeatures6.svg" alt="inventoryfeatures6"
+                            title="Increase Sales">
+                        <h3>Increase Sales</h3>
+                        <p>Increase your sales by using our software which increases the productivity & efficiency
+                            of your
+                            work</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/software/onact/inventoryfeatures7.svg" alt="inventoryfeatures7"
+                            title="Best Selling Product">
+                        <h3>Best Selling Product</h3>
+                        <p>See your profit margins by item and use the information to make the right decisions on
+                            ordering
+                            and pricing</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/software/onact/inventoryfeatures8.svg" alt="inventoryfeatures8"
+                            title="Prepare Financial Statements">
+                        <h3>Prepare Financial Statements</h3>
+                        <p>See your profit margins by item and use the information to make the right decisions on
+                            ordering
+                            and pricing</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+            </div>
+        </div>
+    </section>
+    <!---------- OnAct Inventory Features Ends ---------->
+    <!---------- OnAct Core Accounts Starts ---------->
+    <section id="sms-notification">
+        <div class="container">
+            <div class="col-md-12 wow zoomIn" data-wow-duration=".8s" data-wow-delay=".5s">
+                <h2 class="title"><span>INSTANT | SMS & EMAIL NOTIFICATION</span></h2>
+            </div>
+            <div class=" col-md-12 row col-12 container">
+                <div class="col-md-7">
+                    <div class="sms-notification-content wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <p class="sms-message">Send various SMS to your patients instantly. Whether, it is payment
+                            SMS, absent, present,
+                            notice,
+                            due SMS, HR Report SMS, Various Report SMS, Doctor Appointment SMS &amp; other type of
+                            SMS and
+                            email in both Bangla &amp; English.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="sms-notification-img wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <img src="images/features/sms-notification.svg" alt="sms-notification"
+                            class="img-responsive sms">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------- Doctor Portal Ends ------------------------------------->
+
+    <!----- Mobile App Starts ----->
+    <section id="mobile-app">
+        <div class="container">
+            <div class="mobile-app-title wow zoomIn" data-wow-duration=".8s" data-wow-delay=".5s">
+                <h2 class="title">USER FRIENDLY MOBILE APP</h2>
+            </div>
+            <div class="row col-12 col-md-12">
+                <div class="col-md-5">
+                    <div class="mobile-app-img wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <img src="images/features/mobile-app.svg" alt="attendance-solution" class="img-responsive" />
+                    </div>
+                </div>
+                <div class="col-md-7 m-auto">
+                    <div class="mobile-app-content wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <p class=" mobileapp">An android and iOS based mobile app for faster access of
+                            students profile, accounts
+                            profile,
+                            payment history, class routine, homework, lesson plan & many more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----- Mobile App Ends ----->
+
+    <!-------------------------------- Free Website Starts ------------------------------------->
+    <section id="free-website">
+        <div class="skew-bg">
+            <div class="light-shade">
+                <div class="container">
+                    <div class="col-md-12 wow zoomIn" data-wow-duration=".8s" data-wow-delay=".5s">
+                        <h2 class="title text-light">EYE CATCHING WEBSITES</h2>
+                    </div>
+                    <div class="col-md-12 col-12 row">
+                        <div class="col-md-7 m-auto">
+                            <div class="result-content wow zoomIn " data-wow-duration="1.5s" data-wow-delay=".5s">
+                                <p class="freewebText">Software integrated eye-catching, user friendly,
+                                    responsive dynamic website
+                                    consisting of notice, news and events,
+                                    magazines & more information.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="result-img-wrapper wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                                <img src="images/free-websitehome.svg" alt="result-reports"
+                                    class="img-responsive result-reports" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------- Free Website Ends ------------------------------------->
+
+    <!----- Online Payment Gateway Starts ----->
+    <section id="payment-option">
+        <div class="container">
+            <div class="mobile-app-title wow zoomIn" data-wow-duration=".8s" data-wow-delay=".5s">
+                <h2 class="title">Easy Online Payment Gateway</h2>
+            </div>
+            <div class="row col-md-12 col-12">
+                <div class="col-md-5">
+                    <div class="payment-img wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <img src="images/features/payment-option.svg" alt="payment-option" class="img-responsive" />
+                    </div>
+                </div>
+                <div class="col-md-7 m-auto">
+                    <div class="payment-content wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <p class="payment">Instantly know your payment information with paid & due amount.
+                            Easily & effortlessly pay
+                            the
+                            invoiced amount from any place with just a click. From wide range of payment option
+                            choose the
+                            one that meets your needs. Pay either with mastercard, visa card , rocket , bkash or
+                            other
+                            famous payment options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----- Online Payment Gateway Ends ----->
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <!-- footer section start -->
+    <div class="curvy" style="background-size: cover; height: auto">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="white" fill-opacity="1"
+                d="M0,96L60,122.7C120,149,240,203,360,218.7C480,235,600,213,720,170.7C840,128,960,64,1080,48C1200,32,1320,64,1380,80L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
+        <div class="container">
+            <div class="d-flex justify-content-around position-relative" onclick="start_project.html">
+                <hr class="line" />
+                <div class="d-flex justify-content-center align-items-center m-auto position-relative">
+                    <a href="start_project.html" class="icon-wrapper text-light position-absolute text-center"
+                        style="z-index: 1">
+                        <div>
+                            <strong>START <br />A PROJECT</strong>
+                        </div>
+                    </a>
+                    <div class="position-absolute" style="
+                  z-index: 0;
+                  border-radius: 100%;
+                  background: #4d4a5c;
+                  position: absolute;
+                  height: 134px;
+                  width: 134px;
+                "></div>
+                </div>
+                <hr class="line" />
+            </div>
+            <div class="mt-5 pt-3 d-flex justify-content-around position-relative">
+                <ul class="list-inline">
+                    <a href="#0" class="list-inline-item">
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="#0" class="list-inline-item">
+                        <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="#0" class="list-inline-item">
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="softniquebd@gmail.com" class="list-inline-item">
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="d-flex flex-column flex-md-row">
+                <div class="position-relative col-12 col-md-4">
+                    <div class="d-flex footercard">
+                        <img src="images/alifoot.png" alt="" height="65px" />
+                        <div class="ml-2 mt-2 col-xs-5">
+                            <strong>
+                                <h6 class="font-weight-bold" style="color: #81fa72">
+                                    MOHAMMAD ALI SHUVO
+                                </h6>
+                            </strong>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Dolor, blanditiis?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex footercard">
+                        <img src="images/nsdfoot.png" alt="" height="65px" />
+                        <div class="ml-2 mt-2">
+                            <strong>
+                                <h6 class="font-weight-bold" style="color: #81fa72">
+                                    NOUSHAD BHUIYAN
+                                </h6>
+                            </strong>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Dolor, blanditiis?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-2 m-md-0 m-auto text-center">
+                    <ul class="list-unstyled">
+                        <a href="#0" class="list-item text-light">
+                            <li class="mb-2">PROJECT</li>
+                        </a>
+                        <a href="#0" class="list-item text-light">
+                            <li class="mb-2">SERVICES</li>
+                        </a>
+                        <a href="#0" class="list-item text-light">
+                            <li class="mb-2">CONTACT</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="vl d-none d-md-block"></div>
+
+                <div class="col-12 col-md-3 m-md-0 m-auto text-center">
+                    <h6>VISIT OUR<br />PERSONAL PORTFOLIO</h6>
+                    <ul class="list-unstyled text-center">
+                        <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <li class="mb-2 text-capitalize">shuvo's portfolio</li>
+                        </a>
+                        <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <li class="mb-2 text-capitalize">noushad's portfolio</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-1 position-inherit">
+                    <img class="logofooter" src="./images/softnique-footer.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="./js/main.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- <script src="./js/main.js"></script> -->
+<script src="./js/filterCustom.js"></script>
+
+<script src="./js/plugin.js"></script>
+<script src=""></script>
+<script src=""></script>
+
+</html>
