@@ -1097,3 +1097,68 @@ h2.breadcrumb-subtitle {
     height: 7.5vw;
     margin: auto;
 }
+.keydeatils
+{
+	font-size: 14px;
+	color: grey;
+}
+.businessDetails,.stockDetails
+{
+	font-weight: bold;
+	font-size: 14px;
+	color: grey;
+}
+.keyfeatureimgsize
+{
+	padding: 14px !important;
+}
+.someFeatures-item,.quickFeatures-item,.inventory-item
+{
+	text-align: center;
+	margin-top: 4em;
+}
+.someFeatures-item img, .quickFeatures-item img
+{
+width: 200px;
+height: 200px ;
+}
+.inventory-item img
+{
+	width: 100px;
+height: 100px ;
+}
+.someFeatures-item h3
+{
+margin: 20px 0;
+
+    font-weight: bold;
+}
+
+.keyHead
+{
+	font-weight: bold;
+	color: white;
+	    border-radius: 0.7em;
+    background: #362892;
+    padding: 2px 10px;
+}
+.inventHead
+{
+	margin-bottom: 59px;
+}
+.coreAccount,.targetBusiness
+{
+	margin-bottom: 2em;
+}
+
+
+
+.coreAccounts-item ul>li,.targetBusiness-item ul>li {
+	font-weight: bold;
+    line-height: 3em;
+    font-size: 14px;
+	    padding: 0 4em;
+}
+.coreAccounts-item ul>li i, .targetBusiness-item ul>li i {
+   color: firebrick;
+}
