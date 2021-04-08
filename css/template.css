@@ -1090,6 +1090,10 @@ h2.breadcrumb-subtitle {
 {
 	 background: url(../images/accounting-bg.jpg);
 }
+#breadcrumb.bg-hrm
+{
+	 background: url(../images/hrm-slider-1.jpg);
+}
 .keyfeature-img
 {
    align-items: center;
