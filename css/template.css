@@ -632,6 +632,9 @@ h1 {
 #breadcrumb.bg-features {
     background: url(../images/features-bg.jpg);
 }
+#breadcrumb.bg-graphics {
+    background: url(../images/photo-1497091071254-cc9b2ba7c48a.jfif);
+}
 #breadcrumb.bg-edu{
     background: url(../images/edubackground.jpg);
 }
@@ -1165,4 +1168,41 @@ margin: 20px 0;
 }
 .coreAccounts-item ul>li i, .targetBusiness-item ul>li i {
    color: firebrick;
+}
+#logobg {
+    background: url(../images/logo-design-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.bg-same {
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    width: auto;
+}
+#businessbg {
+    background: url(../images/business-card-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#bannerbg {
+    background: url(../images/banner-poster-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#brochurebg {
+    background: url(../images/brochure-leaflet-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#brandingbg {
+    background: url(../images/corporate-branding-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.logoTxt,.businessTxt,.banPost,.corpoBrand,.broucher
+{
+	    font-weight: bold;
+    text-align: justify;
+    color: grey;
 }
