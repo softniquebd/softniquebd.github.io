@@ -2221,6 +2221,148 @@ nav .dropdown-menu .dropdown-items:active {
   transition: opacity 0.25s ease-in-out;
 }
 
+/* software service home page css */
+
+/* service part starts*/
+
+.service a {
+    color: black;
+}
+
+.service {
+    padding-top: 112px;
+}
+
+
+
+/*Body2 start*/
+
+.body2 {
+    padding-bottom: 10px;
+    padding-top: 50px;
+    margin-bottom: 23px;
+}
+
+.body2 p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #5b646e;
+}
+
+
+/*Body2 End*/
+
+
+/*Body3 Start*/
+
+.body3 .body3c1 {
+    width: 33.3%;
+    float: left;
+    /* padding-left: 1%; */
+}
+
+.body3 .body3c2 {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.body3 .body3c3 {
+    width: 33.3%;
+    float: left;
+    /* padding-right: 1%; */
+}
+
+.clr {
+    clear: both;
+}
+
+.besdiePhone {
+  width: 353px;
+    border-radius: 5px;
+    padding: 56px 0;
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 1px 0px rgba(62, 62, 62, 0.45);
+    transition: all 150ms ease-in-out;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.besdiePhone:hover {
+    top: -3px;
+    left: -3px;
+    box-shadow: 3px 3px 15px 0px rgba(82, 82, 82, 0.85);
+    background-color: rgba(28, 52, 129, 0.4);
+    background: url(../images/circle_hover.svg);
+    background-position-x: 320px;
+    transition-duration: 0.5s;
+    border-color: darkgray;
+    cursor: pointer;
+}
+
+.besdiePhone:hover i,
+.besdiePhone:hover p {
+    color: black;
+}
+
+.phnc1 {
+    width: 20%;
+    float: left;
+}
+
+.phnc1 i {
+    color: #c7c6c7;
+    font-size: 5vh;
+    padding-left: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+}
+
+.phnc2 {
+    width: 80%;
+    float: left;
+}
+
+.phnc2 h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.phnc2 p {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    color: #7e7d7e;
+    width: 90%;
+}
+
+
+/*Body3 End*/
+
+
+/* service part ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*# sourceMappingURL=main.css.map */
 
 

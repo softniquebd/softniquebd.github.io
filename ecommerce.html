@@ -1,0 +1,783 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="./images/icon.png" sizes="16x16" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/hospital_main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/template.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://esteemsoftbd.com/arch/js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="https://esteemsoftbd.com/arch/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://esteemsoftbd.com/arch/css/bootstrap.min.css" /> -->
+    <title>Ecommerce Website</title>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" style="overflow-x: hidden;">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="114263207095888" theme_color="#ff7e29"
+        logged_in_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।"
+        logged_out_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।">
+
+        >
+    </div>
+    <div class="wrapper">
+        <!-- navbar section start -->
+        <nav class="navbar navbar-collapse navbar-expand-md fixed-top navbar-inverse navbar-right shadow bg-white wow animate__animated animate__slideInDown"
+            data-wow-delay="0s" data-wow-duration="1.4s">
+            <!-- Brand -->
+            <a class="navbar-brand wow animate__animated animate__jackInTheBox" data-wow-delay="1s"
+                data-wow-duration="1.4s" href="#"><img class="img-fluid" src="./images/nav-logo.png" height="70"
+                    width="140" /></a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="dark-blue-text"><i class="fa fa-bars fa-1x"
+                        style="font-size: 1.3em; color: #A35414;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            Portfolio
+                        </a>
+                        <div class="dropdown-menu wow animate__animated animate__flipInX" data-wow-duration="0.9s">
+                            <ul>
+                                <a class="dropdown-item" href="webproject.html">Web Projects</a>
+                                <a class="dropdown-item" href="app_projects.html">App Projects</a>
+                                <a class="dropdown-item" href="graphics.html">Graphic Design</a>
+                                <li class=" nav-item dropdown dropdown-item">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Softwares</a>
+                                    <ul class="dropdown-menu" style="top: 0;left: 127px;">
+                                        <a class="dropdown-item" href="hospital.html">Hospital Management </a>
+                                        <a class="dropdown-item" href="education_st.html"> Educational Management </a>
+                                        <a class="dropdown-item" href="accounting.html"> Accounting & Inventory </a>
+                                        <a class="dropdown-item" href="#">Human Resource Management </a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#serv">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog/index.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Links -->
+        </nav>
+        <section id="breadcrumb" class="bg-features bg-hrm">
+            <div class="shade-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="breadcrumb-wrapper">
+                            <h1 class="breadcrumb-title">Ecommerce Website Development</h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- intro section -->
+
+
+
+
+
+
+
+        <section id="quickFeatures ">
+            <div class="container my-5 p-5 ">
+                <h3 class="wow fadeInUp title mb-5 text-center" data-wow-duration="1.25s" data-wow-delay=".5s">
+                    Cloud-Based HR & Payroll Software For Your Business</h3>
+                <div class="quickFeatures-wrapper row col-12 mx-auto ">
+
+                    <!----- Quick Features Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".6s">
+                        <div class="quickFeatures-item">
+                            <img src="images/quickfeatures1hrm.svg" alt="quickFeatures1" title="user friendly">
+                            <p class="font-weight-bold">Complete HR & Payroll reducing hassle, human workload, easier
+                                management from just one .</p>
+                        </div>
+                    </div>
+                    <!----- Quick Features Item Ends ----->
+                    <!----- Quick Features Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".7s">
+                        <div class="quickFeatures-item">
+                            <img src="./images/quickfeatures2hrm.svg" alt="quickFeatures2" title="save time & money">
+                            <p class="font-weight-bold">Platform free cloud based software accessible from anywhere with
+                                any devices allows real-time activity monitoring.</p>
+                        </div>
+                    </div>
+                    <!----- Quick Features Item Ends ----->
+                    <!----- Quick Features Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".8s">
+                        <div class="quickFeatures-item">
+                            <img src="images/quickfeatures3hrm.svg" alt="quickFeatures3" title="stay organized">
+                            <p class="font-weight-bold">Increase business productivity, reduce system errors & manages
+                                your HR department simply with one .</p>
+                        </div>
+                    </div>
+                    <!----- Quick Features Item Ends ----->
+
+                </div>
+            </div>
+        </section>
+        <section class="our service">
+
+            <div class="heading mb-5">
+                <h3 class="text-center title">Efficient, Innovative Simplified Employee Management</h3>
+            </div>
+            <div class="row mx-2 justify-content-center">
+
+
+                <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp"
+                    id="serviceicons" data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+                    <div class="keyfeature-img">
+                        <img src="images/employee-management1.svg" alt="keyFeatures1" title="Reduce Paperwork"
+                            class="img-responsive keyfeatureimgsize">
+
+                    </div>
+
+
+                    <h5 class="text-center my-4  mx-5 keyHead">Reduce Paperwork</h5>
+                    <p class="font-weight-bold text-center keydeatils">Our HRMS collects employees necessary records
+                        eliminating manual records, filing cabinets etc.</p>
+                </div>
+            </div>
+            <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+                data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+                <div class="keyfeature-img">
+                    <img src="images/employee-management2.svg" alt="keyFeatures1" title="Increase Efficiency"
+                        class="img-responsive keyfeatureimgsize">
+
+                </div>
+
+
+                <h5 class="text-center my-4  mx-5 keyHead ">Increase Efficiency</h5>
+                <p class="font-weight-bold text-center keydeatils">Fast invoicing and receipt, point of sale(POS),
+                    recurring
+                    invoice & bill, discount, refund &
+                    return.</p>
+            </div>
+    </div>
+    <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+        data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+        <div class="keyfeature-img">
+            <img src="images/keyfeatures3.svg" alt="keyFeatures1" title="Asset & Inventory"
+                class="img-responsive keyfeatureimgsize">
+
+        </div>
+
+
+        <h5 class="text-center my-4  mx-5 keyHead ">Asset & Inventory</h5>
+        <p class="font-weight-bold text-center keydeatils">Fixed asset, warehouse & shelf management, product stock
+            tracking</p>
+    </div>
+    </div>
+    <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+        data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+        <div class="keyfeature-img">
+            <img src="images/keyfeatures4.svg" alt="keyFeatures1" title="Customer & Vendor"
+                class="img-responsive keyfeatureimgsize">
+
+        </div>
+
+
+        <h5 class="text-center my-4  mx-5 keyHead ">Customer & Vendor</h5>
+        <p class="font-weight-bold text-center keydeatils">Customer & vendor management, get accounts transaction and
+            other reports
+            of customer & vendor</p>
+    </div>
+    </div>
+    <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+        data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+        <div class="keyfeature-img">
+            <img src="images/keyfeatures5.svg" alt="keyFeatures1" title="HR & Payroll"
+                class="img-responsive keyfeatureimgsize">
+
+        </div>
+
+
+        <h5 class="text-center my-4  mx-5 keyHead ">HR & Payroll</h5>
+        <p class="font-weight-bold text-center keydeatils">Employee, attendance, leave management, salary, advance, loan
+            etc</p>
+    </div>
+    </div>
+    <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+        data-wow-delay="0.5s" data-wow-duration="1.4s"">
+            					<div class=" m-auto" id="circular">
+        <div class="keyfeature-img">
+            <img src="images/keyfeatures6.svg" alt="keyFeatures1" title="Report & Analysis"
+                class="img-responsive keyfeatureimgsize">
+
+        </div>
+
+
+        <h5 class="text-center my-4  mx-5 keyHead ">Report & Analysis</h5>
+        <p class="font-weight-bold text-center keydeatils">Generate reports quickly & analyze them to track your
+            business progress
+            & development</p>
+    </div>
+    </div>
+
+
+
+
+    </div>
+
+
+    </section>
+
+
+
+    <!---------- OnAct Key Features Ends ---------->
+
+    <!---------- OnAct Inventory Features Starts ---------->
+    <section id="inventoryFeatures">
+        <div class="container my-5 p-5">
+            <h3 class="wow zoomIn title  text-center  inventHead" data-wow-duration="1.5s" data-wow-delay=".5s">Manage
+                Automatic Online Attendance
+            </h3>
+            <div class="inventory-wrapper row col-12 col-md-12 ">
+
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/attendance1.svg" alt="inventoryfeatures1" title="Real Time Data Sync">
+                        <h5 class="title mt-3">Real Time Data Sync</h5>
+                        <p class="stockDetails">Our software is integrated with attendance devices allowing quick real
+                            time synchronization of attendance data.
+                        </p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/attendance2.svg" alt="inventoryfeatures2" title="Employee Attendance">
+                        <h5 class="title mt-3">Employee Attendance</h5>
+                        <p class="stockDetails">Easily submit attendance of your staffs with in/out times besides
+                            present, absent, late or leaves etc.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/attendance3.svg" alt="inventoryfeatures3" title="Employee Attendance Logs">
+                        <h5 class="title mt-3">Employee Attendance Logs</h5>
+                        <p class="stockDetails">Monitor all employees attendance from one place with all attendance
+                            history, in/out time & worked hours etc.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/attendance4.svg" alt="inventoryfeatures4" title="Detailed Attendance History">
+                        <h5 class="title mt-3">Detailed Attendance History</h5>
+                        <p class="stockDetails">Get detailed attendance history employee wise along with total working
+                            days, in/out time, attendance status etc.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/attendance5.svg" alt="inventoryfeatures5" title="Attendance Report">
+                        <h5 class="title mt-3">Attendance Report</h5>
+                        <p class="stockDetails">
+                            View all employees attendance from one place displaying detailed view of attendance status,
+                            leaves etc.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/attendance6.svg" alt="inventoryfeatures6" title="Leave Setting">
+                        <h5 class="title mt-3">Leave Setting</h5>
+                        <p class="stockDetails">Manage easily all sorts of leaves by creating them from settings
+                            mentioning whether paid or unpaid leaves etc.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="inventoryFeatures">
+        <div class="container my-5 p-5">
+            <h3 class="wow zoomIn title  text-center  inventHead" data-wow-duration="1.5s" data-wow-delay=".5s">
+                Smart & Easy Payroll Management
+            </h3>
+            <div class="inventory-wrapper row col-12 col-md-12 ">
+
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/payroll-management1.svg" alt="inventoryfeatures1" title="Multiple Payroll">
+                        <h5 class="title mt-3">Multiple Payroll</h5>
+                        <p class="stockDetails">
+                            Create bulk payment schedule by department, group etc. Faster & efficient payment for large
+                            groups.
+                        </p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/payroll-management2final.svg" alt="inventoryfeatures2"
+                            title="Partial Payments System">
+                        <h5 class="title mt-3">Partial Payments System</h5>
+                        <p class="stockDetails">Our software can process partial payments accurately for your
+                            organizations with faster delivery.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/payroll-management3.svg" alt="inventoryfeatures3"
+                            title="Automated Salary Calculation">
+                        <h5 class="title mt-3">Automated Salary Calculation</h5>
+                        <p class="stockDetails">No more manual calculatons of salary, leave it to the software to
+                            generate correct salary automatically.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/payroll-management4.svg" alt="inventoryfeatures4" title="Payslip">
+                        <h5 class="title mt-3">Payslip</h5>
+                        <p class="stockDetails">Generate payslips to meet your client's requirement. Get detailed
+                            information of payment with deductions etc.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/payroll-management5.svg" alt="inventoryfeatures5" title="Summary Statement">
+                        <h5 class="title mt-3">Summary Statement</h5>
+                        <p class="stockDetails">
+                            Get detailed salary reports generated department wise etc. View employee salaries in
+                            seconds.
+                        </p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/payroll-management6.svg" alt="inventoryfeatures6" title="Refund Payment">
+                        <h5 class="title mt-3">Refund Payment</h5>
+                        <p class="stockDetails">Store funds & deduct the employee's salary when required & return it
+                            back to the employee when required.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="inventoryFeatures">
+        <div class="container my-5 p-5">
+            <h3 class="wow zoomIn title  text-center  inventHead" data-wow-duration="1.5s" data-wow-delay=".5s">Easy &
+                Quick Leave Management
+            </h3>
+            <div class="inventory-wrapper row col-12 col-md-12 ">
+
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/leave-management1.svg" alt="inventoryfeatures1" title="Leave Status">
+                        <h5 class="title mt-3">Leave Status</h5>
+                        <p class="stockDetails">View the current leave status of all employee from one place with leave
+                            application, leave availability, approval
+                            request etc.
+                        </p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/leave-management2.svg" alt="inventoryfeatures2" title="Leave Details">
+                        <h5 class="title mt-3">Leave Details</h5>
+                        <p class="stockDetails">View detailed summary of all types of leave of your organization & view
+                            leave policy of each employee in a clear
+                            reporting format.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/leave-management3.svg" alt="inventoryfeatures3" title="Leave Deduction">
+                        <h5 class="title mt-3">Leave Deduction</h5>
+                        <p class="stockDetails">Get the proper leave information of employee allowing you to efficiently
+                            handle leave deductions if necessary.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/leave-management4.svg" alt="inventoryfeatures4" title="Leave Carry">
+                        <h5 class="title mt-3">Leave Carry</h5>
+                        <p class="stockDetails">Software will carry forward the remaining leave within a certain period,
+                            later can be adjusted with the new period.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/leave-management5.svg" alt="inventoryfeatures5" title="Leave Cash-In">
+                        <h5 class="title mt-3">Leave Cash-In</h5>
+                        <p class="stockDetails">
+                            Convert any remaining leave into cash, automatically generate all remainging leave into
+                            cash.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/leave-management6.svg" alt="inventoryfeatures6" title="Online Portal">
+                        <h5 class="title mt-3">Online Portal</h5>
+                        <p class="stockDetails">Employee can apply for leave from employee portal & know about the leave
+                            application status.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="inventoryFeatures">
+        <div class="container my-5 p-5">
+            <h3 class="wow zoomIn title  text-center  inventHead" data-wow-duration="1.5s" data-wow-delay=".5s">
+                Robust Solution For Provident Fund
+            </h3>
+            <div class="inventory-wrapper row col-12 col-md-12 ">
+
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/provident-fund1.svg" alt="inventoryfeatures1" title="Auto Calculation">
+                        <h5 class="title mt-3">Auto Calculation</h5>
+                        <p class="stockDetails">
+                            Our software allow you to automatically calculate all existing & previous provident funds.
+                        </p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/provident-fund2.svg" alt="inventoryfeatures2"
+                            title="Provident Fund Contribution">
+                        <h5 class="title mt-3">Provident Fund Contribution</h5>
+                        <p class="stockDetails">
+                            Deduct a small percentage of employee salary & convert them to provident fund
+                        </p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/provident-fund3.svg" alt="inventoryfeatures3"
+                            title="Provident Fund Distribution">
+                        <h5 class="title mt-3">Provident Fund Distribution</h5>
+                        <p class="stockDetails">Create refund rules & configure application to automatically calculate
+                            provident fund.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/provident-fund4.svg" alt="inventoryfeatures4" title="Provident Fund Analysis">
+                        <h5 class="title mt-3">Provident Fund Analysis</h5>
+                        <p class="stockDetails">View all provident fund history of each employee allowing you to control
+                            all funds & transactions.</p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/provident-fund5.svg" alt="inventoryfeatures5" title="Income Distribution">
+                        <h5 class="title mt-3">Income Distribution</h5>
+                        <p class="stockDetails">
+                            Get complete summary of income distributed to each employee or individual employee.
+                        </p>
+                    </div>
+                </div>
+                <!----- Inventory Item Ends ----->
+                <!----- Inventory Item Starts ----->
+                <div class="col-sm-6 col-md-4 col-lg-4 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    <div class="inventory-item">
+                        <img src="images/provident-fund6.svg" alt="inventoryfeatures6" title="Gratuity Computation">
+                        <h5 class="title mt-3">Gratuity Computation</h5>
+                        <p class="stockDetails">Provide gratuity to deserving employees based on their performances for
+                            your organization within a certain time period.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="our service">
+
+        <div class="heading mb-5">
+            <h3 class="text-center title">Run your Complete Disciplinary Management</h3>
+        </div>
+        <div class="row mx-2 justify-content-center">
+
+
+            <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+                data-wow-delay="0.5s" data-wow-duration="1.4s"">
+                					<div class=" m-auto" id="circular">
+                <div class="keyfeature-img">
+                    <img src="images/recruitment-selection1.svg" alt="keyFeatures1" title="Disciplinary Statement"
+                        class="img-responsive keyfeatureimgsize">
+
+                </div>
+
+
+                <h6 class="text-center my-4  mx-5 keyHead">Disciplinary Statement</h6>
+                <p class="font-weight-bold text-center keydeatils">Define all reason statements so that employee abide
+                    by the organizations discipline.</p>
+            </div>
+        </div>
+        <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+            data-wow-delay="0.5s" data-wow-duration="1.4s"">
+                					<div class=" m-auto" id="circular">
+            <div class="keyfeature-img">
+                <img src="images/recruitment-selection2.svg" alt="keyFeatures1" title="Show Cause"
+                    class="img-responsive keyfeatureimgsize">
+
+            </div>
+
+
+            <h6 class="text-center my-4  mx-5 keyHead ">Show Cause</h6>
+            <p class="font-weight-bold text-center keydeatils">
+                Generate application against employee breaking the discipline later decided by management
+            </p>
+        </div>
+        </div>
+        <div class="col-11  col-sm-4 col-md-3 m-2 card  wow animate__animated animate__fadeInUp" id="serviceicons"
+            data-wow-delay="0.5s" data-wow-duration="1.4s"">
+                					<div class=" m-auto" id="circular">
+            <div class="keyfeature-img">
+                <img src="images/recruitment-selection3.svg" alt="keyFeatures1" title="Warning Letter"
+                    class="img-responsive keyfeatureimgsize">
+
+            </div>
+
+
+            <h6 class="text-center my-4  mx-5 keyHead ">Warning Letter</h6>
+            <p class="font-weight-bold text-center keydeatils">
+                Warn employee by warning letter for breaking the company policy so that he doesn't do it again.
+            </p>
+        </div>
+        </div>
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- footer section start -->
+    <div class="curvy" style="background-size: cover; height: auto">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="white" fill-opacity="1"
+                d="M0,96L60,122.7C120,149,240,203,360,218.7C480,235,600,213,720,170.7C840,128,960,64,1080,48C1200,32,1320,64,1380,80L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
+        <div class="container">
+            <div class="d-flex justify-content-around position-relative" onclick="start_project.html">
+                <hr class="line" />
+                <div class="d-flex justify-content-center align-items-center m-auto position-relative">
+                    <a href="start_project.html" class="icon-wrapper text-light position-absolute text-center"
+                        style="z-index: 1">
+                        <div>
+                            <strong>START <br />A PROJECT</strong>
+                        </div>
+                    </a>
+                    <div class="position-absolute" style="
+                  z-index: 0;
+                  border-radius: 100%;
+                  background: #4d4a5c;
+                  position: absolute;
+                  height: 134px;
+                  width: 134px;
+                "></div>
+                </div>
+                <hr class="line" />
+            </div>
+            <div class="mt-5 pt-3 d-flex justify-content-around position-relative">
+                <ul class="list-inline">
+                    <a href="#0" class="list-inline-item">
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="#0" class="list-inline-item">
+                        <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="#0" class="list-inline-item">
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="softniquebd@gmail.com" class="list-inline-item">
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="d-flex flex-column flex-md-row">
+                <div class="position-relative col-12 col-md-4">
+                    <div class="d-flex footercard">
+                        <img src="images/alifoot.png" alt="" height="65px" />
+                        <div class="ml-2 mt-2 col-xs-5">
+                            <strong>
+                                <h6 class="font-weight-bold" style="color: #81fa72">
+                                    MOHAMMAD ALI SHUVO
+                                </h6>
+                            </strong>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Dolor, blanditiis?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex footercard">
+                        <img src="images/nsdfoot.png" alt="" height="65px" />
+                        <div class="ml-2 mt-2">
+                            <strong>
+                                <h6 class="font-weight-bold" style="color: #81fa72">
+                                    NOUSHAD BHUIYAN
+                                </h6>
+                            </strong>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Dolor, blanditiis?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-2 m-md-0 m-auto text-center">
+                    <ul class="list-unstyled">
+                        <a href="#0" class="list-item text-light">
+                            <li class="mb-2">PROJECT</li>
+                        </a>
+                        <a href="#0" class="list-item text-light">
+                            <li class="mb-2">SERVICES</li>
+                        </a>
+                        <a href="#0" class="list-item text-light">
+                            <li class="mb-2">CONTACT</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="vl d-none d-md-block"></div>
+
+                <div class="col-12 col-md-3 m-md-0 m-auto text-center">
+                    <h6>VISIT OUR<br />PERSONAL PORTFOLIO</h6>
+                    <ul class="list-unstyled text-center">
+                        <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <li class="mb-2 text-capitalize">shuvo's portfolio</li>
+                        </a>
+                        <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                            <li class="mb-2 text-capitalize">noushad's portfolio</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col-1 position-inherit">
+                    <img class="logofooter" src="./images/softnique-footer.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="./js/main.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- <script src="./js/main.js"></script> -->
+<script src="./js/filterCustom.js"></script>
+
+<script src="./js/plugin.js"></script>
+<script src=""></script>
+<script src=""></script>
+
+</html>
