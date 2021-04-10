@@ -2280,8 +2280,8 @@ nav .dropdown-menu .dropdown-items:active {
 }
 
 .besdiePhone {
-  width: 353px;
     border-radius: 5px;
+    margin-top: 1em;
     padding: 56px 0;
     border: 1px solid transparent;
     box-shadow: 1px 1px 1px 0px rgba(62, 62, 62, 0.45);
