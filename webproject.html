@@ -106,6 +106,7 @@
                     <a class="dropdown-item" href="education_st.html"> Educational Management </a>
                     <a class="dropdown-item" href="accounting.html"> Accounting & Inventory </a>
                     <a class="dropdown-item" href="hrm_software.html">Human Resource Management </a>
+                    <a class="dropdown-item" href="point_of_sales.html">Point of Sale </a>
                   </ul>
                 </li>
               </ul>
@@ -1208,26 +1209,26 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 <script>
-  $('.read-more-state').on('change', function() {
-    if ($('.read-more-state').is(':checked'))
-    {
+  $('.read-more-state').on('change', function () {
+    if ($('.read-more-state').is(':checked')) {
       var selectedDiv = $(this).closest(".second_element");
-      var height = selectedDiv.height()+selectedDiv.children('.details-wrapper').height();
+      var height = selectedDiv.height() + selectedDiv.children('.details-wrapper').height();
       console.log(height);
       console.log(selectedDiv.children('.details-wrapper').height());
       $(selectedDiv).closest(".filtr-item").css('height', height);
     }
-  else {
-    var selectedDiv = $(this).closest(".second_element");
-      var height = selectedDiv.height()+selectedDiv.children('.details-wrapper').height();
+    else {
+      var selectedDiv = $(this).closest(".second_element");
+      var height = selectedDiv.height() + selectedDiv.children('.details-wrapper').height();
       console.log(height);
       console.log(selectedDiv.children('.details-wrapper').height());
       $(selectedDiv).closest(".filtr-item").css('height', '');
-  }
-});
+    }
+  });
 
 </script>
 
 <script src="./js/filterCustom.js"></script>
 <script src="./js/main.js"></script>
+
 </html>
