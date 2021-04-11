@@ -1818,6 +1818,7 @@ nav .dropdown-menu .dropdown-items:active {
 .Accordion__tabs {
   max-width: 600px;
   list-style: none;
+  margin: auto;
 }
 
 .Accordion__tab {
@@ -2280,6 +2281,7 @@ nav .dropdown-menu .dropdown-items:active {
 }
 
 .besdiePhone {
+    display: block;
     border-radius: 5px;
     margin-top: 1em;
     padding: 56px 0;
@@ -2312,20 +2314,17 @@ nav .dropdown-menu .dropdown-items:active {
 
 .phnc1 {
     width: 20%;
-    float: left;
 }
 
 .phnc1 i {
     color: #c7c6c7;
     font-size: 5vh;
-    padding-left: 20px;
     box-sizing: border-box;
     transition: all 0.3s linear;
 }
 
 .phnc2 {
     width: 80%;
-    float: left;
 }
 
 .phnc2 h3 {

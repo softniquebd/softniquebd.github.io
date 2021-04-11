@@ -1200,7 +1200,7 @@
       </div>
     </div>
   </div>
-  </div>
+  </div>++
 </body>
 
 <script src="js/jquery-3.4.1.min.js"></script>
@@ -1209,20 +1209,24 @@
 
 <script>
   $('.read-more-state').on('change', function() {
+    var selectedDiv = $(this).closest(".second_element");
+    var hiddenArea = +selectedDiv.children('.details-wrapper').height();
+    var height = selectedDiv.height() + hiddenArea;
+
     if ($('.read-more-state').is(':checked'))
     {
-      var selectedDiv = $(this).closest(".second_element");
-      var height = selectedDiv.height()+selectedDiv.children('.details-wrapper').height();
       console.log(height);
       console.log(selectedDiv.children('.details-wrapper').height());
-      $(selectedDiv).closest(".filtr-item").css('height', height);
+      $(selectedDiv).closest(".filtr-item").animate({
+        'height': height
+      });
     }
   else {
     var selectedDiv = $(this).closest(".second_element");
       var height = selectedDiv.height()+selectedDiv.children('.details-wrapper').height();
       console.log(height);
       console.log(selectedDiv.children('.details-wrapper').height());
-      $(selectedDiv).closest(".filtr-item").css('height', '');
+       $(selectedDiv).closest(".filtr-item").removeAttr('style')
   }
 });
 
