@@ -106,6 +106,7 @@
                     <a class="dropdown-item" href="education_st.html"> Educational Management </a>
                     <a class="dropdown-item" href="accounting.html"> Accounting & Inventory </a>
                     <a class="dropdown-item" href="hrm_software.html">Human Resource Management </a>
+                    <a class="dropdown-item" href="point_of_sales.html">Point of Sale </a>
                   </ul>
                 </li>
               </ul>
@@ -1221,9 +1222,9 @@
         'height': height
       });
     }
-  else {
-    var selectedDiv = $(this).closest(".second_element");
-      var height = selectedDiv.height()+selectedDiv.children('.details-wrapper').height();
+    else {
+      var selectedDiv = $(this).closest(".second_element");
+      var height = selectedDiv.height() + selectedDiv.children('.details-wrapper').height();
       console.log(height);
       console.log(selectedDiv.children('.details-wrapper').height());
        $(selectedDiv).closest(".filtr-item").removeAttr('style')
@@ -1234,4 +1235,5 @@
 
 <script src="./js/filterCustom.js"></script>
 <script src="./js/main.js"></script>
+
 </html>
