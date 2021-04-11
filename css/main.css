@@ -2329,9 +2329,8 @@ nav .dropdown-menu .dropdown-items:active {
 }
 
 .phnc2 h3 {
-    font-family: 'Titillium Web', sans-serif;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .phnc2 p {
@@ -2347,6 +2346,12 @@ nav .dropdown-menu .dropdown-items:active {
 
 
 /* service part ends */
+/* point of sales  */
+.point-intro
+{
+  font-weight: bold;
+  text-align: justify;
+}
 
 
 
