@@ -2361,9 +2361,14 @@ span.newline {
 }
 
 .poshead {
+  color: brown;
   font-size: 2em;
   font-weight: 900;
   margin-bottom: 2.1rem;
+}
+
+.fa-chevron-right {
+  color: rgb(233 0 202)
 }
 
 .verticalse_space {
