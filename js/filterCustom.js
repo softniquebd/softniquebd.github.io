@@ -34,7 +34,8 @@ function w3RemoveClass(element, name) {
     var selectedDiv = $(element).children(".second_element");
     var height = selectedDiv.height();
     console.log(selectedDiv)
-    console.log(height)
+     console.log(height)
+     $('something:visible').css('height', '0')
   //   $(element).closest(".filtr-item").height(height)
    }
   for (k = 0; k < arr2.length; k++) {
