@@ -1208,13 +1208,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 <script>
-  $(".read-more-trigger").on("click", function (e) {
+  $('.read-more-state').on('change', function() {
+    if ($('.read-more-state').is(':checked'))
+    {
+      var selectedDiv = $(this).closest(".second_element");
+      var height = selectedDiv.height()+selectedDiv.children('.details-wrapper').height();
+      console.log(height);
+      console.log(selectedDiv.children('.details-wrapper').height());
+      $(selectedDiv).closest(".filtr-item").css('height', height);
+    }
+  else {
     var selectedDiv = $(this).closest(".second_element");
-    var height = selectedDiv.height()+selectedDiv.children('details-wrapper').height();
-    console.log(height);
-    console.log(selectedDiv.children('details-wrapper').height());
-    $(selectedDiv).closest(".filtr-item").css('height', height);
-  })
+      var height = selectedDiv.height()+selectedDiv.children('.details-wrapper').height();
+      console.log(height);
+      console.log(selectedDiv.children('.details-wrapper').height());
+      $(selectedDiv).closest(".filtr-item").css('height', '');
+  }
+});
+
 </script>
 
 <script src="./js/filterCustom.js"></script>
