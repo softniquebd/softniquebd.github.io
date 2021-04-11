@@ -2118,36 +2118,36 @@ nav .dropdown-menu .dropdown-items:active {
 .metaliod {
   background-image: url(../images/industrial-theme1-demo.png);
 }
-.padma
-{
+
+.padma {
   background-image: url(../images/resort.png);
 }
-.hospital
-{
+
+.hospital {
   background-image: url(../images/hospital.png);
 }
-.civil
-{
+
+.civil {
   background-image: url(../images/civil.jpg);
 }
-.movie1
-{
+
+.movie1 {
   background-image: url(../images/movie_site.png);
 }
-.driver
-{
+
+.driver {
   background-image: url(../images/driver_school.png);
 }
-.sports
-{
+
+.sports {
   background-image: url(../images/sports.png);
 }
-.gym
-{
+
+.gym {
   background-image: url(../images/gym_website.png);
 }
-.coaching
-{
+
+.coaching {
   background-image: url(../images/course.png);
 }
 
@@ -2227,11 +2227,11 @@ nav .dropdown-menu .dropdown-items:active {
 /* service part starts*/
 
 .service a {
-    color: black;
+  color: black;
 }
 
 .service {
-    padding-top: 112px;
+  padding-top: 112px;
 }
 
 
@@ -2239,17 +2239,17 @@ nav .dropdown-menu .dropdown-items:active {
 /*Body2 start*/
 
 .body2 {
-    padding-bottom: 10px;
-    padding-top: 50px;
-    margin-bottom: 23px;
+  padding-bottom: 10px;
+  padding-top: 50px;
+  margin-bottom: 23px;
 }
 
 .body2 p {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 30px;
-    color: #5b646e;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #5b646e;
 }
 
 
@@ -2259,85 +2259,89 @@ nav .dropdown-menu .dropdown-items:active {
 /*Body3 Start*/
 
 .body3 .body3c1 {
-    width: 33.3%;
-    float: left;
-    /* padding-left: 1%; */
+  width: 33.3%;
+  float: left;
+  /* padding-left: 1%; */
 }
 
 .body3 .body3c2 {
-    width: 33.3%;
-    float: left;
-    text-align: center;
+  width: 33.3%;
+  float: left;
+  text-align: center;
 }
 
 .body3 .body3c3 {
-    width: 33.3%;
-    float: left;
-    /* padding-right: 1%; */
+  width: 33.3%;
+  float: left;
+  /* padding-right: 1%; */
 }
 
 .clr {
-    clear: both;
+  clear: both;
 }
 
 .besdiePhone {
-    display: block;
-    border-radius: 5px;
-    margin-top: 1em;
-    padding: 56px 0;
-    border: 1px solid transparent;
-    box-shadow: 1px 1px 5px 0px rgba(62, 62, 62, 0.45);
-    transition: all 150ms ease-in-out;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    border-radius: 15px;
-    -o-border-radius: 15px;
+  display: block;
+  border-radius: 5px;
+  margin-top: 1em;
+  padding: 46px 0;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 5px 0px rgba(62, 62, 62, 0.45);
+  transition: all 150ms ease-in-out;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  -o-border-radius: 15px;
 }
 
 .besdiePhone:hover {
-    top: -3px;
-    left: -3px;
-    box-shadow: 3px 3px 15px 0px rgba(82, 82, 82, 0.85);
-    background-color: rgba(28, 52, 129, 0.4);
-    background: url(../images/circle_hover.svg);
-    background-position-x: 320px;
-    transition-duration: 0.5s;
-    border-color: darkgray;
-    cursor: pointer;
+  top: -3px;
+  left: -3px;
+  box-shadow: 3px 3px 15px 0px rgba(82, 82, 82, 0.85);
+  background-color: rgba(28, 52, 129, 0.4);
+  background: url(../images/circle_hover.svg);
+  background-position-x: 320px;
+  transition-duration: 0.5s;
+  border-color: darkgray;
+  cursor: pointer;
+  color: black;
 }
 
 .besdiePhone:hover i,
 .besdiePhone:hover p {
-    color: black;
+  color: rgb(6, 9, 141);
+  margin-bottom: 0.3em;
 }
 
 .phnc1 {
-    width: 20%;
+  width: 20%;
 }
 
 .phnc1 i {
-    color: #c7c6c7;
-    font-size: 5vh;
-    box-sizing: border-box;
-    transition: all 0.3s linear;
+  color: #c7c6c7;
+  font-size: 5vh;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  margin-bottom: 0.2em;
+
 }
 
 .phnc2 {
-    width: 80%;
+  width: 80%;
 }
 
 .phnc2 h3 {
-    font-weight: 700;
-    font-size: 16px;
+  font-weight: 700;
+  font-size: 16px;
 }
 
 .phnc2 p {
-    font-family: 'Prompt', sans-serif;
-    font-weight: 400;
-    font-size: 11px;
-    color: #7e7d7e;
-    width: 90%;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #7e7d7e;
+  width: 90%;
 }
 
 
@@ -2346,23 +2350,23 @@ nav .dropdown-menu .dropdown-items:active {
 
 /* service part ends */
 /* point of sales  */
-.point-intro
-{
+.point-intro {
   font-weight: bold;
   text-align: justify;
 }
+
 span.newline {
-    display: block;
-    margin-bottom: 1.9rem;
+  display: block;
+  margin-bottom: 1.9rem;
 }
-.poshead
-{
-      font-size: 2em;
-    font-weight: 900;
-    margin-bottom: 2.1rem;
+
+.poshead {
+  font-size: 2em;
+  font-weight: 900;
+  margin-bottom: 2.1rem;
 }
-.verticalse_space
-{
+
+.verticalse_space {
   height: 120px;
 }
 
