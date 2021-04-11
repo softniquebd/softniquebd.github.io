@@ -222,20 +222,8 @@
                 <h6 class="header">Business outcome</h6>
                 <p class="project-bio">Represent company self valu, products and services</p>
               </div>
-
             </div>
-
-
-
-
-
-
-
-
-
-
           </div>
-
         </div>
 
 
@@ -1218,12 +1206,17 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script src="./js/main.js"></script>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<!-- <script src="./js/main.js"></script> -->
+
+<script>
+  $(".read-more-trigger").on("click", function (e) {
+    var selectedDiv = $(this).closest(".second_element");
+    var height = selectedDiv.height()+selectedDiv.children('details-wrapper').height();
+    console.log(height);
+    console.log(selectedDiv.children('details-wrapper').height());
+    $(selectedDiv).closest(".filtr-item").css('height', height);
+  })
+</script>
+
 <script src="./js/filterCustom.js"></script>
 <script src="./js/main.js"></script>
-
 </html>

@@ -30,6 +30,13 @@ function w3RemoveClass(element, name) {
   var k, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
+   if (name == 'show') {
+    var selectedDiv = $(element).children(".second_element");
+    var height = selectedDiv.height();
+    console.log(selectedDiv)
+    console.log(height)
+  //   $(element).closest(".filtr-item").height(height)
+   }
   for (k = 0; k < arr2.length; k++) {
     while (arr1.indexOf(arr2[k]) > -1) {
       arr1.splice(arr1.indexOf(arr2[k]), 1);     

@@ -2284,7 +2284,7 @@ nav .dropdown-menu .dropdown-items:active {
     margin-top: 1em;
     padding: 56px 0;
     border: 1px solid transparent;
-    box-shadow: 1px 1px 1px 0px rgba(62, 62, 62, 0.45);
+    box-shadow: 1px 1px 5px 0px rgba(62, 62, 62, 0.45);
     transition: all 150ms ease-in-out;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -2332,7 +2332,6 @@ nav .dropdown-menu .dropdown-items:active {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 700;
     font-size: 13px;
-    margin-bottom: 20px;
 }
 
 .phnc2 p {
