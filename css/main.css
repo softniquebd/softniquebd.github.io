@@ -2352,8 +2352,20 @@ nav .dropdown-menu .dropdown-items:active {
   font-weight: bold;
   text-align: justify;
 }
-
-
+span.newline {
+    display: block;
+    margin-bottom: 1.9rem;
+}
+.poshead
+{
+      font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 2.1rem;
+}
+.verticalse_space
+{
+  height: 120px;
+}
 
 
 
