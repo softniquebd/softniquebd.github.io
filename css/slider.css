@@ -264,6 +264,7 @@ ul.unstyled-wbrd li {
 
 ul.unstyled-wbrd li img {
     max-width: 50px;
+    height: auto !important;
 }
 
 .app-projects li {
