@@ -96,9 +96,10 @@
             </a>
             <div class="dropdown-menu wow animate__animated animate__flipInX" data-wow-duration="0.9s">
               <ul>
-                <a class="dropdown-item" href="#">Web Projects</a>
-                <a class="dropdown-item" href="app_projects.html">App Projects</a>
+                <a class="dropdown-item" href="#">Web Development</a>
+                <a class="dropdown-item" href="app_projects.html">App Development</a>
                 <a class="dropdown-item" href="graphics.html">Graphic Design</a>
+                <a class="dropdown-item" href="ecommerce.html">Ecommerce Development</a>
                 <li class=" nav-item dropdown dropdown-item">
                   <a class="dropdown-toggle" href="#" data-toggle="dropdown">Softwares</a>
                   <ul class="dropdown-menu" style="top: 0;left: 127px;">
@@ -1209,13 +1210,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 <script>
-  $('.read-more-state').on('change', function() {
+  $('.read-more-state').on('change', function () {
     var selectedDiv = $(this).closest(".second_element");
     var hiddenArea = +selectedDiv.children('.details-wrapper').height();
     var height = selectedDiv.height() + hiddenArea;
 
-    if ($('.read-more-state').is(':checked'))
-    {
+    if ($('.read-more-state').is(':checked')) {
       console.log(height);
       console.log(selectedDiv.children('.details-wrapper').height());
       $(selectedDiv).closest(".filtr-item").animate({
@@ -1227,9 +1227,9 @@
       var height = selectedDiv.height() + selectedDiv.children('.details-wrapper').height();
       console.log(height);
       console.log(selectedDiv.children('.details-wrapper').height());
-       $(selectedDiv).closest(".filtr-item").removeAttr('style')
-  }
-});
+      $(selectedDiv).closest(".filtr-item").removeAttr('style')
+    }
+  });
 
 </script>
 

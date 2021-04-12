@@ -2369,9 +2369,61 @@ span.newline {
 .verticalse_space {
   height: 120px;
 }
+.listItem
+{
+  text-align: justify;
+}
+.listItem i
+{
+  color: brown;
+}
+.eCard 
+{
+  width: 65vw !important;
+ 
+    position: relative;
+   
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 2em;
 
+}
+.cardE 
+{
+      height: 10vh;
+    border-radius: 2em;
+      position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+}
 
+.eHead:hover {
+  color: white !important;
 
+  background: linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important
+}
+.eHead:hover {
+  color: white !important;
+
+}
+.detailsE p
+{
+      color: grey;
+    font-size: 14px;
+}
 
 
 
