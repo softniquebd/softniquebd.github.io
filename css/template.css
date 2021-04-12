@@ -632,6 +632,15 @@ h1 {
 #breadcrumb.bg-features {
     background: url(../images/features-bg.jpg);
 }
+#breadcrumb.bg-restu {
+    background: url(../images/restubanner.jpg);
+}
+#breadcrumb.bg-superShop {
+    background: url(../images/supershopbackground.png);
+}
+#breadcrumb.bg-business{
+    background: url(../images/businessautoback.jpg);
+}
 #breadcrumb.bg-graphics {
     background: url(../images/photo-1497091071254-cc9b2ba7c48a.jfif);
 }
