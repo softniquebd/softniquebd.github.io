@@ -77,7 +77,7 @@ $.getJSON("data.json", async function (info) {
     function tagGenerator(tagData) {
         var listHtml = '';
         tagData.forEach(function (element, index) {
-            listHtml += `<li><a rel="tag" href="">${element}</a>
+            listHtml += `<li><a rel="tag" href="${window.location.href.split("#")[0].split("?")[0] + '?tag=' + element}">${element}</a>
                      </li>`
             console.log(element);
         })
