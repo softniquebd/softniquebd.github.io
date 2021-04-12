@@ -635,6 +635,9 @@ h1 {
 #breadcrumb.bg-restu {
     background: url(../images/restubanner.jpg);
 }
+#breadcrumb.bg-superShop {
+    background: url(../images/supershopbackground.png);
+}
 #breadcrumb.bg-graphics {
     background: url(../images/photo-1497091071254-cc9b2ba7c48a.jfif);
 }
