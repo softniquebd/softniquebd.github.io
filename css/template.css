@@ -644,6 +644,9 @@ h1 {
 #breadcrumb.bg-graphics {
     background: url(../images/photo-1497091071254-cc9b2ba7c48a.jfif);
 }
+#breadcrumb.bg-courier {
+    background: url(../images/courierback.jpg);
+}
 #breadcrumb.bg-ecommerce {
     background: url(../images/ecommerce-solution-service-banner.jpg);
 }
@@ -1218,4 +1221,8 @@ margin: 20px 0;
 	    font-weight: bold;
     text-align: justify;
     color: grey;
+}
+.courierText
+{
+	color: black !important;
 }
