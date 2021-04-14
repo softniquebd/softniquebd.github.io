@@ -569,7 +569,7 @@ $.getJSON("data.json", async function (info) {
                                     </label>
 
                                     <div class="entry__field" style="border:0;">
-                                    <input class="input" type="text" id="EMAIL" class="input-element form-control m-auto" name="EMAIL" autocomplete="off" placeholder="Email" data-required="true" required style="width: 87%;height: 2.9rem;font-family: var(--Lexend);border-radius: 2em;border: solid 2px fuchsia;"/>
+                                    <input class="input" type="text" id="EMAIL" class="input-element form-control m-auto" name="EMAIL" autocomplete="off" placeholder="Email" data-required="true" required style="height: 2.9rem;font-family: var(--Lexend);border-radius: 2em;border: solid 2px fuchsia;"/>
                                     </div>
                                 </div>
 
