@@ -1112,12 +1112,20 @@ h2.breadcrumb-subtitle {
 {
 	 background: url(../images/hrm-slider-1.jpg);
 }
+#breadcrumb.bg-real
+{
+	 background: url(../images/realestateback.jpg);
+}
 .keyfeature-img
 {
    align-items: center;
     width: 7.5vw;
     height: 7.5vw;
     margin: auto;
+}
+.travelP
+{
+	color :darkolivegreen;
 }
 .keydeatils
 {
@@ -1130,10 +1138,7 @@ h2.breadcrumb-subtitle {
 	font-size: 14px;
 	color: grey;
 }
-.keyfeatureimgsize
-{
-	padding: 14px !important;
-}
+
 .someFeatures-item,.quickFeatures-item,.inventory-item
 {
 	text-align: center;
