@@ -2434,7 +2434,13 @@ span.newline {
 
 
 
-
+/* travel css */
+.travelserv
+{
+  height: 18vh;
+  border-radius: 2em;
+  width: auto;
+}
 
 
 
