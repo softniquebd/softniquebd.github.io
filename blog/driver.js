@@ -87,7 +87,7 @@ $.getJSON("data.json", async function (info) {
     async function generateDesc(i) {
         var str = 'content:encoded';
         var settings = {
-            "url": "https://v1.nocodeapi.com/softniquebd/medium/LbdKuZbDcDGZfAdW?",
+            "url": "https://medium.com/feed/@18103107?format=json",
             "method": "get",
             "timeout": 0,
             "headers": {
