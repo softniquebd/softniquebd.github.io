@@ -1,3 +1,24 @@
+
+// var o1 = { a: 1 }, o2 = { b: 2 }, o3 = { c: 3 };
+
+// var obj = Object.assign(o1, o2, o3);
+// console.log(obj);
+
+// var str = 'content:encoded';
+// var settings = {
+//     "url": "https://v1.nocodeapi.com/softniquebd/medium/LbdKuZbDcDGZfAdW?",
+//     "method": "get",
+//     "timeout": 0,
+//     "headers": {
+//         "Content-Type": "application/json"
+//     },
+// };
+// var content = 'loading..'
+// await $.ajax(settings).done(function (response) {
+//     response = JSON.parse(response);
+//     content = response[parseInt(i)][str];
+// });
+
 {
     "posts": [
         {
@@ -30,8 +51,7 @@
                 "extension"
             ],
             "writerPic": "../images/alifoot.png",
-            "gitlink": "https://shuvo18103107.github.io/",
-            "htmlPostdesc": ""
+            "gitlink": "https://shuvo18103107.github.io/"
         },
         {
             "postImage": "../assets/Blog-post/blog3.png",
