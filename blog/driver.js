@@ -84,6 +84,35 @@ $.getJSON("data.json", async function (info) {
         return listHtml;
     }
 
+    async function generateDesc(i) {
+        var str = 'content:encoded';
+        var settings = {
+            "url": "https://v1.nocodeapi.com/softniquebd/medium/LbdKuZbDcDGZfAdW?",
+            "method": "get",
+            "timeout": 0,
+            "headers": {
+                "Content-Type": "application/json"
+            },
+        };
+        var content = 'loading..'
+        await $.ajax(settings).done(function (response) {
+            response = JSON.parse(response);
+            content = response[parseInt(i)][str];
+        });
+
+        $('.rich-editor-text').append(content);
+        $('.rich-editor-text figure, .rich-editor-text h3').each(function(){
+            $(this).addClass("text-center");
+        });
+        $('.rich-editor-text li').each(function(){
+            $(this).css("list-style-type", "square");
+        });
+
+        return $('.rich-editor-text').contents().filter(function(){
+            return this.nodeType === 3;
+        }).remove();
+    }
+
     function blogdetails(postnum) {
         var html = '';
         data.forEach(function (post, index) {
@@ -116,48 +145,7 @@ $.getJSON("data.json", async function (info) {
                 </div>
                 <div class="cs-post-option-panel">
                     <div class="rich-editor-text">
-                        <p>Ravenously while stridently coughed far promiscuously below jeez much yikes bland that
-                            salamander cunningly some over abhorrent as house with between ouch that well scurrilously
-                            alas capybara massive outdid oh said hello majestically roadrunner lobster much bled alas
-                            lighted together waved upheld more far woolly ahead darn far far bore far far saw baneful
-                            upset rebound bowed possessive before or indisputably against.</p>
-                        <p>After hamster hello less far astride where accordingly much because some far innocently
-                            invoked far pre-set or objective this pangolin tendentiously eagle near spread and overlay
-                            as abysmal a and before walrus much therefore some close victorious jeepers deeply forward
-                            while jeez and overlaid save hey ritually notwithstanding mounted about nonchalantly and
-                            less hence far like hey kissed. Hello impotent ravenous hey accordingly well much lopsidedly
-                            one far blinked lorikeet sternly futile jeepers strewed well following subconscious far on
-                            egregiously and away far alas much forward in but far opposite less editorial some together.
-                        </p>
-                        <h4>Simple answer is, because other candidates won’t.</h4>
-                        <p>Ravenously while stridently coughed far promiscuously below jeez much yikes bland that
-                            salamander cunningly some over abhorrent as house with between ouch that well scurrilously
-                            alas capybara massive outdid oh said hello majestically roadrunner lobster much bled alas
-                            lighted together waved upheld.</p>
-                        <div class="cs-main-post">
-                            <figure><img onload="pagespeed.CriticalImages.checkImageForCriticality(this);"
-                                    data-pagespeed-url-hash="2714250504" alt="jobline-blog (8)"
-                                    src="../images/office_kothone1.PNG">
-                            </figure>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <blockquote class="text-left-align">
-                                <span> Ravenously while stridently coughed far promiscuously below jeez much yikes bland
-                                    that salamander cunningly some over abhorrent as house with between ouch that well
-                                    scurrilously alas capybara massive outdid oh said hello majestically roadrunner
-                                    lobster much bled alas lighted together waved upheld.</span>
-                                <span class="author-name"> <a href="#">-- Robert Deneairo</a></span>
-                            </blockquote>
-                        </div>
-                        <p>Ravenously while stridently coughed far promiscuously below jeez much yikes bland that
-                            salamander cunningly some over abhorrent as house with between ouch that well scurrilously
-                            alas capybara massive outdid oh said hello majestically roadrunner lobster much bled alas
-                            lighted together waved upheld.</p>
-                    </div>
-                    <div class="cs-main-post">
-                        <figure><img 
-                                src="../images/office kothone-1.JPG">
-                        </figure>
+                         ${ generateDesc(index)}
                     </div>
                 </div>
 
@@ -165,9 +153,7 @@ $.getJSON("data.json", async function (info) {
                     <div class="tags">
                         <span>Tags</span>
                         <ul>
-                       ${tagGenerator(post.tags)
-
-                    }
+                       ${tagGenerator(post.tags)}
                         </ul>
                     </div>
                 </div>
@@ -319,11 +305,7 @@ $.getJSON("data.json", async function (info) {
     }
 
     function renderdetailsPage(postnum) {
-        $(`
-
-         ${blogdetails(postnum)}
-
-    `).insertAfter("nav");
+        $(`${blogdetails(postnum)}`).insertAfter("nav");
         loadAllScript()
     }
 
