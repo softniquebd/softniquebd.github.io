@@ -1,0 +1,963 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="./images/icon.png" sizes="16x16" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/hospital_main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/template.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://esteemsoftbd.com/arch/js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="https://esteemsoftbd.com/arch/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://esteemsoftbd.com/arch/css/bootstrap.min.css" /> -->
+    <title>Hotel Management Software</title>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" style="overflow-x: hidden;">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="114263207095888" theme_color="#ff7e29"
+        logged_in_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।"
+        logged_out_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।">
+
+        >
+    </div>
+    <div class="wrapper">
+        <!-- navbar section start -->
+        <nav class="navbar navbar-collapse navbar-expand-md fixed-top navbar-inverse navbar-right shadow bg-white wow animate__animated animate__slideInDown"
+            data-wow-delay="0s" data-wow-duration="1.4s">
+            <!-- Brand -->
+            <a class="navbar-brand wow animate__animated animate__jackInTheBox" data-wow-delay="1s"
+                data-wow-duration="1.4s" href="#"><img class="img-fluid" src="./images/nav-logo.png" height="70"
+                    width="140" /></a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="dark-blue-text"><i class="fa fa-bars fa-1x"
+                        style="font-size: 1.3em; color: #A35414;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            Portfolio
+                        </a>
+                        <div class="dropdown-menu wow animate__animated animate__flipInX" data-wow-duration="0.9s">
+                            <ul>
+                                <a class="dropdown-item" href="webproject.html">Web Development</a>
+                                <a class="dropdown-item" href="app_projects.html">App Development</a>
+                                <a class="dropdown-item" href="graphics.html">Graphic Design</a>
+                                <a class="dropdown-item" href="#">Ecommerce Development</a>
+                                <li class=" nav-item dropdown dropdown-item">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Softwares</a>
+                                    <ul class="dropdown-menu" style="top: 0;left: 127px;">
+                                        <a class="dropdown-item" href="hospital.html">Hospital Management </a>
+                                        <a class="dropdown-item" href="education_st.html"> Educational Management </a>
+                                        <a class="dropdown-item" href="accounting.html"> Accounting & Inventory </a>
+                                        <a class="dropdown-item" href="hrm_software.html">Human Resource Management </a>
+                                        <a class="dropdown-item" href="point_of_sales.html">Point of Sale </a>
+                                        <a class="dropdown-item" href="resturant.html">Restaurant Management</a>
+                                        <a class="dropdown-item" href="superShop.html">Super Shop Management</a>
+                                        <a class="dropdown-item" href="businessauto.html">Business Automation
+                                            Software</a>
+                                        <a class="dropdown-item" href="courierManagement.html">Courier Management
+                                            Software</a>
+                                        <a class="dropdown-item" href="travel&hospitality.html">Travel & Hospitality
+                                            Softwares</a>
+                                        <a class="dropdown-item" href="ispbillingsoft.html">ISP Billing Software</a>
+
+
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#serv">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog/index.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Links -->
+        </nav>
+        <section id="breadcrumb" class="bg-features bg-hotel">
+            <div class="shade-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="breadcrumb-wrapper">
+                            <h1 class="breadcrumb-title">Hotel Management Software</h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- software intro section store  -->
+
+        <section id="software_intro">
+            <h2 class="title text-center my-5 p-3">HOTEL MANAGEMENT SOFTWARE</h2>
+
+            <div class="row col-12 col-md-12 container-fluid mx-auto">
+                <div class="col-md-6 m-auto wow animate__animated animate__slideInLeft" data-wow-duration="1.5s">
+                    <p class="point-intro text-center">
+                        SoftniqueBD provides a cloud-based Hotel management software that helps hotel industries to
+                        streamline their complex task and customer support
+                        cycles. Our hotel management software is not just a Hotel system but an automated Hotel ERP
+                        solution that will improve
+                        your corporate marketing, guest management service, increase your work efficiency & employee
+                        productivity, Payroll &
+                        Account management and so on. The System will share one single database and all the data will be
+                        stored in a secure
+                        database so that all departments can see the real-time data. In addition, the system can also be
+                        integrated with other
+                        modules like the HR module, Restaurant Module, POS system and so on.
+
+                    </p>
+
+                </div>
+                <div class="col-md-4 wow animate__animated animate__bounceIn" data-wow-duration="1.5s">
+                    <img src="./images/hotelintro.jpg" class="img-fluid ">
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="service" id="service" style="padding-bottom: 122px;">
+            <div class="content wow animate__animated animate__zoomIn sec-title my-5" data-wow-duration="1.4s">
+                <h2 class="title text-center">
+                    Hotel ERP Features
+                </h2>
+                <p class="text-center mt-3 font-weight-bold">Total Hotel Management Software</p>
+            </div>
+
+
+            <div class="full_wrapper body3 mx-auto">
+                <div class="wrapper row mx-3">
+                    <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                        data-wow-duration="1.4s">
+                        <a href="#">
+                            <div class="besdiehotel ">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-cubes"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>Online Reserveren System</h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4 ">
+                                    <p class="font-weight-bold ">
+                                        A powerful web-based booking engine that will allow guests to book their rooms
+                                        online. The customers can also pay their
+                                        room tariffs online. This module also helps hotels to manage check-in and
+                                        check-out procedure of guests with 100%
+                                        accuracy.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-desktop"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>Front Office Management</h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        Front Office plays a vital role in a hotel, it is first and the last department
+                                        where a guest interacts. Our ERP
+                                        software show real-time information by which the front desk can manage room
+                                        booking, guest profile, check-in, and
+                                        check-out process in a more easier and efficient way.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+
+
+
+
+
+                    </div>
+                    <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                        data-wow-duration="1.4s">
+
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-pie-chart"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>Reporting</h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        Hotel ERP software also comes with a great reporting feature. With the help of
+                                        this module, top management can generate
+                                        sales reports, expense report and so on. With that report, top management can
+                                        evaluate their performance.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-cart-plus"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>Inventory Management</h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        Inventory management is a big challenge for hotel industries. They have to
+                                        purchase a lot of items every day. It is very
+                                        tough for them to manage the inventory. But our Smart Hotel ERP comes with an
+                                        Inventory management module by which
+                                        hotels can track all available items and at the same time, hotels can track out
+                                        of stock items.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                        data-wow-duration="1.4s">
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-cutlery"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>Restaurant Management</h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        Our Hotel ERP software also includes Resturant management tools. This tool will
+                                        boost your restaurant performance. From
+                                        table reservation to all incoming takeaway, everything can be managed by a
+                                        couple of clicks.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-calculator"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>Payroll & Accounts Management</h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        Our Hotel management software can also be integrated with Payroll & Accounts
+                                        management module. With the help of these
+                                        modules, Hotels can disburse salary, other conveyance to its employees. All
+                                        kinds of accounting activities can also be
+                                        done with that module.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+                    </div>
+
+
+
+                    <div class=" clr ">
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section id="targetBusiness">
+            <div class="container my-5 p-4">
+                <h3 class="wow zoomIn text-center title targetBusiness" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    Important Features List of Ecommerce Website
+                </h3>
+                <div class="targetBusiness-wrapper row col-12 col-md-12">
+
+                    <!----- Target Business Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <div class="targetBusiness-item">
+                            <ul>
+                                <li><i class="fa fa-fw fa-chevron-right"></i> Category Management</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Product Management</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Product Inventory Management</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i> Order and Delivery Management</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i> Account and Profit Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!----- Target Business Item Ends ----->
+                    <!----- Target Business Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <div class="targetBusiness-item">
+                            <ul>
+                                <li><i class="fa fa-fw fa-chevron-right"></i> Discount and Promotion Management</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i> An easy checkout System</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Sales Reports</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Search engine optimized code and layout
+                                </li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Reporting tools</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!----- Target Business Item Ends ----->
+                    <!----- Target Business Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <div class="targetBusiness-item">
+                            <ul>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Integrated blog or articles Page</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Multiple Payment options</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>The ability to scale up with any Device
+                                </li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Product Ratings & Comments Ratings </li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Customer Feedback</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <div class="targetBusiness-item">
+                            <ul>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Dynamic eCommerce Management Panel</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>eCommerce Categorie Management</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>An easy-to-use checkout
+                                </li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Clear, User-friendly Navigation </li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Interactive User Interface</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!----- Target Business Item Ends ----->
+                </div>
+            </div>
+        </section>
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="container">
+                    <h2 class="title wow zoomIn ">Product Management</h2>
+                </div>
+                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/ecommerce2.jpg"
+                        alt="about image" class="img-fluid img-round">
+                </div>
+                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                    <p></p><span class="newline"></span>
+                    <ul><span class="newline"></span>
+                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>Product inserts, Edit, Delete and
+                                search</strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Final approval facility of Product
+                                Stock</strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Insert your product image</strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Showing similar items list</strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Developed Payment integration</strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Collection to store or regular
+                                shipping</strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Add facilities to Wish-list and Comparison
+                                functionalities</strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Share Buttons for different Social Media
+                            </strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Search Results rewrites and
+                                redirects</strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Different attributes like sizes, colors,
+                                models</strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Multiple images per product</strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Products pictures zooming
+                                facilities</strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Choice List of products per page</strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Product sorting by relevance and
+                                price</strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Manufacturers, brands management</strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Inventory Management, Minimum and Maximum
+                                quantities</strong></li><span class="newline"></span>
+                    </ul><span class="newline"></span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="verticalse_space"></div>
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="container">
+                    <h2 class="title wow zoomIn ">Customer Management System</h2>
+                </div>
+                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/ecommerce3.jpg"
+                        alt="about image" class="img-fluid img-round">
+                </div>
+                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                    <p></p><span class="newline"></span>
+                    <ul><span class="newline"></span>
+                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>Manage customer accounts
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Customer details and previous orders
+                                view</strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Individual Customers product reviews
+
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Verify customer accounts by SMS</strong>
+                        </li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Order delivery tracking system</strong>
+                        </li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong> Delete customer accounts </strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Reset customer passwords</strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Export customers to Excel
+                            </strong></li><span class="newline"></span>
+
+                    </ul><span class="newline"></span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="verticalse_space"></div>
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="container">
+                    <h2 class="title wow zoomIn ">Orders Management (OMS)</h2>
+                </div>
+                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/ecommerce1.jpg"
+                        alt="about image" class="img-fluid img-round">
+                </div>
+                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                    <p></p><span class="newline"></span>
+                    <ul><span class="newline"></span>
+                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Searching and sorting facility to find orders
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Full authority to Manage and updated order
+                                status</strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Track order number with customer information
+
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Auto Listed order number and all customer information
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Delivery tracking status when order is placed</strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Applying Different offer and promotion on Order</strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Confirmation email when order is placed</strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Auto updated inventory list by Adding returned products
+                            </strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Adding private notes to the order
+                            </strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Customization on Orders statuses
+                            </strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Auto printed PDF invoices, slips and delivery slips
+                            </strong></li><span class="newline"></span>
+
+                    </ul><span class="newline"></span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="verticalse_space"></div>
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="container">
+                    <h2 class="title wow zoomIn ">Statistics / graph oriented Result</h2>
+                </div>
+                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/staecommerce.jpg"
+                        alt="about image" class="img-fluid img-round">
+                </div>
+                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                    <p></p><span class="newline"></span>
+                    <ul><span class="newline"></span>
+                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Interactive administrative dashboard with charts and statistics
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Dashboard statistics new customers vs. returning
+                            </strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Statistics on Store sales order volume
+
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Statistics on Store sales by amount
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Per affiliate Statistics</strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Google Analytics integration</strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                General reports on inventory reporting, products in store</strong>
+
+
+                    </ul><span class="newline"></span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="verticalse_space"></div>
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="container">
+                    <h2 class="title wow zoomIn ">Ecommerce Security</h2>
+                </div>
+                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/ecommercesecurity.jpg"
+                        alt="about image" class="img-fluid img-round">
+                </div>
+                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                    <p></p><span class="newline"></span>
+                    <ul><span class="newline"></span>
+                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                SSL certificates
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Secured versions of a framework
+                            </strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Protection against DDoS targets
+
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Security auditing
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Site monitoring</strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Protection from SQL Injection</strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Cookies encryption</strong><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Block repeated attempts to recover passwords</strong><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Phishing and spam protected</strong><span class="newline"></span>
+
+
+                    </ul><span class="newline"></span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="verticalse_space"></div>
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="container">
+                    <h2 class="title wow zoomIn ">Ecommerce Administration</h2>
+                </div>
+                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img
+                        src="./images/systemadministration.jpg" alt="about image" class="img-fluid img-round">
+                </div>
+                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                    <p></p><span class="newline"></span>
+                    <ul><span class="newline"></span>
+                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Users Management and permissions
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Maintenance mode
+                            </strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                IP white list system for user
+
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Content management system
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Database backup facilities</strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                SMTP integration for e-mails sending</strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Products indexation for an optimized search</strong>
+
+
+
+                    </ul><span class="newline"></span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="verticalse_space"></div>
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="container">
+                    <h2 class="title wow zoomIn ">SMS and Email Integration</h2>
+                </div>
+                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/emailsms.jpg"
+                        alt="about image" class="img-fluid img-round">
+                </div>
+                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                    <p></p><span class="newline"></span>
+                    <ul><span class="newline"></span>
+                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Customer accounts by SMS
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Order placed confirmation
+                            </strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Payment confirmation by SMS and Email
+
+                            </strong></li>
+                        <span class="newline"></span>
+
+
+
+                    </ul><span class="newline"></span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="verticalse_space"></div>
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="container">
+                    <h2 class="title wow zoomIn ">Reports</h2>
+                </div>
+                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/ecommerceReport.jpg"
+                        alt="about image" class="img-fluid img-round">
+                </div>
+                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                    <p></p><span class="newline"></span>
+                    <ul><span class="newline"></span>
+                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Product inventory report with attribute (color, size)
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Reports on Party Ledger
+                            </strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Income Statement reports
+
+                            </strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Trial Balance report
+
+                            </strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Report on Sales and SMS
+                            </strong></li><span class="newline"></span>
+                        <span class="newline"></span>
+
+
+
+                    </ul><span class="newline"></span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <div class="verticalse_space"></div>
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="container">
+                    <h2 class="title wow zoomIn ">Web Content</h2>
+                </div>
+                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/webcontent.jpg"
+                        alt="about image" class="img-fluid img-round">
+                </div>
+                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                    <p></p><span class="newline"></span>
+                    <ul><span class="newline"></span>
+                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Home page content
+                            </strong></li>
+                        <span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Warranty Policy
+                            </strong>
+                        </li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Returns and Replacement
+
+                            </strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                FAQ, Privacy Policy, Cookie Policy
+
+                            </strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Unlimited page creation facility
+                            </strong></li><span class="newline"></span>
+                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                Live Chat integration
+                            </strong></li><span class="newline"></span>
+
+
+
+
+                    </ul><span class="newline"></span>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- footer section start -->
+        <div class="curvy" style="background-size: cover; height: auto">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,96L60,122.7C120,149,240,203,360,218.7C480,235,600,213,720,170.7C840,128,960,64,1080,48C1200,32,1320,64,1380,80L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div class="container">
+                <div class="d-flex justify-content-around position-relative" onclick="start_project.html">
+                    <hr class="line" />
+                    <div class="d-flex justify-content-center align-items-center m-auto position-relative">
+                        <a href="start_project.html" class="icon-wrapper text-light position-absolute text-center"
+                            style="z-index: 1">
+                            <div>
+                                <strong>START <br />A PROJECT</strong>
+                            </div>
+                        </a>
+                        <div class="position-absolute" style="
+                  z-index: 0;
+                  border-radius: 100%;
+                  background: #4d4a5c;
+                  position: absolute;
+                  height: 134px;
+                  width: 134px;
+                "></div>
+                    </div>
+                    <hr class="line" />
+                </div>
+                <div class="mt-5 pt-3 d-flex justify-content-around position-relative">
+                    <ul class="list-inline">
+                        <a href="#0" class="list-inline-item">
+                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#0" class="list-inline-item">
+                            <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#0" class="list-inline-item">
+                            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="softniquebd@gmail.com" class="list-inline-item">
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column flex-md-row">
+                    <div class="position-relative col-12 col-md-4">
+                        <div class="d-flex footercard">
+                            <img src="images/alifoot.png" alt="" height="65px" />
+                            <div class="ml-2 mt-2 col-xs-5">
+                                <strong>
+                                    <h6 class="font-weight-bold" style="color: #81fa72">
+                                        MOHAMMAD ALI SHUVO
+                                    </h6>
+                                </strong>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor, blanditiis?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex footercard">
+                            <img src="images/nsdfoot.png" alt="" height="65px" />
+                            <div class="ml-2 mt-2">
+                                <strong>
+                                    <h6 class="font-weight-bold" style="color: #81fa72">
+                                        NOUSHAD BHUIYAN
+                                    </h6>
+                                </strong>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor, blanditiis?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 m-md-0 m-auto text-center">
+                        <ul class="list-unstyled">
+                            <a href="#0" class="list-item text-light">
+                                <li class="mb-2">PROJECT</li>
+                            </a>
+                            <a href="#0" class="list-item text-light">
+                                <li class="mb-2">SERVICES</li>
+                            </a>
+                            <a href="#0" class="list-item text-light">
+                                <li class="mb-2">CONTACT</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="vl d-none d-md-block"></div>
+
+                    <div class="col-12 col-md-3 m-md-0 m-auto text-center">
+                        <h6>VISIT OUR<br />PERSONAL PORTFOLIO</h6>
+                        <ul class="list-unstyled text-center">
+                            <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <li class="mb-2 text-capitalize">shuvo's portfolio</li>
+                            </a>
+                            <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <li class="mb-2 text-capitalize">noushad's portfolio</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-1 position-inherit">
+                        <img class="logofooter" src="./images/softnique-footer.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="./js/main.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- <script src="./js/main.js"></script> -->
+<script src="./js/filterCustom.js"></script>
+
+<script src="./js/plugin.js"></script>
+<script src=""></script>
+<script src=""></script>
+
+</html>
