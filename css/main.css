@@ -2441,6 +2441,39 @@ span.newline {
   border-radius: 2em;
   width: auto;
 }
+/* isp css */
+.single-sercice-feature:hover {
+  border-radius: 1.3em;
+    background: linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
+    -webkit-transition: .4s linear 0s;
+    -moz-transition: .4s linear 0s;
+    -ms-transition: .4s linear 0s;
+    transition: .4s linear 0s;
+    color: #ffffff;
+}
+.single-sercice-feature:hover i {
+  color: white;
+  
+}
+.single-sercice-feature {
+  border-radius: 1.3em;
+    background: #FAFBFC;
+    padding: 20px 46px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 3;
+}
+.single-sercice-feature li {
+  font-weight: bold;
+ 
+}
+
+.ispicon
+{
+      color: firebrick;
+    margin-right: 9px;
+    font-size: 11px;
+}
 
 
 
