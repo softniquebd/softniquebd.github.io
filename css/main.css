@@ -2314,6 +2314,40 @@ nav .dropdown-menu .dropdown-items:active {
   color: rgb(6, 9, 141);
   margin-bottom: 0.3em;
 }
+.besdiehotel {
+  display: block;
+  border-radius: 5px;
+  margin-top: 1em;
+  height: 15em;
+  padding: 30px 0;
+  border: 1px solid transparent;
+  box-shadow: 1px 1px 5px 0px rgba(62, 62, 62, 0.45);
+  transition: all 150ms ease-in-out;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.besdiehotel:hover {
+  top: -3px;
+  left: -3px;
+  box-shadow: 3px 3px 15px 0px rgba(82, 82, 82, 0.85);
+  background-color: rgba(28, 52, 129, 0.4);
+  background: url(../images/circle_hover.svg);
+  background-position-x: 320px;
+  transition-duration: 0.5s;
+  border-color: darkgray;
+  cursor: pointer;
+  color: black;
+}
+
+.besdiehotel:hover i,
+.besdiehotel:hover p {
+  color: rgb(6, 9, 141);
+  margin-bottom: 0.3em;
+}
 
 .phnc1 {
   width: 20%;
@@ -2429,8 +2463,10 @@ span.newline {
 
 .detailsE p {
   color: grey;
-  font-size: 14px;
+  font-size: 12px;
 }
+
+
 
 
 
@@ -2440,6 +2476,39 @@ span.newline {
   height: 18vh;
   border-radius: 2em;
   width: auto;
+}
+/* isp css */
+.single-sercice-feature:hover {
+  border-radius: 1.3em;
+    background: linear-gradient(to left, #4f4fcc, #9758b4, #ff00cc) !important;
+    -webkit-transition: .4s linear 0s;
+    -moz-transition: .4s linear 0s;
+    -ms-transition: .4s linear 0s;
+    transition: .4s linear 0s;
+    color: #ffffff;
+}
+.single-sercice-feature:hover i {
+  color: white;
+  
+}
+.single-sercice-feature {
+  border-radius: 1.3em;
+    background: #FAFBFC;
+    padding: 20px 46px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 3;
+}
+.single-sercice-feature li {
+  font-weight: bold;
+ 
+}
+
+.ispicon
+{
+      color: firebrick;
+    margin-right: 9px;
+    font-size: 11px;
 }
 
 
