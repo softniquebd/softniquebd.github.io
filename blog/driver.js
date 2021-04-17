@@ -128,9 +128,10 @@ $.getJSON("data.json", async function (info) {
                 "Content-Type": "application/json"
             },
         };
-        var content;
+
+        var content='...';
         await $.ajax(settings).done(function (response) {
-            response = JSON.parse(response);
+            if (typeof response == 'string') {response = JSON.parse(response);}
             mediumData = response;
             console.log(mediumData[i].title)
             content = response[parseInt(i)][str];
@@ -147,10 +148,11 @@ $.getJSON("data.json", async function (info) {
             $(this).css("list-style-type", "square");
         });
 
-         $('.rich-editor-text').contents().filter(function(){
-            return this.nodeType === 3;
-         }).remove();
-        return 'Loading..'
+        $('.rich-editor-text').contents().filter(function(){
+        return this.nodeType === 3;
+        }).remove();
+
+        return 'Loading..';
     }
 
     function blogdetails(postnum) {
