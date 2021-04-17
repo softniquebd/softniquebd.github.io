@@ -1,0 +1,783 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="UTF-16" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="./images/icon.png" sizes="16x16" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/hospital_main.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/template.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://esteemsoftbd.com/arch/js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="https://esteemsoftbd.com/arch/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="https://esteemsoftbd.com/arch/css/bootstrap.min.css" /> -->
+    <title>Garments ERP Softwar</title>
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100" style="overflow-x: hidden;">
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="114263207095888" theme_color="#ff7e29"
+        logged_in_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।"
+        logged_out_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।">
+
+        >
+    </div>
+    <div class="wrapper">
+        <!-- navbar section start -->
+        <nav class="navbar navbar-collapse navbar-expand-md fixed-top navbar-inverse navbar-right shadow bg-white wow animate__animated animate__slideInDown"
+            data-wow-delay="0s" data-wow-duration="1.4s">
+            <!-- Brand -->
+            <a class="navbar-brand wow animate__animated animate__jackInTheBox" data-wow-delay="1s"
+                data-wow-duration="1.4s" href="#"><img class="img-fluid" src="./images/nav-logo.png" height="70"
+                    width="140" /></a>
+
+            <!-- Collapse button -->
+            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="dark-blue-text"><i class="fa fa-bars fa-1x"
+                        style="font-size: 1.3em; color: #A35414;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+
+                    <!-- Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
+                            Portfolio
+                        </a>
+                        <div class="dropdown-menu wow animate__animated animate__flipInX" data-wow-duration="0.9s">
+                            <ul>
+                                <a class="dropdown-item" href="webproject.html">Web Development</a>
+                                <a class="dropdown-item" href="app_projects.html">App Development</a>
+                                <a class="dropdown-item" href="graphics.html">Graphic Design</a>
+                                <a class="dropdown-item" href="#">Ecommerce Development</a>
+                                <li class=" nav-item dropdown dropdown-item">
+                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Softwares</a>
+                                    <ul class="dropdown-menu" style="top: 0;left: 127px;">
+                                        <a class="dropdown-item" href="hospital.html">Hospital Management </a>
+                                        <a class="dropdown-item" href="education_st.html"> Educational Management </a>
+                                        <a class="dropdown-item" href="accounting.html"> Accounting & Inventory </a>
+                                        <a class="dropdown-item" href="hrm_software.html">Human Resource Management </a>
+                                        <a class="dropdown-item" href="point_of_sales.html">Point of Sale </a>
+                                        <a class="dropdown-item" href="resturant.html">Restaurant Management</a>
+                                        <a class="dropdown-item" href="superShop.html">Super Shop Management</a>
+                                        <a class="dropdown-item" href="businessauto.html">Business Automation
+                                            Software</a>
+                                        <a class="dropdown-item" href="courierManagement.html">Courier Management
+                                            Software</a>
+                                        <a class="dropdown-item" href="travel&hospitality.html">Travel & Hospitality
+                                            Softwares</a>
+                                        <a class="dropdown-item" href="ispbillingsoft.html">ISP Billing Software</a>
+                                        <a class="dropdown-item" href="#">Hotel Management Software</a>
+
+                                        <a class="dropdown-item" href="realEstate.html">
+                                            Real Estate Management Software
+                                        </a>
+                                        <a class="dropdown-item" href="#">
+                                            Garments ERP Software
+                                        </a>
+
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html#serv">Services</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog/index.html">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Links -->
+        </nav>
+        <section id="breadcrumb" class="bg-features bg-garments">
+            <div class="shade-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="breadcrumb-wrapper">
+                            <h1 class="breadcrumb-title">Garments ERP Softwar</h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- software intro section store  -->
+
+        <section id="software_intro">
+            <h2 class="title text-center my-5 p-3">Garments ERP Softwar</h2>
+
+            <div class="row col-12 col-md-12 container-fluid mx-auto">
+                <div class="col-md-6 m-auto wow animate__animated animate__slideInLeft" data-wow-duration="1.5s">
+                    <p class="point-intro text-center">
+                        SoftniqueBd is one of the leading Garments ERP solution provider, especially for Garments
+                        industries which is
+                        integrated with different modules that cover all the aspects of your Garments Business. This
+                        Garments ERP System
+                        supports multi-currency, multi-Company and multi-location based operations. It aims at keeping
+                        track of all the
+                        activities including receiving buyer order, costing of order, resource planning, procurement of
+                        raw materials,
+                        production management, inventory management, import-export process, order reconciliation process
+                        etc. It’s also
+                        integrated with other modules of Smart ERP including finance, accounts, HRM, supply-chain etc.
+                        With this automated
+                        solution you can easily track your business activities and entire operations of your garments
+                        manufacturing process.
+
+                    </p>
+
+                </div>
+                <div class="col-md-4 wow animate__animated animate__bounceIn" data-wow-duration="1.5s">
+                    <img src="./images/garmentsintro.jpg" class="img-fluid ">
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="service" id="service" style="padding-bottom: 122px;">
+            <div class="content wow animate__animated animate__zoomIn sec-title my-5" data-wow-duration="1.4s">
+                <h2 class="title text-center">
+                    Garments ERP Softwar Feature
+                </h2>
+
+            </div>
+
+
+            <div class="full_wrapper body3 mx-auto">
+                <div class="wrapper row mx-3">
+                    <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                        data-wow-duration="1.4s">
+                        <a href="#">
+                            <div class="besdiehotel ">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-cubes"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>Merchandising Management</h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4 ">
+                                    <p class="font-weight-bold ">
+                                        With the help of this module you can manage Buyer Order, Style Setup, Sample
+                                        Details with Approval & comments different
+                                        aspects, Costing, pre-costing assumption, Purchase Order(PO) entry, PO(purchase
+                                        order) Details, Order Information form,
+                                        Order confirmation, Yarn booking, Knitting Program, Fabric Dyeing,Accessories
+                                        booking and so on.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-rocket"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>Knitting and Dyeing Program</h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        The Knitting and Dyeing module is a great help for the Garments industry in
+                                        delivering the product. This module consists
+                                        of functionalities like Knitting and Dyeing planning, machine scheduling, raw
+                                        material usage, Knit Yarn Issue, Gray
+                                        Fabric Receive, Gray Fabric Issue, Finish Fabric Issue Receive.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+
+
+
+
+
+                    </div>
+                    <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                        data-wow-duration="1.4s">
+
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-cart-plus"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>Inventory Management</h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        Our inventory module can be used to track the stock of items. Items can be
+                                        identified. Using that unique numbers
+                                        inventory system can keep track of items and trace their current location in the
+                                        organization. The inventory module
+                                        includes functionalities like inventory control, master units, stock utilization
+                                        reporting, etc.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-cogs"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>Production Management</h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        A complete look at the management of an apparel manufacturing system. From upper
+                                        management functions to employees on
+                                        the floor, this module also includes sections on information flow, marketing,
+                                        preseason planning, and much more.
+
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+
+                    </div>
+                    <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                        data-wow-duration="1.4s">
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-calculator"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>Accounts Financial Management</h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        The main function of this section is Voucher Entry, Voucher Posting or approval.
+                                        Voucher Entry based on voucher type as
+                                        Cash Payment, Cash Received, Bank Payment, Bank Received, contra account &
+                                        Journal. It also compatible with multiple
+                                        heads (COA) with different Credit(Cash or Bank Head) & Printing or you can also
+                                        export as extension PDF, doc.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-wrench"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>
+                                        Commercial & System Configuration
+                                    </h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        Commercial and LC management system for establishing LC in favor of seller or
+                                        exporter. Smart ERP LC management gives
+                                        you the guarantee to make all the payments of the particular sum in a specified
+                                        currency providing the seller with a
+                                        defined condition and submitting their prescribed documents. Particularly deals
+                                        with Garments import and export related
+                                        business.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+
+
+                    </div>
+
+
+
+
+                </div>
+                <div class="wrapper row  mx-3 ">
+                    <div class=" mx-auto col-11  body3c1  wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                        data-wow-duration="1.4s">
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-pie-chart"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>
+                                        HR & Payroll Management (HRM)
+                                    </h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        Human Resource module helps the HR team for efficient management of human
+                                        resources. HR module helps to manage employee
+                                        information, track employee records like performance reviews, designations, job
+                                        descriptions, skill matrix, time &
+                                        attendance tracking. An anther sub module in the HR module is Payroll System
+                                        which helps to manage salaries, payment
+                                        reports, etc.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+
+
+
+                    </div>
+                    <div class=" mx-auto col-11  body3c1  wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                        data-wow-duration="1.4s">
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-calendar-plus-o"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>
+                                        Attendance Management
+                                    </h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        HRM Module gives you an easy way to manage the attendance of your employees. The
+                                        system gives you all the
+                                        functionalities required to meet your customized attendance management needs.
+                                        The software takes your input and performs
+                                        rest of the attendance calculation.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+
+
+
+
+                    </div>
+                    <div class=" mx-auto col-11 body3c1  wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                        data-wow-duration="1.4s">
+                        <a href="#">
+                            <div class="besdiehotel m">
+                                <div class="phnc1 text-center mx-auto">
+                                    <i class="fa fa-clock-o"></i>
+                                </div>
+                                <div class="phnc2 text-center mx-auto">
+                                    <h3>
+                                        Scheduling & Time-Table Management
+                                    </h3>
+                                </div>
+                                <div class="detailsE mt-4 text-center px-4">
+                                    <p class="font-weight-bold ">
+                                        HRM Module Using web-enabled and self-service concepts, management of vacation
+                                        and leave requests was never easier. This
+                                        integrated module enables online processing of requests and approval for leave
+                                        and vacation time.
+                                    </p>
+
+                                </div>
+
+
+                            </div>
+
+                        </a>
+
+
+
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+        </section>
+
+
+        <section id="targetBusiness">
+            <div class="container my-5 p-4">
+                <h3 class="wow zoomIn text-center title targetBusiness" data-wow-duration="1.5s" data-wow-delay=".5s">
+                    What We Offers in Our Garments ERP Softwar
+                </h3>
+                <div class="targetBusiness-wrapper row col-12 col-md-12">
+
+                    <!----- Target Business Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <div class="targetBusiness-item">
+                            <ul>
+                                <li><i class="fa fa-fw fa-chevron-right"></i> Merchandising Management</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Time & Action (TNA)</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Yarn Order</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i> Knitting Program</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Dyeing Program</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!----- Target Business Item Ends ----->
+                    <!----- Target Business Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <div class="targetBusiness-item">
+                            <ul>
+                                <li><i class="fa fa-fw fa-chevron-right"></i> Inventory Management</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i> Accessories Inventory</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Supply-Chain & Procurement</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>
+                                    Production Management
+                                </li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Commercial & LC Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!----- Target Business Item Ends ----->
+                    <!----- Target Business Item Starts ----->
+                    <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <div class="targetBusiness-item">
+                            <ul>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Shipment Management</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Customer Relation- CRM</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>
+                                    General Store
+                                </li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Human Resource Management </li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Attendance & Payroll Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
+                        <div class="targetBusiness-item">
+                            <ul>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Account Management</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Employee self-service.</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>MIS Reports
+                                </li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Embroidery Management</li>
+                                <li><i class="fa fa-fw fa-chevron-right"></i>Accounts Operation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!----- Target Business Item Ends ----->
+                </div>
+            </div>
+        </section>
+        <!-- features of garments erp -->
+        <div class="single-service-p-section">
+            <div class="container">
+                <h2 class="title text-center my-5 p-3  wow animate__animated animate__zoomIn">
+                    Features of Garments ERP Software
+
+                </h2>
+
+
+
+                <div class="row col-12">
+
+                    <div
+                        class="col-xs-12 col-md-4 col-lg-4 col-sm-6  wow animate__animated animate__bounceIn  wow animate__animated animate__bounceIn">
+                        <div class="single-sercice-feature">
+
+                            <ul>
+                                <li> <i class="fa fa-circle ispicon"></i>Administrative</li>
+                                <li><i class="fa fa-circle ispicon"></i>Commercial Management</li>
+                                <li><i class="fa fa-circle ispicon"></i>Export</li>
+                                <li><i class="fa fa-circle ispicon"></i>Import</li>
+                                <li><i class="fa fa-circle ispicon"></i>Mechanizing Management</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="col-xs-12 col-md-4 col-lg-4 col-sm-6  wow animate__animated animate__bounceIn  wow animate__animated animate__bounceIn">
+                        <div class="single-sercice-feature">
+
+                            <ul>
+                                <li><i class="fa fa-circle ispicon"></i>Embroidery Management</li>
+                                <li><i class="fa fa-circle ispicon"></i>Finishing Management</li>
+                                <li><i class="fa fa-circle ispicon"></i>Washing Management</li>
+                                <li><i class="fa fa-circle ispicon"></i>Knitting Management </li>
+                                <li><i class="fa fa-circle ispicon"></i>Dyeing Management </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="col-xs-12 col-md-4 col-lg-4 col-sm-6  wow animate__animated animate__bounceIn  wow animate__animated animate__bounceIn">
+                        <div class="single-sercice-feature">
+
+                            <ul>
+                                <li><i class="fa fa-circle ispicon"></i>Inventory Managemen</li>
+                                <li><i class="fa fa-circle ispicon"></i>HR & Payroll Management</li>
+                                <li><i class="fa fa-circle ispicon"></i>HR & Payroll Reports</li>
+                                <li><i class="fa fa-circle ispicon"></i>Accounts Management</li>
+                                <li><i class="fa fa-circle ispicon"></i>Accounts Operation</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div
+                        class="col-xs-12 col-md-4 col-lg-4 col-sm-6  wow animate__animated animate__bounceIn  wow animate__animated animate__bounceIn">
+                        <div class="single-sercice-feature">
+
+                            <ul>
+                                <li><i class="fa fa-circle ispicon"></i>Production Management</li>
+                                <li><i class="fa fa-circle ispicon"></i>Sewing Management</li>
+                                <li><i class="fa fa-circle ispicon"></i>Printing Management</li>
+
+                                <li><i class="fa fa-circle ispicon"></i>Individual access </li>
+                                <li><i class="fa fa-circle ispicon"></i>Low cost & best support</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xs-12 col-md-4 col-lg-4 col-sm-6  wow animate__animated animate__bounceIn  wow animate__animated animate__bounceIn">
+                        <div class="single-sercice-feature">
+
+                            <ul>
+                                <li><i class="fa fa-circle ispicon"></i>Accounts Reports</li>
+                                <li><i class="fa fa-circle ispicon"></i>MIS Reports</li>
+                                <li><i class="fa fa-circle ispicon"></i>Add Package</li>
+                                <li><i class="fa fa-circle ispicon"></i>User Panel</li>
+                                <li><i class="fa fa-circle ispicon"></i> Mail & SMS sending</li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer section start -->
+        <div class="curvy" style="background-size: cover; height: auto">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="white" fill-opacity="1"
+                    d="M0,96L60,122.7C120,149,240,203,360,218.7C480,235,600,213,720,170.7C840,128,960,64,1080,48C1200,32,1320,64,1380,80L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                </path>
+            </svg>
+            <div class="container">
+                <div class="d-flex justify-content-around position-relative" onclick="start_project.html">
+                    <hr class="line" />
+                    <div class="d-flex justify-content-center align-items-center m-auto position-relative">
+                        <a href="start_project.html" class="icon-wrapper text-light position-absolute text-center"
+                            style="z-index: 1">
+                            <div>
+                                <strong>START <br />A PROJECT</strong>
+                            </div>
+                        </a>
+                        <div class="position-absolute" style="
+                  z-index: 0;
+                  border-radius: 100%;
+                  background: #4d4a5c;
+                  position: absolute;
+                  height: 134px;
+                  width: 134px;
+                "></div>
+                    </div>
+                    <hr class="line" />
+                </div>
+                <div class="mt-5 pt-3 d-flex justify-content-around position-relative">
+                    <ul class="list-inline">
+                        <a href="#0" class="list-inline-item">
+                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#0" class="list-inline-item">
+                            <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="#0" class="list-inline-item">
+                            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        </a>
+                        <a href="softniquebd@gmail.com" class="list-inline-item">
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column flex-md-row">
+                    <div class="position-relative col-12 col-md-4">
+                        <div class="d-flex footercard">
+                            <img src="images/alifoot.png" alt="" height="65px" />
+                            <div class="ml-2 mt-2 col-xs-5">
+                                <strong>
+                                    <h6 class="font-weight-bold" style="color: #81fa72">
+                                        MOHAMMAD ALI SHUVO
+                                    </h6>
+                                </strong>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor, blanditiis?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex footercard">
+                            <img src="images/nsdfoot.png" alt="" height="65px" />
+                            <div class="ml-2 mt-2">
+                                <strong>
+                                    <h6 class="font-weight-bold" style="color: #81fa72">
+                                        NOUSHAD BHUIYAN
+                                    </h6>
+                                </strong>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Dolor, blanditiis?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-2 m-md-0 m-auto text-center">
+                        <ul class="list-unstyled">
+                            <a href="#0" class="list-item text-light">
+                                <li class="mb-2">PROJECT</li>
+                            </a>
+                            <a href="#0" class="list-item text-light">
+                                <li class="mb-2">SERVICES</li>
+                            </a>
+                            <a href="#0" class="list-item text-light">
+                                <li class="mb-2">CONTACT</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="vl d-none d-md-block"></div>
+
+                    <div class="col-12 col-md-3 m-md-0 m-auto text-center">
+                        <h6>VISIT OUR<br />PERSONAL PORTFOLIO</h6>
+                        <ul class="list-unstyled text-center">
+                            <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <li class="mb-2 text-capitalize">shuvo's portfolio</li>
+                            </a>
+                            <a href="#0" class="list-item text-light d-flex justify-content-center align-items-center">
+                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                                <li class="mb-2 text-capitalize">noushad's portfolio</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-1 position-inherit">
+                        <img class="logofooter" src="./images/softnique-footer.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="./js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="./js/main.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- <script src="./js/main.js"></script> -->
+<script src="./js/filterCustom.js"></script>
+
+<script src="./js/plugin.js"></script>
+<script src=""></script>
+<script src=""></script>
+
+</html>
