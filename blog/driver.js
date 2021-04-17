@@ -119,7 +119,7 @@ $.getJSON("data.json", async function (info) {
     async function generateDesc(i) {
         var str = 'content:encoded';
         var streamUrl = generateURL();
-        console.log("url: "+streamUrl)
+        console.log("url: " + streamUrl)
         var settings = {
             "url": streamUrl,
             "method": "get",
@@ -132,6 +132,7 @@ $.getJSON("data.json", async function (info) {
         var content='...';
         await $.ajax(settings).done(function (response) {
             if (typeof response == 'string') {response = JSON.parse(response);}
+            // response = JSON.parse(response);
             mediumData = response;
             console.log(mediumData[i].title)
             content = response[parseInt(i)][str];
@@ -141,10 +142,10 @@ $.getJSON("data.json", async function (info) {
         });
 
         $('.rich-editor-text').append(content);
-        $('.rich-editor-text figure, .rich-editor-text h3').each(function(){
+        $('.rich-editor-text figure, .rich-editor-text h3').each(function () {
             $(this).addClass("text-center");
         });
-        $('.rich-editor-text li').each(function(){
+        $('.rich-editor-text li').each(function () {
             $(this).css("list-style-type", "square");
         });
 
@@ -185,7 +186,7 @@ $.getJSON("data.json", async function (info) {
                 </div>
                 <div class="cs-post-option-panel">
                     <div class="rich-editor-text">
-                         Loading.. ${ generateDesc(index)}
+                         Loading.. ${generateDesc(index)}
                     </div>
                 </div>
 
