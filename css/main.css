@@ -1982,6 +1982,52 @@ nav .dropdown-menu .dropdown-items:active {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
+/* custom software css */
+.startwrap .icon-wrapper  {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 105px;
+  width: 105px;
+  margin: auto;
+  -webkit-box-shadow: inset 0px 0px 0px 3px black;
+  box-shadow: inset 0px 0px 0px 3px black;
+  background: honeydew;
+  -webkit-box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: 250ms color;
+  -webkit-transition: 250ms color;
+  -moz-transition: 250ms color;
+  -ms-transition: 250ms color;
+  -o-transition: 250ms color;
+  -webkit-animation-name: wave;
+  animation-name: wave;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+
+
+
+
+
 
 .curvy .list-inline {
   font-size: 1.3em !important;
@@ -2511,7 +2557,7 @@ span.newline {
     font-size: 11px;
 }
 
-
+/* custom soft */
 
 
 
