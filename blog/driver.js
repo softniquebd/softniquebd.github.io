@@ -86,7 +86,7 @@ $.getJSON("data.json", async function (info) {
     }
 
     function generateURL() {
-        var urlToPass = 'https://v1.nocodeapi.com/softniquebd_0/medium/huCVrlYIYWadJpFh?'
+        var urlToPass = 'https://v1.nocodeapi.com/softniquebd_1/medium/IRXNMmLYulcsChUo?'
         // var URLlist =
         //     [   'https://v1.nocodeapi.com/softniquebd_0/medium/huCVrlYIYWadJpFh?',
         //         'https://v1.nocodeapi.com/softniquebd_1/medium/IRXNMmLYulcsChUo?',
@@ -113,7 +113,7 @@ $.getJSON("data.json", async function (info) {
         //     localStorage.setItem("apiUrl", URLlist[0])
         //     urlToPass = URLlist[0];
         // }
-        return urlToPass;
+        //return urlToPass;
     }
 
     async function generateDesc(i) {
@@ -141,7 +141,7 @@ $.getJSON("data.json", async function (info) {
             console.log(response)
         });
 
-        $('.rich-editor-text').append(content);
+        $('.rich-editor-text').append(`<iframe src="https://docs.google.com/document/d/e/2PACX-1vSlqBkwAtAL8s2GceEpfQvJQqIOsiC6cmKPyy5H1X6-UOijDuDi0l9TalFFJTlgyjHlBR5MoTMOpczc/pub?embedded=true" width="804" height="767" frameborder="0"></iframe>`);
         $('.rich-editor-text figure, .rich-editor-text h3').each(function () {
             $(this).addClass("text-center");
         });
