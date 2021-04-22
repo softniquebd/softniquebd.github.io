@@ -71,8 +71,8 @@ nav .dropdown i {
 }
 
 nav .dropdown-menu {
-  left: 575px;
-  min-width: 0;
+  /* left: 575px;
+  min-width: 0; */
   font-size: 0.86em;
   text-shadow: none !important;
   -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.25);
@@ -2562,40 +2562,17 @@ span.newline {
 /* navbar css */
 .softdrop
 {
-      opacity: 1;
-    visibility: visible;
-    transition: all ease .1s;
-    -webkit-transition: all ease .1s;
-    -ms-transition: all ease .1s;
-    z-index: 999;
-    height: auto;
-        max-width: 800px;
-    left: calc(50% - 400px);
-    right: auto;
-        width: 100%;
+   
+        max-width: 100%;
+  
     overflow: hidden;
-    box-shadow: 0 0 20px 5px rgb(0 0 0 / 30%);
-    border-radius: 0;
-    font-size: 18px;
-    background-color: #fff;
-    background: #fff;
-    box-shadow: 0 3px 3px rgb(0 0 0 / 20%);
-    position: absolute;
-    top: 100%;
+   
+    position: static;
+  
     left: 0;
-    width: 100%;
-    font-size: 14px;
+  
     line-height: 22px;
-    padding: 15px 8px 5px;
-    transition: all ease .5s;
-    -webkit-transition: all ease .5s;
-    -ms-transition: all ease .5s;
-    opacity: 0;
-    visibility: hidden;
-    z-index: -1;
-    text-align: left;
-    height: 0;
-        margin: -9px 0 0;
+ 
 }
 
 @media screen and (min-width: 992px)
@@ -2718,3 +2695,5 @@ span.newline {
     /* First the Grid */
   }
 }
+
+/* navbar final css */

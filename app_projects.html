@@ -15,6 +15,84 @@
     <title>App projects</title>
 
 </head>
+<style>
+    @media (min-width: 992px) {
+        .dropdown-menu .dropdown-toggle:after {
+            border-top: .3em solid transparent;
+            border-right: 0;
+            border-bottom: .3em solid transparent;
+            border-left: .3em solid;
+        }
+
+        .dropdown-menu .dropdown-menu {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .dropdown-menu li {
+            position: relative;
+        }
+
+        .nav-item .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
+
+        .nav-item .submenu-left {
+            right: 100%;
+            left: auto;
+        }
+
+        .dropdown-menu>li:hover {
+            background-color: #f1f1f1
+        }
+
+        .dropdown-menu>li:hover>.submenu {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        .dropdown-menu li {
+            display: block;
+        }
+
+        .dropdown-menu {
+            margin: 16.125rem 53px 0;
+            min-width: 63rem;
+            top: -256px !important;
+        }
+
+    }
+
+    @media screen and (max-width: 393px) {
+
+        .nabvarul li a {
+            font-size: 11px;
+        }
+
+        .navicon {
+            font-size: 14px !important;
+        }
+
+    }
+
+    @media screen and (max-width: 393px) {
+
+        .nabvarul li a {
+            font-size: 8.5px;
+        }
+
+        .nabvarul li a {
+            padding: 2px;
+        }
+
+
+
+    }
+</style>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100" style="overflow-x: hidden;">
     <!-- Load Facebook SDK for JavaScript -->
@@ -44,8 +122,8 @@
             data-wow-delay="0s" data-wow-duration="1.4s">
             <!-- Brand -->
             <a class="navbar-brand wow animate__animated animate__jackInTheBox" data-wow-delay="1s"
-                data-wow-duration="1.4s" href="#"><img class="img-fluid" src="./images/nav-logo.png" height="70"
-                    width="140" /></a>
+                data-wow-duration="1.4s" style="width: auto;" href="#">
+                <img class="img-fluid" src="./images/nav-logo.png" height="70" width="140" /></a>
 
             <!-- Collapse button -->
             <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
@@ -60,56 +138,94 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="webproject.html">Web</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">App</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="dropdown-toggle nav-link active" href="#" data-toggle="dropdown">Softwares</a>
 
-                    <!-- Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown">
-                            Portfolio
-                        </a>
-                        <div class="dropdown-menu wow animate__animated animate__flipInX" data-wow-duration="0.9s">
-                            <ul>
-                                <a class="dropdown-item" href="webproject.html">Web Development</a>
-                                <a class="dropdown-item" href="#">App Development</a>
-                                <a class="dropdown-item" href="graphics.html">Graphic Design</a>
-                                <a class="dropdown-item" href="ecommerce.html">Ecommerce Development</a>
-                                <li class=" nav-item dropdown dropdown-item">
-                                    <a class="dropdown-toggle" href="#" data-toggle="dropdown">Softwares</a>
-                                    <ul class="dropdown-menu" style="top: 0;left: 127px;">
-                                        <a class="dropdown-item" href="hospital.html">Hospital Management </a>
-                                        <a class="dropdown-item" href="education_st.html"> Educational Management </a>
-                                        <a class="dropdown-item" href="accounting.html"> Accounting & Inventory </a>
-                                        <a class="dropdown-item" href="hrm_software.html">Human Resource Management </a>
-                                        <a class="dropdown-item" href="point_of_sales.html">Point of Sale </a>
-                                        <a class="dropdown-item" href="resturant.html">Restaurant Management</a>
-                                        <a class="dropdown-item" href="superShop.html">Super Shop Management</a>
-                                        <a class="dropdown-item" href="businessauto.html">Business Automation
-                                            Software</a>
-                                        <a class="dropdown-item" href="courierManagement.html">Courier Management
-                                            Software</a>
-                                        <a class="dropdown-item" href="travel&hospitality.html">Travel & Hospitality
-                                            Softwares</a>
-                                        <a class="dropdown-item" href="ispbillingsoft.html">ISP Billing Software</a>
 
-                                        <a class="dropdown-item" href="hotelmanagment.html">Hotel Management
-                                            Software</a>
-                                        <a class="dropdown-item" href="realEstate.html">
-                                            Real Estate Management Software
-                                        </a>
-                                        <a class="dropdown-item" href="garmentserp.html">
-                                            Garments ERP Software
-                                        </a>
-                                        <a class="dropdown-item" href="customsoft.html">
-                                            Custom Software Development
-                                        </a>
-                                    </ul>
-                                </li>
+
+                        <div class=" softdrop  dropdown-menu wow animate__animated animate__flipInX"
+                            data-wow-duration="0.9s">
+                            <ul class="nabvarul">
+                                <li><a href="hospital.html">
+
+                                        <i class="fa fa-stethoscope navicon"></i>Hospital Management</a></li>
+                                <li><a href="education_st.html">
+
+                                        <i class="fa fa-graduation-cap navicon"></i>Educational Management</a></li>
+                                <li><a href="accounting.html">
+
+                                        <i class="fa fa-cart-plus navicon"></i>Accounting & Inventory</a></li>
+                                <li><a href="hrm_software.html">
+
+                                        <i class="fa fa-pie-chart navicon"></i>Human Resource Management</a></li>
+                                <li><a href="travel&hospitality.html">
+
+                                        <i class="fa fa-plane navicon"></i>Travel & Hospitality</a></li>
+                                <li><a href="point_of_sales.html">
+
+                                        <i class=" fa fa-calculator navicon"></i>Point of Sale</a></li>
+                                <li><a href="superShop.html">
+
+                                        <i class="fa fa-shopping-cart navicon"></i>Super Shop Managment</a></li>
+                                <li><a href="businessauto.html">
+
+                                        <i class="fa fa-line-chart navicon"></i>Business Automation</a></li>
+                                <li><a href="resturant.html">
+
+                                        <i class="fa fa-cutlery navicon"></i>Resturant Management</a></li>
+                                <li><a href="realEstate.html">
+
+                                        <i class="fa fa-industry navicon"></i>Real Estate Management</a></li>
+                                <li><a href="hotelmanagment.html">
+
+                                        <i class="fa fa-building  navicon"></i>Hotel Management</a></li>
+                                <li><a href="garmentserp.html">
+
+                                        <i class="fa fa-tags navicon"></i>Garments ERP</a></li>
+                                <li><a href="courierManagement.html">
+
+                                        <i class=" fa fa-truck navicon"></i>Courier Management</a></li>
+                                <li><a href="customsoft.html">
+
+                                        <i class="fa fa-lightbulb-o navicon"></i>Custom Software</a></li>
+                                <li><a href="ispbillingsoft.html">
+
+                                        <i class="fa fa-skyatlas navicon"></i>ISP Billing Software</a></li>
+                                <li><a href="#">
+
+                                        <i class="fa fa-leaf navicon"></i>Agriculture Software</a></li>
+
+
+
                             </ul>
                         </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="graphics.html">Graphic Design</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ecommerce.html">Ecommerce</a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="/index.html#serv">Services</a>
-                    </li>
+
+
+
+
+
+
+
+
+                    <!-- Dropdown -->
+
+
+
 
                     <li class="nav-item">
                         <a class="nav-link" href="blog/index.html">Blog</a>
@@ -721,5 +837,14 @@
 
 
 </script>
+
+
+
+
+
+
+
+
+
 
 </html>
