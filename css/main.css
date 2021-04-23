@@ -2562,15 +2562,12 @@ span.newline {
 /* navbar css */
 .softdrop
 {
-   
-        max-width: 100%;
-  
+    max-width: unset !important;
+    min-width: unset !important;
+    width: unset !important;
+    left: unset !important;
     overflow: hidden;
-   
     position: static;
-  
-    left: 0;
-  
     line-height: 22px;
  
 }
