@@ -117,11 +117,10 @@ $.getJSON("data.json", async function (info) {
     }
 
     async function generateDesc(i) {
-        var str = 'content:encoded';
-        var streamUrl = generateURL();
-        console.log("url: " + streamUrl)
+
+        console.log(data[i])
         var settings = {
-            "url": streamUrl,
+            "url": data[i].blogPost,
             "method": "get",
             "timeout": 0,
             "headers": {
@@ -129,31 +128,26 @@ $.getJSON("data.json", async function (info) {
             },
         };
 
-        var content='...';
         await $.ajax(settings).done(function (response) {
-            if (typeof response == 'string') {response = JSON.parse(response);}
-            // response = JSON.parse(response);
-            mediumData = response;
-            console.log(mediumData[i].title)
-            content = response[parseInt(i)][str];
-        }).fail(function (response) {
-            content = response;
-            console.log(response)
+            var tempString = response.split('<style type="text/css">')[1];
+            var responseStyle = tempString.split('</style>')[0]
+            response = response.split('</head>')[1]
+            var test = responseStyle.replace(/\}/g, '}#richEditor ')
+            test = test.substring(0, test.length - 12);
+            $('.rich-editor-text').append('<style type="text/css">' + test + '</style>' + response);
+
+            console.log(responseStyle);
         });
 
-        $('.rich-editor-text').append(`<iframe src="https://docs.google.com/document/d/e/2PACX-1vSlqBkwAtAL8s2GceEpfQvJQqIOsiC6cmKPyy5H1X6-UOijDuDi0l9TalFFJTlgyjHlBR5MoTMOpczc/pub?embedded=true" width="804" height="767" frameborder="0"></iframe>`);
-        $('.rich-editor-text figure, .rich-editor-text h3').each(function () {
-            $(this).addClass("text-center");
-        });
-        $('.rich-editor-text li').each(function () {
-            $(this).css("list-style-type", "square");
-        });
+        $('.rich-editor-text .title').css("padding", "0");
+
 
         $('.rich-editor-text').contents().filter(function(){
         return this.nodeType === 3;
         }).remove();
 
-        return 'Loading..';
+        return '';
+
     }
 
     function blogdetails(postnum) {
@@ -185,13 +179,13 @@ $.getJSON("data.json", async function (info) {
                     </div>
                 </div>
                 <div class="cs-post-option-panel">
-                    <div class="rich-editor-text">
-                         Loading.. ${generateDesc(index)}
+                    <div class="rich-editor-text" id="richEditor">
+                          ${generateDesc(index)}
                     </div>
                 </div>
 
                 <div class="cs-tags">
-                    <div class="tags">
+                    <div class="tags mt-5">
                         <span>Tags</span>
                         <ul>
                        ${tagGenerator(post.tags)}
@@ -536,9 +530,9 @@ $.getJSON("data.json", async function (info) {
                                                 <!-- Begin Sendinblue Form -->
                     <!-- START - We recommend to place the below code in head tag of your website html  -->
                     <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-                    <style>
+                    <>
                         .entry__field:focus-within { border:0 !important; box-shadow:none !important;}
-                    </style>
+                    </>
                     <!--  END - We recommend to place the above code in head tag of your website html -->
 
                     <!-- START - We recommend to place the below code where you want the form in your website html  -->

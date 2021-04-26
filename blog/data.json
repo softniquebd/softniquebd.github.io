@@ -3,13 +3,14 @@
 {
     "posts": [
         {
-            "postImage": "../assets/Blog-post/post-1.jpg",
+            "postImage": "../assets/Blog-post/blog1.png",
             "bannerTitle": "Flutter announced the desktop stable version",
             "category": "Software",
             "date": "March 21, 2021",
             "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
             "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
             "blogWriter": "Noushad Bhuiyan",
+            "blogPost": "https://docs.google.com/document/d/e/2PACX-1vQGiB3qRVnXR_l5AztJOQhRMKIo7Yve1bLCXC1kqCRiSDClPXbQ6e-UaPQmyrYoSmXILUZeKKc1t9y-/pub?embedded=true",
             "tags": [
                 "tech",
                 "extension",
@@ -26,6 +27,7 @@
             "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
             "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
             "blogWriter": "Mohammad Ali",
+            "blogPost": "https://docs.google.com/document/d/e/2PACX-1vQGiB3qRVnXR_l5AztJOQhRMKIo7Yve1bLCXC1kqCRiSDClPXbQ6e-UaPQmyrYoSmXILUZeKKc1t9y-/pub?embedded=true",
             "tags": [
                 "web",
                 "software",
@@ -42,6 +44,7 @@
             "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
             "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
             "blogWriter": "Noushad Bhuiyan",
+            "blogPost": "https://docs.google.com/document/d/e/2PACX-1vQGiB3qRVnXR_l5AztJOQhRMKIo7Yve1bLCXC1kqCRiSDClPXbQ6e-UaPQmyrYoSmXILUZeKKc1t9y-/pub?embedded=true",
             "tags": [
                 "software",
                 "app"
@@ -57,6 +60,7 @@
             "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
             "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
             "blogWriter": "Mohammad Ali",
+            "blogPost": "https://docs.google.com/document/d/e/2PACX-1vQGiB3qRVnXR_l5AztJOQhRMKIo7Yve1bLCXC1kqCRiSDClPXbQ6e-UaPQmyrYoSmXILUZeKKc1t9y-/pub?embedded=true",
             "tags": [
                 "tech",
                 "extension"
