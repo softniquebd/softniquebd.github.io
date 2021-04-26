@@ -7912,7 +7912,7 @@ section.main-type .small {
     -o-transition: all 350ms cubic-bezier(0.77, 0, 0.175, 1);
     position: absolute;
     display: block;
-    width: 40%;
+    width: 64%;
     height: auto;
     top: 50%;
     left: 50%;
@@ -7932,7 +7932,7 @@ section.main-type .small {
 }
 
 .step-1 .form-icon img {
-    width: 30%;
+    width: 45%;
 }
 
 .js-form-link,
