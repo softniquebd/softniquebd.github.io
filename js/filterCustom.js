@@ -12,8 +12,8 @@ function filterSelection(c) {
     }
 
     for (w = 0; w < x.length; w++) {
-        w3RemoveClass(x[w], "show");
-        if (x[w].className.indexOf(c) > -1) w3AddClass(x[w], "show");
+        w3RemoveClass(x[w], "showw");
+        if (x[w].className.indexOf(c) > -1) w3AddClass(x[w], "showw");
     }
 }
 
@@ -30,7 +30,7 @@ function w3RemoveClass(element, name) {
   var k, arr1, arr2;
   arr1 = element.className.split(" ");
   arr2 = name.split(" ");
-   if (name == 'show') {
+   if (name == 'showw') {
     var selectedDiv = $(element).children(".second_element");
     var height = selectedDiv.height();
     console.log(selectedDiv)
