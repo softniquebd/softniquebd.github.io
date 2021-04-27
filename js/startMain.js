@@ -792,6 +792,31 @@ PageInits = {
             brandBudgetSliderInput.value = values + ' - ' + secondValue + 'k';
           });
  
+ 
+          //GRAPHICS BUDGET SLIDER
+          var graphicsBudgetSlider = document.getElementById('graphics-slider-budget'),
+              graphicsBudgetSliderInput = document.getElementById('graphics-slider-budget-input');
+ 
+          noUiSlider.create(graphicsBudgetSlider, {
+            start: [5],
+            connect: true,
+            range: {
+                'min': [5],
+                'max': [85]
+            },
+            step: 10,
+            format: wNumb({
+            decimals: 0,
+                prefix: '$',
+            suffix: 'k',
+          })
+          });
+ 
+          graphicsBudgetSlider.noUiSlider.on('update', function ( values, handle, unencoded, isTap, positions ) {
+            var secondValue = parseInt(unencoded) + parseInt(10);
+            graphicsBudgetSliderInput.value = values + ' - ' + secondValue + 'k';
+          });
+ 
           //WEBSITE WEEKS SLIDER
           var websiteWeekSlider = document.getElementById('website-slider-week');
           var websiteWeekInput = document.getElementById('website-slider-week-input');
@@ -870,6 +895,34 @@ PageInits = {
  
           brandWeekInput.addEventListener('change', function(){
             brandWeekSlider.noUiSlider.set([null, this.value]);
+          });
+            
+          //GRAPHICS WEEKS SLIDER
+          var graphicsWeekSlider = document.getElementById('graphics-slider-week');
+          var graphicsWeekInput = document.getElementById('graphics-slider-week-input');
+ 
+ 
+          noUiSlider.create(graphicsWeekSlider, {
+            start: [4],
+            connect: true,
+            range: {
+                'min': 4,
+                'max': 50
+            },
+            step: 1,
+            format: wNumb({
+            decimals: 0,
+            suffix: ' weeks',
+          })
+          });
+ 
+          graphicsWeekSlider.noUiSlider.on('update', function( values, handle ) {
+            var value = values[handle];
+            graphicsWeekInput.value = value;
+          });
+ 
+          graphicsWeekInput.addEventListener('change', function(){
+            graphicsWeekSlider.noUiSlider.set([null, this.value]);
           });
  
           //OPEN FORM GLOBAL
