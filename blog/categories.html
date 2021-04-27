@@ -74,10 +74,16 @@
         }
 
         .dropdown-menu {
-            margin: 16.125rem 53px 0;
+            margin: 16.125rem 151px 0;
             min-width: 63rem;
             top: -256px !important;
         }
+
+        .nabvarul li {
+            width: 84.33% !important;
+
+        }
+
 
     }
 
@@ -89,6 +95,11 @@
 
         .navicon {
             font-size: 14px !important;
+        }
+
+        .softdrop {
+            min-width: 0 !important;
+            left: 0 !important;
         }
 
     }
@@ -103,10 +114,129 @@
             padding: 2px;
         }
 
+        .softdrop {
+            min-width: 0px !important;
+            left: 0px !important;
+        }
 
 
     }
+
+    @media screen and (max-width:979px) {
+
+        .nabvarul li a {
+            font-size: 11px !important;
+        }
+
+
+    }
+
+    @media screen and (max-width:885px) {
+
+        .navicon {
+            font-size: 15px !important;
+            margin-right: 0.4em !important;
+        }
+
+        .nabvarul li a {
+            font-size: 11px !important;
+        }
+
+    }
+
+    @media screen and (max-width:810px) {
+
+        .navicon {
+            font-size: 9px !important;
+            margin-right: 0.4em !important;
+        }
+
+        .nabvarul li a {
+            font-size: 11px !important;
+        }
+
+    }
+
+    @media screen and (max-width: 300px) and (min-width: 230px) {
+
+        .softdrop {
+            width: 55% !important;
+            height: 110% !important;
+        }
+
+        .nabvarul {
+            width: 91.33% !important;
+            padding: 1px !important;
+        }
+
+        .nabvarul li a {
+            font-size: 7.6px !important;
+            padding: 2px !important;
+        }
+
+        .nav .nav-item i {
+            margin-left: 0.1em !important;
+
+        }
+
+        .navicon {
+
+            margin-right: 0.3em !important;
+        }
+
+
+
+
+
+
+
+    }
+
+    @media screen and (max-width: 420px) and (min-width: 301px) {
+        .softdrop {
+            width: 56% !important;
+
+        }
+
+        .nabvarul {
+
+            padding: 1px !important;
+        }
+
+    }
+
+    @media screen and (max-width: 767px) and (min-width: 421px) {
+        .softdrop {
+            width: 58% !important;
+
+        }
+
+
+
+    }
+
+    @media screen and (max-width: 245px) and (min-width: 225px) {
+        .softdrop {
+            height: 98% !important;
+
+        }
+
+        .nabvarul {
+
+            padding: 1px !important;
+        }
+
+        .nabvarul li a {
+            font-size: 6px !important;
+        }
+
+        .navicon {
+            font-size: 0px !important;
+        }
+
+    }
 </style>
+
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100" style="overflow-x: hidden;">
     <!-- Load Facebook SDK for JavaScript -->
