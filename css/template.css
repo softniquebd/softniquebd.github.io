@@ -1205,9 +1205,10 @@ margin: 20px 0;
    color: firebrick;
 }
 #logobg {
-    background: url(../images/logo-design-bg.jpg);
+    background: url(../images/logo-design-bg.webp);
     background-position: center;
     background-size: cover;
+	border-top-left-radius: 12vw;
 }
 .bg-same {
     background-position: center;
@@ -1216,24 +1217,29 @@ margin: 20px 0;
     width: auto;
 }
 #businessbg {
-    background: url(../images/business-card-bg.jpg);
+    background: url(../images/business-card-bg.webp);
     background-position: center;
     background-size: cover;
+	border-bottom-right-radius: 12vw;
 }
 #bannerbg {
-    background: url(../images/banner-poster-bg.jpg);
+    background: url(../images/banner-poster-bg.webp);
     background-position: center;
     background-size: cover;
+	border-top-left-radius: 12vw;
 }
 #brochurebg {
-    background: url(../images/brochure-leaflet-bg.jpg);
+    background: url(../images/brochure-leaflet-bg.webp);
     background-position: center;
     background-size: cover;
+	border-bottom-right-radius: 12vw;
 }
 #brandingbg {
-    background: url(../images/corporate-branding-bg.jpg);
+    background: url(../images/corporate-branding-bg.webp);
     background-position: center;
     background-size: cover;
+	border-top-left-radius: 12vw;
+	border-bottom-right-radius: 12vw;
 }
 
 .logoTxt,.businessTxt,.banPost,.corpoBrand,.broucher
