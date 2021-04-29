@@ -16,13 +16,17 @@
 
 </head>
 <style>
+    /* filter css */
+
     .filterDiv {
+        /* display: none; */
         transition: all 0.4s ease-in-out;
         -webkit-transition: all 0.4s ease-in-out;
         -moz-transition: all 0.4s ease-in-out;
         -ms-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
         overflow: hidden;
+        /* Hide the element content, while height = 0 */
         height: 0;
         opacity: 0;
         transition: height 0ms 400ms, opacity 400ms 0ms;
@@ -35,13 +39,13 @@
         -moz-transition: all 0.4s ease-in-out;
         -ms-transition: all 0.4s ease-in-out;
         -o-transition: all 0.4s ease-in-out;
-        height: 530px;
+        /* display: block; */
+        height: auto;
         opacity: 1;
         transition: height 0ms 0ms, opacity 600ms 0ms;
 
     }
 </style>
-
 <style>
     @media (min-width: 992px) {
         .dropdown-menu .dropdown-toggle:after {
@@ -981,6 +985,29 @@
 
 
 <script src="js/jquery-3.4.1.min.js"></script>
+<script>
+    $('.read-more-state').on('change', function () {
+        var selectedDiv = $(this).closest(".second_element");
+        var hiddenArea = +selectedDiv.children('.details-wrapper').height();
+        var height = selectedDiv.height() + hiddenArea;
+
+        if ($('.read-more-state').is(':checked')) {
+            console.log(height);
+            console.log(selectedDiv.children('.details-wrapper').height());
+            $(selectedDiv).closest(".filtr-item").animate({
+                'height': height
+            });
+        }
+        else {
+            var selectedDiv = $(this).closest(".second_element");
+            var height = selectedDiv.height() + selectedDiv.children('.details-wrapper').height();
+            console.log(height);
+            console.log(selectedDiv.children('.details-wrapper').height());
+            $(selectedDiv).closest(".filtr-item").removeAttr('style')
+        }
+    });
+
+</script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="./js/owl.js"></script>
@@ -990,6 +1017,7 @@
 <script src="./js/main.js"></script>
 <script src="./js/script.js"></script>
 <script src="./js/filterCustom.js"></script>
+<script src="./js/jquery.filterizr.min.js"></script>
 <script src="./js/main.js"></script>
 
 <script>
@@ -999,14 +1027,5 @@
 
 
 </script>
-
-
-
-
-
-
-
-
-
 
 </html>

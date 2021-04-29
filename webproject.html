@@ -37,10 +37,22 @@
     -ms-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     /* display: block; */
-    height: 530px;
+    height: auto;
     opacity: 1;
     transition: height 0ms 0ms, opacity 600ms 0ms;
+    padding-bottom: 3em;
+    padding-top: 2em;
 
+  }
+
+  @media screen and (max-width: 767px) {
+    .showw {
+      height: auto;
+    }
+    .second_element {
+      padding-top: 1.6em;
+      padding-bottom: 1em;
+    }
   }
 </style>
 <style>
@@ -280,7 +292,7 @@
       data-wow-delay="0s" data-wow-duration="1.4s">
       <!-- Brand -->
       <a class="navbar-brand wow animate__animated animate__jackInTheBox" data-wow-delay="1s" data-wow-duration="1.4s"
-        style="width: auto;" href="#">
+        href="#">
         <img class="img-fluid" src="./images/nav-logo.png" height="70" width="140" /></a>
 
       <!-- Collapse button -->
@@ -484,7 +496,7 @@
 
               <div class="col-6 col-md-6">
                 <h6 class="header">Business outcome</h6>
-                <p class="project-bio">Represent company self valu, products and services</p>
+                <p class="project-bio">Represent company self value, products and services</p>
               </div>
             </div>
           </div>
@@ -540,7 +552,7 @@
 
               <div class="col-6 col-md-6">
                 <h6 class="header">Business outcome</h6>
-                <p class="project-bio">Represent company self valu, products and services</p>
+                <p class="project-bio">Represent company self value, products and services</p>
               </div>
 
             </div>
@@ -879,7 +891,7 @@
 
               <div class="col-6 col-md-6">
                 <h6 class="header">Business outcome</h6>
-                <p class="project-bio">Represent company self valu, products and services</p>
+                <p class="project-bio">Represent company self value, products and services</p>
               </div>
 
             </div>
@@ -1089,7 +1101,7 @@
 
               <div class="col-6 col-md-6">
                 <h6 class="header">Business outcome</h6>
-                <p class="project-bio">Represent company self valu, products and services
+                <p class="project-bio">Represent company self value, products and services
                 </p>
               </div>
 
@@ -1165,7 +1177,7 @@
 
               <div class="col-6 col-md-6">
                 <h6 class="header">Business outcome</h6>
-                <p class="project-bio">Represent company self valu, products and services , make business more efficient
+                <p class="project-bio">Represent company self value, products and services , make business more efficient
                   way through online platform
                 </p>
               </div>
@@ -1245,7 +1257,7 @@
 
               <div class="col-6 col-md-6">
                 <h6 class="header">Business outcome</h6>
-                <p class="project-bio">Represent company self valu, products and services , make business more efficient
+                <p class="project-bio">Represent company self value, products and services , make business more efficient
                   way through online platform
                 </p>
               </div>
@@ -1327,7 +1339,7 @@
 
               <div class="col-6 col-md-6">
                 <h6 class="header">Business outcome</h6>
-                <p class="project-bio">Represent company self valu, services , make business more efficient
+                <p class="project-bio">Represent company self value, services , make business more efficient
                   way through online platform
                 </p>
               </div>
@@ -1462,18 +1474,23 @@
 
 
 
-
+<script src="js/jquery-3.4.1.min.js"></script>
 <script>
-  $('.read-more-state').on('change', function () {
-    var selectedDiv = $(this).closest(".second_element");
-    var hiddenArea = +selectedDiv.children('.details-wrapper').height();
-    var height = selectedDiv.height() + hiddenArea;
 
+$(window).on('resize', function(){
+  var win = $(this); //this = window
+$('.read-more-state').on('change', function () {
+    var issueHeight = 0;
+    var selectedDiv = $(this).closest(".second_element");
+    var hiddenArea = selectedDiv.children('.details-wrapper').height();
+    var height = selectedDiv.height()+ hiddenArea;
+     if (win.width() <= 767) {issueHeight = hiddenArea}
+    else{ issueHeight = 0} 
     if ($('.read-more-state').is(':checked')) {
       console.log(height);
       console.log(selectedDiv.children('.details-wrapper').height());
       $(selectedDiv).closest(".filtr-item").animate({
-        'height': height
+        'height': height+issueHeight
       });
     }
     else {
@@ -1484,9 +1501,9 @@
       $(selectedDiv).closest(".filtr-item").removeAttr('style')
     }
   });
+});
 
 </script>
-<script src="js/jquery-3.4.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="./js/wow.min.js"></script>
 <script>
@@ -1501,6 +1518,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
 <script src="./js/parallax.js"></script>
 <script src="./js/owl.js"></script>
+<script src="./js/main.js"></script>
 <script src="./js/jquery.fancybox.js"></script>
 
 <script src="./js/main.js"></script>
