@@ -22,7 +22,7 @@
 		float: none;
 	}
 	.navbar-brand > img {
-		width: 75%;
+		/* width: 75%; */
 		margin: 0 0 0 5px;
 	}
 	.affix .navbar-brand > img {
@@ -177,6 +177,7 @@
 	/*Support Page Ends*/
 	
 }	
+
 
 /*-------------   Screen 768px to 980px --------------------*/
 

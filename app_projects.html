@@ -16,6 +16,33 @@
 
 </head>
 <style>
+    .filterDiv {
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        overflow: hidden;
+        height: 0;
+        opacity: 0;
+        transition: height 0ms 400ms, opacity 400ms 0ms;
+    }
+
+
+    .showw {
+        transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        height: 530px;
+        opacity: 1;
+        transition: height 0ms 0ms, opacity 600ms 0ms;
+
+    }
+</style>
+
+<style>
     @media (min-width: 992px) {
         .dropdown-menu .dropdown-toggle:after {
             border-top: .3em solid transparent;
@@ -127,6 +154,15 @@
         .nabvarul li a {
             font-size: 11px !important;
         }
+
+    }
+
+    @media screen and (max-width:600px) {
+        .banner_text h1 {
+            font-size: 14px !important;
+
+        }
+
 
     }
 

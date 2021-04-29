@@ -871,7 +871,7 @@ h2.breadcrumb-subtitle {
 		font-weight: bold;
 		padding: 2em;
 		font-size: 20px;
-		text-align: justify;
+		text-align: initial !important;
 	}
 	/*Patient Management Ends*/
 	/*Invoicing & Billing Starts*/
