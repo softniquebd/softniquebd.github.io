@@ -49,6 +49,7 @@
     .showw {
       height: auto;
     }
+
     .second_element {
       padding-top: 1.6em;
       padding-bottom: 1em;
@@ -1177,7 +1178,8 @@
 
               <div class="col-6 col-md-6">
                 <h6 class="header">Business outcome</h6>
-                <p class="project-bio">Represent company self value, products and services , make business more efficient
+                <p class="project-bio">Represent company self value, products and services , make business more
+                  efficient
                   way through online platform
                 </p>
               </div>
@@ -1257,7 +1259,8 @@
 
               <div class="col-6 col-md-6">
                 <h6 class="header">Business outcome</h6>
-                <p class="project-bio">Represent company self value, products and services , make business more efficient
+                <p class="project-bio">Represent company self value, products and services , make business more
+                  efficient
                   way through online platform
                 </p>
               </div>
@@ -1362,6 +1365,10 @@
 
 
       </div>
+
+      <!-- <div class="divi">
+
+      </div> -->
 
     </div>
 
@@ -1477,31 +1484,31 @@
 <script src="js/jquery-3.4.1.min.js"></script>
 <script>
 
-$(window).on('resize', function(){
-  var win = $(this); //this = window
-$('.read-more-state').on('change', function () {
-    var issueHeight = 0;
-    var selectedDiv = $(this).closest(".second_element");
-    var hiddenArea = selectedDiv.children('.details-wrapper').height();
-    var height = selectedDiv.height()+ hiddenArea;
-     if (win.width() <= 767) {issueHeight = hiddenArea}
-    else{ issueHeight = 0} 
-    if ($('.read-more-state').is(':checked')) {
-      console.log(height);
-      console.log(selectedDiv.children('.details-wrapper').height());
-      $(selectedDiv).closest(".filtr-item").animate({
-        'height': height+issueHeight
-      });
-    }
-    else {
+  $(window).on('resize', function () {
+    var win = $(this); //this = window
+    $('.read-more-state').on('change', function () {
+      var issueHeight = 0;
       var selectedDiv = $(this).closest(".second_element");
-      var height = selectedDiv.height() + selectedDiv.children('.details-wrapper').height();
-      console.log(height);
-      console.log(selectedDiv.children('.details-wrapper').height());
-      $(selectedDiv).closest(".filtr-item").removeAttr('style')
-    }
+      var hiddenArea = selectedDiv.children('.details-wrapper').height();
+      var height = selectedDiv.height() + hiddenArea;
+      if (win.width() <= 767) { issueHeight = hiddenArea }
+      else { issueHeight = 0 }
+      if ($('.read-more-state').is(':checked')) {
+        console.log(height);
+        console.log(selectedDiv.children('.details-wrapper').height());
+        $(selectedDiv).closest(".filtr-item").animate({
+          'height': height + issueHeight
+        });
+      }
+      else {
+        var selectedDiv = $(this).closest(".second_element");
+        var height = selectedDiv.height() + selectedDiv.children('.details-wrapper').height();
+        console.log(height);
+        console.log(selectedDiv.children('.details-wrapper').height());
+        $(selectedDiv).closest(".filtr-item").removeAttr('style')
+      }
+    });
   });
-});
 
 </script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
