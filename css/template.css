@@ -90,7 +90,7 @@ h1,h2,h3,h4,h5,h6{
 /*Menu Ends*/ 
 /*Main Background Page Starts*/ 
 #main-background {
-    background: url('../images/main-background.jpg');
+    background: url('../images/main-background.webp');
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
@@ -476,7 +476,7 @@ h1 {
 /*Software Overview*/
 /*Software Solution Starts*/
 	#complete-solution {
-		background: url(../images/skew-bg/software-solutions.jpg);
+		background: url(../images/skew-bg/software-solutions.webp);
 		background-position: inherit;
 		background-size: cover;
 		padding: 150px 0;
@@ -509,7 +509,7 @@ h1 {
 /*Software Solution Ends*/
 /*Arch Features Link*/
 #features-sec {
-    background: url(../images/skew-bg/features-section.jpg);
+    background: url(../images/skew-bg/features-section.webp);
     padding: 68px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -570,7 +570,7 @@ h1 {
 /*Witty Benefits Ends*/
 /*Pricing Section Starts*/
 #price-sec {
-    background: url(../images/skew-bg/price-section.jpg);
+    background: url(../images/skew-bg/price-section.webp);
     padding: 68px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -627,58 +627,58 @@ h1 {
     background: rgba(0,0,0,0.45);
 }
 #breadcrumb.bg-modules {
-    background: url(../images/modules-bg.jpg);
+    background: url(../images/modules-bg.webp);
 }
 #breadcrumb.bg-features {
-    background: url(../images/features-bg.jpg);
+    background: url(../images/features-bg.webp);
 }
 #breadcrumb.bg-restu {
-    background: url(../images/restubanner.jpg);
+    background: url(../images/restubanner.webp);
 }
 #breadcrumb.bg-superShop {
-    background: url(../images/supershopbackground.png);
+    background: url(../images/supershopbackground.webp);
 }
 #breadcrumb.bg-hotel {
-    background: url(../images/hotelbanner.jpg);
+    background: url(../images/hotelbanner.webp);
 }
 #breadcrumb.bg-agriculture {
-    background: url(../images/agricultureBack.jpg);
+    background: url(../images/agricultureBack.webp);
 }
 #breadcrumb.bg-business{
-    background: url(../images/businessautoback.jpg);
+    background: url(../images/businessautoback.webp);
 }
 #breadcrumb.bg-custom{
-    background: url(../images/custombanner.jpg);
+    background: url(../images/custombanner.webp);
 }
 #breadcrumb.bg-garments{
-    background: url(../images/garmentsback.jpg);
+    background: url(../images/garmentsback.webp);
 }
 #breadcrumb.bg-isp{
-    background: url(../images/ispbanner.jpg);
+    background: url(../images/ispbanner.webp);
 }
 #breadcrumb.bg-graphics {
-    background: url(../images/photo-1497091071254-cc9b2ba7c48a.jfif);
+    background: url(../images/photo-1497091071254-cc9b2ba7c48a.webp);
 }
 #breadcrumb.bg-courier {
-    background: url(../images/courierback.jpg);
+    background: url(../images/courierback.webp);
 }
 #breadcrumb.bg-ecommerce {
-    background: url(../images/ecommerce-solution-service-banner.jpg);
+    background: url(../images/ecommerce-solution-service-banner.webp);
 }
 #breadcrumb.bg-edu{
-    background: url(../images/edubackground.jpg);
+    background: url(../images/edubackground.webp);
 }
 #breadcrumb.bg-pricing {
-    background: url(../images/pricing-bg.jpg);
+    background: url(../images/pricing-bg.webp);
 }
 #breadcrumb.bg-demo {
-    background: url(../images/demo-bg.jpg);
+    background: url(../images/demo-bg.webp);
 }
 #breadcrumb.bg-support {
-    background: url(../images/support-bg.jpg);
+    background: url(../images/support-bg.webp);
 }
 #breadcrumb.bg-faq {
-    background: url(../images/faq-bg.jpg);
+    background: url(../images/faq-bg.webp);
 }
 /*.breadcrumb-wrapper>h1.breadcrumb-title {
     margin: 3em 0 0 .75em;
@@ -784,7 +784,7 @@ h2.breadcrumb-subtitle {
 /*Core Modules Ends*/
 /*Additional Modules Starts*/
 #additional-modules {
-	background: url(../images/skew-bg/invoicing-billing.jpg);
+	background: url(../images/skew-bg/invoicing-billing.webp);
 	background-size: cover;
 	background-position: center;
 	padding: 200px 0;
@@ -876,7 +876,7 @@ h2.breadcrumb-subtitle {
 	/*Patient Management Ends*/
 	/*Invoicing & Billing Starts*/
 	#invoicing-billing {
-		background: url(../images/skew-bg/invoicing-billing.jpg);
+		background: url(../images/skew-bg/invoicing-billing.webp);
 		background-size: cover;
 		background-position: center;
 		padding: 165px 0;
@@ -899,7 +899,7 @@ h2.breadcrumb-subtitle {
 	/*Outpatient Management Ends*/
 	/*Inpatient Management Starts*/
 	#inpatient {
-		background: url(../images/skew-bg/inpatient-management.jpg);
+		background: url(../images/skew-bg/inpatient-management.webp);
 		background-size: cover;
 		background-position: center;
 		padding: 150px 0 100px;
@@ -921,7 +921,7 @@ h2.breadcrumb-subtitle {
 	/*Patient Portal Ends*/	
 	/*Doctor Portal Starts*/
 	#doctor-portal {
-		background: url(../images/skew-bg/doctor-portal.jpg);
+		background: url(../images/skew-bg/doctor-portal.webp);
 		background-size: cover;
 		background-position: center;
 		padding: 150px 0;
@@ -942,7 +942,7 @@ h2.breadcrumb-subtitle {
 	/*Pathology & Radiology Ends*/	
 	/*Pharmacy Starts*/
 	#pharmacy {
-		background: url(../images/skew-bg/pharmacy.jpg);
+		background: url(../images/skew-bg/pharmacy.webp);
 		background-size: cover;
 		background-position: center;
 		padding: 100px 0;
@@ -961,7 +961,7 @@ h2.breadcrumb-subtitle {
 	/*Financial Reports Ends*/	
 	/*Export Starts*/
 	#export-data-scanner {
-	    background: url(../images/skew-bg/export-barcode-scanner.jpg);
+	    background: url(../images/skew-bg/export-barcode-scanner.webp);
 	    background-size: cover;
 	    background-position: center;
 	    padding: 165px 0;
@@ -997,7 +997,7 @@ h2.breadcrumb-subtitle {
 	/*Attendance Solution Ends*/
 	/*SMS/Email Starts*/
 	#sms-notification {
-	    background: url(../images/skew-bg/sms-notification.jpg);
+	    background: url(../images/skew-bg/sms-notification.webp);
 	    background-size: cover;
 	    background-position: center;
 	    padding: 180px 0;
@@ -1053,7 +1053,7 @@ h2.breadcrumb-subtitle {
     text-align: justify;
 }
 #result-reports .skew-bg {
-    background: url(../images/automatic-result.jpg);
+    background: url(../images/automatic-result.webp);
     margin: 100px 0 0;
     background-size: cover;
     background-position: center;
@@ -1099,7 +1099,7 @@ h2.breadcrumb-subtitle {
     text-align: justify;
 }
 #free-website .skew-bg {
-    background: url(../images/freewebsite.jpg);
+    background: url(../images/freewebsite.webp);
     margin: 100px 0 0;
     background-position: center;
 }
@@ -1121,15 +1121,15 @@ h2.breadcrumb-subtitle {
 }
 #breadcrumb.bg-accounting
 {
-	 background: url(../images/accounting-bg.jpg);
+	 background: url(../images/accounting-bg.webp);
 }
 #breadcrumb.bg-hrm
 {
-	 background: url(../images/hrm-slider-1.jpg);
+	 background: url(../images/hrm-slider-1.webp);
 }
 #breadcrumb.bg-real
 {
-	 background: url(../images/realestateback.jpg);
+	 background: url(../images/realestateback.webp);
 }
 .keyfeature-img
 {
