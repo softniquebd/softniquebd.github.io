@@ -142,8 +142,8 @@ $.getJSON("data.json", async function (info) {
         $('.rich-editor-text .title').css("padding", "0");
 
 
-        $('.rich-editor-text').contents().filter(function(){
-        return this.nodeType === 3;
+        $('.rich-editor-text').contents().filter(function () {
+            return this.nodeType === 3;
         }).remove();
 
         return '';
@@ -530,9 +530,7 @@ $.getJSON("data.json", async function (info) {
                                                 <!-- Begin Sendinblue Form -->
                     <!-- START - We recommend to place the below code in head tag of your website html  -->
                     <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-                    <>
-                        .entry__field:focus-within { border:0 !important; box-shadow:none !important;}
-                    </>
+                  
                     <!--  END - We recommend to place the above code in head tag of your website html -->
 
                     <!-- START - We recommend to place the below code where you want the form in your website html  -->
