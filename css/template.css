@@ -129,7 +129,7 @@ h1,h2,h3,h4,h5,h6{
 /*Slider Starts*/
 .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
 	height: auto;
-	width: 100%;
+	width: 85%;
 }
 .carousel-indicators {
 	bottom: 0;
@@ -969,7 +969,7 @@ h2.breadcrumb-subtitle {
 	#export-data-scanner p {
 	    color: #fff;
 	    font-size: 20px;
-	    text-align: justify;
+	    /* text-align: justify; */
 	    margin-bottom: 3em;
 	}
 	.barcode-img {
@@ -992,7 +992,7 @@ h2.breadcrumb-subtitle {
 	.attendance-solution-content {
 	    padding: 2em;
 	    font-size: 20px;
-	    text-align: justify;
+	    /* text-align: justify; */
 	}
 	/*Attendance Solution Ends*/
 	/*SMS/Email Starts*/
@@ -1004,7 +1004,7 @@ h2.breadcrumb-subtitle {
 	}
 	.sms-notification-content {
 	    font-size: 20px;
-	    text-align: justify;
+	    /* text-align: justify; */
 	    color: #fff;
 	    padding: 1em 2em;
 	}
@@ -1049,8 +1049,8 @@ h2.breadcrumb-subtitle {
 .fast-printing
 {
 	font-weight: bold;
-    font-size: 1.3em;
-    text-align: justify;
+	font-size: 1.3em;
+	/* text-align: justify; */
 }
 #result-reports .skew-bg {
     background: url(../images/automatic-result.webp);
@@ -1077,11 +1077,10 @@ h2.breadcrumb-subtitle {
 }
 .result-content {
 	font-weight: bold;
-
-    font-size: 23px;
-    text-align: justify;
-    color: #fff;
-    padding: 2em;
+	font-size: 23px;
+	/* text-align: justify; */
+	color: #fff;
+	padding: 2em;
 }
 .result-reports
 {
@@ -1094,9 +1093,9 @@ h2.breadcrumb-subtitle {
 .mobileapp,.payment
 {
 	font-weight: bold;
-	    padding: 2em;
-    font-size: 20px;
-    text-align: justify;
+	padding: 2em;
+	font-size: 20px;
+	/* text-align: justify; */
 }
 #free-website .skew-bg {
     background: url(../images/freewebsite.webp);

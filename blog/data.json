@@ -1,5 +1,3 @@
-
-
 {
     "posts": [
         {
@@ -16,7 +14,7 @@
                 "extension",
                 "app"
             ],
-            "writerPic": "../images/nsdfoot.png",
+            "writerPic": "../images/nsdfoot.webp",
             "gitlink": "https://github.com/NoushadBug"
         },
         {
@@ -33,7 +31,7 @@
                 "software",
                 "extension"
             ],
-            "writerPic": "../images/alifoot.png",
+            "writerPic": "../images/alifoot.webp",
             "gitlink": "https://shuvo18103107.github.io/"
         },
         {
@@ -49,7 +47,7 @@
                 "software",
                 "app"
             ],
-            "writerPic": "../images/nsdfoot.png",
+            "writerPic": "../images/nsdfoot.webp",
             "gitlink": "https://github.com/NoushadBug"
         },
         {
@@ -65,7 +63,7 @@
                 "tech",
                 "extension"
             ],
-            "writerPic": "../images/alifoot.png",
+            "writerPic": "../images/alifoot.webp",
             "gitlink": "https://shuvo18103107.github.io/"
         }
     ]
