@@ -129,7 +129,7 @@ h1,h2,h3,h4,h5,h6{
 /*Slider Starts*/
 .carousel-inner > .item > a > img, .carousel-inner > .item > img, .img-responsive, .thumbnail a > img, .thumbnail > img {
 	height: auto;
-	width: 100%;
+	width: 85%;
 }
 .carousel-indicators {
 	bottom: 0;
