@@ -542,12 +542,7 @@
                 if ( /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream ) {
 
                     // iOS has problems for input elements inside fixed containers,
-                    // the workaround is to apply `position: fixed` to `<body><div class="loader"
-    style=" position: fixed;z-index: 9669;top: 0;left: 0;width: 100%;height: 100%;display: flex;background: #ffffff;justify-content: center;align-items: center; flex-direction: column;">
-    <img src="./images/softnique-nav.webp" alt="loader" style="height: 10%;" >
-	<br>
-    <img src="./images/loader.svg" alt="loader" width="150px" height="50px">
-  </div>` element,
+                    // the workaround is to apply `position: fixed` to `<body>` element,
                     // unfortunately, this makes it lose the scrollbars and forces address bar to appear.
 
                     if ( firstItem.type !== 'image' ) {
