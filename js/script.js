@@ -95,7 +95,7 @@ let timer = setInterval(autoPlay, 4000);
 
 
 
-// testomonial js
+// testimonial js
 gsap.to(".bubble--container", 20, {
     rotation: 360,
     transformOrigin: "left 50%",

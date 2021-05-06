@@ -12,11 +12,12 @@
 	<meta name="softnique bd" content="softnique">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="icon" href="./images/icon.webp" sizes="16x16" />
-	<link rel="stylesheet" href="./css/main.css" />
 	<link rel="stylesheet" href="./css/owl.css" />
 	<link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
-	<link rel="stylesheet" href="./css/slider.css" />
-	<link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link rel="stylesheet" href="./css/testimonial.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/app.css" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
 
@@ -2049,25 +2050,25 @@
 	</div>
 
 	<!-- testimonial section -->
-	<div class="container col-md-12 col-12">
-		<div class="heading-title">
-			<h1 class="text-center my-5 pt-5 title">What Our Clients Say?</h1>
+        <div class="container col-md-12 col-12">
+            <div class="heading-title">
+                <h1 class="text-center my-5 pt-5 title">What Our Clients Say?</h1>
 
-		</div>
-		<!-- Inspired by the elements on this page: https://wambi.org/members/ -->
+            </div>
+            <!-- Inspired by the elements on this page: https://wambi.org/members/ -->
 
-		<div class="body--container">
-			<div class="text">"SoftniqueBd Company is the best service I could have asked for - Danial (CEO of
-				Foody)"</div>
-			<div class="bubble--container">
-				<div class="bubble bubble--large"></div>
-				<div class="bubble bubble--one"></div>
-				<div class="bubble bubble--two"></div>
-				<div class="bubble bubble--three"></div>
-			</div>
-		</div>
+            <div class="body--container">
+                <div class="text">"SoftniqueBd Company is the best service I could have asked for - Danial (CEO of
+                    Foody)"</div>
+                <div class="bubble--container">
+                    <div class="bubble bubble--large"></div>
+                    <div class="bubble bubble--one"></div>
+                    <div class="bubble bubble--two"></div>
+                    <div class="bubble bubble--three"></div>
+                </div>
+            </div>
 
-	</div>
+        </div>
 
 	<!-- footer section start -->
 	<div class="curvy" style="background-size: cover; height: auto">
@@ -2196,5 +2197,70 @@
 <script src="./js/parallax.js"></script>
 <script src="./js/owl.js"></script>
 <script src="./js/jquery.fancybox.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+<script>
+	// testimonial js
+	gsap.to(".bubble--container", 20, {
+		rotation: 360,
+		transformOrigin: "left 50%",
+		repeat: -1,
+		ease: "none"
+	});
+
+	var quotes = [
+		'"Thank you so much for all of your help with everything! - CEO of TechSoft',
+		'"Hands down the best support I have ever received - CEO of Raid Express"',
+		'"The best service I have ever received!- CEO of Prime Power" ',
+		'"We could not have done it without you! -CEO of TechXon"',
+		'"Beyond grateful for the service I received!" - CEO of IntelliWare ',
+		'"A wonderful experience all around! -CEO of BNL Software "'
+	];
+
+	var previousInt = 0;
+
+	function animateOut() {
+		gsap.fromTo(".text", 2, { opacity: 1 }, { opacity: 0 });
+	}
+
+	function animateIn() {
+		gsap.fromTo(".text", 2, { opacity: 0 }, { opacity: 1 });
+	}
+
+	// returns a random integer for the quote randomizer
+	function getRandomInt() {
+		return Math.floor(Math.random() * quotes.length);
+	}
+
+	function handleAnimation() {
+		var randomInt = getRandomInt();
+
+		// prevents the new quote from being the same as the previous quote
+		while (randomInt == previousInt) {
+			randomInt = getRandomInt();
+		}
+
+		previousInt = randomInt;
+
+		// fades the animation out after a second
+		setTimeout(() => {
+			animateOut();
+		}, 1000);
+
+		// changes the text of the quote after 2.8 seconds
+		setTimeout(() => {
+			document.querySelector(".text").innerHTML = quotes[randomInt];
+		}, 2800);
+
+		// fades the quote back in after 3 seconds
+		setTimeout(() => {
+			animateIn();
+		}, 3000);
+	}
+
+	// changes the quote every 7 seconds
+	setInterval(handleAnimation, 7000);
+</script>
+
 <script src="./js/main.js"></script>
 </html>
