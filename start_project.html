@@ -36,6 +36,9 @@
 </head>
 
 <body class="hireus">
+
+
+
   <!-- Load Facebook SDK for JavaScript -->
   <div id="fb-root"></div>
   <script>
@@ -58,7 +61,21 @@
   <div class="fb-customerchat" attribution="setup_tool" page_id="114263207095888" theme_color="#ff7e29"
     logged_in_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।"
     logged_out_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।">
+
+
+
   </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
   <div id="main" class="m-scene">
@@ -889,54 +906,6 @@
   <!-- COPY THIS EVERYWHERE -->
   <div class="form-response js-form-response text-center"></div>
 </body>
-<!-- chatbox js -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script>
-  // var formSelectionList = ['website','marketing','brand']
-
-  function formSubmission(param) {
-    var form = document.getElementById("form-" + param);
-
-    async function handleSubmit(event) {
-      event.preventDefault();
-      //var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        $('.js-form-response').addClass('sent');
-        $('.js-form-response').html('<h2>Thanks!</h2> <p>We have recieved your information! We will come back to contact with you very soon.</p><a class="bs-button btn-small theme_btn" data-linkName="go home" href="/"><span data-hover="go home">go home</span></a><h6>Check out our social platforms</h6><ul class="social"><li class="facebook"><a href="https://www.facebook.com/softniquebd/" target="_blank"><span>Facebook</span><img src="./images/facebook.webp" alt="Facebook"></a><li><li class="instagram"><a href="https://www.instagram.com/softniquebd/" target="_blank"><span>Instagram</span><img src="./images/instagram.webp" alt="instagram"></a><li><li class="linkedin"><a href="https://www.linkedin.com/company/softniquebd" target="_blank"><span>linkedin</span><img src="./images/linkedin.webp" alt="Linkedin"></a><li></ul>');
-        form.reset()
-      }).catch(error => {
-        $('.js-form-response').addClass('sent');
-        $('.js-form-response').html('<h2>Oops!</h2> <p> There was a problem submitting your form</p><a class="bs-button btn-small theme_btn" data-linkName="go home" href="/"><span data-hover="go home">go home</span></a><h6>Check out our socail platforms</h6><ul class="social"><li class="facebook"><a href="https://www.facebook.com/softniquebd/" target="_blank"><span>Facebook</span><img src="./images/facebook.webp" alt="Facebook"></a><li><li class="instagram"><a href="https://www.instagram.com/softniquebd/" target="_blank"><span>Instagram</span><img src="./images/instagram.webp" alt="instagram"></a><li><li class="linkedin"><a href="https://www.linkedin.com/company/softniquebd" target="_blank"><span>linkedin</span><img src="./images/linkedin.webp" alt="Linkedin"></a><li></ul>')
-      });
-    }
-
-    form.addEventListener("submit", handleSubmit)
-  }
-
-  $('[data-form="website"]').on("click", function () {
-    formSubmission(1);
-  });
-
-  $('[data-form="marketing"]').on("click", function () {
-    formSubmission(2);
-  });
-
-  $('[data-form="brand"]').on("click", function () {
-    formSubmission(3);
-  });
-  $('[data-form="graphics"]').on("click", function () {
-    formSubmission(4);
-  });
-
-</script>
 
 
 <script>
@@ -957,28 +926,6 @@
 
 
 
-  (function () {
-    var options = {
-      facebook: "114263207095888", // Facebook page ID
-      whatsapp: "+8801688898166", // WhatsApp number
-      call_to_action: "", // Call to action
-      button_color: "#932C8B", // Color of button
-      position: "right", // Position may be 'right' or 'left'
-      order: "facebook,whatsapp", // Order of buttons
-    };
-    var proto = document.location.protocol,
-      host = "getbutton.io",
-      url = proto + "//static." + host;
-    var s = document.createElement("script");
-    s.type = "text/javascript";
-    s.async = true;
-    s.src = url + "/widget-send-button/js/init.js";
-    s.onload = function () {
-      WhWidgetSendButton.init(host, proto, options);
-    };
-    var x = document.getElementsByTagName("script")[0];
-    x.parentNode.insertBefore(s, x);
-  })();
 </script>
 
 
