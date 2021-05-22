@@ -1634,7 +1634,7 @@ nav .dropdown-menu .dropdown-items:active {
 }
 
 .best-solution .best {
-  font-size: 2vw !important;
+  font-size: 2vw ;
   margin: 2em 0 !important;
   margin-top: 3em;
   margin-left: -3em;

@@ -155,7 +155,7 @@ $.getJSON("data.json", async function (info) {
         data.forEach(function (post, index) {
             if (postnum == index) {
                 html += `<div class="col-md-12 mt-5 container  banner-img  "> </div>
-                <div class="banner-text">
+                <div class="banner-text ">
                 <h1 class="font-weight-bold">${data[index].bannerTitle}</h1>
             <p>
                ${data[index].postTitle}
@@ -480,7 +480,7 @@ $.getJSON("data.json", async function (info) {
                 <section class="site-title">
                     <div class="site-background" data-aos="fade-up" data-aos-delay="100">
                         <h3 class="title">Our Blog</h3>
-                        <h1 class="title">Where We Implement Our Ideas Into Reality</h1>
+                        <h1 class="title blogt">Where We Implement Our Ideas Into Reality</h1>
                         <a href='#PostFeed'><button class="btn theme_btn">Explore</button></a>
 
                     </div>
