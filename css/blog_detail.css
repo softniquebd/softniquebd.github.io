@@ -400,9 +400,10 @@ ul.blog-list .slick-list.draggable {
 .cs-blog-detail .post-option span a {
     color: #999 !important;
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 18px;
     vertical-align: middle;
+    font-weight: bolder;
 }
 
 .cs-blog .post-option span i,
@@ -423,6 +424,8 @@ ul.blog-list .slick-list.draggable {
 }
 
 .cs-blog-detail .post-option .post-date {
+    font-weight: bold;
+    font-size: 18px;
     margin-left: 18px;
 }
 
@@ -547,9 +550,11 @@ ul.blog-list .slick-list.draggable {
 
 .cs-blog .cs-author .cs-text a,
 .cs-blog-detail .cs-author .cs-text a {
+    margin-left: 25px;
     color: #555;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
+    /* margin-top: 78px; */
 }
 
 .blog-large .post-option,
