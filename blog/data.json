@@ -1,70 +1,24 @@
 {
     "posts": [
         {
-            "postImage": "../assets/Blog-post/blog1.png",
-            "bannerTitle": "Flutter announced the desktop stable version",
-            "category": "Software",
-            "date": "March 21, 2021",
-            "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
-            "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
-            "blogWriter": "Noushad Bhuiyan",
-            "blogPost": "https://docs.google.com/document/d/e/2PACX-1vQGiB3qRVnXR_l5AztJOQhRMKIo7Yve1bLCXC1kqCRiSDClPXbQ6e-UaPQmyrYoSmXILUZeKKc1t9y-/pub?embedded=true",
-            "tags": [
-                "tech",
-                "extension",
-                "app"
-            ],
-            "writerPic": "../images/nsdfoot.webp",
-            "gitlink": "https://github.com/NoushadBug"
-        },
-        {
-            "postImage": "../assets/Blog-post/blog2.png",
-            "bannerTitle": "Complete Flutter and Dart Roadmap 2020",
-            "category": "Software",
-            "date": "March 23, 2021",
-            "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
-            "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
-            "blogWriter": "Mohammad Ali",
-            "blogPost": "https://docs.google.com/document/d/e/2PACX-1vQGiB3qRVnXR_l5AztJOQhRMKIo7Yve1bLCXC1kqCRiSDClPXbQ6e-UaPQmyrYoSmXILUZeKKc1t9y-/pub?embedded=true",
-            "tags": [
-                "web",
-                "software",
-                "extension"
-            ],
-            "writerPic": "../images/alifoot.webp",
-            "gitlink": "https://shuvo18103107.github.io/"
-        },
-        {
-            "postImage": "../assets/Blog-post/blog3.png",
-            "bannerTitle": "SoftniqueBd made Hello Doctor application",
+            "postImage": "../blog/images/softniquebd - complete flutter and dart roadmap 2021 (1).webp",
+            "bannerTitle": "COMPLETE FLUTTER AND DART ROADMAP 2021",
             "category": "Application",
-            "date": "April 04, 2021",
-            "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
-            "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
-            "blogWriter": "Noushad Bhuiyan",
-            "blogPost": "https://docs.google.com/document/d/e/2PACX-1vQGiB3qRVnXR_l5AztJOQhRMKIo7Yve1bLCXC1kqCRiSDClPXbQ6e-UaPQmyrYoSmXILUZeKKc1t9y-/pub?embedded=true",
+            "date": "May 23, 2021",
+            "postTitle": "Things To Get Remapped Before Starting.",
+            "postDescription": "With multiple emerging technologies available to empower you to develop full-fledged applications, here are the compelling guidelines why you should move your app to the Dart Side and choose flutter for the app development.From faster development to rapid app changes, saving a development time to bringing the wide choice of widgets, Flutter is throwing all such reasons to businesses ranging from startup to leading brands to develop an app using Flutter.",
+            "blogWriter": "Mohammad Ali Shuvo",
+            "blogPost": "../blog/flutterRoadMap.html",
             "tags": [
-                "software",
-                "app"
+                "Mobile App",
+                "Flutter",
+                "Dart",
+                "Cross-Platform",
+                "Application",
+                "Software"
             ],
-            "writerPic": "../images/nsdfoot.webp",
-            "gitlink": "https://github.com/NoushadBug"
-        },
-        {
-            "postImage": "../assets/Blog-post/blog4.png",
-            "bannerTitle": "SoftniqueBd made a chrome extension",
-            "category": "Extension",
-            "date": "April 21, 2021",
-            "postTitle": "Why should boys have all the fun? it's the women who are making india an alcohol-loving contry",
-            "postDescription": "Lorem ipsum dolor sit amet ,consectetur ,adipisicing elit. Neque voluptas deserunt beatae adipisci iusto totam placeat corrupti ipsum tempora magnam incidunt aperiam tenetur anobis voluptate numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni illum similique veniam tempore unde?",
-            "blogWriter": "Mohammad Ali",
-            "blogPost": "https://docs.google.com/document/d/e/2PACX-1vQGiB3qRVnXR_l5AztJOQhRMKIo7Yve1bLCXC1kqCRiSDClPXbQ6e-UaPQmyrYoSmXILUZeKKc1t9y-/pub?embedded=true",
-            "tags": [
-                "tech",
-                "extension"
-            ],
-            "writerPic": "../images/alifoot.webp",
-            "gitlink": "https://shuvo18103107.github.io/"
+            "writerPic": "",
+            "gitlink": ""
         }
     ]
 }
