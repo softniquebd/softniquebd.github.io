@@ -949,7 +949,9 @@
                         </li>
                         <li><a rel="tag" href="#0">Flutter</a>
                         </li>
-                        <li><a rel="tag" href="#0">Cross Platform</a>
+                        <li><a rel="tag" href="#0">Cross-Platform</a>
+                        </li>
+                        <li><a rel="tag" href="#0">Mobile App</a>
                         </li>
                         <li><a rel="tag" href="#0">Dart</a>
                         </li>
@@ -971,7 +973,10 @@
     console.log(tagsList)
 
     $(tagsList).children('li').each(function () {
-        console.log(this);
+        var tagName = $(this).children('a').text().toLowerCase();
+        var urlString = window.location.origin+'/blog/';
+        var onclickString = urlString +'?tag='+tagName;
+        $(this).children('a').attr('href', onclickString);
     });
 </script>
 
