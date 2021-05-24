@@ -89,6 +89,23 @@
 </head>
 
 <style>
+    .rich-editor-text h1, h2, h3, h4, h5, h6, .c3{
+        text-align: center;
+    }
+    .c3{
+        text-align: center;
+    }
+
+    li {
+        color: black;
+    }
+    li:nth-child(odd) {
+        color: #777;
+    }
+    li:nth-child(even) {
+        color: black;
+    }
+
     @media screen and (max-width: 768px) and (min-width: 576px) {
         .imgRespo {
             width: 419px !important;
@@ -100,6 +117,7 @@
         }
 
         .headTitle {
+            text-align: center;
             font-size: 2em !important;
         }
 
@@ -121,6 +139,7 @@
         }
 
         .headTitle {
+            text-align: center;
             font-size: 2em !important;
         }
 
@@ -146,6 +165,7 @@
         }
 
         .headTitle {
+            text-align: center;
             font-size: 1.7em !important;
         }
 
@@ -171,6 +191,7 @@
         }
 
         .headTitle {
+            text-align: center;
             font-size: 1.5em !important;
         }
 
@@ -180,7 +201,7 @@
 
 
     ul {
-        list-style-type: disc;
+        list-style-type: circle;
     }
 
     li {
@@ -230,7 +251,7 @@
                     <div class="c20">
                         <hr>
                         <p class="c6"><span class="c1"></span></p>
-                        <h1 class="c13 headTitle" id="h.eqwy3elh9q5y"><span class="c5">Complete Flutter and Dart Roadmap
+                        <h1 class="c13 headTitle text-center" id="h.eqwy3elh9q5y"><span class="c5">Complete Flutter and Dart Roadmap
                                 2021</span></h1>
                         <p class="c8 text-center"><span
                                 style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 333.33px;">
@@ -921,16 +942,18 @@
             <div class="cs-tags">
                 <div class="tags mt-5">
                     <span>Tags</span>
-                    <ul>
-                        <li><a rel="tag" href="#">Software</a>
+                    <ul id="tagList">
+                        <li><a rel="tag" href="#0">Software</a>
                         </li>
-                        <li><a rel="tag" href="#">App</a>
+                        <li><a rel="tag" href="#0">App</a>
                         </li>
-                        <li><a rel="tag" href="#">Flutter</a>
+                        <li><a rel="tag" href="#0">Flutter</a>
                         </li>
-                        <li><a rel="tag" href="#">Cross Platform</a>
+                        <li><a rel="tag" href="#0">Cross-Platform</a>
                         </li>
-                        <li><a rel="tag" href="#">Dart</a>
+                        <li><a rel="tag" href="#0">Mobile App</a>
+                        </li>
+                        <li><a rel="tag" href="#0">Dart</a>
                         </li>
                     </ul>
                 </div>
@@ -943,5 +966,18 @@
 
 </body>
 
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script>
+    // "window.location = window.location.href.split('#')[0].split('?')[0]+'tag?=software'"
+    var tagsList = $('#tagList');
+    console.log(tagsList)
+
+    $(tagsList).children('li').each(function () {
+        var tagName = $(this).children('a').text().toLowerCase();
+        var urlString = window.location.origin+'/blog/';
+        var onclickString = urlString +'?tag='+tagName;
+        $(this).children('a').attr('href', onclickString);
+    });
+</script>
 
 </html>

@@ -251,20 +251,41 @@ $.getJSON("data.json", async function (info) {
         loadAllScript()
     }
 
-    // function renderselectedTag(tag) {
-    //     var found = false, html = '';
-    //     for (let x = 0; x < tagList.length; x++) {
-    //         for (let y = 0; y < tagList[x].length; y++) {
-    //             if (tag == tagList[x][y]) {
-    //                 found = true;
-    //             }
-    //         }
-    //         if (found) {
-
-    //         }
-    //     }
-    //     return html;
-    // }
+    function renderselectedTag(tag) {
+       var found = false, html = '';
+        for (let x = 0; x < tagList.length; x++) {
+            for (let y = 0; y < tagList[x].length; y++) {
+                var tagLower = tagList[x][y].toLowerCase();
+                if (tag.toLowerCase() == tagLower) {
+                    found = true;
+                }
+            }
+            if (found) {
+                html += `<div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="post-image">
+                        <div>
+                            <img src="${data[x].postImage}" class="img" alt="blog${x}">
+                        </div>
+                        <div class="post-info flex-row theme_btn">
+                            <span> <i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;${data[x].blogWriter}</span>
+                            <span><i class="fa fa-calendar-check-o text-gray" aria-hidden="true"></i>
+                                &nbsp;&nbsp;${data[x].date}</span>
+                                <span>${data[x].category}
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + x}"><span>${data[x].bannerTitle}</a>
+                        <p>${data[x].postDescription.substring(0, 294) + "..."}
+                        </p>
+                        <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?post=' + x}'">Read More &nbsp; <i class="fa fa-arrow-right"
+                                aria-hidden="true"></i></button>
+                    </div>
+                </div>`;
+                found = false;
+            }
+        }
+        return html;
+    }
 
     function renderTaggedPosts(tag) {
         $(`
@@ -342,7 +363,7 @@ $.getJSON("data.json", async function (info) {
                     </div>
                 </div>
                 <div class="post-title">
-                    <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}"><span>${data[index].bannerTitle}</a>
+                    <a href="${data[index].blogPost}"><span>${data[index].bannerTitle}</a>
                     <p>${data[index].postDescription.substring(0, 294) + "..."}
                     </p>
                     <button class="btn post-btn theme_btn" onclick="location.href='../blog/flutterRoadMap.html'">Read More &nbsp; <i class="fa fa-arrow-right"
@@ -371,7 +392,7 @@ $.getJSON("data.json", async function (info) {
                                             </div>
                                         </div>
                                         <div class="post-title">
-                                            <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}">${post.bannerTitle}</a>
+                                            <a href="${data[index].blogPost}">${post.bannerTitle}</a>
                                             <p>${post.postDescription.substring(0, 294) + "..."}
                                             </p>
                                             <button class="btn post-btn theme_btn" onclick="location.href='../blog/flutterRoadMap.html'">Read More &nbsp; <i class="fa fa-arrow-right"
@@ -397,7 +418,7 @@ $.getJSON("data.json", async function (info) {
                                         </div>
                                     </div>
                                     <div class="post-title">
-                                        <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + ((data.length - 1) - index)}">${post.bannerTitle}</a>
+                                        <a href="${data[index].blogPost}">${post.bannerTitle}</a>
                                     </div>
                                 </div>
                     `;
@@ -431,7 +452,7 @@ $.getJSON("data.json", async function (info) {
         var html = '';
         tags.forEach(function (element, index) {
             html += `
-                    <span class="tag theme_btn " data-aos="flip-up" data-aos-delay="${index}00">${element}</span>
+                    <span class="tag theme_btn " data-aos="flip-up" data-aos-delay="${index}00" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?tag=' + element}'">${element}</span>
                     `;
         })
         return html;
@@ -661,6 +682,7 @@ $.getJSON("data.json", async function (info) {
         else if (query.indexOf("cat=") !== -1) {
             var categoryName = query.split('cat=')[1]
             if (categoryName != null && categoryName != undefined && categoryName != '' && uniqueCategories.indexOf(categoryName) !== -1) {
+                alert(categoryName)
                 renderCategorizedPosts(categoryName);
             }
             else {
@@ -669,12 +691,14 @@ $.getJSON("data.json", async function (info) {
         }
 
         else if (query.indexOf("tag=") !== -1) {
-            var tagName = query.split('tag=')[1]
-            if (tagName != null && tagName != undefined && tagName != '' && tags.indexOf(tagName) !== -1) {
+            var tagName = query.split('tag=')[1];
+            tagName = tagName.replace(/%20/g, " ");
+// alert(tagName)
+            if (tagName != null && tagName != undefined && tagName != '' && tags.join(' ').toLowerCase().split(' ').indexOf(tagName.toLowerCase()) !== -1) {
                 renderTaggedPosts(tagName);
             }
             else {
-                renderMainPage();
+                //renderMainPage();
             }
         }
     }
