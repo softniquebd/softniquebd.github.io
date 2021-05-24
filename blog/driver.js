@@ -342,7 +342,7 @@ $.getJSON("data.json", async function (info) {
                     </div>
                 </div>
                 <div class="post-title">
-                    <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}"><span>${data[index].bannerTitle}</a>
+                    <a href="${data[index].blogPost}"><span>${data[index].bannerTitle}</a>
                     <p>${data[index].postDescription.substring(0, 294) + "..."}
                     </p>
                     <button class="btn post-btn theme_btn" onclick="location.href='../blog/flutterRoadMap.html'">Read More &nbsp; <i class="fa fa-arrow-right"
@@ -371,7 +371,7 @@ $.getJSON("data.json", async function (info) {
                                             </div>
                                         </div>
                                         <div class="post-title">
-                                            <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + index}">${post.bannerTitle}</a>
+                                            <a href="${data[index].blogPost}">${post.bannerTitle}</a>
                                             <p>${post.postDescription.substring(0, 294) + "..."}
                                             </p>
                                             <button class="btn post-btn theme_btn" onclick="location.href='../blog/flutterRoadMap.html'">Read More &nbsp; <i class="fa fa-arrow-right"
@@ -397,7 +397,7 @@ $.getJSON("data.json", async function (info) {
                                         </div>
                                     </div>
                                     <div class="post-title">
-                                        <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + ((data.length - 1) - index)}">${post.bannerTitle}</a>
+                                        <a href="${data[index].blogPost}">${post.bannerTitle}</a>
                                     </div>
                                 </div>
                     `;
