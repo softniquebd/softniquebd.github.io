@@ -61,9 +61,17 @@
 	<meta name="twitter:card" content="summary_large_image" />
 
 	<meta name="twitter:creator" content="<meta name=" twitter:creator" content="@MohammadAliShu4" />
+	<link rel="stylesheet" type="text/css" href="loading-bar.css" />
+	<link rel="stylesheet" type="text/css" href="./css/loading-bar.css" />
+	<link rel="stylesheet" type="text/css" href="./css/loading-bar.min.css" />
+
+
+
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<link rel="icon" href="./images/icon.webp" sizes="16x16" />
-	<link rel="stylesheet" href="./css/loader.css">
+	<link rel="stylesheet" href="./css/loading-bar.css">
+	<link rel="stylesheet" href="./css/loading-bar.min.css">
 	<link rel="stylesheet" href="./css/main.css" />
 	<link rel="stylesheet" href="./css/owl.css" />
 	<link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
@@ -505,16 +513,16 @@
 	}
 
 	.slider-text1 {
-		background: lightgreen;
+		/* background: lightgreen; */
 		animation: slide 5s linear infinite;
 	}
 
 	.slider-text2 {
-		background: skyblue;
+		/* background: skyblue; */
 	}
 
 	.slider-text3 {
-		background: rgb(220, 245, 130);
+		/* background: rgb(220, 245, 130); */
 	}
 
 
@@ -555,43 +563,47 @@
 	<!-- loader -->
 
 
-	<div class="loader"
-		style=" position: fixed;z-index: 9669;top: 0;left: 0;width: 100%;height: 100%;display: flex;background: #ffffff;justify-content: center;align-items: center; flex-direction: column;">
-
-		<div class="content">
 
 
+	<div class="content">
 
 
-
-			<div class="col-12  text-center" style="height: fit-content;">
-				<div class="col-12 ">
-					<img src="./images/softnique-nav.webp" alt="loader" style="width: 145px;">
-
-				</div>
-				<div class="slider-wrapper col-12 mt-5">
-					We Provide
-					<div class="slider">
-						<div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv" aria-hidden="true"></i>
-						</div>
-						<div class="slider-text2">App development <i class="ml-2 fa fa-mobile" aria-hidden="true"></i>
-						</div>
-						<div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs" aria-hidden="true"></i>
-						</div>
+		<div class="loader"
+			style=" position: fixed;z-index: 9669;top: 0;left: 0;width: 100%;height: 100%;display: flex;background: #ffffff;justify-content: center;align-items: center; flex-direction: column;">
+		</div>
 
 
+		<div class="col-12  text-center" style="height: fit-content;">
+			<div class="col-12 ">
+				<img src="./images/softnique-nav.webp" alt="loader" style="width: 145px;">
 
+			</div>
+			<div class="slider-wrapper row">
 
-
-
+				<div class="slider  col-12 mt-5">
+					<div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv" aria-hidden="true"></i>
 					</div>
-				</div>
+					<div class="slider-text2">App development <i class="ml-2 fa fa-mobile" aria-hidden="true"></i>
+					</div>
+					<div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs" aria-hidden="true"></i>
+					</div>
 
+
+
+
+
+
+				</div>
+				<div class="ldBar col-12 " data-value="50" data-preset="fan" 50>
+				</div>
 			</div>
 
 
-
 		</div>
+
+
+
+	</div>
 
 
 	</div>
@@ -2653,6 +2665,8 @@
 <script src="./js/owl.js"></script>
 <script src="./js/jquery.fancybox.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+<script type="text/javascript" src="./js/loading-bar.min.js"></script>
+<script type="text/javascript" src="./js/loading-bar.js"></script>
 <script>
 	// testimonial js
 	gsap.to(".bubble--container", 20, {
