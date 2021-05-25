@@ -409,15 +409,216 @@
         }
     }
 </style>
+<!-- loader css style -->
+<style>
+    @media screen and (max-width: 700px) and (min-width: 536px) {
+        .slider-wrapper {
+            font-size: 25px !important;
 
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 7px !important;
+
+        }
+    }
+
+    @media screen and (max-width: 535px) and (min-width: 417px) {
+        .slider-wrapper {
+            font-size: 18px !important;
+
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 12px !important;
+
+        }
+    }
+
+    @media screen and (max-width: 416px) and (min-width: 350px) {
+        .slider-wrapper {
+            font-size: 14px !important;
+
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 14px !important;
+
+        }
+    }
+
+    @media screen and (max-width: 350px) and (min-width: 286px) {
+        .slider-wrapper {
+            font-size: 12px !important;
+
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 16px !important;
+
+        }
+    }
+
+    @media screen and (max-width: 286px) and (min-width: 215px) {
+        .slider-wrapper {
+            font-size: 10px !important;
+
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 18px !important;
+
+        }
+    }
+
+    @media screen and (max-width: 215px) and (min-width: 100px) {
+        .slider-wrapper {
+            font-size: 8px !important;
+
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 20px !important;
+
+        }
+    }
+
+    .content {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider-wrapper {
+        border-radius: 2em;
+        font-size: 30px;
+        color: #880404;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+    }
+
+    .slider {
+        height: 50px;
+        padding-left: 15px;
+        overflow: hidden;
+    }
+
+    .slider div {
+        border-radius: 2em;
+        color: #0d042b;
+        height: 50px;
+        margin-bottom: 50px;
+        padding: 2px 15px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .slider-text1 {
+        background: lightgreen;
+        animation: slide 5s linear infinite;
+    }
+
+    .slider-text2 {
+        background: skyblue;
+    }
+
+    .slider-text3 {
+        background: rgb(220, 245, 130);
+    }
+
+
+
+    @keyframes slide {
+        0% {
+            margin-top: -300px;
+        }
+
+        5% {
+            margin-top: -200px;
+        }
+
+        33% {
+            margin-top: -200px;
+        }
+
+        38% {
+            margin-top: -100px;
+        }
+
+        66% {
+            margin-top: -100px;
+        }
+
+        71% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+</style>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
     <div class="loader"
         style=" position: fixed;z-index: 9669;top: 0;left: 0;width: 100%;height: 100%;display: flex;background: #ffffff;justify-content: center;align-items: center; flex-direction: column;">
-        <img src="./images/softnique-nav.webp" alt="loader" style="height: 10%;">
-        <br>
-        <img src="./images/loader.svg" alt="loader" width="150px" height="50px">
+
+        <div class="content">
+
+
+
+
+
+            <div class="col-12  text-center" style="height: fit-content;">
+                <div class="col-12 ">
+                    <img src="./images/softnique-nav.webp" alt="loader" style="width: 145px;">
+
+                </div>
+                <div class="slider-wrapper col-12 mt-5">
+                    We Provide
+                    <div class="slider">
+                        <div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv" aria-hidden="true"></i>
+                        </div>
+                        <div class="slider-text2">App development <i class="ml-2 fa fa-mobile" aria-hidden="true"></i>
+                        </div>
+                        <div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs" aria-hidden="true"></i>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
     </div>
+
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>
