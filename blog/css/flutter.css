@@ -1,0 +1,138 @@
+
+    .rich-editor-text h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .c3 {
+        text-align: center;
+    }
+
+    .c3 {
+        text-align: center;
+    }
+
+    .commonli {
+        color: black;
+    }
+
+    .commonli:nth-child(odd) {
+        color: #777;
+    }
+
+    .commonli:nth-child(even) {
+        color: black;
+    }
+
+    @media screen and (max-width: 768px) and (min-width: 576px) {
+        .imgRespo {
+            width: 419px !important;
+            height: 281.33px !important;
+        }
+
+        p span {
+            text-align: left !important;
+        }
+
+        .headTitle {
+            text-align: center;
+            font-size: 2em !important;
+        }
+
+    }
+
+    @media screen and (max-width: 575px) and (min-width: 391px) {
+        .imgRespo {
+            width: 319px !important;
+            height: 200px !important;
+        }
+
+        p span {
+            text-align: left !important;
+        }
+
+        .commonli {
+            font-size: 1.1em !important;
+            margin-left: 1.2em !important;
+        }
+
+        .headTitle {
+            text-align: center;
+            font-size: 2em !important;
+        }
+
+    }
+
+    @media screen and (max-width: 391px) and (min-width: 332px) {
+        .imgRespo {
+            width: 314px !important;
+            height: 200px !important;
+        }
+
+        p span {
+            text-align: left !important;
+        }
+
+        .commonli {
+            font-size: 1em !important;
+            margin-left: 1.1em !important;
+        }
+
+        .banner-text {
+            margin-top: 5em !important;
+        }
+
+        .headTitle {
+            text-align: center;
+            font-size: 1.7em !important;
+        }
+
+    }
+
+    @media screen and (max-width: 332px) and (min-width: 100px) {
+        .imgRespo {
+            width: 250px !important;
+            height: 180px !important;
+        }
+
+        p span {
+            text-align: left !important;
+        }
+
+        .commonli {
+            font-size: 0.9em !important;
+            margin-left: 0.8em !important;
+        }
+
+        .banner-text {
+            margin-top: 5em !important;
+        }
+
+        .headTitle {
+            text-align: center;
+            font-size: 1.5em !important;
+        }
+
+    }
+
+
+
+
+    ul {
+        list-style-type: circle;
+    }
+
+    .commonli{
+        font-size: 1.4em;
+    }
+   
+
+    p img {
+        text-align: center !important;
+    }
+
+
+    html {
+        scroll-behavior: smooth;
+    }
