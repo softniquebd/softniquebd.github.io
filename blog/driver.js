@@ -277,7 +277,7 @@ $.getJSON("data.json", async function (info) {
                         <a href="${data[x].blogPost}"><span>${data[x].bannerTitle}</a>
                         <p>${data[x].postDescription.substring(0, 294) + "..."}
                         </p>
-                        <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + data[x].blogPost}'">Read More &nbsp; <i class="fa fa-arrow-right"
+                        <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.data[x].blogPost}'">Read More &nbsp; <i class="fa fa-arrow-right"
                                 aria-hidden="true"></i></button>
                     </div>
                 </div>`;
