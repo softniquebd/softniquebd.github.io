@@ -15,47 +15,12 @@
 
     <meta name="keywords"
         CONTENT="real estate software,management,bangldesh,real estate management,softniquebd.tech,softnique,softnique bd,noushadbug,mohammad ali shuvo, noushad bhuiyan, softniquebd,real estate logo,real estate business,real estate company,real estate websites,real estate company in bangladesh,real estate agent" />
-    <link rel="canonical" href="https://softniquebd.tech/realEstate.html">
-    <meta property="type" content="article" />
+
     <meta property="title" content="Real Estate Software Development Company - SoftniqueBD" />
     <meta property="description"
         content="softnique BD provides real estate management software with essential feature to manage activity related to Real Estate business. You can manage Clients, Leads, Sales and billing. It is raelly great hassle for business owner in Real Estate to get proper information of his business. So that our software make it easy for them to manage all the things in a single place." />
 
-    <meta name="robots" content="index,follow" />
-    <meta property="url" content="https://softniquebd.tech/realEstate.html" />
-    <meta property="site_name" content="Real Estate Software Development Company - SoftniqueBD" />
-    <meta property="image" content="https://softniquebd.tech/images/nav-logo.webp" />
-    <meta property="image:secure_url" content="https://softniquebd.tech/images/nav-logo.webp" />
-    <meta property="image:alt" content="Real Estate Software Development Company - SoftniqueBD" />
-    <meta property="image:type" content="image/webp" />
-    <meta name="twitter:title"
-        content="Real Estate Software Development Company - SoftniqueBD | Best Real Estate Software Development Company in Bangladesh" />
 
-
-    <meta name="Abstract" content="Real Estate Software Development Company in Dhaka Bangladesh" />
-
-
-    <meta name="Googlebot" content="all" />
-    <meta http-equiv="imagetoolbar" content="yes" />
-    <meta name="Author" content="SoftniqueBD." />
-    <meta name="Copyright" content="SoftniqueBD" />
-
-    <meta name="owner" content="SoftniqueBD" />
-    <meta name="Rating" content="General" />
-    <meta http-equiv="Pragma" content="no-cache" />
-
-    <meta name="distribution" content="Global" />
-
-    <meta name="classification"
-        content="Software Development, Website Design, eCommerce Development, Mobile App, IT Consulting, Website Development, Graphics Design and Custom Solution" />
-
-    <meta name="robots" content="follow,index" />
-    <meta property="locale" content="en_US" />
-
-    <meta property="article:publisher" content="https://www.facebook.com/softniquebd" />
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <meta name="twitter:creator" content="<meta name=" twitter:creator" content="@MohammadAliShu4" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="icon" href="./images/icon.webp" sizes="16x16" />
     <link rel="stylesheet" href="./css/normalize.css" />
@@ -457,7 +422,7 @@
         }
     }
 
-    .content {
+    .loadWrappe {
         width: 100vw;
         height: 100vh;
         display: flex;
@@ -494,16 +459,16 @@
     }
 
     .slider-text1 {
-        background: lightgreen;
+        /* background: lightgreen; */
         animation: slide 5s linear infinite;
     }
 
     .slider-text2 {
-        background: skyblue;
+        /* background: skyblue; */
     }
 
     .slider-text3 {
-        background: rgb(220, 245, 130);
+        /* background: rgb(220, 245, 130); */
     }
 
 
@@ -540,11 +505,16 @@
 </style>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+    <!-- loader -->
+
+
     <div class="loader"
         style=" position: fixed;z-index: 9669;top: 0;left: 0;width: 100%;height: 100%;display: flex;background: #ffffff;justify-content: center;align-items: center; flex-direction: column;">
 
-        <div class="content">
 
+
+        <div class="loadWrapper">
 
 
 
@@ -552,11 +522,13 @@
             <div class="col-12  text-center" style="height: fit-content;">
                 <div class="col-12 ">
                     <img src="./images/softnique-nav.webp" alt="loader" style="width: 145px;">
+                    <br>
+                    <img src="./images/loader.svg" alt="loader" width="150px" height="50px">
 
                 </div>
-                <div class="slider-wrapper col-12 mt-5">
-                    We Provide
-                    <div class="slider">
+                <div class="slider-wrapper row">
+
+                    <div class="slider  col-12 mt-3">
                         <div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv" aria-hidden="true"></i>
                         </div>
                         <div class="slider-text2">App development <i class="ml-2 fa fa-mobile" aria-hidden="true"></i>
@@ -570,7 +542,10 @@
 
 
                     </div>
+                    <div class="ldBar col-12 " data-value="50" data-preset="fan" 50>
+                    </div>
                 </div>
+
 
             </div>
 
@@ -580,6 +555,7 @@
 
 
     </div>
+
 
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
