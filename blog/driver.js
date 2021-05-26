@@ -274,10 +274,10 @@ $.getJSON("data.json", async function (info) {
                         </div>
                     </div>
                     <div class="post-title">
-                        <a href="${window.location.href.split("#")[0].split("?")[0] + '?post=' + x}"><span>${data[x].bannerTitle}</a>
+                        <a href="${data[x].blogPost}"><span>${data[x].bannerTitle}</a>
                         <p>${data[x].postDescription.substring(0, 294) + "..."}
                         </p>
-                        <button class="btn post-btn theme_btn" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?post=' + x}'">Read More &nbsp; <i class="fa fa-arrow-right"
+                        <button class="btn post-btn theme_btn" onclick="window.location.href = '${data[x].blogPost}'">Read More &nbsp; <i class="fa fa-arrow-right"
                                 aria-hidden="true"></i></button>
                     </div>
                 </div>`;
@@ -293,7 +293,7 @@ $.getJSON("data.json", async function (info) {
         <div class="banner-text">
 
             <h1 class="font-weight-bold">Blogs related to </h1>
-             <h3> "${tag}"</h3>
+             <h3> "${tag.replace(/%20/g, " ")}"</h3>
 
         </div>
         <main>
@@ -366,7 +366,7 @@ $.getJSON("data.json", async function (info) {
                     <a href="${data[index].blogPost}"><span>${data[index].bannerTitle}</a>
                     <p>${data[index].postDescription.substring(0, 294) + "..."}
                     </p>
-                    <button class="btn post-btn theme_btn" onclick="location.href='../blog/flutterRoadMap.html'">Read More &nbsp; <i class="fa fa-arrow-right"
+                    <button class="btn post-btn theme_btn" onclick="location.href='${data[index].blogPost}'">Read More &nbsp; <i class="fa fa-arrow-right"
                             aria-hidden="true"></i></button>
                 </div>
             </div>`
@@ -395,7 +395,7 @@ $.getJSON("data.json", async function (info) {
                                             <a href="${data[index].blogPost}">${post.bannerTitle}</a>
                                             <p>${post.postDescription.substring(0, 294) + "..."}
                                             </p>
-                                            <button class="btn post-btn theme_btn" onclick="location.href='../blog/flutterRoadMap.html'">Read More &nbsp; <i class="fa fa-arrow-right"
+                                            <button class="btn post-btn theme_btn" onclick="location.href='${data[index].blogPost}'">Read More &nbsp; <i class="fa fa-arrow-right"
                                                     aria-hidden="true"></i></button>
                                         </div>
                                          <hr>
@@ -452,7 +452,7 @@ $.getJSON("data.json", async function (info) {
         var html = '';
         tags.forEach(function (element, index) {
             html += `
-                    <span class="tag theme_btn " data-aos="flip-up" data-aos-delay="${index}00" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?tag=' + element}'">${element}</span>
+                    <span class="tag theme_btn " data-aos="flip-up" data-aos-delay="${index}00" onclick="window.location.href = '${window.location.href.split("#")[0].split("?")[0] + '?tag=' + element}'">${element.replace(/%20/g, " ")}</span>
                     `;
         })
         return html;
@@ -692,13 +692,11 @@ $.getJSON("data.json", async function (info) {
 
         else if (query.indexOf("tag=") !== -1) {
             var tagName = query.split('tag=')[1];
-            tagName = tagName.replace(/%20/g, " ");
-// alert(tagName)
             if (tagName != null && tagName != undefined && tagName != '' && tags.join(' ').toLowerCase().split(' ').indexOf(tagName.toLowerCase()) !== -1) {
                 renderTaggedPosts(tagName);
             }
             else {
-                //renderMainPage();
+                renderMainPage();
             }
         }
     }
