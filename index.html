@@ -739,14 +739,7 @@
 </style>
 
 <script src="js/jquery-3.4.1.min.js"></script>
-<script>
-		function progressLoader() {
-			//alert('asd')
-			var prg = $('.progress-bar').width();
-			$('.progress-bar').width(parseInt(prg)+10);
-			setTimeout(progressLoader, 500);
-		}
-</script>
+
 <body data-spy="scroll" data-target=".navbar" data-offset="100" onload="progressLoader()">
 
 	<!-- loader -->
@@ -767,6 +760,14 @@
                     <br>
                     <div class="progress mt-3">
                         <span class="progress-bar"  style="width: 10%"></span>
+						<script>
+								function progressLoader() {
+									//alert('asd')
+									var prg = $('.progress-bar').width();
+									$('.progress-bar').width(parseInt(prg)+10);
+									setTimeout(progressLoader, 100);
+								}
+						</script>
                     </div>
                 </div>
                 <div class="slider-wrapper" style="display: contents;">
