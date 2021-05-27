@@ -358,7 +358,7 @@ $.getJSON("data.json", async function (info) {
                     <div class="post-info flex-row theme_btn">
                         <span> <i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;${data[index].blogWriter}</span>
                         <span><i class="fa fa-calendar-check-o text-gray" aria-hidden="true"></i>
-                            &nbsp;&nbsp;${data[index].date}</span>
+                            &n     bsp;&nbsp;${data[index].date}</span>
                             <span>${data[index].category}
                     </div>
                 </div>
@@ -682,7 +682,7 @@ $.getJSON("data.json", async function (info) {
         else if (query.indexOf("cat=") !== -1) {
             var categoryName = query.split('cat=')[1]
             if (categoryName != null && categoryName != undefined && categoryName != '' && uniqueCategories.indexOf(categoryName) !== -1) {
-                alert(categoryName)
+                //alert(categoryName)
                 renderCategorizedPosts(categoryName);
             }
             else {
