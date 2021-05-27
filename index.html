@@ -738,7 +738,16 @@
     }
 </style>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
+<script>
+	function progressLoader(){
+		//alert('test')
+		$('.progress-bar').width('40%');
+		$('.progress-bar').width('60%');
+		$('.progress-bar').width('80%');
+	}
+</script>
+
+<body data-spy="scroll" onload="progressLoader()" data-target=".navbar" data-offset="100">
 
 	<!-- loader -->
 
@@ -757,7 +766,7 @@
                     <img src="../images/softnique-nav.webp" alt="loader" style="width: 145px;">
                     <br>
                     <div class="progress mt-3">
-                        <span class="progress-bar" onload="progressLoader()" style="width: 30%"></span>
+                        <span class="progress-bar" style="width: 30%"></span>
                     </div>
                 </div>
                 <div class="slider-wrapper" style="display: contents;">
@@ -2811,16 +2820,6 @@
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script>
-		$(function(){
-            $('[onload]').trigger('onload');
-        });
-       function progressLoader(){
-		   //alert('test')
-            $('.progress-bar').width('40%');
-            $('.progress-bar').width('60%');
-            $('.progress-bar').width('80%');
-        }
-        
         $(window).on('load', function () {
             $('.progress-bar').width('100%');
             $('.loader').fadeOut('slow');
