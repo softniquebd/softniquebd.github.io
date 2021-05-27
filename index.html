@@ -476,34 +476,40 @@
 		height: 20px;
 	}
 
-	.slider {
-		height: 50px;
-		padding-left: 15px;
-		overflow: hidden;
-	}
+  .slider {
+        height: 100px;
+        padding-left: 15px;
+        overflow: hidden;
+    }
 
-	.slider div {
-		border-radius: 2em;
-		color: #0d042b;
-		height: 50px;
-		margin-bottom: 50px;
-		padding: 2px 15px;
-		text-align: center;
-		box-sizing: border-box;
-	}
+    .slider div {
+        border-radius: 2em;
+        color: #0d042b;
+        height: 50px;
+        margin-bottom: 50px;
+        padding: 2px 15px;
+        text-align: center;
+        box-sizing: border-box;
+    }
 
-	.slider-text1 {
-		/* background: lightgreen; */
-		animation: slide 5s linear infinite;
-	}
+    .slider-text1 {
+        font-size: 0.7em !important;
+        /* background: lightgreen; */
+        animation: slide 15s linear infinite;
+        animation-delay: 1s;
+    }
 
-	.slider-text2 {
-		/* background: skyblue; */
-	}
+    .slider-text2 {
+        font-size: 0.7em !important;
+        /* background: skyblue; */
+    }
 
-	.slider-text3 {
-		/* background: rgb(220, 245, 130); */
-	}
+    .slider-text3 {
+        font-size: 0.7em !important;
+        /* background: rgb(220, 245, 130); */
+    }
+
+
 
 
 
@@ -536,6 +542,53 @@
 			margin-top: 0px;
 		}
 	}
+
+
+
+
+    /* new dynamic progress bar styles     */
+    .progress {
+        width: 50%;
+        /* max-width: 260px; */
+        height: 7px;
+        margin: auto;
+        background: #e1e4e8;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+    .progress .progress-bar {
+        display: block;
+        height: 100%;
+        background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+        background-size: 300% 100%;
+        -webkit-animation: progress-animation 2s linear infinite;
+                animation: progress-animation 2s linear infinite;
+    }
+
+    @-webkit-keyframes progress-animation {
+        0% {
+            background-position: 100%;
+        }
+        100% {
+            background-position: 0;
+    }
+    }
+
+    @keyframes progress-animation {
+        0% {
+            background-position: 100%;
+        }
+        100% {
+            background-position: 0;
+        }
+    }
+
+    .slider p{
+        width: 300px;
+        font-size: 0.6em;
+        text-align: justify;
+        color: brown;
+    }
 </style>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100">
@@ -552,36 +605,32 @@
 
 
 
-
 			<div class="col-12  text-center" style="height: fit-content;">
-				<div class="col-12 ">
-					<img src="./images/softnique-nav.webp" alt="loader" style="width: 145px;">
-					<br>
-					<img src="./images/loader.svg" alt="loader" width="150px" height="50px">
+                <div class="col-12 ">
+                    <img src="../images/softnique-nav.webp" alt="loader" style="width: 145px;">
+                    <br>
+                    <div class="progress mt-3">
+                        <span class="progress-bar" style="width: 30%"></span>
+                    </div>
+                </div>
+                <div class="slider-wrapper" style="display: contents;">
 
-				</div>
-				<div class="slider-wrapper row">
-
-					<div class="slider  col-12 mt-3">
-						<div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv" aria-hidden="true"></i>
-						</div>
-						<div class="slider-text2">App development <i class="ml-2 fa fa-mobile" aria-hidden="true"></i>
-						</div>
-						<div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs" aria-hidden="true"></i>
-						</div>
-
-
-
-
-
-
-					</div>
-					<div class="ldBar col-12 " data-value="50" data-preset="fan" 50>
-					</div>
-				</div>
+                    <div class="slider  col-12 mt-3">
+                        <div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv text-secondary" aria-hidden="true"></i><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit repellendus.</p>
+                        </div>
+                        <div class="slider-text2">App development <i class="ml-2 fa fa-mobile text-secondary" aria-hidden="true"></i><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit repellendus.</p>
+                        </div>
+                        <div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs text-secondary" aria-hidden="true"></i><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit repellendus.</p>
+                        </div>
+                    </div>
+                </div>
 
 
-			</div>
+            </div>
+
 
 
 
@@ -2636,10 +2685,13 @@
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script>
-
-	$(window).on('load', function () {
-		$('.loader').fadeOut('slow');
-	});
+        $('.progress-bar').width('40%');
+        $('.progress-bar').width('60%');
+        $('.progress-bar').width('80%');
+        $(window).on('load', function () {
+            $('.progress-bar').width('100%');
+            $('.loader').fadeOut('slow');
+        });
 
 </script>
 <script src="js/jquery.filterizr.min.js"></script>
