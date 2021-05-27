@@ -62,220 +62,222 @@ android application development, android application development company in bang
     }
 </style>
 <style>
-    @media screen and (max-width: 277px) and (min-width: 100px) {
-        .theme_btn {
-            font-size: 15px !important;
+    /* loading css */
+    .contentLoad {
+        /* width: 100%;
+		height: 100vh;
+
+		display: flex; */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentLoad .loading {
+        width: 80px;
+        height: 50px;
+        position: relative;
+    }
+
+    @keyframes text {
+        0% {
+            letter-spacing: 1px;
+            transform: translateX(0px);
+        }
+
+        40% {
+            letter-spacing: 2px;
+            transform: translateX(26px);
+        }
+
+        80% {
+            letter-spacing: 1px;
+            transform: translateX(32px);
+        }
+
+        90% {
+            letter-spacing: 2px;
+            transform: translateX(0px);
+        }
+
+        100% {
+            letter-spacing: 1px;
+            transform: translateX(0px);
         }
     }
 
-    @media screen and (max-width: 350px) and (min-width: 100px) {
-
-        .heading h1 {
-            font-weight: 600 !important;
-
-            font-size: 1.5em !important;
-        }
-
+    .contentLoad .loading span {
+        background-color: #ff0404;
+        border-radius: 50px;
+        display: block;
+        height: 16px;
+        width: 16px;
+        bottom: 0;
+        position: absolute;
+        transform: translateX(64px);
+        animation: loading 3.5s ease both infinite;
     }
 
-    @media screen and (max-width: 352px) and (min-width: 100px) {
-
-        .title {
-            font-weight: 600 !important;
-
-            font-size: 1.3em !important;
-        }
-
+    .contentLoad .loading span:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: #d9b200;
+        border-radius: inherit;
+        animation: loading2 3.5s ease both infinite;
     }
 
-
-
-    @media screen and (max-width: 768px) and (min-width: 351px) {
-
-        .heading h1 {
-            font-weight: 600 !important;
-
-            font-size: 2.0em !important;
+    @keyframes loading {
+        0% {
+            width: 16px;
+            transform: translateX(0px);
         }
 
-    }
-
-    @media screen and (max-width: 768px) and (min-width: 351px) {
-
-        .title {
-
-
-            font-size: 1.5em !important;
+        40% {
+            width: 100%;
+            transform: translateX(0px);
         }
 
-    }
-
-
-
-
-
-
-    @media (min-width: 992px) {
-        .dropdown-menu .dropdown-toggle:after {
-            border-top: .3em solid transparent;
-            border-right: 0;
-            border-bottom: .3em solid transparent;
-            border-left: .3em solid;
+        80% {
+            width: 16px;
+            transform: translateX(64px);
         }
 
-        .dropdown-menu .dropdown-menu {
-            margin-left: 0;
-            margin-right: 0;
+        90% {
+            width: 100%;
+            transform: translateX(0px);
         }
 
-        .dropdown-menu li {
-            position: relative;
-        }
-
-        .nav-item .submenu {
-            display: none;
-            position: absolute;
-            left: 100%;
-            top: -7px;
-        }
-
-        .nav-item .submenu-left {
-            right: 100%;
-            left: auto;
-        }
-
-        .dropdown-menu>li:hover {
-            background-color: #f1f1f1
-        }
-
-        .dropdown-menu>li:hover>.submenu {
-            display: block;
+        100% {
+            width: 16px;
+            transform: translateX(0px);
         }
     }
 
-    @media screen and (max-width: 767px) {
-        .dropdown-menu li {
-            display: block;
+    @keyframes loading2 {
+        0% {
+            transform: translateX(0px);
+            width: 16px;
         }
 
-        .dropdown-menu {
-            margin: 16.125rem 151px 0;
-            min-width: 63rem;
-            top: -256px !important;
+        40% {
+            transform: translateX(0%);
+            width: 80%;
         }
 
-        .nabvarul li {
-            width: 84.33% !important;
-
+        80% {
+            width: 100%;
+            transform: translateX(0px);
         }
 
+        90% {
+            width: 80%;
+            transform: translateX(15px);
+        }
 
+        100% {
+            transform: translateX(0px);
+            width: 16px;
+        }
     }
 
-    @media screen and (max-width: 393px) {
 
-        .nabvarul li a {
-            font-size: 11px;
-        }
 
-        .navicon {
-            font-size: 14px !important;
-        }
 
-        .softdrop {
-            min-width: 0 !important;
-            left: 0 !important;
-        }
 
+
+
+
+
+
+
+
+    @media screen and (max-width: 535px) and (min-width: 417px) {
+
+
+        /* .contentLoad {
+            margin-left: 50px !important;
+        } */
     }
 
-    @media screen and (max-width: 393px) {
+    @media screen and (max-width: 416px) and (min-width: 350px) {
 
-        .nabvarul li a {
-            font-size: 8.5px;
+
+        /* .contentLoad {
+            margin-left: 40px !important;
+        }
+    } */
+
+        @media screen and (max-width: 350px) and (min-width: 286px) {
+
+
+            /* .contentLoad {
+            margin-left: 30px !important;
+        } */
         }
 
-        .nabvarul li a {
-            padding: 2px;
+        @media screen and (max-width: 286px) and (min-width: 215px) {
+
+
+            /* .contentLoad {
+            margin-left: 20px !important;
+        } */
         }
 
-        .softdrop {
-            min-width: 0px !important;
-            left: 0px !important;
+        @media screen and (max-width: 215px) and (min-width: 100px) {
+
+
+            /* .contentLoad {
+            margin-left: 10px !important;
+        } */
         }
 
-
-    }
-
-    @media screen and (max-width:979px) {
-
-        .nabvarul li a {
-            font-size: 11px !important;
+        @media screen and (max-width: 277px) and (min-width: 100px) {
+            .theme_btn {
+                font-size: 15px !important;
+            }
         }
 
+        @media screen and (max-width: 350px) and (min-width: 100px) {
 
-    }
+            .heading h1 {
+                font-weight: 600 !important;
 
-    @media screen and (max-width:885px) {
-
-        .navicon {
-            font-size: 15px !important;
-            margin-right: 0.4em !important;
-        }
-
-        .nabvarul li a {
-            font-size: 11px !important;
-        }
-
-    }
-
-    @media screen and (max-width:600px) {
-        .banner_text h1 {
-            font-size: 14px !important;
-
-        }
-
-
-    }
-
-    @media screen and (max-width:810px) {
-
-        .navicon {
-            font-size: 9px !important;
-            margin-right: 0.4em !important;
-        }
-
-        .nabvarul li a {
-            font-size: 11px !important;
-        }
-
-    }
-
-    @media screen and (max-width: 300px) and (min-width: 230px) {
-
-        .softdrop {
-            width: 55% !important;
-            height: 110% !important;
-        }
-
-        .nabvarul {
-            width: 91.33% !important;
-            padding: 1px !important;
-        }
-
-        .nabvarul li a {
-            font-size: 7.6px !important;
-            padding: 2px !important;
-        }
-
-        .nav .nav-item i {
-            margin-left: 0.1em !important;
+                font-size: 1.5em !important;
+            }
 
         }
 
-        .navicon {
+        @media screen and (max-width: 352px) and (min-width: 100px) {
 
-            margin-right: 0.3em !important;
+            .title {
+                font-weight: 600 !important;
+
+                font-size: 1.3em !important;
+            }
+
+        }
+
+
+
+        @media screen and (max-width: 768px) and (min-width: 351px) {
+
+            .heading h1 {
+                font-weight: 600 !important;
+
+                font-size: 2.0em !important;
+            }
+
+        }
+
+        @media screen and (max-width: 768px) and (min-width: 351px) {
+
+            .title {
+
+
+                font-size: 1.5em !important;
+            }
+
         }
 
 
@@ -283,52 +285,220 @@ android application development, android application development company in bang
 
 
 
+        @media (min-width: 992px) {
+            .dropdown-menu .dropdown-toggle:after {
+                border-top: .3em solid transparent;
+                border-right: 0;
+                border-bottom: .3em solid transparent;
+                border-left: .3em solid;
+            }
 
-    }
+            .dropdown-menu .dropdown-menu {
+                margin-left: 0;
+                margin-right: 0;
+            }
 
-    @media screen and (max-width: 420px) and (min-width: 301px) {
-        .softdrop {
-            width: 56% !important;
+            .dropdown-menu li {
+                position: relative;
+            }
+
+            .nav-item .submenu {
+                display: none;
+                position: absolute;
+                left: 100%;
+                top: -7px;
+            }
+
+            .nav-item .submenu-left {
+                right: 100%;
+                left: auto;
+            }
+
+            .dropdown-menu>li:hover {
+                background-color: #f1f1f1
+            }
+
+            .dropdown-menu>li:hover>.submenu {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 767px) {
+            .dropdown-menu li {
+                display: block;
+            }
+
+            .dropdown-menu {
+                margin: 16.125rem 151px 0;
+                min-width: 63rem;
+                top: -256px !important;
+            }
+
+            .nabvarul li {
+                width: 84.33% !important;
+
+            }
+
 
         }
 
-        .nabvarul {
+        @media screen and (max-width: 393px) {
 
-            padding: 1px !important;
-        }
+            .nabvarul li a {
+                font-size: 11px;
+            }
 
-    }
+            .navicon {
+                font-size: 14px !important;
+            }
 
-    @media screen and (max-width: 767px) and (min-width: 421px) {
-        .softdrop {
-            width: 58% !important;
-
-        }
-
-
-
-    }
-
-    @media screen and (max-width: 245px) and (min-width: 225px) {
-        .softdrop {
-            height: 98% !important;
+            .softdrop {
+                min-width: 0 !important;
+                left: 0 !important;
+            }
 
         }
 
-        .nabvarul {
+        @media screen and (max-width: 393px) {
 
-            padding: 1px !important;
+            .nabvarul li a {
+                font-size: 8.5px;
+            }
+
+            .nabvarul li a {
+                padding: 2px;
+            }
+
+            .softdrop {
+                min-width: 0px !important;
+                left: 0px !important;
+            }
+
+
         }
 
-        .nabvarul li a {
-            font-size: 6px !important;
+        @media screen and (max-width:979px) {
+
+            .nabvarul li a {
+                font-size: 11px !important;
+            }
+
+
         }
 
-        .navicon {
-            font-size: 0px !important;
+        @media screen and (max-width:885px) {
+
+            .navicon {
+                font-size: 15px !important;
+                margin-right: 0.4em !important;
+            }
+
+            .nabvarul li a {
+                font-size: 11px !important;
+            }
+
         }
 
-    }
+        @media screen and (max-width:600px) {
+            .banner_text h1 {
+                font-size: 14px !important;
+
+            }
+
+
+        }
+
+        @media screen and (max-width:810px) {
+
+            .navicon {
+                font-size: 9px !important;
+                margin-right: 0.4em !important;
+            }
+
+            .nabvarul li a {
+                font-size: 11px !important;
+            }
+
+        }
+
+        @media screen and (max-width: 300px) and (min-width: 230px) {
+
+            .softdrop {
+                width: 55% !important;
+                height: 110% !important;
+            }
+
+            .nabvarul {
+                width: 91.33% !important;
+                padding: 1px !important;
+            }
+
+            .nabvarul li a {
+                font-size: 7.6px !important;
+                padding: 2px !important;
+            }
+
+            .nav .nav-item i {
+                margin-left: 0.1em !important;
+
+            }
+
+            .navicon {
+
+                margin-right: 0.3em !important;
+            }
+
+
+
+
+
+
+
+        }
+
+        @media screen and (max-width: 420px) and (min-width: 301px) {
+            .softdrop {
+                width: 56% !important;
+
+            }
+
+            .nabvarul {
+
+                padding: 1px !important;
+            }
+
+        }
+
+        @media screen and (max-width: 767px) and (min-width: 421px) {
+            .softdrop {
+                width: 58% !important;
+
+            }
+
+
+
+        }
+
+        @media screen and (max-width: 245px) and (min-width: 225px) {
+            .softdrop {
+                height: 98% !important;
+
+            }
+
+            .nabvarul {
+
+                padding: 1px !important;
+            }
+
+            .nabvarul li a {
+                font-size: 6px !important;
+            }
+
+            .navicon {
+                font-size: 0px !important;
+            }
+
+        }
 </style>
 
 
@@ -336,8 +506,12 @@ android application development, android application development company in bang
     <div class="loader"
         style=" position: fixed;z-index: 9669;top: 0;left: 0;width: 100%;height: 100%;display: flex;background: #ffffff;justify-content: center;align-items: center; flex-direction: column;">
         <img src="./images/softnique-nav.webp" alt="loader" style="height: 10%;">
-        <br>
-        <img src="./images/loader.svg" alt="loader" width="150px" height="50px">
+        <div class="contentLoad" style="margin-left: -27px;">
+            <div class="loading">
+
+                <span></span>
+            </div>
+        </div>
     </div>
 
 
