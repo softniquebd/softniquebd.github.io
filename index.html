@@ -759,7 +759,7 @@
                     <img src="../images/softnique-nav.webp" alt="loader" style="width: 145px;">
                     <br>
                     <div class="progress mt-3">
-                        <span class="progress-bar"  style="width: 60%"></span>
+                        <span class="progress-bar"  style="width: 40%"></span>
                     </div>
                 </div>
                 <div class="slider-wrapper" style="display: contents;">
@@ -2816,6 +2816,8 @@
 <script>
 
         $(window).on('load', function () {
+            $('.progress-bar').width('60%');
+            $('.progress-bar').width('80%');
             $('.progress-bar').width('100%');
             $('.loader').fadeOut('slow');
         });
