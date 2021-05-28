@@ -14,7 +14,7 @@ body {
     position: relative;
 }
 
-.home .slide {
+.home .slideApp {
     position: absolute;
     left: 0px;
     top: 43px;
@@ -25,7 +25,7 @@ body {
     z-index: 1;
     display: none;
     padding: 0 15px;
-    animation: slide 2s ease;
+    animation: slideApp 2s ease;
 
 }
 
@@ -36,7 +36,7 @@ body {
     position: absolute;
     filter: blur(3px);
     -webkit-filter: blur(3px);
-    -webkit-animation: slide 2s ease;
+    -webkit-animation: slideApp 2s ease;
 }
 
 .image2 {
@@ -45,7 +45,7 @@ body {
     object-fit: cover;
     position: absolute;
     -webkit-filter: blur(3px);
-    -webkit-animation: slide 2s ease;
+    -webkit-animation: slideApp 2s ease;
 }
 
 .image3 {
@@ -55,16 +55,16 @@ body {
     position: absolute;
     filter: blur(3px);
     -webkit-filter: blur(3px);
-    -webkit-animation: slide 2s ease;
+    -webkit-animation: slideApp 2s ease;
 }
 
 
 
-.home .slide.active {
+.home .slideApp.active {
     display: flex;
 }
 
-@keyframes slide {
+@keyframes slideApp {
     0% {
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
@@ -112,14 +112,14 @@ body {
     padding: 0.8vw;
 }
 
-.home .slide.active .caption h1 {
+.home .slideApp.active .caption h1 {
     opacity: 0;
     animation: captionText .5s ease forwards;
     animation-delay: 1s;
 }
 
 
-.home .slide.active .caption i {
+.home .slideApp.active .caption i {
     opacity: 0;
     animation: captionText .5s ease forwards;
     animation-delay: 1s;
@@ -131,7 +131,7 @@ body {
     color: #222222;
 }
 
-.home .slide.active .caption p {
+.home .slideApp.active .caption p {
     opacity: 0;
     animation: captionText .5s ease forwards;
     animation-delay: 1.2s;
@@ -145,7 +145,7 @@ body {
     color: #ffffff;
 }
 
-.home .slide.active .caption a {
+.home .slideApp.active .caption a {
     opacity: 0;
     animation: captionText .5s ease forwards;
     animation-delay: 1.4s;

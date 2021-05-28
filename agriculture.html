@@ -347,442 +347,364 @@
     }
 </style>
 
-<!-- loader css style -->
-<style>
-    .contentLoad {
-        /* width: 100%;
-		height: 100vh;
+<<!-- loader css style -->
+    <style>
+        @media screen and (max-width: 700px) and (min-width: 536px) {
+            .slider-wrapper {
+                font-size: 25px !important;
 
-		display: flex; */
-        justify-content: center;
-        align-items: center;
-    }
+            }
 
-    .contentLoad .loading {
-        width: 80px;
-        height: 50px;
-        position: relative;
-    }
+            .slider-text1,
+            .slider-text2,
+            .slider-text3 {
+                padding-top: 7px !important;
 
-    @keyframes text {
-        0% {
-            letter-spacing: 1px;
-            transform: translateX(0px);
+            }
         }
 
-        40% {
-            letter-spacing: 2px;
-            transform: translateX(26px);
+        @media screen and (max-width: 535px) and (min-width: 417px) {
+            .slider-wrapper {
+                font-size: 18px !important;
+
+            }
+
+            .slider-text1,
+            .slider-text2,
+            .slider-text3 {
+                padding-top: 12px !important;
+
+            }
+
+            .contentLoad {
+                margin-left: 50px !important;
+            }
         }
 
-        80% {
-            letter-spacing: 1px;
-            transform: translateX(32px);
+        @media screen and (max-width: 416px) and (min-width: 350px) {
+            .slider-wrapper {
+                font-size: 14px !important;
+
+            }
+
+            .slider-text1,
+            .slider-text2,
+            .slider-text3 {
+                padding-top: 14px !important;
+
+            }
+
+            .contentLoad {
+                margin-left: 40px !important;
+            }
         }
 
-        90% {
-            letter-spacing: 2px;
-            transform: translateX(0px);
+        @media screen and (max-width: 350px) and (min-width: 286px) {
+            .slider-wrapper {
+                font-size: 12px !important;
+
+            }
+
+            .slider-text1,
+            .slider-text2,
+            .slider-text3 {
+                padding-top: 16px !important;
+
+            }
+
+            .contentLoad {
+                margin-left: 30px !important;
+            }
         }
 
-        100% {
-            letter-spacing: 1px;
-            transform: translateX(0px);
-        }
-    }
+        @media screen and (max-width: 286px) and (min-width: 215px) {
+            .slider-wrapper {
+                font-size: 10px !important;
 
-    .contentLoad .loading span {
-        background-color: #ff0404;
-        border-radius: 50px;
-        display: block;
-        height: 16px;
-        width: 16px;
-        bottom: 0;
-        position: absolute;
-        transform: translateX(64px);
-        animation: loading 3.5s ease both infinite;
-    }
+            }
 
-    .contentLoad .loading span:before {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        background-color: #d9b200;
-        border-radius: inherit;
-        animation: loading2 3.5s ease both infinite;
-    }
+            .slider-text1,
+            .slider-text2,
+            .slider-text3 {
+                padding-top: 18px !important;
 
-    @keyframes loading {
-        0% {
-            width: 16px;
-            transform: translateX(0px);
+            }
+
+            .contentLoad {
+                margin-left: 20px !important;
+            }
         }
 
-        40% {
-            width: 100%;
-            transform: translateX(0px);
+        @media screen and (max-width: 215px) and (min-width: 100px) {
+            .slider-wrapper {
+                font-size: 8px !important;
+
+            }
+
+            .slider-text1,
+            .slider-text2,
+            .slider-text3 {
+                padding-top: 20px !important;
+
+            }
+
+            .contentLoad {
+                margin-left: 10px !important;
+            }
         }
 
-        80% {
-            width: 16px;
-            transform: translateX(64px);
+
+        /* new dynamic progress bar styles     */
+        .loadWrappe {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        90% {
-            width: 100%;
-            transform: translateX(0px);
-        }
-
-        100% {
-            width: 16px;
-            transform: translateX(0px);
-        }
-    }
-
-    @keyframes loading2 {
-        0% {
-            transform: translateX(0px);
-            width: 16px;
-        }
-
-        40% {
-            transform: translateX(0%);
-            width: 80%;
-        }
-
-        80% {
-            width: 100%;
-            transform: translateX(0px);
-        }
-
-        90% {
-            width: 80%;
-            transform: translateX(15px);
-        }
-
-        100% {
-            transform: translateX(0px);
-            width: 16px;
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-    @media screen and (max-width: 700px) and (min-width: 536px) {
         .slider-wrapper {
-            font-size: 25px !important;
-
+            border-radius: 2em;
+            font-size: 30px;
+            color: #880404;
+            font-weight: bold;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
         }
 
-        .slider-text1,
-        .slider-text2,
+        .slider {
+            height: 100px;
+            padding-left: 15px;
+            overflow: hidden;
+        }
+
+        .slider div {
+            border-radius: 2em;
+            color: #0d042b;
+            height: 50px;
+            margin-bottom: 50px;
+            padding: 2px 15px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .slider-text1 {
+            font-size: 0.7em !important;
+            /* background: lightgreen; */
+            animation: slide 30s linear infinite;
+            animation-delay: 1s;
+        }
+
+        .slider-text2 {
+            font-size: 0.7em !important;
+            /* background: skyblue; */
+        }
+
         .slider-text3 {
-            padding-top: 7px !important;
-
-        }
-    }
-
-    @media screen and (max-width: 535px) and (min-width: 417px) {
-        .slider-wrapper {
-            font-size: 18px !important;
-
+            font-size: 0.7em !important;
+            /* background: rgb(220, 245, 130); */
         }
 
-        .slider-text1,
-        .slider-text2,
-        .slider-text3 {
-            padding-top: 12px !important;
 
+
+
+
+        @keyframes slide {
+            0% {
+                margin-top: -300px;
+            }
+
+            5% {
+                margin-top: -200px;
+            }
+
+            33% {
+                margin-top: -200px;
+            }
+
+            38% {
+                margin-top: -100px;
+            }
+
+            66% {
+                margin-top: -100px;
+            }
+
+            71% {
+                margin-top: 0px;
+            }
+
+            100% {
+                margin-top: 0px;
+            }
         }
 
-        .contentLoad {
-            margin-left: 50px !important;
-        }
-    }
 
-    @media screen and (max-width: 416px) and (min-width: 350px) {
-        .slider-wrapper {
-            font-size: 14px !important;
 
-        }
 
-        .slider-text1,
-        .slider-text2,
-        .slider-text3 {
-            padding-top: 14px !important;
 
+        .progress {
+            width: 50%;
+            /* max-width: 260px; */
+            height: 7px;
+            margin: auto;
+            background: #e1e4e8;
+            border-radius: 3px;
+            overflow: hidden;
         }
 
-        .contentLoad {
-            margin-left: 40px !important;
-        }
-    }
-
-    @media screen and (max-width: 350px) and (min-width: 286px) {
-        .slider-wrapper {
-            font-size: 12px !important;
-
+        .progress .progress-bar {
+            display: block;
+            height: 100%;
+            background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+            background-size: 300% 100%;
+            -webkit-animation: progress-animation 2s linear infinite;
+            animation: progress-animation 2s linear infinite;
         }
 
-        .slider-text1,
-        .slider-text2,
-        .slider-text3 {
-            padding-top: 16px !important;
+        @-webkit-keyframes progress-animation {
+            0% {
+                background-position: 100%;
+            }
 
+            100% {
+                background-position: 0;
+            }
         }
 
-        .contentLoad {
-            margin-left: 30px !important;
-        }
-    }
+        @keyframes progress-animation {
+            0% {
+                background-position: 100%;
+            }
 
-    @media screen and (max-width: 286px) and (min-width: 215px) {
-        .slider-wrapper {
-            font-size: 10px !important;
-
-        }
-
-        .slider-text1,
-        .slider-text2,
-        .slider-text3 {
-            padding-top: 18px !important;
-
+            100% {
+                background-position: 0;
+            }
         }
 
-        .contentLoad {
-            margin-left: 20px !important;
+        .slider p {
+            width: 300px;
+            font-size: 0.6em;
+            text-align: justify;
+            color: brown;
         }
-    }
+    </style>
 
-    @media screen and (max-width: 215px) and (min-width: 100px) {
-        .slider-wrapper {
-            font-size: 8px !important;
+    <body data-spy="scroll" data-target=".navbar" data-offset="100">
 
-        }
+        <!-- loader -->
 
-        .slider-text1,
-        .slider-text2,
-        .slider-text3 {
-            padding-top: 20px !important;
 
-        }
-
-        .contentLoad {
-            margin-left: 10px !important;
-        }
-    }
-
-    .loadWrappe {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .slider-wrapper {
-        border-radius: 2em;
-        font-size: 30px;
-        color: #880404;
-        font-weight: bold;
-        text-transform: uppercase;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20px;
-    }
-
-    .slider {
-        height: 50px;
-        padding-left: 15px;
-        overflow: hidden;
-    }
-
-    .slider div {
-        border-radius: 2em;
-        color: #0d042b;
-        height: 50px;
-        margin-bottom: 50px;
-        padding: 2px 15px;
-        text-align: center;
-        box-sizing: border-box;
-    }
-
-    .slider-text1 {
-        /* background: lightgreen; */
-        animation: slide 5s linear infinite;
-    }
-
-    .slider-text2 {
-        /* background: skyblue; */
-    }
-
-    .slider-text3 {
-        /* background: rgb(220, 245, 130); */
-    }
+        <div class="loader"
+            style=" position: fixed;z-index: 9669;top: 0;left: 0;width: 100%;height: 100%;display: flex;background: #ffffff;justify-content: center;align-items: center; flex-direction: column;">
 
 
 
-    @keyframes slide {
-        0% {
-            margin-top: -300px;
-        }
-
-        5% {
-            margin-top: -200px;
-        }
-
-        33% {
-            margin-top: -200px;
-        }
-
-        38% {
-            margin-top: -100px;
-        }
-
-        66% {
-            margin-top: -100px;
-        }
-
-        71% {
-            margin-top: 0px;
-        }
-
-        100% {
-            margin-top: 0px;
-        }
-    }
-</style>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="100">
-
-    <!-- loader -->
-
-
-    <div class="loader"
-        style=" position: fixed;z-index: 9669;top: 0;left: 0;width: 100%;height: 100%;display: flex;background: #ffffff;justify-content: center;align-items: center; flex-direction: column;">
+            <div class="loadWrapper">
 
 
 
-        <div class="loadWrapper">
-
-
-
-
-            <div class="col-12  text-center" style="height: fit-content;">
-                <div class="col-12 ">
-                    <img src="./images/softnique-nav.webp" alt="loader" style="width: 145px;">
-                    <br>
-                    <!-- loader start -->
-
-
-                    <!-- end loader -->
-
-                    <div class="contentLoad" style="margin-left: 110px;">
-                        <div class="loading">
-
-                            <span></span>
+                <div class="col-12  text-center" style="height: fit-content;">
+                    <div class="col-12 ">
+                        <img src="./images/softnique-nav.webp" alt="loader" style="width: 145px;">
+                        <br>
+                        <div class="progress mt-3">
+                            <span class="progress-bar" style="width: 40%"></span>
                         </div>
                     </div>
+                    <div class="slider-wrapper" style="display: contents;">
+
+                        <div class="slider  col-12 mt-3">
+                            <div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv text-secondary"
+                                    aria-hidden="true"></i><br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
+                                    repellendus.</p>
+                            </div>
+                            <div class="slider-text2">App development <i class="ml-2 fa fa-mobile text-secondary"
+                                    aria-hidden="true"></i><br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
+                                    repellendus.</p>
+                            </div>
+                            <div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs text-secondary"
+                                    aria-hidden="true"></i><br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
+                                    repellendus.</p>
+                            </div>
+                        </div>
+                    </div>
+
 
                 </div>
-                <div class="slider-wrapper row">
-
-                    <div class="slider  col-12 mt-3">
-                        <div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv" aria-hidden="true"></i>
-                        </div>
-                        <div class="slider-text2">App development <i class="ml-2 fa fa-mobile" aria-hidden="true"></i>
-                        </div>
-                        <div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs" aria-hidden="true"></i>
-                        </div>
 
 
-
-
-
-
-                    </div>
-                    <div class="ldBar col-12 " data-value="50" data-preset="fan" 50>
-                    </div>
-                </div>
 
 
             </div>
 
 
+        </div>
+        <!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v10.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your Chat Plugin code -->
+        <div class="fb-customerchat" attribution="setup_tool" page_id="114263207095888" theme_color="#ff7e29"
+            logged_in_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।"
+            logged_out_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।">
+
+
 
         </div>
 
+        <div class="wrapper">
+            <nav class="navbar navbar-collapse navbar-expand-md fixed-top navbar-inverse navbar-right shadow bg-white wow animate__animated animate__slideInDown"
+                data-wow-delay="0s" data-wow-duration="1.4s">
+                <!-- Brand -->
+                <a class="navbar-brand wow animate__animated animate__jackInTheBox" data-wow-delay="1s"
+                    data-wow-duration="1.4s" style="width: auto;" href="./index.html">
+                    <img class="img-fluid" src="./images/nav-logo.webp" height="70" width="140" /></a>
 
-    </div>
+                <!-- Collapse button -->
+                <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="dark-blue-text"><i class="fa fa-bars fa-1x"
+                            style="font-size: 1.3em; color: #A35414;"></i></span>
+                </button>
 
-    <!-- Load Facebook SDK for JavaScript -->
-    <div id="fb-root"></div>
-    <script>
-        window.fbAsyncInit = function () {
-            FB.init({
-                xfbml: true,
-                version: 'v10.0'
-            });
-        };
-
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Your Chat Plugin code -->
-    <div class="fb-customerchat" attribution="setup_tool" page_id="114263207095888" theme_color="#ff7e29"
-        logged_in_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।"
-        logged_out_greeting="আপনার সঙ্গে আলাপ করতে প্রস্তুত। আলাপ শুরু করার জন্য কিছু বলুন।">
-
-
-
-    </div>
-
-    <div class="wrapper">
-        <nav class="navbar navbar-collapse navbar-expand-md fixed-top navbar-inverse navbar-right shadow bg-white wow animate__animated animate__slideInDown"
-            data-wow-delay="0s" data-wow-duration="1.4s">
-            <!-- Brand -->
-            <a class="navbar-brand wow animate__animated animate__jackInTheBox" data-wow-delay="1s"
-                data-wow-duration="1.4s" style="width: auto;" href="./index.html">
-                <img class="img-fluid" src="./images/nav-logo.webp" height="70" width="140" /></a>
-
-            <!-- Collapse button -->
-            <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="dark-blue-text"><i class="fa fa-bars fa-1x"
-                        style="font-size: 1.3em; color: #A35414;"></i></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="webproject.html">Web</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="app_projects.html">App</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="dropdown-toggle nav-link active" href="#" data-toggle="dropdown">Softwares</a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="webproject.html">Web</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="app_projects.html">App</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="dropdown-toggle nav-link active" href="#" data-toggle="dropdown">Softwares</a>
 
 
-                        <!-- <ul class="dropdown-menu" style="left: 934px;top: 80px;">
+                            <!-- <ul class="dropdown-menu" style="left: 934px;top: 80px;">
 													<a class="dropdown-item" href="hospital.html">Hospital Management </a>
 													<a class="dropdown-item" href="education_st.html"> Educational Management </a>
 													<a class="dropdown-item" href="accounting.html"> Accounting & Inventory </a>
@@ -813,560 +735,572 @@
 												</ul> -->
 
 
-                        <div class=" softdrop  dropdown-menu wow animate__animated animate__flipInX"
-                            data-wow-duration="0.9s">
-                            <ul class="nabvarul">
-                                <li><a href="hospital.html">
+                            <div class=" softdrop  dropdown-menu wow animate__animated animate__flipInX"
+                                data-wow-duration="0.9s">
+                                <ul class="nabvarul">
+                                    <li><a href="hospital.html">
 
-                                        <i class="fa fa-stethoscope navicon"></i>Hospital Management</a></li>
-                                <li><a href="education_st.html">
+                                            <i class="fa fa-stethoscope navicon"></i>Hospital Management</a></li>
+                                    <li><a href="education_st.html">
 
-                                        <i class="fa fa-graduation-cap navicon"></i>Educational Management</a></li>
-                                <li><a href="accounting.html">
+                                            <i class="fa fa-graduation-cap navicon"></i>Educational Management</a></li>
+                                    <li><a href="accounting.html">
 
-                                        <i class="fa fa-cart-plus navicon"></i>Accounting & Inventory</a></li>
-                                <li><a href="hrm_software.html">
+                                            <i class="fa fa-cart-plus navicon"></i>Accounting & Inventory</a></li>
+                                    <li><a href="hrm_software.html">
 
-                                        <i class="fa fa-pie-chart navicon"></i>Human Resource Management</a></li>
-                                <li><a href="travel_hospitality.html">
+                                            <i class="fa fa-pie-chart navicon"></i>Human Resource Management</a></li>
+                                    <li><a href="travel_hospitality.html">
 
-                                        <i class="fa fa-plane navicon"></i>Travel & Hospitality</a></li>
-                                <li><a href="point_of_sales.html">
+                                            <i class="fa fa-plane navicon"></i>Travel & Hospitality</a></li>
+                                    <li><a href="point_of_sales.html">
 
-                                        <i class=" fa fa-calculator navicon"></i>Point of Sale</a></li>
-                                <li><a href="superShop.html">
+                                            <i class=" fa fa-calculator navicon"></i>Point of Sale</a></li>
+                                    <li><a href="superShop.html">
 
-                                        <i class="fa fa-shopping-cart navicon"></i>Super Shop Managment</a></li>
-                                <li><a href="businessauto.html">
+                                            <i class="fa fa-shopping-cart navicon"></i>Super Shop Managment</a></li>
+                                    <li><a href="businessauto.html">
 
-                                        <i class="fa fa-line-chart navicon"></i>Business Automation</a></li>
-                                <li><a href="resturant.html">
+                                            <i class="fa fa-line-chart navicon"></i>Business Automation</a></li>
+                                    <li><a href="resturant.html">
 
-                                        <i class="fa fa-cutlery navicon"></i>Resturant Management</a></li>
-                                <li><a href="realEstate.html">
+                                            <i class="fa fa-cutlery navicon"></i>Resturant Management</a></li>
+                                    <li><a href="realEstate.html">
 
-                                        <i class="fa fa-industry navicon"></i>Real Estate Management</a></li>
-                                <li><a href="hotelmanagment.html">
+                                            <i class="fa fa-industry navicon"></i>Real Estate Management</a></li>
+                                    <li><a href="hotelmanagment.html">
 
-                                        <i class="fa fa-building  navicon"></i>Hotel Management</a></li>
-                                <li><a href="garmentserp.html">
+                                            <i class="fa fa-building  navicon"></i>Hotel Management</a></li>
+                                    <li><a href="garmentserp.html">
 
-                                        <i class="fa fa-tags navicon"></i>Garments ERP</a></li>
-                                <li><a href="courierManagement.html">
+                                            <i class="fa fa-tags navicon"></i>Garments ERP</a></li>
+                                    <li><a href="courierManagement.html">
 
-                                        <i class=" fa fa-truck navicon"></i>Courier Management</a></li>
-                                <li><a href="customsoft.html">
+                                            <i class=" fa fa-truck navicon"></i>Courier Management</a></li>
+                                    <li><a href="customsoft.html">
 
-                                        <i class="fa fa-lightbulb-o navicon"></i>Custom Software</a></li>
-                                <li><a href="ispbillingsoft.html">
+                                            <i class="fa fa-lightbulb-o navicon"></i>Custom Software</a></li>
+                                    <li><a href="ispbillingsoft.html">
 
-                                        <i class="fa fa-skyatlas navicon"></i>ISP Billing Software</a></li>
-                                <li><a href="#">
+                                            <i class="fa fa-skyatlas navicon"></i>ISP Billing Software</a></li>
+                                    <li><a href="#">
 
-                                        <i class="fa fa-leaf navicon"></i>Agriculture Software</a></li>
-
-
-
-                            </ul>
-                        </div>
-
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="graphics.html">Graphic Design</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="ecommerce.html">E-commerce</a>
-                    </li>
+                                            <i class="fa fa-leaf navicon"></i>Agriculture Software</a></li>
 
 
 
-
-
-
-
-
-
-                    <!-- Dropdown -->
-
-
-
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog/index.html">Blog</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- Links -->
-        </nav>
-        <section id="breadcrumb" class="bg-features bg-agriculture">
-            <div class="shade-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="breadcrumb-wrapper">
-                            <h1 class="breadcrumb-title">Algricultural Softwares</h1>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="software_intro">
-            <h2 class="title text-center my-5 p-3 tratext xtile ">OUR MOTTO ON AGRICULTURAL SOFTWARE</h2>
-
-            <div class="row col-12 col-md-12 container-fluid mx-auto">
-                <div class="col-md-6 m-auto wow animate__animated animate__slideInLeft" data-wow-duration="1.5s">
-                    <p class="point-intro text-center">
-                        Agriculture software is a recent beneficial finding of the digital world on the merge of
-                        cybernetic and agronomy. Digital applications simplify agrarians' lives. Smart innovations make
-                        their business comfortable, predictable, confident, more profitable.
-                        As a country of agro-economic growth, Bangladesh is truely depended on agricultural development.
-                        And we believe the digitalization of this sector. SoftniqueBD provides a better solution towards
-                        the solution based strategies for farmers such as their farm management,
-                        business calculation kits, farmers farming technique tutorial and support and many other
-                        features.
-                    </p>
-
-                </div>
-                <div class="col-md-4 wow animate__animated animate__bounceIn" data-wow-duration="1.5s">
-                    <img src="./images/agriculturalFact.webp" class="img-fluid ">
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <section class="service" id="service" style="padding-bottom: 122px;">
-            <div class="content wow animate__animated animate__zoomIn sec-title my-5" data-wow-duration="1.4s">
-                <h2 class="title text-center xtile">
-                    Solutions towards the Agricultural Movement
-                </h2>
-                <h4 class="text-center mt-3 font-weight-bold xtile">Agricultural Multi Purpose Software</h4>
-            </div>
-
-
-            <div class="full_wrapper body3 mx-auto">
-                <div class="wrapper row mx-3">
-                    <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
-                        data-wow-duration="1.4s">
-                        <a href="#">
-                            <div class="besdiehotel ">
-                                <div class="phnc1 text-center mx-auto">
-                                    <i class="fa fa-cogs"></i>
-                                </div>
-                                <div class="phnc2 text-center mx-auto">
-                                    <h3>Automation based smart farming</h3>
-                                </div>
-                                <div class="detailsE mt-4 text-center px-4 ">
-                                    <p class="font-weight-bold ">
-                                        Automation increases the productivity of agricultural machinery by increasing
-                                        efficiency, reliability, and precision, and reducing the need of human
-                                        intervention. This is achieved by adding sensors and controls and many more.
-                                    </p>
-
-                                </div>
-
-
+                                </ul>
                             </div>
 
-                        </a>
-                        <a href="#">
-                            <div class="besdiehotel m">
-                                <div class="phnc1 text-center mx-auto">
-                                    <i class="fa fa-leaf"></i>
-                                </div>
-                                <div class="phnc2 text-center mx-auto">
-                                    <h3>Farm management solutions</h3>
-                                </div>
-                                <div class="detailsE mt-4 text-center px-4">
-                                    <p class="font-weight-bold ">
-                                        Farm management solutionse can play a vital role in a digital solution of a
-                                        farm, as it can manage the workers attendance, working hours, leave, holiday,
-                                        and many more.
-                                    </p>
-
-                                </div>
-
-
-                            </div>
-
-                        </a>
-
-
-
-
-
-                    </div>
-                    <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
-                        data-wow-duration="1.4s">
-
-                        <a href="#">
-                            <div class="besdiehotel m">
-                                <div class="phnc1 text-center mx-auto">
-                                    <i class="fa fa-pie-chart"></i>
-                                </div>
-                                <div class="phnc2 text-center mx-auto">
-                                    <h3>Crops and Products Reporting</h3>
-                                </div>
-                                <div class="detailsE mt-4 text-center px-4">
-                                    <p class="font-weight-bold ">
-                                        Agricultural multi purpose software also comes with a great reporting feature.
-                                        With the help of
-                                        this module, top management can generate
-                                        crops and products reports, expense report and so on. With that report, top
-                                        management can
-                                        evaluate their performance.
-                                    </p>
-
-                                </div>
-
-
-                            </div>
-
-                        </a>
-                        <a href="#">
-                            <div class="besdiehotel m">
-                                <div class="phnc1 text-center mx-auto">
-                                    <i class="fa fa-chain"></i>
-                                </div>
-                                <div class="phnc2 text-center mx-auto">
-                                    <h3>Seed-to-Sale Tracking Software</h3>
-                                </div>
-                                <div class="detailsE mt-4 text-center px-4">
-                                    <p class="font-weight-bold ">
-                                        SoftniqueBD develops seed-to-sale tracking software that encompasses the entire
-                                        shipping and logistics process from raw material manufacturing to electronic
-                                        proof of delivery (EPoD). It is a new move for the people with great start.
-                                    </p>
-
-                                </div>
-
-
-                            </div>
-
-                        </a>
-
-                    </div>
-                    <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
-                        data-wow-duration="1.4s">
-                        <a href="#">
-                            <div class="besdiehotel m">
-                                <div class="phnc1 text-center mx-auto">
-                                    <i class="fa fa-flask"></i>
-                                </div>
-                                <div class="phnc2 text-center mx-auto">
-                                    <h3>Soil Analysis</h3>
-                                </div>
-                                <div class="detailsE mt-4 text-center px-4">
-                                    <p class="font-weight-bold ">
-                                        Our software also includes agricultural soil analysis to improve behavioral
-                                        analyses of the soils through image processing and sensor detections.
-                                    </p>
-
-                                </div>
-
-
-                            </div>
-
-                        </a>
-                        <a href="#">
-                            <div class="besdiehotel m">
-                                <div class="phnc1 text-center mx-auto">
-                                    <i class="fa fa-snowflake-o"></i>
-                                </div>
-                                <div class="phnc2 text-center mx-auto">
-                                    <h3>Weather monitoring and predictions</h3>
-                                </div>
-                                <div class="detailsE mt-4 text-center px-4">
-                                    <p class="font-weight-bold ">
-                                        Our software can also be integrated with weather updates and alerts as it is a
-                                        part and parcel for the farmers and weather plays a vital role for growth of
-                                        agro products.
-                                    </p>
-
-                                </div>
-
-
-                            </div>
-
-                        </a>
-                    </div>
-
-
-
-                    <div class=" clr ">
-
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <section id="targetBusiness">
-            <div class="container my-5 p-4">
-                <h3 class="wow zoomIn text-center title targetBusiness xtile" data-wow-duration="1.5s"
-                    data-wow-delay=".5s">
-                    What We Offer in Our Agricultural Softwares
-                </h3>
-                <div class="targetBusiness-wrapper row col-12 col-md-12">
-
-                    <!----- Target Business Item Starts ----->
-                    <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
-                        <div class="targetBusiness-item">
-                            <ul>
-                                <li><i class="fa fa-fw fa-chevron-right"></i> GEO/GIS technologies</li>
-                                <li><i class="fa fa-fw fa-chevron-right"></i>Farm management solutions</li>
-                                <li><i class="fa fa-fw fa-chevron-right"></i>Inventory & Quality Control Solutions</li>
-                                <li><i class="fa fa-fw fa-chevron-right"></i> Food Safety Traceability Solutions</li>
-                                <li><i class="fa fa-fw fa-chevron-right"></i> Fish Farm Management Software</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!----- Target Business Item Ends ----->
-                    <!----- Target Business Item Starts ----->
-                    <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".5s">
-                        <div class="targetBusiness-item">
-                            <ul>
-                                <li><i class="fa fa-fw fa-chevron-right"></i> Aerial Crop Scouting Solutions</li>
-                                <li><i class="fa fa-fw fa-chevron-right"></i> UAV Livestock Software</li>
-                                <li><i class="fa fa-fw fa-chevron-right"></i>Agriculture Precision Farming Apps</li>
-                                <li><i class="fa fa-fw fa-chevron-right"></i>
-                                    Tutorial Based Solutions for farmers
-                                </li>
-                                <li><i class="fa fa-fw fa-chevron-right"></i>Agriculture Monitoring Systems</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!----- Target Business Item Ends ----->
-                </div>
-            </div>
-        </section>
-        <div class="container">
-
-            <div class="row align-items-center">
-                <div class="container">
-                    <h2 class="title wow zoomIn xtile ">GEO/GIS technologies</h2>
-                </div>
-                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/geoAgro.webp"
-                        alt="about image" class="img-fluid img-round">
-                </div>
-                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
-
-                    <p></p><span class="newline"></span>
-                    <ul><span class="newline"></span>
-                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Mapping quantities and densities
-                            </strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Geocoding and Spatial Analysis
-                            </strong></li><span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Image Exporting</strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Data and Soil Visualization</strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>Case Study</strong></li>
-                        <span class="newline"></span>
-
-                    </ul><span class="newline"></span>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="verticalse_space"></div>
-        <div class="container">
-
-            <div class="row align-items-center">
-                <div class="container">
-                    <h2 class="title wow zoomIn xtile">Inventory & Quality Control Solutions</h2>
-                </div>
-                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/qualityControl.webp"
-                        alt="about image" class="img-fluid img-round">
-                </div>
-                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
-
-                    <p></p><span class="newline"></span>
-                    <ul><span class="newline"></span>
-                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Enriched with quality maintaining information
-                            </strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Precision Agriculture Management
-                            </strong></li><span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Prominent and precise Irrigation Management
-
-                            </strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Operations Management</strong>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="graphics.html">Graphic Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="ecommerce.html">E-commerce</a>
                         </li>
 
 
-                    </ul><span class="newline"></span>
-                    <p></p>
+
+
+
+
+
+
+
+                        <!-- Dropdown -->
+
+
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog/index.html">Blog</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <div class="verticalse_space"></div>
-        <div class="container">
+                <!-- Links -->
+            </nav>
+            <section id="breadcrumb" class="bg-features bg-agriculture">
+                <div class="shade-bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="breadcrumb-wrapper">
+                                <h1 class="breadcrumb-title">Algricultural Softwares</h1>
 
-            <div class="row align-items-center">
-                <div class="container">
-                    <h2 class="title wow zoomIn xtile ">Stock Management Software</h2>
-                </div>
-                <div class="col-lg-6 wow animate__animated animate__bounceIn">
-                    <img src="./images/stockManagement.webp" alt="about image" class="img-fluid img-round">
-                </div>
-                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight">
-
-                    <p></p><span class="newline"></span>
-                    <ul><span class="newline"></span>
-                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Live Breeding Stock
-                            </strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Live Inventory Stock</strong>
-                        </li><span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                profit-and-loss statement and balance
-
-                            </strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Cattle Management
-                            </strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Purchase, Receiving, Stock Accounting</strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Managing Feeding Automation</strong></li>
-
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Managing Feeding Automation</strong></li>
-
-
-                    </ul><span class="newline"></span>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="verticalse_space"></div>
-        <div class="container">
-
-            <div class="row align-items-center">
-                <div class="container">
-                    <h2 class="title wow zoomIn xtile ">Food Safety Companion Software</h2>
-                </div>
-                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/manageAgro.webp"
-                        alt="about image" class="img-fluid img-round">
-                </div>
-                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
-
-                    <p></p><span class="newline"></span>
-                    <ul><span class="newline"></span>
-                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Maintains Food Safety Hazard Planning
-                            </strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Maintains Food Safety Traceability Solutions
-                            </strong>
-                        </li><span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Maintains Food Safety Initiative Standards
-                            </strong></li>
-                        </li><span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Maintains Environmental Health & Safety Systems
-                            </strong></li>
-
-
-
-                    </ul><span class="newline"></span>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="verticalse_space"></div>
-        <div class="container">
-
-            <div class="row align-items-center">
-                <div class="container">
-                    <h2 class="title wow zoomIn xtile ">Agricultural Warehouse Report module</h2>
-                </div>
-                <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/pos8.webp"
-                        alt="about image" class="img-fluid img-round">
-                </div>
-                <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
-
-                    <p></p><span class="newline"></span>
-                    <ul><span class="newline"></span>
-                        <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Versatile reports for all levels of management.
-                            </strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Statistical reports
-                            </strong>
-                        </li><span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Financial Reporting
-
-                            </strong></li>
-                        <span class="newline"></span>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Generate information by date and warehouse categories</strong></li>
-                        <span class="newline"></span>
-                        <li><i class="fa fa-fw fa-chevron-right"></i><strong>
-                                Stock Entry Report</strong>
-                        </li><span class="newline"></span>
-
-
-
-
-                    </ul><span class="newline"></span>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-        <div class="verticalse_space"></div>
-
-        <!-- footer section start -->
-        <div class="curvy" style="background-size: cover; height: auto">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path fill="white" fill-opacity="1"
-                    d="M0,96L60,122.7C120,149,240,203,360,218.7C480,235,600,213,720,170.7C840,128,960,64,1080,48C1200,32,1320,64,1380,80L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-                </path>
-            </svg>
-            <div class="container">
-                <div class="d-flex justify-content-around position-relative" onclick="start_project.html">
-                    <hr class="line" />
-                    <div class="d-flex justify-content-center align-items-center m-auto position-relative">
-                        <a href="start_project.html" class="icon-wrapper text-light position-absolute text-center"
-                            style="z-index: 1">
-                            <div>
-                                <strong>START <br />A PROJECT</strong>
                             </div>
-                        </a>
-                        <div class="position-absolute" style="
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="software_intro">
+                <h2 class="title text-center my-5 p-3 tratext xtile ">OUR MOTTO ON AGRICULTURAL SOFTWARE</h2>
+
+                <div class="row col-12 col-md-12 container-fluid mx-auto">
+                    <div class="col-md-6 m-auto wow animate__animated animate__slideInLeft" data-wow-duration="1.5s">
+                        <p class="point-intro text-center">
+                            Agriculture software is a recent beneficial finding of the digital world on the merge of
+                            cybernetic and agronomy. Digital applications simplify agrarians' lives. Smart innovations
+                            make
+                            their business comfortable, predictable, confident, more profitable.
+                            As a country of agro-economic growth, Bangladesh is truely depended on agricultural
+                            development.
+                            And we believe the digitalization of this sector. SoftniqueBD provides a better solution
+                            towards
+                            the solution based strategies for farmers such as their farm management,
+                            business calculation kits, farmers farming technique tutorial and support and many other
+                            features.
+                        </p>
+
+                    </div>
+                    <div class="col-md-4 wow animate__animated animate__bounceIn" data-wow-duration="1.5s">
+                        <img src="./images/agriculturalFact.webp" class="img-fluid ">
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <section class="service" id="service" style="padding-bottom: 122px;">
+                <div class="content wow animate__animated animate__zoomIn sec-title my-5" data-wow-duration="1.4s">
+                    <h2 class="title text-center xtile">
+                        Solutions towards the Agricultural Movement
+                    </h2>
+                    <h4 class="text-center mt-3 font-weight-bold xtile">Agricultural Multi Purpose Software</h4>
+                </div>
+
+
+                <div class="full_wrapper body3 mx-auto">
+                    <div class="wrapper row mx-3">
+                        <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                            data-wow-duration="1.4s">
+                            <a href="#">
+                                <div class="besdiehotel ">
+                                    <div class="phnc1 text-center mx-auto">
+                                        <i class="fa fa-cogs"></i>
+                                    </div>
+                                    <div class="phnc2 text-center mx-auto">
+                                        <h3>Automation based smart farming</h3>
+                                    </div>
+                                    <div class="detailsE mt-4 text-center px-4 ">
+                                        <p class="font-weight-bold ">
+                                            Automation increases the productivity of agricultural machinery by
+                                            increasing
+                                            efficiency, reliability, and precision, and reducing the need of human
+                                            intervention. This is achieved by adding sensors and controls and many more.
+                                        </p>
+
+                                    </div>
+
+
+                                </div>
+
+                            </a>
+                            <a href="#">
+                                <div class="besdiehotel m">
+                                    <div class="phnc1 text-center mx-auto">
+                                        <i class="fa fa-leaf"></i>
+                                    </div>
+                                    <div class="phnc2 text-center mx-auto">
+                                        <h3>Farm management solutions</h3>
+                                    </div>
+                                    <div class="detailsE mt-4 text-center px-4">
+                                        <p class="font-weight-bold ">
+                                            Farm management solutionse can play a vital role in a digital solution of a
+                                            farm, as it can manage the workers attendance, working hours, leave,
+                                            holiday,
+                                            and many more.
+                                        </p>
+
+                                    </div>
+
+
+                                </div>
+
+                            </a>
+
+
+
+
+
+                        </div>
+                        <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                            data-wow-duration="1.4s">
+
+                            <a href="#">
+                                <div class="besdiehotel m">
+                                    <div class="phnc1 text-center mx-auto">
+                                        <i class="fa fa-pie-chart"></i>
+                                    </div>
+                                    <div class="phnc2 text-center mx-auto">
+                                        <h3>Crops and Products Reporting</h3>
+                                    </div>
+                                    <div class="detailsE mt-4 text-center px-4">
+                                        <p class="font-weight-bold ">
+                                            Agricultural multi purpose software also comes with a great reporting
+                                            feature.
+                                            With the help of
+                                            this module, top management can generate
+                                            crops and products reports, expense report and so on. With that report, top
+                                            management can
+                                            evaluate their performance.
+                                        </p>
+
+                                    </div>
+
+
+                                </div>
+
+                            </a>
+                            <a href="#">
+                                <div class="besdiehotel m">
+                                    <div class="phnc1 text-center mx-auto">
+                                        <i class="fa fa-chain"></i>
+                                    </div>
+                                    <div class="phnc2 text-center mx-auto">
+                                        <h3>Seed-to-Sale Tracking Software</h3>
+                                    </div>
+                                    <div class="detailsE mt-4 text-center px-4">
+                                        <p class="font-weight-bold ">
+                                            SoftniqueBD develops seed-to-sale tracking software that encompasses the
+                                            entire
+                                            shipping and logistics process from raw material manufacturing to electronic
+                                            proof of delivery (EPoD). It is a new move for the people with great start.
+                                        </p>
+
+                                    </div>
+
+
+                                </div>
+
+                            </a>
+
+                        </div>
+                        <div class="mx-auto col-11 body3c1 wow animate__animated animate__fadeInLeft col-lg-4 col-xl-4"
+                            data-wow-duration="1.4s">
+                            <a href="#">
+                                <div class="besdiehotel m">
+                                    <div class="phnc1 text-center mx-auto">
+                                        <i class="fa fa-flask"></i>
+                                    </div>
+                                    <div class="phnc2 text-center mx-auto">
+                                        <h3>Soil Analysis</h3>
+                                    </div>
+                                    <div class="detailsE mt-4 text-center px-4">
+                                        <p class="font-weight-bold ">
+                                            Our software also includes agricultural soil analysis to improve behavioral
+                                            analyses of the soils through image processing and sensor detections.
+                                        </p>
+
+                                    </div>
+
+
+                                </div>
+
+                            </a>
+                            <a href="#">
+                                <div class="besdiehotel m">
+                                    <div class="phnc1 text-center mx-auto">
+                                        <i class="fa fa-snowflake-o"></i>
+                                    </div>
+                                    <div class="phnc2 text-center mx-auto">
+                                        <h3>Weather monitoring and predictions</h3>
+                                    </div>
+                                    <div class="detailsE mt-4 text-center px-4">
+                                        <p class="font-weight-bold ">
+                                            Our software can also be integrated with weather updates and alerts as it is
+                                            a
+                                            part and parcel for the farmers and weather plays a vital role for growth of
+                                            agro products.
+                                        </p>
+
+                                    </div>
+
+
+                                </div>
+
+                            </a>
+                        </div>
+
+
+
+                        <div class=" clr ">
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section id="targetBusiness">
+                <div class="container my-5 p-4">
+                    <h3 class="wow zoomIn text-center title targetBusiness xtile" data-wow-duration="1.5s"
+                        data-wow-delay=".5s">
+                        What We Offer in Our Agricultural Softwares
+                    </h3>
+                    <div class="targetBusiness-wrapper row col-12 col-md-12">
+
+                        <!----- Target Business Item Starts ----->
+                        <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s"
+                            data-wow-delay=".5s">
+                            <div class="targetBusiness-item">
+                                <ul>
+                                    <li><i class="fa fa-fw fa-chevron-right"></i> GEO/GIS technologies</li>
+                                    <li><i class="fa fa-fw fa-chevron-right"></i>Farm management solutions</li>
+                                    <li><i class="fa fa-fw fa-chevron-right"></i>Inventory & Quality Control Solutions
+                                    </li>
+                                    <li><i class="fa fa-fw fa-chevron-right"></i> Food Safety Traceability Solutions
+                                    </li>
+                                    <li><i class="fa fa-fw fa-chevron-right"></i> Fish Farm Management Software</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!----- Target Business Item Ends ----->
+                        <!----- Target Business Item Starts ----->
+                        <div class="col-sm-6 col-md-6 col-lg-6 wow bounceIn" data-wow-duration="1.5s"
+                            data-wow-delay=".5s">
+                            <div class="targetBusiness-item">
+                                <ul>
+                                    <li><i class="fa fa-fw fa-chevron-right"></i> Aerial Crop Scouting Solutions</li>
+                                    <li><i class="fa fa-fw fa-chevron-right"></i> UAV Livestock Software</li>
+                                    <li><i class="fa fa-fw fa-chevron-right"></i>Agriculture Precision Farming Apps</li>
+                                    <li><i class="fa fa-fw fa-chevron-right"></i>
+                                        Tutorial Based Solutions for farmers
+                                    </li>
+                                    <li><i class="fa fa-fw fa-chevron-right"></i>Agriculture Monitoring Systems</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!----- Target Business Item Ends ----->
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+
+                <div class="row align-items-center">
+                    <div class="container">
+                        <h2 class="title wow zoomIn xtile ">GEO/GIS technologies</h2>
+                    </div>
+                    <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/geoAgro.webp"
+                            alt="about image" class="img-fluid img-round">
+                    </div>
+                    <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                        <p></p><span class="newline"></span>
+                        <ul><span class="newline"></span>
+                            <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Mapping quantities and densities
+                                </strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Geocoding and Spatial Analysis
+                                </strong></li><span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Image Exporting</strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Data and Soil Visualization</strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>Case Study</strong></li>
+                            <span class="newline"></span>
+
+                        </ul><span class="newline"></span>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="verticalse_space"></div>
+            <div class="container">
+
+                <div class="row align-items-center">
+                    <div class="container">
+                        <h2 class="title wow zoomIn xtile">Inventory & Quality Control Solutions</h2>
+                    </div>
+                    <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img
+                            src="./images/qualityControl.webp" alt="about image" class="img-fluid img-round">
+                    </div>
+                    <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                        <p></p><span class="newline"></span>
+                        <ul><span class="newline"></span>
+                            <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Enriched with quality maintaining information
+                                </strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Precision Agriculture Management
+                                </strong></li><span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Prominent and precise Irrigation Management
+
+                                </strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Operations Management</strong>
+                            </li>
+
+
+                        </ul><span class="newline"></span>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="verticalse_space"></div>
+            <div class="container">
+
+                <div class="row align-items-center">
+                    <div class="container">
+                        <h2 class="title wow zoomIn xtile ">Stock Management Software</h2>
+                    </div>
+                    <div class="col-lg-6 wow animate__animated animate__bounceIn">
+                        <img src="./images/stockManagement.webp" alt="about image" class="img-fluid img-round">
+                    </div>
+                    <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight">
+
+                        <p></p><span class="newline"></span>
+                        <ul><span class="newline"></span>
+                            <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Live Breeding Stock
+                                </strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Live Inventory Stock</strong>
+                            </li><span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    profit-and-loss statement and balance
+
+                                </strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Cattle Management
+                                </strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Purchase, Receiving, Stock Accounting</strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Managing Feeding Automation</strong></li>
+
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Managing Feeding Automation</strong></li>
+
+
+                        </ul><span class="newline"></span>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="verticalse_space"></div>
+            <div class="container">
+
+                <div class="row align-items-center">
+                    <div class="container">
+                        <h2 class="title wow zoomIn xtile ">Food Safety Companion Software</h2>
+                    </div>
+                    <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/manageAgro.webp"
+                            alt="about image" class="img-fluid img-round">
+                    </div>
+                    <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                        <p></p><span class="newline"></span>
+                        <ul><span class="newline"></span>
+                            <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Maintains Food Safety Hazard Planning
+                                </strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Maintains Food Safety Traceability Solutions
+                                </strong>
+                            </li><span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Maintains Food Safety Initiative Standards
+                                </strong></li>
+                            </li><span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Maintains Environmental Health & Safety Systems
+                                </strong></li>
+
+
+
+                        </ul><span class="newline"></span>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="verticalse_space"></div>
+            <div class="container">
+
+                <div class="row align-items-center">
+                    <div class="container">
+                        <h2 class="title wow zoomIn xtile ">Agricultural Warehouse Report module</h2>
+                    </div>
+                    <div class="col-lg-6 wow animate__animated animate__bounceIn"> <img src="./images/pos8.webp"
+                            alt="about image" class="img-fluid img-round">
+                    </div>
+                    <div class="col-lg-6 mx-auto wow animate__animated animate__slideInRight ">
+
+                        <p></p><span class="newline"></span>
+                        <ul><span class="newline"></span>
+                            <li> <i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Versatile reports for all levels of management.
+                                </strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Statistical reports
+                                </strong>
+                            </li><span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Financial Reporting
+
+                                </strong></li>
+                            <span class="newline"></span>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Generate information by date and warehouse categories</strong></li>
+                            <span class="newline"></span>
+                            <li><i class="fa fa-fw fa-chevron-right"></i><strong>
+                                    Stock Entry Report</strong>
+                            </li><span class="newline"></span>
+
+
+
+
+                        </ul><span class="newline"></span>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="verticalse_space"></div>
+
+            <!-- footer section start -->
+            <div class="curvy" style="background-size: cover; height: auto">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path fill="white" fill-opacity="1"
+                        d="M0,96L60,122.7C120,149,240,203,360,218.7C480,235,600,213,720,170.7C840,128,960,64,1080,48C1200,32,1320,64,1380,80L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+                    </path>
+                </svg>
+                <div class="container">
+                    <div class="d-flex justify-content-around position-relative" onclick="start_project.html">
+                        <hr class="line" />
+                        <div class="d-flex justify-content-center align-items-center m-auto position-relative">
+                            <a href="start_project.html" class="icon-wrapper text-light position-absolute text-center"
+                                style="z-index: 1">
+                                <div>
+                                    <strong>START <br />A PROJECT</strong>
+                                </div>
+                            </a>
+                            <div class="position-absolute" style="
                   z-index: 0;
                   border-radius: 100%;
                   background: #4d4a5c;
@@ -1374,110 +1308,111 @@
                   height: 134px;
                   width: 134px;
                 "></div>
-                    </div>
-                    <hr class="line" />
-                </div>
-                <div class="mt-5 pt-3 d-flex justify-content-around position-relative">
-                    <ul class="list-inline">
-                        <a href="https://facebook.com/softniquebd" target="_blank" class="list-inline-item">
-                            <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
-                        </a>
-                        <a href="https://api.whatsapp.com/send?phone=8801816266199" target="_blank"
-                            class="list-inline-item">
-                            <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
-                        </a>
-                        <a href="https://instagram.com/softniquebd" target="_blank" class="list-inline-item">
-                            <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
-                        </a>
-                        <a href="mailto:softniquebd@gmail.com" class="list-inline-item">
-                            <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="d-flex flex-column flex-md-row" style="place-items: center;">
-                    <div class="position-relative col-12 col-md-4">
-                        <div class="d-flex footercard">
-                            <img src="images/alifoot.webp" alt="" height="65px" />
-                            <div class="ml-2 mt-2 col-xs-5">
-                                <strong>
-                                    <h6 class="font-weight-bold" style="color: #81fa72">
-                                        MOHAMMAD ALI SHUVO
-                                    </h6>
-                                </strong>
-                                <p>
-                                    Founder and CTO । Expertise on Flutter, Mobile App Development, Web Development,
-                                    Full Stack Technologies
-                                </p>
-                            </div>
                         </div>
-                        <div class="d-flex footercard">
-                            <img src="./images/nsdfoot.webp" alt="" height="65px" />
-                            <div class="ml-2 mt-2">
-                                <strong>
-                                    <h6 class="font-weight-bold" style="color: #81fa72">
-                                        NOUSHAD BHUIYAN
-                                    </h6>
-                                </strong>
-                                <p>
-                                    Co-Founder | Expertise on Software Development, Web Development, Strategic
-                                    Development Technologies
-                                </p>
-                            </div>
-                        </div>
+                        <hr class="line" />
                     </div>
-                    <div class="col-4 col-md-2 m-md-0 m-auto text-center">
-                        <ul class="list-unstyled">
-                            <a href="./webproject.html" class="list-item text-light">
-                                <li class="mb-2">WEB PROJECTS</li>
+                    <div class="mt-5 pt-3 d-flex justify-content-around position-relative">
+                        <ul class="list-inline">
+                            <a href="https://facebook.com/softniquebd" target="_blank" class="list-inline-item">
+                                <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
                             </a>
-                            <a href="./app_projects.html" class="list-item text-light">
-                                <li class="mb-2">APP PROJECTS</li>
+                            <a href="https://api.whatsapp.com/send?phone=8801816266199" target="_blank"
+                                class="list-inline-item">
+                                <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
                             </a>
-                            <a href="./graphics.html" class="list-item text-light">
-                                <li class="mb-2">GRAPHICS DESIGN</li>
+                            <a href="https://instagram.com/softniquebd" target="_blank" class="list-inline-item">
+                                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
                             </a>
-                            <a href="./ecommerce.html" class="list-item text-light">
-                                <li class="mb-2">ECOMMERCE</li>
+                            <a href="mailto:softniquebd@gmail.com" class="list-inline-item">
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
                             </a>
                         </ul>
                     </div>
-                    <div class="vl d-none d-md-block"></div>
+                    <div class="d-flex flex-column flex-md-row" style="place-items: center;">
+                        <div class="position-relative col-12 col-md-4">
+                            <div class="d-flex footercard">
+                                <img src="images/alifoot.webp" alt="" height="65px" />
+                                <div class="ml-2 mt-2 col-xs-5">
+                                    <strong>
+                                        <h6 class="font-weight-bold" style="color: #81fa72">
+                                            MOHAMMAD ALI SHUVO
+                                        </h6>
+                                    </strong>
+                                    <p>
+                                        Founder and CTO । Expertise on Flutter, Mobile App Development, Web Development,
+                                        Full Stack Technologies
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex footercard">
+                                <img src="./images/nsdfoot.webp" alt="" height="65px" />
+                                <div class="ml-2 mt-2">
+                                    <strong>
+                                        <h6 class="font-weight-bold" style="color: #81fa72">
+                                            NOUSHAD BHUIYAN
+                                        </h6>
+                                    </strong>
+                                    <p>
+                                        Co-Founder | Expertise on Software Development, Web Development, Strategic
+                                        Development Technologies
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-2 m-md-0 m-auto text-center">
+                            <ul class="list-unstyled">
+                                <a href="./webproject.html" class="list-item text-light">
+                                    <li class="mb-2">WEB PROJECTS</li>
+                                </a>
+                                <a href="./app_projects.html" class="list-item text-light">
+                                    <li class="mb-2">APP PROJECTS</li>
+                                </a>
+                                <a href="./graphics.html" class="list-item text-light">
+                                    <li class="mb-2">GRAPHICS DESIGN</li>
+                                </a>
+                                <a href="./ecommerce.html" class="list-item text-light">
+                                    <li class="mb-2">ECOMMERCE</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="vl d-none d-md-block"></div>
 
-                    <div class="col-12 col-md-3 m-md-0 m-auto text-center">
-                        <h6>914/1, Gulshan Tower Road 53, Dhaka 1212<br>softniquebd@gmail.com<br>Phone: 01784-215213,
-                            01816-266199</h6>
-                    </div>
-                    <div class="text-sm-center text-md-left position-inherit">
-                        <img class="logofooter" src="./images/softnique-footer.webp" alt="" />
+                        <div class="col-12 col-md-3 m-md-0 m-auto text-center">
+                            <h6>914/1, Gulshan Tower Road 53, Dhaka 1212<br>softniquebd@gmail.com<br>Phone:
+                                01784-215213,
+                                01816-266199</h6>
+                        </div>
+                        <div class="text-sm-center text-md-left position-inherit">
+                            <img class="logofooter" src="./images/softnique-footer.webp" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-</body>
+    </body>
 
-<script src="js/jquery-3.4.1.min.js"></script>
-<script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
 
-    $(window).on('load', function () {
-        $('.loader').fadeOut('slow');
-    });
+        $(window).on('load', function () {
+            $('.loader').fadeOut('slow');
+        });
 
-</script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="./js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script src="./js/plugin.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script src="./js/jquery.parallax-scroll.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
-<script src="./js/parallax.js"></script>
-<script src="./js/owl.js"></script>
-<script src="./js/jquery.fancybox.js"></script>
-<script src="./js/main.js"></script>
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./js/plugin.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./js/jquery.parallax-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="./js/parallax.js"></script>
+    <script src="./js/owl.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+    <script src="./js/main.js"></script>
 
 </html>

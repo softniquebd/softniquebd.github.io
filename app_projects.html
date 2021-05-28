@@ -60,457 +60,572 @@ android application development, android application development company in bang
 
     }
 </style>
+<!-- loader css -->
 <style>
-    /* loading css */
-    .contentLoad {
-        /* width: 100%;
-		height: 100vh;
+    @media screen and (max-width: 700px) and (min-width: 536px) {
+        .loadSlide {
+            font-size: 25px !important;
 
-		display: flex; */
-        justify-content: center;
-        align-items: center;
-    }
-
-    .contentLoad .loading {
-        width: 80px;
-        height: 50px;
-        position: relative;
-    }
-
-    @keyframes text {
-        0% {
-            letter-spacing: 1px;
-            transform: translateX(0px);
         }
 
-        40% {
-            letter-spacing: 2px;
-            transform: translateX(26px);
-        }
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 7px !important;
 
-        80% {
-            letter-spacing: 1px;
-            transform: translateX(32px);
-        }
-
-        90% {
-            letter-spacing: 2px;
-            transform: translateX(0px);
-        }
-
-        100% {
-            letter-spacing: 1px;
-            transform: translateX(0px);
         }
     }
-
-    .contentLoad .loading span {
-        background-color: #ff0404;
-        border-radius: 50px;
-        display: block;
-        height: 16px;
-        width: 16px;
-        bottom: 0;
-        position: absolute;
-        transform: translateX(64px);
-        animation: loading 3.5s ease both infinite;
-    }
-
-    .contentLoad .loading span:before {
-        position: absolute;
-        content: "";
-        width: 100%;
-        height: 100%;
-        background-color: #d9b200;
-        border-radius: inherit;
-        animation: loading2 3.5s ease both infinite;
-    }
-
-    @keyframes loading {
-        0% {
-            width: 16px;
-            transform: translateX(0px);
-        }
-
-        40% {
-            width: 100%;
-            transform: translateX(0px);
-        }
-
-        80% {
-            width: 16px;
-            transform: translateX(64px);
-        }
-
-        90% {
-            width: 100%;
-            transform: translateX(0px);
-        }
-
-        100% {
-            width: 16px;
-            transform: translateX(0px);
-        }
-    }
-
-    @keyframes loading2 {
-        0% {
-            transform: translateX(0px);
-            width: 16px;
-        }
-
-        40% {
-            transform: translateX(0%);
-            width: 80%;
-        }
-
-        80% {
-            width: 100%;
-            transform: translateX(0px);
-        }
-
-        90% {
-            width: 80%;
-            transform: translateX(15px);
-        }
-
-        100% {
-            transform: translateX(0px);
-            width: 16px;
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
 
     @media screen and (max-width: 535px) and (min-width: 417px) {
+        .loadSlide {
+            font-size: 18px !important;
 
+        }
 
-        /* .contentLoad {
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 12px !important;
+
+        }
+
+        .contentLoad {
             margin-left: 50px !important;
-        } */
+        }
     }
 
     @media screen and (max-width: 416px) and (min-width: 350px) {
+        .loadSlide {
+            font-size: 14px !important;
 
+        }
 
-        /* .contentLoad {
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 14px !important;
+
+        }
+
+        .contentLoad {
             margin-left: 40px !important;
         }
-    } */
+    }
 
-        @media screen and (max-width: 350px) and (min-width: 286px) {
+    @media screen and (max-width: 350px) and (min-width: 286px) {
+        .loadSlide {
+            font-size: 12px !important;
 
+        }
 
-            /* .contentLoad {
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 16px !important;
+
+        }
+
+        .contentLoad {
             margin-left: 30px !important;
-        } */
+        }
+    }
+
+    @media screen and (max-width: 286px) and (min-width: 215px) {
+        .loadSlide {
+            font-size: 10px !important;
+
         }
 
-        @media screen and (max-width: 286px) and (min-width: 215px) {
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 18px !important;
 
+        }
 
-            /* .contentLoad {
+        .contentLoad {
             margin-left: 20px !important;
-        } */
+        }
+    }
+
+    @media screen and (max-width: 215px) and (min-width: 100px) {
+        .loadSlide {
+            font-size: 8px !important;
+
         }
 
-        @media screen and (max-width: 215px) and (min-width: 100px) {
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 20px !important;
 
+        }
 
-            /* .contentLoad {
+        .contentLoad {
             margin-left: 10px !important;
-        } */
+        }
+    }
+
+
+    /* new dynamic progress bar styles     */
+    .loadWrappe {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loadSlide {
+        border-radius: 2em;
+        font-size: 30px;
+        color: #880404;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+    }
+
+    .LoaderSlide {
+        height: 100px;
+        padding-left: 15px;
+        overflow: hidden;
+    }
+
+    .LoaderSlide div {
+        border-radius: 2em;
+        color: #0d042b;
+        height: 50px;
+        margin-bottom: 50px;
+        padding: 2px 15px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .slider-text1 {
+        font-size: 0.7em !important;
+        /* background: lightgreen; */
+        animation: slide 30s linear infinite;
+        animation-delay: 1s;
+    }
+
+    .slider-text2 {
+        font-size: 0.7em !important;
+        /* background: skyblue; */
+    }
+
+    .slider-text3 {
+        font-size: 0.7em !important;
+        /* background: rgb(220, 245, 130); */
+    }
+
+
+
+
+
+    @keyframes slide {
+        0% {
+            margin-top: -300px;
         }
 
-        @media screen and (max-width: 277px) and (min-width: 100px) {
-            .theme_btn {
-                font-size: 15px !important;
-            }
+        5% {
+            margin-top: -200px;
         }
 
-        @media screen and (max-width: 350px) and (min-width: 100px) {
-
-            .heading h1 {
-                font-weight: 600 !important;
-
-                font-size: 1.5em !important;
-            }
-
+        33% {
+            margin-top: -200px;
         }
 
-        @media screen and (max-width: 352px) and (min-width: 100px) {
-
-            .title {
-                font-weight: 600 !important;
-
-                font-size: 1.3em !important;
-            }
-
+        38% {
+            margin-top: -100px;
         }
 
-
-
-        @media screen and (max-width: 768px) and (min-width: 351px) {
-
-            .heading h1 {
-                font-weight: 600 !important;
-
-                font-size: 2.0em !important;
-            }
-
+        66% {
+            margin-top: -100px;
         }
 
-        @media screen and (max-width: 768px) and (min-width: 351px) {
-
-            .title {
-
-
-                font-size: 1.5em !important;
-            }
-
+        71% {
+            margin-top: 0px;
         }
 
+        100% {
+            margin-top: 0px;
+        }
+    }
 
 
 
+    /* progress css */
 
+    .progress {
+        width: 50%;
+        /* max-width: 260px; */
+        height: 7px;
+        margin: auto;
+        background: #e1e4e8;
+        border-radius: 3px;
+        overflow: hidden;
+    }
 
-        @media (min-width: 992px) {
-            .dropdown-menu .dropdown-toggle:after {
-                border-top: .3em solid transparent;
-                border-right: 0;
-                border-bottom: .3em solid transparent;
-                border-left: .3em solid;
-            }
+    .progress .progress-bar {
+        display: block;
+        height: 100%;
+        background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+        background-size: 300% 100%;
+        -webkit-animation: progress-animation 2s linear infinite;
+        animation: progress-animation 2s linear infinite;
+    }
 
-            .dropdown-menu .dropdown-menu {
-                margin-left: 0;
-                margin-right: 0;
-            }
-
-            .dropdown-menu li {
-                position: relative;
-            }
-
-            .nav-item .submenu {
-                display: none;
-                position: absolute;
-                left: 100%;
-                top: -7px;
-            }
-
-            .nav-item .submenu-left {
-                right: 100%;
-                left: auto;
-            }
-
-            .dropdown-menu>li:hover {
-                background-color: #f1f1f1
-            }
-
-            .dropdown-menu>li:hover>.submenu {
-                display: block;
-            }
+    @-webkit-keyframes progress-animation {
+        0% {
+            background-position: 100%;
         }
 
-        @media screen and (max-width: 767px) {
-            .dropdown-menu li {
-                display: block;
-            }
+        100% {
+            background-position: 0;
+        }
+    }
 
-            .dropdown-menu {
-                margin: 16.125rem 151px 0;
-                min-width: 63rem;
-                top: -256px !important;
-            }
-
-            .nabvarul li {
-                width: 84.33% !important;
-
-            }
-
-
+    @keyframes progress-animation {
+        0% {
+            background-position: 100%;
         }
 
-        @media screen and (max-width: 393px) {
+        100% {
+            background-position: 0;
+        }
+    }
 
-            .nabvarul li a {
-                font-size: 11px;
-            }
 
-            .navicon {
-                font-size: 14px !important;
-            }
+    .LoaderSlide p {
+        width: 300px;
+        font-size: 0.6em;
+        text-align: justify;
+        color: brown;
+    }
 
-            .softdrop {
-                min-width: 0 !important;
-                left: 0 !important;
-            }
 
+
+
+
+
+    @media screen and (max-width: 277px) and (min-width: 100px) {
+        .theme_btn {
+            font-size: 15px !important;
+        }
+    }
+
+    @media screen and (max-width: 350px) and (min-width: 100px) {
+
+        .heading h1 {
+            font-weight: 600 !important;
+
+            font-size: 1.5em !important;
         }
 
-        @media screen and (max-width: 393px) {
+    }
 
-            .nabvarul li a {
-                font-size: 8.5px;
-            }
+    @media screen and (max-width: 352px) and (min-width: 100px) {
 
-            .nabvarul li a {
-                padding: 2px;
-            }
+        .title {
+            font-weight: 600 !important;
 
-            .softdrop {
-                min-width: 0px !important;
-                left: 0px !important;
-            }
-
-
+            font-size: 1.3em !important;
         }
 
-        @media screen and (max-width:979px) {
-
-            .nabvarul li a {
-                font-size: 11px !important;
-            }
+    }
 
 
+
+    @media screen and (max-width: 768px) and (min-width: 351px) {
+
+        .heading h1 {
+            font-weight: 600 !important;
+
+            font-size: 2.0em !important;
         }
 
-        @media screen and (max-width:885px) {
+    }
 
-            .navicon {
-                font-size: 15px !important;
-                margin-right: 0.4em !important;
-            }
+    @media screen and (max-width: 768px) and (min-width: 351px) {
 
-            .nabvarul li a {
-                font-size: 11px !important;
-            }
+        .title {
 
+
+            font-size: 1.5em !important;
         }
 
-        @media screen and (max-width:600px) {
-            .banner_text h1 {
-                font-size: 14px !important;
-
-            }
+    }
 
 
+
+
+
+
+    @media (min-width: 992px) {
+        .dropdown-menu .dropdown-toggle:after {
+            border-top: .3em solid transparent;
+            border-right: 0;
+            border-bottom: .3em solid transparent;
+            border-left: .3em solid;
         }
 
-        @media screen and (max-width:810px) {
-
-            .navicon {
-                font-size: 9px !important;
-                margin-right: 0.4em !important;
-            }
-
-            .nabvarul li a {
-                font-size: 11px !important;
-            }
-
+        .dropdown-menu .dropdown-menu {
+            margin-left: 0;
+            margin-right: 0;
         }
 
-        @media screen and (max-width: 300px) and (min-width: 230px) {
+        .dropdown-menu li {
+            position: relative;
+        }
 
-            .softdrop {
-                width: 55% !important;
-                height: 110% !important;
-            }
+        .nav-item .submenu {
+            display: none;
+            position: absolute;
+            left: 100%;
+            top: -7px;
+        }
 
-            .nabvarul {
-                width: 91.33% !important;
-                padding: 1px !important;
-            }
+        .nav-item .submenu-left {
+            right: 100%;
+            left: auto;
+        }
 
-            .nabvarul li a {
-                font-size: 7.6px !important;
-                padding: 2px !important;
-            }
+        .dropdown-menu>li:hover {
+            background-color: #f1f1f1
+        }
 
-            .nav .nav-item i {
-                margin-left: 0.1em !important;
+        .dropdown-menu>li:hover>.submenu {
+            display: block;
+        }
+    }
 
-            }
+    @media screen and (max-width: 767px) {
+        .dropdown-menu li {
+            display: block;
+        }
 
-            .navicon {
+        .dropdown-menu {
+            margin: 16.125rem 151px 0;
+            min-width: 63rem;
+            top: -256px !important;
+        }
 
-                margin-right: 0.3em !important;
-            }
-
-
-
-
-
-
+        .nabvarul li {
+            width: 84.33% !important;
 
         }
 
-        @media screen and (max-width: 420px) and (min-width: 301px) {
-            .softdrop {
-                width: 56% !important;
 
-            }
+    }
 
-            .nabvarul {
+    @media screen and (max-width: 393px) {
 
-                padding: 1px !important;
-            }
+        .nabvarul li a {
+            font-size: 11px;
+        }
+
+        .navicon {
+            font-size: 14px !important;
+        }
+
+        .softdrop {
+            min-width: 0 !important;
+            left: 0 !important;
+        }
+
+    }
+
+    @media screen and (max-width: 393px) {
+
+        .nabvarul li a {
+            font-size: 8.5px;
+        }
+
+        .nabvarul li a {
+            padding: 2px;
+        }
+
+        .softdrop {
+            min-width: 0px !important;
+            left: 0px !important;
+        }
+
+
+    }
+
+    @media screen and (max-width:979px) {
+
+        .nabvarul li a {
+            font-size: 11px !important;
+        }
+
+
+    }
+
+    @media screen and (max-width:885px) {
+
+        .navicon {
+            font-size: 15px !important;
+            margin-right: 0.4em !important;
+        }
+
+        .nabvarul li a {
+            font-size: 11px !important;
+        }
+
+    }
+
+    @media screen and (max-width:600px) {
+        .banner_text h1 {
+            font-size: 14px !important;
 
         }
 
-        @media screen and (max-width: 767px) and (min-width: 421px) {
-            .softdrop {
-                width: 58% !important;
 
-            }
+    }
 
+    @media screen and (max-width:810px) {
 
+        .navicon {
+            font-size: 9px !important;
+            margin-right: 0.4em !important;
+        }
+
+        .nabvarul li a {
+            font-size: 11px !important;
+        }
+
+    }
+
+    @media screen and (max-width: 300px) and (min-width: 230px) {
+
+        .softdrop {
+            width: 55% !important;
+            height: 110% !important;
+        }
+
+        .nabvarul {
+            width: 91.33% !important;
+            padding: 1px !important;
+        }
+
+        .nabvarul li a {
+            font-size: 7.6px !important;
+            padding: 2px !important;
+        }
+
+        .nav .nav-item i {
+            margin-left: 0.1em !important;
 
         }
 
-        @media screen and (max-width: 245px) and (min-width: 225px) {
-            .softdrop {
-                height: 98% !important;
+        .navicon {
 
-            }
+            margin-right: 0.3em !important;
+        }
 
-            .nabvarul {
 
-                padding: 1px !important;
-            }
 
-            .nabvarul li a {
-                font-size: 6px !important;
-            }
 
-            .navicon {
-                font-size: 0px !important;
-            }
+
+
+
+    }
+
+    @media screen and (max-width: 420px) and (min-width: 301px) {
+        .softdrop {
+            width: 56% !important;
 
         }
+
+        .nabvarul {
+
+            padding: 1px !important;
+        }
+
+    }
+
+    @media screen and (max-width: 767px) and (min-width: 421px) {
+        .softdrop {
+            width: 58% !important;
+
+        }
+
+
+
+    }
+
+    @media screen and (max-width: 245px) and (min-width: 225px) {
+        .softdrop {
+            height: 98% !important;
+
+        }
+
+        .nabvarul {
+
+            padding: 1px !important;
+        }
+
+        .nabvarul li a {
+            font-size: 6px !important;
+        }
+
+        .navicon {
+            font-size: 0px !important;
+        }
+
+    }
 </style>
 
 
 <body data-spy="scroll" data-target=".navbar" data-offset="100" style="overflow-x: hidden;">
     <div class="loader"
         style=" position: fixed;z-index: 9669;top: 0;left: 0;width: 100%;height: 100%;display: flex;background: #ffffff;justify-content: center;align-items: center; flex-direction: column;">
-        <img src="./images/softnique-nav.webp" alt="loader" style="height: 10%;">
-        <div class="contentLoad" style="margin-left: -27px;">
-            <div class="loading">
+        <div class="loadWrapper">
 
-                <span></span>
+
+
+            <div class="col-12  text-center" style="height: fit-content;">
+                <div class="col-12 ">
+                    <img src="./images/softnique-nav.webp" alt="loader" style="width: 145px;">
+                    <br>
+                    <div class="progress mt-3">
+                        <span class="progress-bar" style="width: 40%"></span>
+                    </div>
+                </div>
+                <div class="loadSlide" style="display: contents;">
+
+                    <div class="LoaderSlide col-12 mt-3">
+                        <div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv text-secondary"
+                                aria-hidden="true"></i><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
+                                repellendus.</p>
+                        </div>
+                        <div class="slider-text2">App development <i class="ml-2 fa fa-mobile text-secondary"
+                                aria-hidden="true"></i><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
+                                repellendus.</p>
+                        </div>
+                        <div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs text-secondary"
+                                aria-hidden="true"></i><br>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
+                                repellendus.</p>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
+
+
+
+
         </div>
+
+
     </div>
 
 
@@ -669,7 +784,7 @@ android application development, android application development company in bang
         <!-- homslider -->
         <section class="home">
             <div class="slider">
-                <div class="slide active">
+                <div class="slideApp active">
                     <img src="images/slider4.webp" class="image1" alt="">
                     <div class="container">
                         <div class="caption  banner_text">
@@ -682,7 +797,7 @@ android application development, android application development company in bang
                         </div>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="slideApp">
                     <img src="images/slider3.webp" class="image2" alt="">
                     <div class="container">
                         <div class="caption banner_text ">
@@ -696,7 +811,7 @@ android application development, android application development company in bang
                         </div>
                     </div>
                 </div>
-                <div class="slide">
+                <div class="slideApp">
                     <img src="images/slider2.webp" class="image3" alt="">
                     <div class="container">
                         <div class="caption banner_text">
