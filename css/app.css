@@ -62,7 +62,7 @@
   height: 578px;
   margin: 0 auto;
   padding: 70px 20px;
-  background: url(../images/iphone-mockup.png) center top no-repeat;
+  background: url(../images/iphone-mockup.webp) center top no-repeat;
 }
 
 .screenshots-section .carousel-outer .owl-carousel {
@@ -84,7 +84,7 @@
   top: 0px;
   width: 20px;
   height: 630px;
-  background: url(../images/iphone-mockup.png) left top no-repeat;
+  background: url(../images/iphone-mockup.webp) left top no-repeat;
   z-index: 20;
 }
 
@@ -95,7 +95,7 @@
   top: 0px;
   width: 21px;
   height: 630px;
-  background: url(../images/iphone-mockup.png) right top no-repeat;
+  background: url(../images/iphone-mockup.webp) right top no-repeat;
   z-index: 20;
 }
 
