@@ -181,7 +181,7 @@ android application development, android application development company in bang
         font-size: 30px;
         color: #880404;
         font-weight: bold;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -300,7 +300,7 @@ android application development, android application development company in bang
 
 
     .LoaderSlide p {
-        width: 300px;
+        width: 315px;
         font-size: 0.6em;
         text-align: justify;
         color: brown;
@@ -599,20 +599,20 @@ android application development, android application development company in bang
                 <div class="loadSlide" style="display: contents;">
 
                     <div class="LoaderSlide col-12 mt-3">
-                        <div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv text-secondary"
+                        <div class="slider-text1">Android App Development<i class=" ml-2 fa fa-android text-secondary"
                                 aria-hidden="true"></i><br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
-                                repellendus.</p>
+                            <p>If you have an idea, we have an app development team which can transform your idea into a
+                                secure & feature-packed mobile application.</p>
                         </div>
-                        <div class="slider-text2">App development <i class="ml-2 fa fa-mobile text-secondary"
+                        <div class="slider-text2">iOS App Development<i class="ml-2 fa fa-apple text-secondary"
                                 aria-hidden="true"></i><br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
-                                repellendus.</p>
+                            <p>If you are looking for a top iOS app development agency that can deliver apps for the
+                                latest versions of iPAds and iPhones, then we are your best bet.</p>
                         </div>
-                        <div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs text-secondary"
-                                aria-hidden="true"></i><br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
-                                repellendus.</p>
+                        <div class="slider-text3">Cross-platform App Development<i
+                                class="ml-2 fa fa-cogs text-secondary" aria-hidden="true"></i><br>
+                            <p>We understand the importance of cross-platform applications, both from a business and
+                                technical perspective.</p>
                         </div>
                     </div>
                 </div>
@@ -1350,6 +1350,44 @@ android application development, android application development company in bang
             </div>
         </div>
     </div>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+    </script>
 </body>
 
 

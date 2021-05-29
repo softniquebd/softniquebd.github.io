@@ -467,7 +467,7 @@
         font-size: 30px;
         color: #880404;
         font-weight: bold;
-        text-transform: uppercase;
+        text-transform: capitalize;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -585,7 +585,7 @@
     }
 
     .slider p {
-        width: 300px;
+        width: 400px;
         font-size: 0.6em;
         text-align: justify;
         color: brown;
@@ -617,20 +617,21 @@
                 <div class="slider-wrapper" style="display: contents;">
 
                     <div class="slider  col-12 mt-3">
-                        <div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv text-secondary"
+                        <div class="slider-text1">Cloud-Based Software<i class=" ml-2 fa fa-cloud text-secondary"
                                 aria-hidden="true"></i><br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
-                                repellendus.</p>
+                            <p>We provide User-friendly, extremely easy to use, cloud-based software which can save
+                                time, money & increase profits.</p>
                         </div>
-                        <div class="slider-text2">App development <i class="ml-2 fa fa-mobile text-secondary"
+                        <div class="slider-text2">Product / Stock Efficiency<i class="ml-2 fa fa-cubes text-secondary"
                                 aria-hidden="true"></i><br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
-                                repellendus.</p>
+                            <p>Real-time Inventory, Stock alerts, search inventory item, control your cash flow, manage
+                                orders and many other feature are available.</p>
                         </div>
-                        <div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs text-secondary"
+                        <div class="slider-text3">Multiple Business<i class="ml-2 fa fa-cogs text-secondary"
                                 aria-hidden="true"></i><br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
-                                repellendus.</p>
+                            <p>By using this software you can run your Dealership, Showrooms, export-import ,
+                                Manufacturer, Retailer & Wholesaler, Ict & cable Operators and many others busines
+                                field.</p>
                         </div>
                     </div>
                 </div>
@@ -1400,6 +1401,44 @@
         </div>
     </div>
     </div>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+    </script>
 </body>
 
 <script src="js/jquery-3.4.1.min.js"></script>
