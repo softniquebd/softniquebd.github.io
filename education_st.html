@@ -544,7 +544,7 @@
         font-size: 30px;
         color: #880404;
         font-weight: bold;
-        text-transform: uppercase;
+        text-transform: capitalize;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -662,7 +662,7 @@
     }
 
     .slider p {
-        width: 300px;
+        width: 391px;
         font-size: 0.6em;
         text-align: justify;
         color: brown;
@@ -694,20 +694,24 @@
                 <div class="slider-wrapper" style="display: contents;">
 
                     <div class="slider  col-12 mt-3">
-                        <div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv text-secondary"
-                                aria-hidden="true"></i><br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
-                                repellendus.</p>
+                        <div class="slider-text1">Education Management Software<i
+                                class=" ml-2 fa fa-graduation-cap text-secondary" aria-hidden="true"></i><br>
+                            <p>SoftniqueBD provides education management software and we bring complete software
+                                solution
+                                for School, College, Madrasah and Polytechnic institution.</p>
                         </div>
-                        <div class="slider-text2">App development <i class="ml-2 fa fa-mobile text-secondary"
+                        <div class="slider-text2">Smart Academic System <i class="ml-2 fa fa-university text-secondary"
                                 aria-hidden="true"></i><br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
-                                repellendus.</p>
+                            <p>A smart solution in academic, accounts & fees,attendance tracking, faculty/staff,
+                                library,
+                                exam all kinds of management in one place.</p>
                         </div>
-                        <div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs text-secondary"
+                        <div class="slider-text3">Total Solution<i class="ml-2 fa fa-cogs text-secondary"
                                 aria-hidden="true"></i><br>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore deleniti odit
-                                repellendus.</p>
+                            <p>Automatic result & report card, result analysis & report, instant sms & email
+                                notification,
+                                user-friendly mobile app, easy online payment gateway and many other solution in one
+                                place.</p>
                         </div>
                     </div>
                 </div>
@@ -1497,6 +1501,44 @@
         </div>
     </div>
     </div>
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function () {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        }
+        else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+	// ]]>
+    </script>
 </body>
 
 <script src="js/jquery-3.4.1.min.js"></script>
