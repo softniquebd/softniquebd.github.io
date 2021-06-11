@@ -35,7 +35,7 @@ li
 }
 
 #maincontentId p{
-    font-weight: bold !important;
+    /* font-weight: bold !important; */
     text-align: justify !important;
     line-height: 1.7em !important;
     font-family: 'Quicksand' !important;

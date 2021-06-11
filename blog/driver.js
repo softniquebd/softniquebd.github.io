@@ -340,6 +340,12 @@ $.getJSON("data.json", async function (info) {
 
     }
 
+
+
+
+
+
+
     function renderdetailsPage(postnum) {
         $(`${blogdetails(postnum)}`).insertAfter("nav");
         loadAllScript()
