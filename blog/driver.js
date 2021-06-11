@@ -252,7 +252,7 @@ $.getJSON("data.json", async function (info) {
     }
 
     function renderselectedTag(tag) {
-       var found = false, html = '';
+        var found = false, html = '';
         for (let x = 0; x < tagList.length; x++) {
             for (let y = 0; y < tagList[x].length; y++) {
                 var tagLower = tagList[x][y].toLowerCase();
@@ -269,7 +269,7 @@ $.getJSON("data.json", async function (info) {
                         <div class="post-info flex-row theme_btn">
                             <span> <i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;${data[x].blogWriter}</span>
                             <span><i class="fa fa-calendar-check-o text-gray" aria-hidden="true"></i>
-                                &nbsp;&nbsp;${data[x].date}</span>
+                                ${data[x].date}</span>
                                 <span>${data[x].category}
                         </div>
                     </div>
@@ -358,7 +358,7 @@ $.getJSON("data.json", async function (info) {
                     <div class="post-info flex-row theme_btn">
                         <span> <i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;${data[index].blogWriter}</span>
                         <span><i class="fa fa-calendar-check-o text-gray" aria-hidden="true"></i>
-                            &n     bsp;&nbsp;${data[index].date}</span>
+                            ${data[index].date}</span>
                             <span>${data[index].category}
                     </div>
                 </div>
@@ -387,7 +387,7 @@ $.getJSON("data.json", async function (info) {
                                             <div class="post-info flex-row theme_btn">
                                                 <span> <i class="fa fa-user text-gray" aria-hidden="true"></i>&nbsp;&nbsp;${post.blogWriter}</span>
                                                 <span><i class="fa fa-calendar-check-o text-gray" aria-hidden="true"></i>
-                                                    &nbsp;&nbsp;${post.date}</span>
+                                                ${post.date}</span>
                                                 <span>${post.category}</span>
                                             </div>
                                         </div>
@@ -413,7 +413,7 @@ $.getJSON("data.json", async function (info) {
                                         </div>
                                         <div class="post-info flex-row ">
                                             <span><i class="fa fa-calendar-check-o text-gray"
-                                                    aria-hidden="true"></i>&nbsp;&nbsp;${post.date}</span>
+                                                    aria-hidden="true"></i>${post.date}</span>
                                             <span>${post.category}</span>
                                         </div>
                                     </div>

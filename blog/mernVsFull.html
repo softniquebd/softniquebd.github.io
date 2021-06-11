@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="I2aJtNwoBFHCWzr4dpfF2WbTxI4ylF93ffaLERNFCHs" />
+
+    <meta name="keywords" CONTENT="softniquebd.tech,softnique,softnique bd,noushadbug,mohammad ali shuvo, noushad bhuiyan, softniquebd, top bangladeshi software development company , software development company in bangladesh, software development company bd,best software development company in Bangladesh, software development company in Bangladesh, best ecommerce development
+	company, best it company in Bangladesh
+	softniquebd software, Best Software Development Company in Bangladesh, Best school management Software, Smart Academic
+	System,
+	School Management Software, Smart HRM, Human Resource Management, Smart ERP, Enterprise Resource Planning, Account
+	Management System, Hospital Management, Real Estate ERP, IT Solution Provider Company, Management Consulting, Web
+	Application ,Best Website Design in BD, Web Designer, Inventory and Accounts , Production software, Educational Sector
+	Software, Library Software, Restaurant management, Hospitality management, top software company in bd">
+
+    <meta property="og:title" content="Best Software Development Company in Bangladesh - SoftniqueBD">
+    <meta property="og:description"
+        content="softniqueBD is an emerging software and IT company from Bangladesh.For more details visit softniquebd.tech and connect with softniquebd.">
+
+
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="icon" href="../images/icon.webp" sizes="16x16" />
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" />
+    <title>Mean Stack VS Full Stack - SoftniqueBD</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="../css/aos.css">
+    <link rel="stylesheet" href=".././css/categories.css" />
+    <link rel="stylesheet" href=".././css/blog_detail.css" />
+    <!-- Custom Style   -->
+    <!-- <link rel="stylesheet" href="../css/Style.css"> -->
+    <link rel="stylesheet" href="../blog/css/mernvsfull.css">
+    <link rel="stylesheet" href="../css/main.css" />
+
+</head>
+
+<!-- loader css style -->
+<style>
+    @media screen and (max-width: 700px) and (min-width: 536px) {
+        .slider-wrapper {
+            font-size: 25px !important;
+
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 7px !important;
+
+        }
+    }
+
+    @media screen and (max-width: 536px) and (min-width: 417px) {
+        .slider-wrapper {
+            font-size: 25px !important;
+
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 12px !important;
+
+        }
+
+        .contentLoad {
+            margin-left: 50px !important;
+        }
+
+
+    }
+
+    @media screen and (max-width: 416px) and (min-width: 350px) {
+        .slider-wrapper {
+            font-size: 23px !important;
+
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 14px !important;
+
+        }
+
+        .contentLoad {
+            margin-left: 40px !important;
+        }
+    }
+
+    @media screen and (max-width: 350px) and (min-width: 286px) {
+        .slider-wrapper {
+            font-size: 23px !important;
+
+        }
+
+        .slider p {
+            display: none !important;
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 16px !important;
+
+        }
+
+        .contentLoad {
+            margin-left: 30px !important;
+        }
+    }
+
+    @media screen and (max-width: 286px) and (min-width: 215px) {
+        .slider-wrapper {
+            font-size: 23px !important;
+
+        }
+
+        .slider p {
+            display: none !important;
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 18px !important;
+
+        }
+
+        .contentLoad {
+            margin-left: 20px !important;
+        }
+    }
+
+    @media screen and (max-width: 215px) and (min-width: 100px) {
+        .slider-wrapper {
+            font-size: 23px !important;
+
+        }
+
+        .slider p {
+            display: none !important;
+        }
+
+        .slider-text1,
+        .slider-text2,
+        .slider-text3 {
+            padding-top: 20px !important;
+
+        }
+
+        .contentLoad {
+            margin-left: 10px !important;
+        }
+    }
+
+
+    /* new dynamic progress bar styles     */
+    .loadWrappe {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slider-wrapper {
+        border-radius: 2em;
+        font-size: 30px;
+        color: #880404;
+        font-weight: bold;
+        text-transform: capitalize;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+    }
+
+    .slider {
+        height: 100px;
+        padding-left: 15px;
+        overflow: hidden;
+    }
+
+    .slider div {
+        border-radius: 2em;
+        color: #0d042b;
+        height: 50px;
+        margin-bottom: 50px;
+        padding: 2px 15px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .slider-text1 {
+        font-size: 0.7em !important;
+        /* background: lightgreen; */
+        animation: slide 30s linear infinite;
+        animation-delay: 1s;
+    }
+
+    .slider-text2 {
+        font-size: 0.7em !important;
+        /* background: skyblue; */
+    }
+
+    .slider-text3 {
+        font-size: 0.7em !important;
+        /* background: rgb(220, 245, 130); */
+    }
+
+
+
+
+
+    @keyframes slide {
+        0% {
+            margin-top: -300px;
+        }
+
+        5% {
+            margin-top: -200px;
+        }
+
+        33% {
+            margin-top: -200px;
+        }
+
+        38% {
+            margin-top: -100px;
+        }
+
+        66% {
+            margin-top: -100px;
+        }
+
+        71% {
+            margin-top: 0px;
+        }
+
+        100% {
+            margin-top: 0px;
+        }
+    }
+
+
+
+
+
+    .progress {
+        width: 50%;
+        /* max-width: 260px; */
+        height: 7px;
+        margin: auto;
+        background: #e1e4e8;
+        border-radius: 3px;
+        overflow: hidden;
+    }
+
+    .progress .progress-bar {
+        display: block;
+        height: 100%;
+        background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+        background-size: 300% 100%;
+        -webkit-animation: progress-animation 2s linear infinite;
+        animation: progress-animation 2s linear infinite;
+    }
+
+    @-webkit-keyframes progress-animation {
+        0% {
+            background-position: 100%;
+        }
+
+        100% {
+            background-position: 0;
+        }
+    }
+
+    @keyframes progress-animation {
+        0% {
+            background-position: 100%;
+        }
+
+        100% {
+            background-position: 0;
+        }
+    }
+
+    .slider p {
+        width: 300px;
+        font-size: 0.6em;
+        text-align: justify;
+        color: brown;
+    }
+</style>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="100">
+
+    <!-- loader -->
+
+
+    <div class="loader"
+        style=" position: fixed;z-index: 9669;top: 0;left: 0;width: 100%;height: 100%;display: flex;background: radial-gradient(circle, rgba(255, 255, 255, 0.98) 43%, rgba(154, 154, 214, 0.86) 102%);justify-content: center;align-items: center; flex-direction: column;">
+
+
+
+        <div class="loadWrapper">
+
+
+
+            <div class="col-12  text-center" style="height: fit-content;">
+                <div class="col-12 ">
+                    <img src="../images/softnique-nav.webp" alt="loader" style="width: 145px;">
+                    <br>
+                    <div class="progress mt-3">
+                        <span class="progress-bar" style="width: 40%"></span>
+                    </div>
+                </div>
+                <div class="slider-wrapper" style="display: contents;">
+
+                    <div class="slider  col-12 mt-3">
+                        <div class="slider-text1">Web Development<i class=" ml-2 fa fa-tv text-secondary"
+                                aria-hidden="true"></i><br>
+                            <p>Our team comprises the best website designer and website developers and we provide custom
+                                solution for any business or industry</p>
+                        </div>
+                        <div class="slider-text2">App development <i class="ml-2 fa fa-mobile text-secondary"
+                                aria-hidden="true"></i><br>
+                            <p>We design, develop and deploy mobile apps in multiple platforms such as iPhone, Android
+                                and Windows. </p>
+                        </div>
+                        <div class="slider-text3">Custom Software<i class="ml-2 fa fa-cogs text-secondary"
+                                aria-hidden="true"></i><br>
+                            <p>Our software development services can help you bring your product idea to a feasible
+                                business solution.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+    <!-- navbar section start -->
+    <nav class="navbar navbar-collapse navbar-expand-md fixed-top navbar-inverse navbar-right shadow bg-white wow animate__animated animate__slideInDown"
+        data-wow-delay="0s" data-wow-duration="1.4s">
+        <!-- Brand -->
+        <a class="navbar-brand wow animate__animated animate__jackInTheBox" data-wow-delay="1s" data-wow-duration="1.4s"
+            style="width: auto;" href="#">
+            <img class="img-fluid" src="../images/nav-logo.webp" height="70" width="140" /></a>
+
+        <!-- Collapse button -->
+        <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="dark-blue-text"><i class="fa fa-bars fa-1x"
+                    style="font-size: 1.3em; color: #A35414;"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../webproject.html">Web</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../app_projects.html">App</a>
+                </li>
+                <li class="nav-item">
+                    <a class="dropdown-toggle nav-link active" href="#" data-toggle="dropdown">Softwares</a>
+
+
+
+                    <div class=" softdrop  dropdown-menu wow animate__animated animate__flipInX"
+                        data-wow-duration="0.9s">
+                        <ul class="nabvarul">
+                            <li><a href="../hospital.html">
+
+                                    <i class="fa fa-stethoscope navicon"></i>Hospital Management</a></li>
+                            <li><a href="../education_st.html">
+
+                                    <i class="fa fa-graduation-cap navicon"></i>Educational Management</a></li>
+                            <li><a href="../accounting.html">
+
+                                    <i class="fa fa-cart-plus navicon"></i>Accounting & Inventory</a></li>
+                            <li><a href="../hrm_software.html">
+
+                                    <i class="fa fa-pie-chart navicon"></i>Human Resource Management</a></li>
+                            <li><a href="../travel_hospitality.html">
+
+                                    <i class="fa fa-plane navicon"></i>Travel & Hospitality</a></li>
+                            <li><a href="../point_of_sales.html">
+
+                                    <i class=" fa fa-calculator navicon"></i>Point of Sale</a></li>
+                            <li><a href="../superShop.html">
+
+                                    <i class="fa fa-shopping-cart navicon"></i>Super Shop Managment</a></li>
+                            <li><a href="../businessauto.html">
+
+                                    <i class="fa fa-line-chart navicon"></i>Business Automation</a></li>
+                            <li><a href="../resturant.html">
+
+                                    <i class="fa fa-cutlery navicon"></i>Resturant Management</a></li>
+                            <li><a href="../realEstate.html">
+
+                                    <i class="fa fa-industry navicon"></i>Real Estate Management</a></li>
+                            <li><a href="../hotelmanagment.html">
+
+                                    <i class="fa fa-building  navicon"></i>Hotel Management</a></li>
+                            <li><a href="../garmentserp.html">
+
+                                    <i class="fa fa-tags navicon"></i>Garments ERP</a></li>
+                            <li><a href="courierManagement.html">
+
+                                    <i class=" fa fa-truck navicon"></i>Courier Management</a></li>
+                            <li><a href="../customsoft.html">
+
+                                    <i class="fa fa-lightbulb-o navicon"></i>Custom Software</a></li>
+                            <li><a href="../ispbillingsoft.html">
+
+                                    <i class="fa fa-skyatlas navicon"></i>ISP Billing Software</a></li>
+                            <li><a href="../agriculture.html">
+
+                                    <i class="fa fa-leaf navicon"></i>Agriculture Software</a></li>
+
+
+
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../graphics.html">Graphic Design</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="../ecommerce.html">E-commerce</a>
+                </li>
+
+
+
+
+
+
+
+
+
+                <!-- Dropdown -->
+
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../blog/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Links -->
+    </nav>
+
+    <div class="col-md-12 mt-5 container  banner-img  "> </div>
+    <div class="banner-text  ">
+        <h1 class="font-weight-bold  head-title" style="font-family: 'Quicksand' !important;">Full Stack vs MEAN Stack
+        </h1>
+        <p class="text-center allp" style="font-family: 'Quicksand' !important;">
+            All You Need To Know
+        </p>
+    </div>
+    <div class="container  " id="maincontentId">
+        <div class="cs-blog-detail">
+            <div class="cs-post-title">
+                <div class="cs-author">
+                    <figure>
+                        <a href="https://github.com/shuvo18103107?tab=repositories"><img width="50" height="50"
+                                src="../images//nsdfoot.webp" alt="${index}"></a>
+                    </figure>
+                    <div class="cs-text">
+                        <a href="https://github.com/NoushadBug">Noushad Bhuiyan
+                        </a>
+                    </div>
+                </div>
+                <div class="post-option">
+                    <span class="post-date"><i class="cs-color icon-calendar6"></i>June 10, 2021</a></span>
+                    <span class="post-comment"><a href="./index.html?cat=Software"><i
+                                class="cs-color icon-chat6"></i>Software</a></span>
+                </div>
+            </div>
+            <hr>
+
+            <p class="c6 starthead"><span class="c1"></span></p>
+
+
+
+            <!-- main content start -->
+            <div class="c22 c38  text-center mainimage">
+                <h1 class="c20 mb-4 headTitle" id="h.pm1e6jsjxtyz"><span class="c34 c37">Full Stack vs MEAN Stack: All
+                        You Need To
+                        Know</span></h1>
+                <img src="../blog/images/banner.webp" />
+
+                <p class="c1"><span class="c0"></span></p>
+                <p class="c1"><span class="c0"></span></p>
+                <p class="c1"><span class="c0"></span></p>
+                <hr>
+                <p class="c1"><span class="c0"></span></p>
+                <p class="c1"><span class="c0"></span></p>
+                <p class="c12 customP"><span class=" c21 c22" style="font-family: 'Quicksand' !important;"">Full Stack development
+                        and </span><span class=" c21 c22"><a class="c10" href="#"></a>MEAN
+                        Stack development</a></span><span class="c4 c22">&nbsp;have proven their importance in the
+                        domain of custom software development.Though both these stacks are highly popular among
+                        developers, some aspects make them different from each other. It is necessary to understand the
+                        points of differences to select the right tech stack for your upcoming software development
+                        project.</span></p>
+                <p class="c1"><span class="c27 c35 c22"></span></p>
+                <p class="c5"><span class="c27 c22 c35"></span></p>
+                <p class="c5"><span class="c15"></span></p>
+
+                <img alt="" src="../blog/images/begin.webp" />
+                <h1 class=" commonh1 mt-4">What
+                    does stack mean by software
+                    development?</h1>
+                <p class="c1"><span class="c0"></span></p>
+                <p class="c12  customP">A stack is a combination of languages, frameworks, and
+                    technologies
+                    used in the creation of mobile app development and web
+                    development</p>
+                <p class="c1"><span class="c4"></span></p>
+                <p class="c12 customP"><span class="c4 c22">Generally, any software is divided into two parts –
+                        client-side and
+                        server-side, also known as front-end and back-end. The selection of the right tech stack has a
+                        great impact on the growth and success of the web application.</span></p>
+                <p class="c12 customP">Here, we are talking about two popular stacks –
+                    MEAN
+                    stack &nbsp;and Full
+                    Stack. Let’s discuss Full stack vs MEAN stack in
+                    detail.</p>
+
+                <h1 class="c12 commonh1 mt-4 text-center"><span class="c8">What is Full Stack Development?</span></h1>
+                <img src="../blog/images/full-stack-devlopment-min.webp" />
+                <p class="c1"><span class="c15"></span></p>
+                <p class="c12 customP"><span class="c4 c22">Full Stack development involves both front-end and back-end
+                        parts of
+                        web application development. Full Stack is an umbrella term and it is not restricted to any
+                        particular software or tool.</span></p>
+                <p class="c11 customP"><span class="c4 c22">Front-end refers to the front part of the application or UI
+                        which is
+                        seen by the end-user and used for end-user interaction. The back-end part is related to
+                        server-side development, database, and API development.</span></p>
+                <h1 class="c11 commonh1"><span class="c8">Who Is A Full-Stack Developer?</span></h1>
+                <img src="../blog/images/superman.webp" />
+                <p class="c1"><span class="c0"></span></p>
+                <p class="c11 customP"><span class="c4 c22">A full-stack developer is a person who is proficient in
+                        several
+                        languages and frameworks for client-side and server-side programming. They don’t require
+                        learning all the technologies or tools available in the market. However, they must possess the
+                        knowledge of developing applications entirely from UI design to development and
+                        deployment.</span></p>
+                <h1 class="c20  commonh1" id="h.sa0zv22xn8d6"><span class="c17">What Are The Benefits Of Hiring
+                        Full-Stack
+                        Developers?</span></h1>
+                <img src="../blog/images/hirefullstack.webp" />
+                <ul class="c13 lst-kix_lyxyilye1v0w-0 start customP">
+                    <li class="c16 li-bullet-0"><span class="c4">They can easily switch between different programming
+                            languages and frameworks</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Knowledge of UI/UX and suitable architecture</span>
+                    </li>
+                    <li class="c16 li-bullet-0"><span class="c4">Ability to turn ideas into reality from concept to
+                            actual implementation</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Knowledge of various databases like MySQL, MongoDB,
+                            Oracle, SQL server</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Can deal with server setups and deployments</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">API development and implementation</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">They can work upon a range of programming languages for
+                            frontend and backend such as Java, C#, .NET, Python, and JavaScript</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">They are quite faster to adopt new technologies or
+                            concepts</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Familiar with modern architectural concepts like cloud,
+                            microservices, containerization, and orchestration</span></li>
+                </ul>
+                <h1 class="c22 c28  commonh1" id="h.ojqblzu7ikcz"><span class="c17">What Are The Technology Stacks For
+                        Full-Stack
+                        Development?</span></h1>
+                <p class="c11 customP">
+                    With the increased usage of open-source software and
+                    agile
+                    approach &nbsp;to development, full-stack development is getting
+                    a makeover with new frameworks and tools.
+                </p>
+                <h1 class=" commonh1">Popular Tech Stack For Full-Stack
+                    Development:</h1>
+                <ul class="c13 lst-kix_histgcus60p3-0 start customP">
+                    <li class="c16 li-bullet-0"><span class="c34 c30">LAMP Stack:</span></li>
+                </ul>
+                <p class="c11 customP"><span class="c4">L for Linux Operating System, A for Apache server, M for MySQL
+                        database
+                        server, and P for PHP Language</span></p>
+                <ul class="c13 lst-kix_nglhrvwsxkga-0 start customP">
+                    <li class="c16 li-bullet-0"><span class="c34 c30">MEAN Stack:</span></li>
+                </ul>
+                <p class="c11 customP">In
+                    MEAN
+                    stack, M represents MongoDB( popular NoSQL Database), E stands
+                    for Express.js, A for Angular which is frontend framework and N represents cross-platform
+                    runtime environment</p>
+                <ul class="c13 lst-kix_shjf09utqsa8-0 start customP">
+                    <li class="c16 li-bullet-0"><span class="c30 c34">MERN Stack:</span></li>
+                </ul>
+                <p class="c11 customP"><span class="c4">This is the same stack as MEAN, just Angular is replaced by
+                        React.</span></p>
+                <p class="c11 customP"><span class="c4">For any full-stack developer, knowledge of HTML, CSS, And
+                        JavaScript is
+                        a must and with that front-end knowledge, they must deal with server-side programming
+                        too.</span></p>
+                <p class="c11 customP"><span class="c4">Apart from this, developers can choose languages like Python,
+                        Java, and
+                        frameworks like .Net and RoR to develop full-stack applications.</span></p>
+                <h1 class="c28 c22 commonh1" id="h.bnd412bpnwy"><span class="c17">Skills Required To Become Full-Stack
+                        Developers:</span></h1>
+                <p class="c11 customP"><span class="c4">Full-stack developers have to play more than one role in web
+                        development
+                        processes. From architecting user requirements to front-end, back-end, and database management,
+                        they need to obtain broader perspectives for usability, accessibility, and quality of the
+                        system.</span></p>
+                <p class="c11 customP"><span class="c4">They must possess:</span></p>
+                <ul class="c13 lst-kix_kg5bxtme0ihw-0 start customP">
+                    <li class="c16 li-bullet-0"><span class="c4">Knowledge of essential front-end technologies like
+                            HTML, CSS, JavaScript</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">At least one server-side programming language like
+                            Java, Python, PHP, Ruby, and so on</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Database management and caching mechanism</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Server and configuration management</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Version control systems</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Basic UI/UX design</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Project management skills</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Security awareness</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Agile development approach</span></li>
+                </ul>
+                <p class="c11 customP">Knowledge of, automated tests, and modern development architecture like,
+                    containerization, and container-orchestration can be the icing on the cake.
+                    Upcoming years will see a notable rise in full-stack development as they are known for their
+                    capability to build end-to-end systems.</p>
+                <h1 class="c28 c22 commonh1" id="h.2atkckolbzjm"><span class="c17">Disadvantages Of Hiring Full Stack
+                        Developers</span></h1>
+                <ul class="c13 lst-kix_z9mrqtshbltg-0 start customP">
+                    <li class="c16 li-bullet-0"><span class="c4">They sometimes lack in-depth knowledge and that leads
+                            to delay and misperceptions</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">They are often overloaded with the tasks</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">Dependency on the Full Stack developer is higher and
+                            they are difficult to replace</span></li>
+                    <li class="c16 li-bullet-0"><span class="c4">It’s difficult to stay updated with every update of all
+                            frameworks/technologies</span></li>
+                </ul>
+                <h1 class="c9 commonh1"><span class="c17">What is MEAN Stack Development?</span></h1>
+
+                <img src="../blog/images/mean-stacks-main.webp" />
+
+                <p class="c9 customP"><span class="c4">MEAN Stack development is a process to build advanced and dynamic
+                        web
+                        applications using JavaScript (JS)-based technologies. The full form of MEAN is MongoDB,
+                        Express.js, Angular, and Node.js.</span></p>
+                <p class="c9 customP"><span class="c4">Simply put, MEAN Stack is one of the most popular Full Stack
+                        frameworks.
+                        Unlike MEAN Stack developers, all the Full Stack developers have a good knowledge of all
+                        technologies used for frontend and backend development. </span></p>
+                <h1 class="c3 commonh1" id="h.5mic76dlvhao"><span class="c17">Benefits Of Hiring MEAN Stack
+                        Developers:</span>
+                </h1>
+                <ul class="c13 lst-kix_klm4ef6loue6-0 start customP">
+                    <li class="c18 li-bullet-0"><span class="c4">Possess the experience of working on the database,
+                            frontend, and backend</span></li>
+                    <li class="c18 li-bullet-0"><span class="c4">Expertise in JavaScript-based technologies and complete
+                            web development</span></li>
+                    <li class="c18 li-bullet-0"><span class="c4">Able to manage every web development phase</span></li>
+                    <li class="c18 li-bullet-0"><span class="c4">Suitable for cutting-edge web application
+                            development</span></li>
+                    <li class="c18 li-bullet-0"><span class="c4">Able to develop individually and can handle a team of
+                            web developers</span></li>
+                </ul>
+                <h1 class="c3 commonh1" id="h.r4bungqal15u"><span class="c17">What Are The Disadvantages Of Hiring MEAN
+                        Stack
+                        Developers?</span></h1>
+                <p class="c9 customP"><span class="c4">It is certainly a framework that is adopted by a number of
+                        leading
+                        organizations and utilizes benefits it has to offer but there are several disadvantages of the
+                        MEAN stack.</span></p>
+                <ul class="c13 lst-kix_d8dsydhe2ufp-0 start customP">
+                    <li class="c18 li-bullet-0"><span class="c4">Lacks the ability to work on quite large-scale
+                            enterprises due to only JavaScript experience</span></li>
+                    <li class="c18 li-bullet-0"><span class="c4">Knowledge and scope are limited compared to full-stack
+                            development</span></li>
+                    <li class="c18 li-bullet-0"><span class="c4">Require more time to switch to different
+                            technologies/tools except for JavaScript</span></li>
+                    <li class="c18 li-bullet-0"><span class="c4">Developers must be able to have Node.js expertise to
+                            leverage its scalability and reliability</span></li>
+                </ul>
+                <p class="c9 commonh1"><span class="c17">How Full Stack is Different than MEAN Stack</span></p>
+                <ul class="c13 lst-kix_dn7oyi30c4n0-0 start customP">
+                    <li class="c18 li-bullet-0"><span class="c23">Technology</span><span class="c21 c27">- Full Stack
+                            development needs knowledge of several web technologies for frontend and backend
+                            development. It also demands insight for deployment, design, optimization, and automation of
+                            web applications. It is necessary for Full Stack developers to work on a diverse range of
+                            tools and technologies for developing complex web apps.</span></li>
+                </ul>
+                <p class="c9 customP"><span class="c4">In contrast to this, MEAN Stack demands knowledge of only 4
+                        JavaScript-based frameworks and a database to build a feature-rich web application.</span></p>
+                <p class="c5"><span class="c23 c36"></span></p>
+                <ul class="c13 lst-kix_vb0xbbwkkady-0 start customP">
+                    <li class="c18 li-bullet-0"><span class="c23">Development Process</span><span class="c4">- Full
+                            Stack development is highly versatile and developers can work on client-side and server-side
+                            alike. This process also ensures seamless performance and regular customization of the
+                            website or web apps.</span></li>
+                </ul>
+                <p class="c9 customP"><span class="c4">MEAN Stack development, on the other hand, needs expertise in
+                        JavaScript-based frameworks as it involves JavaScript in both frontend and backend
+                        development.</span></p>
+                <ul class="c13 lst-kix_fosk0bcbsrpl-0 start customP">
+                    <li class="c18 li-bullet-0"><span class="c23">Frameworks</span><span class="c4">- As mentioned
+                            above, Full-Stack developers have knowledge of multiple web technologies and frameworks.
+                            They can work on a diverse range of projects. What’s more, database knowledge is not
+                            restricted to MongoDB like in MEAN Stack development.</span></li>
+                </ul>
+                <p class="c9"><span class="c4">MEAN Stack development requires the insight of MERN, which stands for
+                        MongoDB, Express, React, and Node.js. MEAN Stack developers are proficient in any JS-based
+                        frameworks including React and Node. They can also learn to work on tools and frameworks similar
+                        to React and Express.js.</span></p>
+                <ul class="c13 lst-kix_o47hklbkc4rx-0 start">
+                    <li class="c18 li-bullet-0"><span class="c23">Tools</span><span class="c4">- Full Stack developers
+                            can use any tools from various web development technologies and frameworks including PHP,
+                            C++, Java, and Python. They need to know at least one framework for the backend and frontend
+                            development of modern web apps.</span></li>
+                </ul>
+                <p class="c9"><span class="c4">In MEAN Stack development, MongoDB database, Express.js, and Node.js
+                        frameworks, and Angular are involved to build responsive and user-friendly, real-time web
+                        applications. This process does not involve any other technologies.</span></p>
+                <h1 class="c3  commonh1" id="h.21jndmjfy1ka"><span class="c17">How do these two stacks redefine Web App
+                        Development?</span></h1>
+                <p class="c11"><span class="c4">To understand these stacks in detail, we first need to understand how
+                        they relate to web development. As we have mentioned earlier, web development or any software
+                        development has two components – backend and frontend.</span></p>
+                <p class="c11"><span class="c4">The frontend is the face of the application. It is used by end-users to
+                        interact with the website or app. It includes design, user experience (UX), user interfaces
+                        (UI), graphics, content, and components that are related to the look-and-feel of the
+                        website.</span></p>
+                <p class="c11"><span class="c4">Backend is the backbone of the application. It’s a part that is not
+                        visible to end-users neither the processes. The backend is a logical part where data is stored,
+                        processed, manipulated, and sent to the frontend for presentation. All functionalities of the
+                        website are programmed in the backend. It mainly targets ‘responses’ given to users that include
+                        processed data or calculated results.</span></p>
+                <p class="c11"><span class="c4">Both these parts require different technologies yet they complement each
+                        other. While the frontend requires technologies like JavaScript, HTML, and CSS, backend focuses
+                        on database management and server-side programming.</span></p>
+                <p class="c11"><span class="c4">This is where Full Stack and MEAN stack differs.</span></p>
+                <p class="c11"><span class="c21">MEAN stack is one of the popular Full Stack frameworks consisting of
+                    </span><span class="c21">JavaScript</span><span class="c21">-based
+                        technologies like </span><span class="c21">MongoDB</span><span class="c21">, Express.js,
+                    </span><span class="c21">
+                        Angular</span><span class="c4">, and NodeJS. On the other hand, Full Stack
+                        means having a knowledge of developing
+                        both – frontend and backend parts of the website.</span></p>
+                <p class="c11"><span class="c4">Full Stack is a broad concept and requires a set of languages, tools,
+                        and concepts to learn, unlike MEAN. In MEAN stack, you will require knowledge of 4 frameworks
+                        mentioned in this acronym (first letter of each). MEAN is Full Stack because it consists
+                        of:</span></p>
+                <p class="c11"><span class="c23">MongoDB</span><span class="c4">&nbsp;– a database</span></p>
+                <p class="c11"><span class="c23">Express.js</span><span class="c4">&nbsp;– Backend web application
+                        framework for Node.js</span></p>
+                <p class="c11"><span class="c23">Angular </span><span class="c4">– Frontend web framework</span></p>
+                <p class="c11"><span class="c23">Node.js </span><span class="c4">– Backend JavaScript runtime
+                        environment</span></p>
+                <p class="c11"><span class="c4">This together makes MEAN a complete web development framework. MEAN has
+                        played a significant role in increasing the popularity of Full Stack. This is because MEAN stack
+                        developers are capable of developing a whole web application that includes database management,
+                        frontend, and backend using JavaScript-based frameworks.</span></p>
+                <h1 class="c20  commonh1" id="h.10y98bj5at25"><span class="c17">Full Stack vs MEAN Stack Key
+                        Differences</span>
+                </h1>
+
+                <table style="width:100%">
+                    <tbody>
+                        <tr>
+                            <th>Full Stack Development</th>
+                            <th>MEAN Stack Development</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                It is useful for building robust web applications</td>
+                            <td>
+                                It focuses on 4 frameworks – MongoDB, Express.js, Angular, and Node.js</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                It is not limited to JS (JavaScript).</td>
+                            <td>
+                                It is restricted to JS-based tools and technologies</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                It enables developers to work on multiple client-side and server-side frameworks</td>
+                            <td>
+                                MEAN Stack developers are proficient in 4 frameworks</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                It needs mastery in different programming languages</td>
+                            <td>
+                                It needs expertise in JavaScript along with frontend and backend development</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Full Stack development is high in demand because of its ability to deal with diverse
+                                tools</td>
+                            <td>
+                                When a JS-based web app is required, MEAN Stack is an ideal choice</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Full Stack developers must possess analytical, management, and architectural skills</td>
+                            <td>
+                                MEAN Stack developers are a kind of Full Stack developers</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Full Stack development can earn more money for developers</td>
+                            <td>
+                                MEAN Stack developers are paid less than Full Stack developers</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+                <h1 class="c3 commonh1" id="h.t6rhzup8i88q"><span class="c17">Which Is Better: MEAN Stack Or Full
+                        Stack?</span>
+                </h1>
+                <p class="c12"><span class="c4 c22">In a nutshell, there is no place for the question- Which is better-
+                        MEAN Stack development or Full Stack Development? It is because choosing the right approach or
+                        technology depends on various factors like budget, timeline, and resource availability. Full
+                        Stack development swiftly gains ground because of its versatility whereas MEAN Stack development
+                        is ideal for complex processes that need frequent customization.</span></p>
+                <p class="c1"><span class="c4 c22"></span></p>
+                <p class="c9"><span class="c4">Technically, this question simply does not make any sense as MEAN stack
+                        is a popular and widely-adopted Full Stack for web development.</span></p>
+                <p class="c9"><span class="c4">Full Stack has increased in popularity due to its versatile role in this
+                        product-driven world. To make your customers happy, you need to develop faster and release
+                        faster. And to accomplish this, organizations need skills and responsibilities that save time
+                        and achieve goals using innovative and modern approaches. Definitely, Full Stack developers are
+                        the most sought-after skill in the upcoming years.</span></p>
+                <p class="c5"><span class="c4"></span></p>
+                <p class="c5"><span class="c4"></span></p>
+                <p class="c22 c26"><span class="c4"></span></p>
+                <p class="c5"><span class="c4"></span></p>
+                <p class="c11 c29"><span class="c4"></span></p>
+                <p class="c11 c29"><span class="c24"></span></p>
+                <p class="c1"><span class="c0"></span></p>
+                <p class="c1"><span class="c0"></span></p>
+                <p class="c11 c29"><span class="c15"></span></p>
+                <p class="c1"><span class="c15"></span></p>
+            </div>
+
+            <div class="cs-tags">
+                <div class="tags mt-5">
+                    <span>Tags</span>
+                    <ul id="tagList">
+                        <li><a rel="tag" href="#0">Software</a>
+                        </li>
+                        <li><a rel="tag" href="#0">MERN Stack</a>
+                        </li>
+                        <li><a rel="tag" href="#0">Full Stack</a>
+                        </li>
+                        <li><a rel="tag" href="#0">Web Development</a>
+                        </li>
+                        <li><a rel="tag" href="#0">Javascript</a>
+                        </li>
+                        <li><a rel="tag" href="#0">Web Technologie</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer section start -->
+    <div class="curvy" style="background-size: cover; height: auto">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="white" fill-opacity="1"
+                d="M0,96L60,122.7C120,149,240,203,360,218.7C480,235,600,213,720,170.7C840,128,960,64,1080,48C1200,32,1320,64,1380,80L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg>
+        <div class="container">
+            <div class="d-flex justify-content-around position-relative" onclick="start_project.html">
+                <hr class="line" />
+                <div class="d-flex justify-content-center align-items-center m-auto position-relative">
+                    <a href="start_project.html" class="icon-wrapper text-light position-absolute text-center"
+                        style="z-index: 1">
+                        <div>
+                            <strong>START <br />A PROJECT</strong>
+                        </div>
+                    </a>
+                    <div class="position-absolute" style="
+              z-index: 0;
+              border-radius: 100%;
+              background: #4d4a5c;
+              position: absolute;
+              height: 134px;
+              width: 134px;
+            "></div>
+                </div>
+                <hr class="line" />
+            </div>
+            <div class="mt-5 pt-3 d-flex justify-content-around position-relative">
+                <ul class="list-inline">
+                    <a href="https://facebook.com/softniquebd" target="_blank" class="list-inline-item">
+                        <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=8801816266199" target="_blank"
+                        class="list-inline-item">
+                        <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="https://instagram.com/softniquebd" target="_blank" class="list-inline-item">
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    </a>
+                    <a href="mailto:softniquebd@gmail.com" class="list-inline-item">
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="d-flex flex-column flex-md-row" style="place-items: center;">
+                <div class="position-relative col-12 col-md-4">
+                    <div class="d-flex footercard">
+                        <img src=".././images/alifoot.webp" alt="" height="65px" />
+                        <div class="ml-2 mt-2 col-xs-5">
+                            <strong>
+                                <h6 class="font-weight-bold" style="color: #81fa72">
+                                    MOHAMMAD ALI SHUVO
+                                </h6>
+                            </strong>
+                            <p class="allp">
+                                Founder and CTO । Expertise on Flutter, Mobile App Development, Web Development, Full
+                                Stack Technologies
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex footercard">
+                        <img src=".././images/nsdfoot.webp" alt="" height="65px" />
+                        <div class="ml-2 mt-2">
+                            <strong>
+                                <h6 class="font-weight-bold" style="color: #81fa72">
+                                    NOUSHAD BHUIYAN
+                                </h6>
+                            </strong>
+                            <p class="allp">
+                                Co-Founder | Expertise on Software Development, Web Development, Strategic Development
+                                Technologies
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-2 m-md-0 m-auto text-center">
+                    <ul class="list-unstyled">
+                        <a href="../././webproject.html" class="list-item text-light">
+                            <li class="mb-2">WEB PROJECTS</li>
+                        </a>
+                        <a href="../././app_projects.html" class="list-item text-light">
+                            <li class="mb-2">APP PROJECTS</li>
+                        </a>
+                        <a href="../././graphics.html" class="list-item text-light">
+                            <li class="mb-2">GRAPHICS DESIGN</li>
+                        </a>
+                        <a href="../././ecommerce.html" class="list-item text-light">
+                            <li class="mb-2">ECOMMERCE</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="vl d-none d-md-block"></div>
+
+                <div class="col-12 col-md-3 m-md-0 m-auto text-center">
+                    <h6>914/1, Gulshan Tower Road 53, Dhaka 1212<br>softniquebd@gmail.com<br>Phone: 01784-215213,
+                        01816-266199</h6>
+                </div>
+                <div class="text-sm-center text-md-left position-inherit">
+                    <img class="logofooter" src="../././images/softnique-footer.webp" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    // "window.location = window.location.href.split('#')[0].split('?')[0]+'tag?=software'"
+    var tagsList = $('#tagList');
+    console.log(tagsList)
+
+    $(tagsList).children('li').each(function () {
+        var tagName = $(this).children('a').text().toLowerCase();
+        var urlString = window.location.origin + '/blog/';
+        var onclickString = urlString + '?tag=' + tagName;
+        $(this).children('a').attr('href', onclickString);
+    });
+</script>
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script>
+
+    $(window).on('load', function () {
+        $('.loader').fadeOut('slow');
+    });
+
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="../js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../js/plugin.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="../js/jquery.parallax-scroll.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+<script src="../js/parallax.js"></script>
+<script src="../js/owl.js"></script>
+<script src="../js/jquery.fancybox.js"></script>
+<!-- Disable inspect/Copy Code Starts  -->
+<script>
+    document.onkeydown = function (e) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'H'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'A'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'F'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.keyCode == 'E'.charCodeAt(0)) {
+            return false;
+        }
+    }
+
+    $(document).bind("contextmenu", function (e) {
+        e.preventDefault();
+    });
+    $(document).keydown(function (e) {
+        if (e.ctrlKey && (e.which === 83)) {
+            e.preventDefault();
+            return false;
+        }
+    });
+</script>
+
+<script src="../js/main.js"></script>
+
+
+
+</html>
